@@ -22,13 +22,19 @@ export default function TopNavi() {
         >
           Product
         </HashLink> */}
-
         <HashLink
           smooth
           to="/#Solution"
-          className=" text-2l w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
+          className="text-2l w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
         >
           Solution
+        </HashLink>
+        <HashLink
+          smooth
+          to="/#FAQ"
+          className="text-2l w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
+        >
+          FAQ
         </HashLink>
 
         <a

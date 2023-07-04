@@ -1,6 +1,6 @@
 import did from "../assets/img/DID.png";
-import ZKP from "../assets/img/zero.png";
 import FastAuth from "../assets/img/fast.png";
+import Store from "../assets/img/store.png";
 export default function YourDIntroPage() {
   return (
     <div className="w-full px-20 h-screen p-20 m-100 flex flex-col justify-around ">
@@ -27,8 +27,8 @@ export default function YourDIntroPage() {
       <div id="list" className="flex justify-between items-center mb-5">
         <div id="DID" className="">
           <img src={did} className="h-48 w-48 mx-auto p-5" alt="did" />
-          <div className="text-4xl w-fit mx-auto font-sf-pro-text text-center">
-            Data Wallect
+          <div className="text-4xl w-fit mx-auto font-sf-pro-text font-semibold text-center">
+            Data Wallet
           </div>
           <div className="text-2xl w-fit font-sf-pro-text  text-gray-400 p-5 ">
             By using DID technology, we empower users to directly own their
@@ -37,7 +37,7 @@ export default function YourDIntroPage() {
         </div>
         <div id="Fast Auth">
           <img src={FastAuth} className="h-48 w-48 mx-auto p-5" alt="did" />
-          <div className="text-4xl w-fit mx-auto font-sf-pro-text text-center">
+          <div className="text-4xl w-fit mx-auto font-sf-pro-text font-semibold text-center">
             Fast Auth
           </div>
           <div className="text-2xl w-fit font-sf-pro-text  text-gray-400 p-5">
@@ -46,8 +46,8 @@ export default function YourDIntroPage() {
           </div>
         </div>
         <div id="ZKP">
-          <img src={ZKP} className="h-48 w-48 mx-auto p-5" alt="did" />
-          <div className="text-4xl w-fit mx-auto font-sf-pro-text text-center">
+          <img src={Store} className="h-48 w-48 mx-auto p-5" alt="did" />
+          <div className="text-4xl w-fit mx-auto font-sf-pro-text font-semibold text-center">
             Data Selling
           </div>
           <div className="text-2xl w-fit font-sf-pro-text  text-gray-400 p-5">
