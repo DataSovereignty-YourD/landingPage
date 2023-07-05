@@ -33,7 +33,7 @@ export default function NoVideoPage() {
       <p className="mt-2 text-xl sm:text-4xl lg:text-6xl font-sf-pro-text font-bold tracking-tight text-gray-900 ">
         {videos[activeIndex].Title}
       </p>
-      <p className="mt-6 text-sl sm:text-3lg lg:text-4lg  leading-8 text-gray-600">
+      <p className="mt-6 text-sm sm:text-xl lg:text-2xl  leading-8 text-gray-600">
         {videos[activeIndex].describe}
       </p>
       <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
