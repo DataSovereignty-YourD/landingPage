@@ -8,11 +8,6 @@ export default function MainPage() {
   return (
     <div className="app">
       <TopNavi />
-      <Routes>
-        <Route path="/" element={<FirstPage />} />
-        <Route path="/Solution" element={<DetailPage />} />
-        <Route path="/FAQ" element={<FAQPage />} />
-      </Routes>
     </div>
   );
 }

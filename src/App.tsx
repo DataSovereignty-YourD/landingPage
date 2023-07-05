@@ -7,14 +7,15 @@ import TopNavi from "./component/topNavi";
 import YourDIntroPage from "./pages/yourdIntroPage";
 import CarouselExample from "./pages/test";
 import Footer from "./component/footer";
+import FirstPage from "./pages/FirstPage";
 
 function App() {
   return (
     <div>
-      <TopNavi />
-      <MainPage />
+      <TopNavi/>
+      <FirstPage/>
       <YourDIntroPage />
-      <DetailPage />
+      {/* <DetailPage /> */}
       <FAQPage />
       <Footer />
     </div>

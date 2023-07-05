@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "Mainback": "url('/src/assets/img/back.png')",
+        "Mainback": "url('/src/assets/img/mobileSecurity.png')",
       },
       colors: {
         "custom-blue": "#699bf7",
@@ -19,5 +19,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };

@@ -2,11 +2,11 @@ import { HashLink } from "react-router-hash-link";
 import logo from "../assets/img/YourD-Logo-high.png";
 export default function TopNavi() {
   return (
-    <div className="h-16 w-full bg-white bg-opacity-95 fixed lg:px-64 md:px-40 sm:px-16 transition-all duration-300 flex justify-between items-center">
-      <HashLink smooth to="#Home">
-        <img src={logo} className="h-16 w-fit mx-auto" alt="Logo" />
+    <div className="h-12 sm:h-16 w-full text-sm sm:text-xl bg-transparent fixed pr-4 lg:px-44 md:px-20 sm:px-20 sm:mr-20 transition-all duration-100 flex justify-between items-center backdrop-blur-md z-30">
+      <HashLink smooth to="/#">
+        <img src={logo} className="h-12 sm:h-16 w-fit " alt="Logo" />
       </HashLink>
-      <div className="flex space-x-4 ">
+      <div className="flex space-x-2 ">
         {/* <HashLink
           smooth
           to="/#Developer"
@@ -25,20 +25,20 @@ export default function TopNavi() {
         <HashLink
           smooth
           to="/#Solution"
-          className="text-2l w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
+          className=" w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
         >
           Solution
         </HashLink>
         <HashLink
           smooth
           to="/#FAQ"
-          className="text-2l w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
+          className="w-fit mx-auto font-sf-pro-text font-bold text-center align-center px-1 sm:px-4"
         >
           FAQ
         </HashLink>
 
         <a
-          className="text-2l w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
+          className=" w-fit mx-auto font-sf-pro-text font-bold text-center align-center"
           href="mailto:0xcatbox@gmail.com"
         >
           Contact

@@ -9,7 +9,7 @@ const FAQs: FAQ[] = [
   {
     question: "What is DID?",
     answer:
-      "DID stands for Decentralized Identifier. It's a new type of identifier that enables the holder to prove control over it and is globally unique, resolvable with high availability, and cryptographically verifiable. DIDs are used in decentralized systems and are managed via blockchain technology, allowing the holder to have full control over their personal data. It doesn't require a centralized registration authority and can be used for any digital interaction. We leveraged Decentralized Identifier (DID) technology, which enables users to have full control over their digital identities. By utilizing DIDs, users can authenticate themselves securely and efficiently without relying on centralized authentication services or multiple external databases.",
+      "DID stands for Decentralized Identifier. It enables the holder to prove control over it, is globally unique, resolvable, and cryptographically verifiable. DIDs are used in decentralized systems and managed via blockchain technology. Users have full control over their personal data and can authenticate themselves securely without relying on centralized authorities or databases.",
   },
   {
     question: "What is ZKP?",
@@ -29,23 +29,23 @@ const FAQPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div id="FAQ" className="mx-auto ">
-      <h1 className=" text-4xl w-fit mx-auto font-sf-pro-text font-bold text-center text-custom-blue mb-4">
+    <div id="FAQ" className="px-12 my-40">
+      <div className=" text-4xl  font-sf-pro-text font-bold sm:text-center text-custom-blue mb-4">
         FAQs
-      </h1>
+      </div>
       {FAQs.map((faq, index) => (
         <div
           key={index}
-          className="border rounded-lg p-4 mb-4 w-1/2 mx-auto transition-all duration-200 ease-in"
+          className=" border-b-2 p-2 mb-4 w-full md:w-3/4 lg:w-2/3  mx-auto transition-all duration-200 ease-in h-fit"
         >
           <p
-            className="font-bold font-sf-pro-text  text-2lg"
+            className="font-bold font-sf-pro-text text-xl sm:text-2xl lg:text-3xl"
             onClick={() => setActiveIndex(index === activeIndex ? null : index)}
           >
             {faq.question}
           </p>
           {index === activeIndex && (
-            <p className="mt-2  font-sf-pro-text ">{faq.answer}</p>
+            <p className="mt-4 text-sm sm:text-lg lg:text-xl font-sf-pro-text ">{faq.answer}</p>
           )}
         </div>
       ))}
