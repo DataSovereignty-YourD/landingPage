@@ -16,7 +16,7 @@ function App() {
       <FirstPage />
       <YourDIntroPage />
       {/* <DetailPage /> */}
-      <NoVideoPage />
+      {/* <NoVideoPage /> */}
       <FAQPage />
       <Footer />
     </div>
