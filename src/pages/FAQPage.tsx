@@ -39,13 +39,13 @@ const FAQPage: React.FC = () => {
           className=" border-b-2 p-2 mb-4 w-full md:w-3/4 lg:w-2/3  mx-auto transition-all duration-200 ease-in h-fit"
         >
           <p
-            className="font-bold font-sf-pro-text text-xl sm:text-2xl lg:text-3xl"
+            className="font-bold font-sf-pro-text text-xl sm:text-2xl lg:text-3xl "
             onClick={() => setActiveIndex(index === activeIndex ? null : index)}
           >
             {faq.question}
           </p>
           {index === activeIndex && (
-            <p className="mt-4 text-sm sm:text-lg lg:text-xl font-sf-pro-text ">{faq.answer}</p>
+            <p className="mt-4 text-sm sm:text-lg lg:text-xl font-sf-pro-text leading-normal">{faq.answer}</p>
           )}
         </div>
       ))}
