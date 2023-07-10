@@ -30,7 +30,7 @@ const FAQPage: React.FC = () => {
 
   return (
     <div id="FAQ" className="px-12 my-40">
-      <div className=" text-4xl  font-sf-pro-text font-bold sm:text-center text-custom-blue mb-4">
+      <div className=" text-4xl  font-[font-sf-pro-text-bold] font-bold sm:text-center text-custom-blue mb-4">
         FAQs
       </div>
       {FAQs.map((faq, index) => (
@@ -39,13 +39,13 @@ const FAQPage: React.FC = () => {
           className=" border-b-2 p-2 mb-4 w-full md:w-3/4 lg:w-2/3  mx-auto transition-all duration-200 ease-in h-fit"
         >
           <p
-            className="font-bold font-sf-pro-text text-xl sm:text-2xl lg:text-3xl "
+            className="font-bold font-[font-sf-pro-text-bold] text-xl sm:text-2xl lg:text-3xl "
             onClick={() => setActiveIndex(index === activeIndex ? null : index)}
           >
             {faq.question}
           </p>
           {index === activeIndex && (
-            <p className="mt-4 text-sm sm:text-lg lg:text-xl font-sf-pro-text leading-normal">{faq.answer}</p>
+            <p className="mt-4 text-sm sm:text-lg lg:text-xl font-[font-sf-pro-text] leading-normal">{faq.answer}</p>
           )}
         </div>
       ))}

@@ -2,12 +2,40 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: 'sf-pro-text';
+  src: url('./assets/fonts/SF-Pro.ttf');
+}
+@font-face {
+font-family: 'sf-pro-text-semibold';
+src: url('./assets/fonts/SF-Pro-Text-Semibold.otf');
+}
+
+@font-face {
+font-family: 'sf-pro-text-regular';
+src: url('./assets/fonts/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+font-family: 'sf-pro-text-medium';
+src: url('./assets/fonts/SF-Pro-Text-Medium.otf');
+}
+
+@font-face {
+font-family: 'sf-pro-text-right';
+src: url('./assets/fonts/SF-Pro-Text-Light.otf');
+}
+
+@font-face {
+  font-family: 'sf-pro-text-bold';
+  src: url('./assets/fonts/SF-Pro-Text-Bold.otf');
+  }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  
 }
 img {
   -webkit-user-select: none;

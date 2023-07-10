@@ -12,7 +12,7 @@ module.exports = {
         "custom-blue": "#699bf7",
       },
       fontFamily: {
-        "sf-pro-text": ["SF-Pro-Text", "sans-serif"],
+        "sf-pro-text": ["SF-Pro-Text"],
       },
     },
   },

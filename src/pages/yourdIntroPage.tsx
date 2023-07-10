@@ -1,6 +1,7 @@
 import DataWallet from "../assets/img/datawallet.png";
 import FastAuth from "../assets/img/fast.png";
 import Dataselling from "../assets/img/dataselling.png";
+
 export default function YourDIntroPage() {
 
     const Solution = [
@@ -25,13 +26,13 @@ export default function YourDIntroPage() {
             <div className="w-full pt-10 pb-40">
                 <div
                     id="title"
-                    className="text-3xl sm:text-5xl md:text-5xl w-full mx-auto font-sf-pro-text font-bold sm:text-center sm:p-5 mb-10 text-custom-blue"
+                    className="text-3xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-custom-blue"
                 >
                     Control Your Data
                 </div>
 
                 <div id="description">
-                    <div className="text-xl sm:text-xl md:text-2xl w-fit mx-auto font-sf-pro-text text-gray-500 sm:text-center">
+                    <div className="text-xl sm:text-xl md:text-2xl w-fit mx-auto font-[sf-pro-text] text-gray-500 sm:text-center">
                         YourD uses DID and ZKP technologies, which means we cannot access
                         any of your data. <br/>You have direct control over your data and you even have the option
                         to sell it for revenue.
@@ -40,16 +41,16 @@ export default function YourDIntroPage() {
             </div>
 
             <div id="list" className="grid mb-5 sm:grid-cols-3 ">
-                {Solution.map((item) => {
+                {Solution.map((item,index) => {
                     return (
-                        <div className="flex flex-col items-start justify-start">
+                        <div key={index} className="flex flex-col items-start justify-start">
                             <div className="w-36 h-36 my-2 sm:my-4 sm:mx-auto">
-                                <img src={item.image} className="object-fill"/>
+                                <img src={item.image} className="object-fill" alt="icon"/>
                             </div>
-                            <div className="text-3xl w-fit font-sf-pro-text font-semibold text-start sm:text-center sm:mx-auto mb-4 sm:mb-10">
+                            <div className="text-3xl w-fit font-semibold text-start sm:text-center sm:mx-auto mb-4 sm:mb-10">
                                 {item.name}
                             </div>
-                            <div className="text-xl px-0 sm:text-left  sm:px-2 lg:px-4 w-full font-sf-pro-text  text-gray-500 mb-10">
+                            <div className="text-xl px-0 sm:text-left  sm:px-2 lg:px-4 w-full font-[font-sf-pro-text]  text-gray-500 mb-10">
                                 {item.description}
                             </div>
                         </div>
