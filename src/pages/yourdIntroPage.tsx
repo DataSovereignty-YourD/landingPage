@@ -42,7 +42,7 @@ export default function YourDIntroPage() {
             <div id="list" className="grid mb-5 sm:grid-cols-3 ">
                 {Solution.map((item) => {
                     return (
-                        <div className="flex flex-col items-start justify-start animate-fade-left animate-once animate-duration-1000 animate-ease-out">
+                        <div className="flex flex-col items-start justify-start">
                             <div className="w-36 h-36 my-2 sm:my-4 sm:mx-auto">
                                 <img src={item.image} className="object-fill"/>
                             </div>
