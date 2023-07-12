@@ -21,6 +21,11 @@ const FAQs: FAQ[] = [
     answer:
       "We have implemented our proprietary Decentralized Identifier (DID) in alignment with the W3C standards and have successfully completed its specification registration. This DID enables users to safeguard their data independently, facilitating personal ownership. Our technology has made Fast Auth possible by allowing direct authentication, eliminating the need for verifying personal information through multiple company databases.",
   },
+  {
+    question: "What is Self-Sovereign Identity (SSI)?",
+    answer:
+      "Self-sovereign identity is a digital identity model that gives individuals complete control over their personal data and digital identities. SSI allows individuals to create and manage their own digital identities, which can be verified by third parties without relying on a centralized authority.",
+  },
 
   // Add more FAQs as needed
 ];
