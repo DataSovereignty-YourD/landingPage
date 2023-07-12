@@ -3,10 +3,10 @@ import React from "react";
 export default function RoadMapPage() {
   return (
     <div id="FAQ" className="p-20 my-40 w-full h-full bg-custom-blue">
-      <div className="text-4xl  font-[font-sf-pro-text-bold] font-bold sm:text-center text-white mb-4">
+      <div className="lg:text-4xl  md:text-3xl text-xl font-[font-sf-pro-text-bold] font-bold sm:text-center text-white mb-4">
         YourD Development RoadMap for 2023
       </div>
-      <div className="text-xl font-[font-sf-pro-text] sm:text-center">
+      <div className="lg:text-xl md:text-lg text-base font-[font-sf-pro-text] sm:text-center">
         We are working hard to protect for your data ownership.
         <br></br> Here are some future developments.
       </div>
