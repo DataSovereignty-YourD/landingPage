@@ -8,6 +8,7 @@ import YourDIntroPage from "./pages/yourdIntroPage";
 import Footer from "./component/footer";
 import FirstPage from "./pages/FirstPage";
 import NoVideoPage from "./pages/Novideopage";
+import RoadMapPage from "./pages/roadmapPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <TopNavi />
       <FirstPage />
       <YourDIntroPage />
+      <RoadMapPage />
       {/* <DetailPage /> */}
       {/* <NoVideoPage /> */}
       <FAQPage />
