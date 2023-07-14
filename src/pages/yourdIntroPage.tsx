@@ -5,25 +5,26 @@ import Dataselling from "../assets/img/dataselling.png";
 export default function YourDIntroPage() {
   const Solution = [
     {
-      name: "Data Wallet",
-      description:
-        "By using DID technology, we empower users to directly own their personal data.",
-      image: DataWallet,
-    },
-    {
-      name: "Fast Auth",
+      title: "Fast Auth",
       description:
         "Providing Fast & Easy Login experience through QR codes. With user-centric authentication, the process becomes faster, eliminating the need for multi-server verification.",
       image: FastAuth,
     },
     {
-      name: "Data Selling",
+      title: "Data Wallet",
       description:
-        "With ZKP, our targeted advertising services generate revenue while prioritizing data protection",
+        "DataWallet provides a solution for ownership that goes beyond personal information, allowing individuals to view the entire NFT and token ecosystem.",
+      image: DataWallet,
+    },
+    {
+      title: "Data Selling",
+      description:
+        "By owning the data, I can receive compensation for selling and using my own data. With a Web 3.0 advertising protocol that enables targeted advertising, personal data exposure for targeted ads is eliminated, and compensation is provided for data usage.",
       image: Dataselling,
     },
   ];
-  //데이터 소유권을 가짐으로써 나의 데이터를 판매와  사용에 대한 보상 지급 <br><br> 타겟 광고를 할 수 있는 Web 3.0 광고 프로토콜로, 타겟 광고에 사용된 개인 데이터 유출 ✕ + 데이터 사용에 대한 보상 지급
+  //"Safely generate revenue from data through various data selling opportunities using ZKP. Explore D-ad (Advertising) and AI training data (upcoming) to securely monetize your data.",
+  //데이터 소유권을 가짐으로써 나의 데이터를 판매와 사용에 대한 보상 지급 <br><br> 타겟 광고를 할 수 있는 Web 3.0 광고 프로토콜로, 타겟 광고에 사용된 개인 데이터 유출✕ + 데이터 사용에 대한 보상 지급
   return (
     <div
       id="Solution"
@@ -47,21 +48,25 @@ export default function YourDIntroPage() {
         </div>
       </div>
 
-      <div id="list" className="grid mb-5 sm:grid-cols-3 ">
+      <div id="list" className="xl:px-20 grid w-full mb-5 sm:grid-cols-3 ">
         {Solution.map((item, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-start justify-start"
+              className="px-3 py-5 sm:py-0 xl:px-10 w-full h-full justify-center flex flex-col sm:flex-row mx-auto font-bold font-[font-sf-pro-text-bold]"
             >
-              <div className="w-36 h-36 my-2 sm:my-4 sm:mx-auto">
-                <img src={item.image} className="object-fill" alt="icon" />
-              </div>
-              <div className="text-3xl w-fit font-semibold text-start sm:text-center sm:mx-auto mb-4 sm:mb-10">
-                {item.name}
-              </div>
-              <div className="text-xl px-0 sm:text-left  sm:px-2 lg:px-4 w-full font-[font-sf-pro-text]  text-gray-500 mb-10">
-                {item.description}
+              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-custom-blue">
+                <div className="Icon rounded-full overflow-hidden mx-auto w-20 h-20 bg-color-2 items-center">
+                  <img src={item.image} className="p-5"></img>
+                </div>
+                <div className=" mx-auto  flex  flex-col">
+                  <span className="text-3xl xl:text-5xl  text-black my-5">
+                    {item.title}
+                  </span>
+                  <span className="flex-wrap mx-auto  overflow-hidden  font-medium  text-lg sm:text-sm  xl:text-lg text-left">
+                    {item.description}
+                  </span>
+                </div>
               </div>
             </div>
           );

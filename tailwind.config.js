@@ -9,10 +9,10 @@ module.exports = {
         Mainback: "url('/src/assets/img/mobileSecurity.png')",
       },
       colors: {
-        "color-1": "#699BF7",
+        "color-1": "#ffffff",
         "color-2": "#00BCFF",
         "color-3": "#00D7F2",
-        "custom-blue": "#699BF7",
+        "custom-blue": "#007aff",
       },
       fontFamily: {
         "sf-pro-text": ["SF-Pro-Text"],
