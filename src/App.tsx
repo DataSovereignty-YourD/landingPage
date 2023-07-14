@@ -9,12 +9,14 @@ import Footer from "./component/footer";
 import FirstPage from "./pages/FirstPage";
 import NoVideoPage from "./pages/Novideopage";
 import RoadMapPage from "./pages/roadmapPage";
+import { ControlPage } from "./pages/controlPage";
 
 function App() {
   return (
     <div>
       <TopNavi />
       <FirstPage />
+      <ControlPage />
       <YourDIntroPage />
       <RoadMapPage />
       {/* <DetailPage /> */}
