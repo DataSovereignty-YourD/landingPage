@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "Mainback": "url('/src/assets/img/mobileSecurity.png')",
+        Mainback: "url('/src/assets/img/mobileSecurity.png')",
       },
       colors: {
-        "custom-blue": "#699bf7",
+        "color-1": "#699BF7",
+        "color-2": "#00BCFF",
+        "color-3": "#00D7F2",
+        "custom-blue": "#699BF7",
       },
       fontFamily: {
         "sf-pro-text": ["SF-Pro-Text"],
@@ -19,7 +22,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
+  plugins: [require("tailwindcss-animated")],
 };

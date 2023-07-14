@@ -1,9 +1,8 @@
-
 export default function FirstPage() {
   return (
     <div
       id="Home"
-      className="w-full h-screen bg-gradient-to-b to-white via-blue-300 from-[#007AFF]"
+      className="w-full h-screen bg-gradient-to-b to-color-5  from-color-1"
     >
       <div className="flex justify-center flex-col w-full h-screen z-10">
         <div className="mb-40">
