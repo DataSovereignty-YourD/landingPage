@@ -10,18 +10,14 @@ import FirstPage from "./pages/FirstPage";
 import NoVideoPage from "./pages/Novideopage";
 import RoadMapPage from "./pages/roadmapPage";
 import { ControlPage } from "./pages/controlPage";
+import { Test } from "./pages/test";
+import { ScrollSection } from "./pages/scrollsection";
 
 function App() {
   return (
     <div>
       <TopNavi />
-      <FirstPage />
-      <ControlPage />
-      <YourDIntroPage />
-      <RoadMapPage />
-      {/* <DetailPage /> */}
-      {/* <NoVideoPage /> */}
-      <FAQPage />
+      <ScrollSection />
       <Footer />
     </div>
   );
