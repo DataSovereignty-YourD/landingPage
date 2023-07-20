@@ -34,7 +34,7 @@ const FAQPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div id="FAQ" className="px-12 pt-32 my-40">
+    <div id="FAQ" className=" px-12 pt-32 my-40">
       <div className=" text-4xl  font-[font-sf-pro-text-bold] font-bold sm:text-center text-custom-blue mb-4">
         FAQs
       </div>

@@ -33,7 +33,7 @@ const ScrollableContainer = ({ children }: ScrollableContainerProps) => {
             style={{
               scrollSnapAlign: "start",
             }}
-            className=" h-full md:h-screen"
+            className=" w-full h-full md:h-screen"
           >
             {child}
           </motion.div>
