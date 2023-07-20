@@ -5,6 +5,7 @@ import { ControlPage } from "./controlPage";
 import YourDIntroPage from "./yourdIntroPage";
 import RoadMapPage from "./roadmapPage";
 import FAQPage from "./FAQPage";
+import Footer from "../component/footer";
 type ScrollableContainerProps = {
   children: ReactNode[];
 };
@@ -39,6 +40,9 @@ const ScrollableContainer = ({ children }: ScrollableContainerProps) => {
           </motion.div>
         ))}
       </motion.div>
+      <div className=" snap-end bottom-0">
+        <Footer />
+      </div>
     </motion.div>
   );
 };

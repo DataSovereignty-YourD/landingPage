@@ -18,7 +18,7 @@ function App() {
     <div>
       <TopNavi />
       <ScrollSection />
-      <Footer />
+      <div className="h-1"></div>
     </div>
   );
 }
