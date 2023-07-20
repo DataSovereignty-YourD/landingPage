@@ -28,9 +28,9 @@ export default function YourDIntroPage() {
   return (
     <div
       id="Solution"
-      className="w-full flex flex-col px-12 pt-32 lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around "
+      className="w-full h-full flex flex-col px-12 pt-10 lg:px-32 md:px-20 sm:px-10 min-h-screen  justify-around "
     >
-      <div className="w-full pt-10 pb-40">
+      <div className="w-full pt-10 pb-10">
         <div
           id="title"
           className="text-3xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-custom-blue"

@@ -26,12 +26,12 @@ export function ControlPage() {
   return (
     <div
       id="Solution"
-      className="w-full flex flex-col px-12 pt-32 lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around "
+      className="w-full  h-full  flex flex-col px-12  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around "
     >
-      <div className="w-full pt-10 pb-40">
+      <div className="w-full pt-10 pb-10">
         <div
           id="title"
-          className="text-4xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] text-center sm:p-5 mb-10 text-custom-blue"
+          className="text-4xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-custom-blue"
         >
           3-Problem
         </div>
@@ -45,7 +45,7 @@ export function ControlPage() {
         </div>
       </div>
 
-      <div id="list" className="px-0 xl:px-20 grid w-full mb-5 sm:grid-cols-3 ">
+      <div id="list" className="px-0 xl:px-10 grid w-full mb-5 sm:grid-cols-3 ">
         {contents.map((item, index) => {
           return (
             <div

@@ -42,7 +42,7 @@ const ScrollableContainer = ({ children }: ScrollableContainerProps) => {
     </motion.div>
   );
 };
-export function Test() {
+export function ScrollSection() {
   return (
     <ScrollableContainer>
       <FirstPage />
