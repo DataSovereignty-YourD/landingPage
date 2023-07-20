@@ -7,19 +7,19 @@ export function ControlPage() {
     {
       title: "Prove",
       description:
-        "In order to ensure that only the owner has access to and can use the data, and that unauthorized access is prevented, it is necessary to establish ownership of the data and prove that it belongs to oneself.",
+        " To secure data and prevent unauthorized access, it is essential to establish and prove ownership, ensuring that only the rightful owner can access and utilize the data.",
       image: Prove,
     },
     {
       title: "Own",
       description:
-        "A solution for data ownership is needed. Traditionally, companies held data associated with individuals, but with YourD, individuals can now have ownership of their own data through the use of DIDs (Decentralized Identifiers), even without relying on corporate entities.",
+        "YourD provides a solution for data ownership by enabling individuals to have control over their own data through the use of DIDs. This empowers individuals to assert ownership of their data independent of corporate entities.",
       image: Own,
     },
     {
       title: "Apply",
       description:
-        "It is not just about owning and proving ownership of data, but also about leveraging one's own data to create added value. Moreover, since revenue generation is based on utilizing data, security becomes even more critical. YourD addresses this challenge by implementing Zero-Knowledge Proofs (ZKPs).",
+        "YourD goes beyond data ownership and focuses on leveraging personal data to create value. With a revenue model based on data utilization, security is of utmost importance. YourD tackles this by implementing Zero-Knowledge Proofs (ZKPs) to ensure data privacy and security.",
       image: Apply,
     },
   ];
