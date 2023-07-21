@@ -60,7 +60,7 @@ export default function YourDIntroPage() {
                   <img src={item.image} className="p-5"></img>
                 </div>
                 <div className=" mx-auto  flex  flex-col">
-                  <span className="text-3xl xl:text-5xl  text-black my-5">
+                  <span className="text-xl xl:text-2xl  text-black my-5">
                     {item.title}
                   </span>
                   <span className="flex-wrap mx-auto  overflow-hidden  font-medium  text-lg sm:text-sm  xl:text-lg text-left">

@@ -26,7 +26,7 @@ export function ControlPage() {
   return (
     <div
       id="Solution"
-      className="w-full  h-full  flex flex-col px-12 py-10  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around "
+      className="w-full  h-full  flex flex-col px-12 py-10  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around bg-[#F7F5FE]"
     >
       <div className="w-full pt-10 pb-10">
         <div
@@ -57,7 +57,7 @@ export function ControlPage() {
                   <img src={item.image} className="p-5"></img>
                 </div>
                 <div className=" mx-auto  flex  flex-col">
-                  <span className="text-3xl xl:text-5xl  text-black my-5">
+                  <span className="text-xl xl:text-2xl  text-black my-5">
                     {item.title}
                   </span>
                   <span className="flex-wrap mx-auto  overflow-hidden  font-medium  text-lg sm:text-sm  xl:text-lg text-left">

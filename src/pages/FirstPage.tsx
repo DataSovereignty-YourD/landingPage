@@ -2,7 +2,7 @@ import Img from "../assets/svg/Business_SVG.svg";
 
 export default function FirstPage() {
   return (
-    <section className="h-full w-full dark:bg-gray-800 dark:text-gray-100">
+    <section className="h-full w-full  bg-backcolor ">
       <div className="container h-full flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-44 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="font-[sf-pro-text-bold] text-5xl font-bold leadi sm:text-6xl">
