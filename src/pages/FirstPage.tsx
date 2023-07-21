@@ -1,22 +1,45 @@
+import Img from "../assets/svg/Business_SVG.svg";
+
 export default function FirstPage() {
   return (
-    <div
-      id="Home"
-      className="w-full h-screen bg-gradient-to-b to-color-5  from-color-1"
-    >
-      <div className="flex justify-center flex-col w-full h-screen z-10">
-        <div className="mb-40">
-          <div className="text-5xl text-black sm:text-5xl md:text-6xl lg:text-8xl w-fit mx-auto font-[sf-pro-text-bold] font-bold text-center animate-fade-up animate-once animate-ease-in animate-alternate animate-duration-1000">
-            Ignite Data Ownership
-          </div>
-          <div className="text-xl text-gray-600 sm:text-3xl md:text-4xl lg:text-4xl font-[sf-pro-text-semibold] w-fit mx-auto pt-10  animate-fade-up animate-once animate-ease-in animate-alternate animate-delay-100 animate-duration-1000">
+    <section className="h-full w-full dark:bg-gray-800 dark:text-gray-100">
+      <div className="container h-full flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-44 lg:flex-row lg:justify-between">
+        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <h1 className="font-[sf-pro-text-bold] text-5xl font-bold leadi sm:text-6xl">
+            Ignite
+            <br className="h-10"></br>
+            <span className="font-[sf-pro-text-bold] font-bold text-maincolor">
+              Data Ownership
+            </span>
+          </h1>
+          <p className="font-[sf-pro-text] mt-6 mb-8 text-lg sm:mb-12">
             Take Control of Your Data Sovereignty
+          </p>
+          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              className="px-8 py-3 text-lg font-semibold font-[sf-pro-text-semibold] rounded bg-maincolor dark:text-gray-900"
+            >
+              Get Start
+            </a>
+            {/* <a
+              rel="noopener noreferrer"
+              href="#"
+              className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100"
+            >
+             more info
+            </a> */}
           </div>
         </div>
+        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img
+            src={Img}
+            alt=""
+            className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+          />
+        </div>
       </div>
-      {/* <div className="w-96 h-96 absolute z-[1] right-0 top-[50px]">
-        <img src={bgimg} alt="bg" />
-      </div> */}
-    </div>
+    </section>
   );
 }

@@ -19,7 +19,7 @@ export default function YourDIntroPage() {
     {
       title: "Data Selling",
       description:
-        "By owning the data, I can receive compensation for selling and using my own data. With a Web 3.0 advertising protocol that enables targeted advertising, personal data exposure for targeted ads is eliminated, and compensation is provided for data usage.",
+        "Own your data, sell it, get compensated. Our Web 3.0 ads ensure privacy and fair pay.",
       image: Dataselling,
     },
   ];
@@ -33,9 +33,9 @@ export default function YourDIntroPage() {
       <div className="w-full pt-10 pb-10">
         <div
           id="title"
-          className="text-3xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-custom-blue"
+          className="text-3xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-maincolor"
         >
-          Control Your Data
+          Our Service
         </div>
 
         <div id="description">
@@ -55,7 +55,7 @@ export default function YourDIntroPage() {
               key={index}
               className="px-3 py-5 sm:py-0 xl:px-10 w-full h-full justify-center flex flex-col sm:flex-row mx-auto font-bold font-[font-sf-pro-text-bold]"
             >
-              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-custom-blue">
+              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-maincolor">
                 <div className="Icon rounded-full overflow-hidden mx-auto w-20 h-20 bg-color-2 items-center">
                   <img src={item.image} className="p-5"></img>
                 </div>

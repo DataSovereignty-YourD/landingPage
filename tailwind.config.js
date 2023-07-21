@@ -10,8 +10,9 @@ module.exports = {
       },
       colors: {
         "color-1": "#ffffff",
-        "color-2": "#00BCFF",
+        "color-2": "#B7A2D7",
         "color-3": "#00D7F2",
+        maincolor: "#7047D1",
         "custom-blue": "#007aff",
       },
       fontFamily: {

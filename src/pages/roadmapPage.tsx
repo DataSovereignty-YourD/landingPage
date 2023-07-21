@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RoadMapPage() {
   return (
-    <div id="RoadMap" className="p-20  w-full h-screen bg-custom-blue">
+    <div id="RoadMap" className="p-20  w-full h-screen bg-maincolor">
       <div className="lg:text-4xl  md:text-3xl text-xl font-[font-sf-pro-text-bold] font-bold sm:text-center text-white mb-4">
         YourD Development RoadMap for 2023
       </div>
@@ -14,7 +14,7 @@ export default function RoadMapPage() {
         <div className="col-span-1  w-full h-full"></div>
         <div className="col-span-3  w-full h-full ">
           <div className="w-full h-full bg-white rounded-md p-2 md:pl-4">
-            <h1 className="font-bold font-[font-sf-pro-text-bold] text-custom-blue sm:text-xl md:text-2xl text-base py-2">
+            <h1 className="font-bold font-[font-sf-pro-text-bold] text-maincolor sm:text-xl md:text-2xl text-base py-2">
               Beta Release
             </h1>
             <p className="font-semibold font-[font-sf-pro-text-semibold] text-gray-900  md:text-base sm:text-sm text-xs">
@@ -44,7 +44,7 @@ export default function RoadMapPage() {
 
         <div className="col-span-3 mx-auto w-full h-full ">
           <div className="w-full h-full bg-white rounded-md p-2 md:pl-4">
-            <h1 className="font-bold font-[font-sf-pro-text-bold]  text-custom-blue sm:text-xl md:text-2xl text-base py-2">
+            <h1 className="font-bold font-[font-sf-pro-text-bold]  text-maincolor sm:text-xl md:text-2xl text-base py-2">
               Full Release
             </h1>
             <p className="font-semibold font-[font-sf-pro-text-semibold] text-gray-900  md:text-base sm:text-sm text-xs">
@@ -60,7 +60,7 @@ export default function RoadMapPage() {
         <div className="col-span-1  w-full h-full"></div>
         <div className="col-span-3  w-full h-full ">
           <div className="w-full h-full bg-white rounded-md p-2 md:pl-4">
-            <h1 className="font-bold font-[font-sf-pro-text-bold] text-custom-blue  sm:text-xl md:text-2xl text-base py-2">
+            <h1 className="font-bold font-[font-sf-pro-text-bold] text-maincolor  sm:text-xl md:text-2xl text-base py-2">
               Update
             </h1>
             <p className="font-semibold font-[font-sf-pro-text-semibold] text-gray-900  md:text-base sm:text-sm text-xs ">

@@ -7,31 +7,31 @@ export function ControlPage() {
     {
       title: "Prove",
       description:
-        " To secure data and prevent unauthorized access, it is essential to establish and prove ownership, ensuring that only the rightful owner can access and utilize the data.",
+        "To secure data and prevent unauthorized access, ownership must be established and proven, ensuring only the rightful owner can access and utilize it.",
       image: Prove,
     },
     {
       title: "Own",
       description:
-        "YourD provides a solution for data ownership by enabling individuals to have control over their own data through the use of DIDs. This empowers individuals to assert ownership of their data independent of corporate entities.",
+        "YourD enables data ownership through DIDs, giving individuals full control. Empowering you, not corporations.",
       image: Own,
     },
     {
       title: "Apply",
       description:
-        "YourD goes beyond data ownership and focuses on leveraging personal data to create value. With a revenue model based on data utilization, security is of utmost importance. YourD tackles this by implementing Zero-Knowledge Proofs (ZKPs) to ensure data privacy and security.",
+        "YourD leverages personal data to create value with a revenue model based on data utilization. Zero-Knowledge Proofs (ZKPs) ensure data privacy and security.",
       image: Apply,
     },
   ];
   return (
     <div
       id="Solution"
-      className="w-full  h-full  flex flex-col px-12  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around "
+      className="w-full  h-full  flex flex-col px-12 py-10  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around "
     >
       <div className="w-full pt-10 pb-10">
         <div
           id="title"
-          className="text-4xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-custom-blue"
+          className="text-4xl sm:text-5xl md:text-5xl w-full mx-auto font-[sf-pro-text-bold] sm:text-center sm:p-5 mb-10 text-maincolor"
         >
           3-Problem
         </div>
@@ -52,7 +52,7 @@ export function ControlPage() {
               key={index}
               className="px-3 py-5 sm:py-0 xl:px-10 w-full h-full justify-center flex flex-col sm:flex-row mx-auto font-bold font-[font-sf-pro-text-bold]"
             >
-              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-custom-blue">
+              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-maincolor">
                 <div className="Icon rounded-full overflow-hidden mx-auto w-20 h-20 bg-color-2 items-center">
                   <img src={item.image} className="p-5"></img>
                 </div>
