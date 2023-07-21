@@ -12,12 +12,18 @@ import RoadMapPage from "./pages/roadmapPage";
 import { ControlPage } from "./pages/controlPage";
 import { Test } from "./pages/test";
 import { ScrollSection } from "./pages/scrollsection";
+import { BusinessPage } from "./pages/BusinessPage";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <TopNavi />
-      <ScrollSection />
+      <Routes>
+        <Route path="/" element={<ScrollSection />} />
+        <Route path="/Business" element={<BusinessPage />} />
+      </Routes>
+
       <div className="h-1"></div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import logo from "../assets/img/YourD-Logo-high.png";
 export default function TopNavi() {
   return (
@@ -31,19 +32,17 @@ export default function TopNavi() {
         </HashLink>
         <HashLink
           smooth
-          to="/#Price"
-          className="w-fit mx-auto font-sf-pro-text font-bold text-center align-center px-1 sm:px-2 hover:text-[#FFD400]"
-        >
-          Price
-        </HashLink>
-        <HashLink
-          smooth
           to="/#FAQ"
           className="w-fit mx-auto font-sf-pro-text font-bold text-center align-center px-2 sm:px-2 hover:text-[#FFD400]"
         >
           FAQ
         </HashLink>
-
+        <Link
+          to="/Business "
+          className="w-fit mx-auto font-sf-pro-text font-bold text-center align-center px-2 sm:px-2 hover:text-[#FFD400]"
+        >
+          Business
+        </Link>
         <a
           className=" w-fit mx-auto font-sf-pro-text font-bold text-center align-center rounded-3xl border border-black py-2 px-3 hover:bg-[#007aff] transition-all duration-300 hover:text-[#FFD400]"
           href="mailto:0xcatbox@gmail.com"
