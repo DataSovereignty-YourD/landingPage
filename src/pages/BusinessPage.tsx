@@ -3,7 +3,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import W3C from "../assets/svg/W3C_Icon.svg";
 import Tezos from "../assets/svg/tezos_Icon.svg";
 import GDPR from "../assets/svg/GDPR.svg";
-
+import Dashboard from "../assets/img/Dashborad.png";
 const Pay1 = () => {
   return (
     <div>
@@ -49,28 +49,22 @@ const Pay1 = () => {
                   className="w-max space-y-4 py-6 m-auto text-gray-600"
                 >
                   <li className="space-x-2">
-                    <span className="text-maincolor  font-semibold">
-                      &check;
-                    </span>
-                    <span>First premium advantage</span>
+                    <span className="text-maincolor  font-semibold"></span>
+                    <span>Data Analytics</span>
                   </li>
                   <li className="space-x-2">
-                    <span className="text-maincolor  font-semibold">
-                      &check;
-                    </span>
-                    <span>Second advantage weekly</span>
+                    <span className="text-maincolor  font-semibold"></span>
+                    <span>Data API</span>
                   </li>
                   <li className="space-x-2">
-                    <span className="text-maincolor  font-semibold">
-                      &check;
-                    </span>
-                    <span>Third advantage donate to project</span>
+                    <span className="text-maincolor  font-semibold"></span>
+                    <span>Solution Feedback</span>
                   </li>
                 </ul>
                 <button
                   type="submit"
                   title="Submit"
-                  className="block w-full py-3 px-6 text-center rounded-xl transition bg-purple-600 hover:bg-purple-700 active:bg-purple-800 focus:bg-indigo-600"
+                  className="block w-full py-3 px-6 text-center rounded-xl transition bg-maincolor hover:bg-purple-700 active:bg-purple-800 focus:bg-indigo-600"
                 >
                   <span className="text-white font-semibold">
                     Send us an email
@@ -90,25 +84,19 @@ const Pay1 = () => {
                     <span className="text-maincolor font-semibold">
                       &check;
                     </span>
-                    <span>First premium advantage</span>
+                    <span>provide data analystics</span>
                   </li>
                   <li className="space-x-2">
                     <span className="text-maincolor font-semibold">
                       &check;
                     </span>
-                    <span>Second advantage weekly</span>
+                    <span>can use easy data API</span>
                   </li>
                   <li className="space-x-2">
                     <span className="text-maincolor font-semibold">
                       &check;
                     </span>
-                    <span>Third advantage donate to project</span>
-                  </li>
-                  <li className="space-x-2">
-                    <span className="text-maincolor font-semibold">
-                      &check;
-                    </span>
-                    <span>Fourth, access to all components weekly</span>
+                    <span>Weekly solution feedback</span>
                   </li>
                 </ul>
                 <p className="text-gray-700">
@@ -685,10 +673,104 @@ const PayPage = () => {
   );
 };
 
+const Feature1 = () => {
+  return (
+    <section className="h-screen w-full bg-white text-gray-800">
+      <div className="h-full w-full container flex flex-col mx-auto lg:flex-row  py-6 lg:py-12">
+        <div className="h-full flex  flex-col  align-middle px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5">
+          <p className="pt-32 sm:pt-64 text-4xl  font-[font-sf-pro-text-bold] font-bold text-center text-maincolor mb-4">
+            Data analytics
+          </p>
+          <p className="font-[font-sf-pro-text]  text-xl  text-left">
+            Analyzing GDPR-compliant data using ZKP (Zero-Knowledge Proofs)
+            technology to provide charts and statistical information.
+          </p>
+        </div>
+
+        <div className="h-full w-full">
+          <div className="h-full w-full flex  items-end justify-center md:p-2 lg:pl-12">
+            <img
+              src={Dashboard}
+              alt=""
+              className=" object-contain overflow-hidden relative rounded-l-2xl h-full w-full shadow-lg  aspect-video sm:min-h-96 "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+const Feature2 = () => {
+  return (
+    <section className="h-screen w-screen bg-white text-gray-800 ">
+      <div className="h-full w-full container flex flex-col-reverse mx-auto lg:flex-row">
+        <div className="h-full w-full">
+          <div className="h-full w-full flex  items-end justify-center md:p-2 ">
+            <img
+              src={Dashboard}
+              alt=""
+              className=" object-contain overflow-hidden relative rounded-r-2xl h-full w-full shadow-lg  aspect-video sm:min-h-96 "
+            />
+          </div>
+        </div>
+        <div className="h-full flex  flex-col  align-middle px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5">
+          <span className="pt-32 sm:pt-64 text-4xl  font-[font-sf-pro-text-bold] font-bold text-center text-maincolor mb-4">
+            Data API{" "}
+            <p className="text-gray-500 text-xl">with GDPR Compliance</p>
+          </span>
+          <p className=" font-[font-sf-pro-text]  text-xl  text-left">
+            <span>Easy API</span> - If you want custom data like a ranking
+            system, we can provide tailored solutions to meet your specific
+            needs with ease and efficiency.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+const Feature3 = () => {
+  return (
+    <section className="h-screen w-full bg-white text-gray-800">
+      <div className="h-full w-full container flex flex-col mx-auto lg:flex-row  py-6 lg:py-12">
+        <div className="h-full flex  flex-col  align-middle px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5">
+          <p className="pt-32 sm:pt-64 text-4xl  font-[font-sf-pro-text-bold] font-bold text-center text-maincolor mb-4">
+            Periodic Solution Feedback
+          </p>
+          <p className="font-[font-sf-pro-text]  text-xl  text-left">
+            Weekly user churn feedback based on user data, empowering
+            data-driven decisions for improved engagement and retention.
+          </p>
+        </div>
+
+        <div className="h-full w-full">
+          <div className="h-full w-full flex  items-end justify-center md:p-2 lg:pl-12">
+            <img
+              src={Dashboard}
+              alt=""
+              className=" object-contain overflow-hidden relative rounded-l-2xl h-full w-full shadow-lg  aspect-video sm:min-h-96 "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export function BusinessPage() {
   return (
     <div>
       <Pay1 />
+      <Feature1 />
+      <Feature2 />
+      <Feature3 />
     </div>
   );
 }
+
+// Business
+// GDPR compliant 하게 제공한다.
+// 1.Data 통계 - 차트나 그래프
+// 2.원하는 자료형식에 맞춰서 API제공  , 랭킹, 이런 데이터들
+// 3.분석과 해당 솔루션( 통계에 따른)
+// ㄴ 게임 - 여러 정보가 있잖아 정보를 바탕으로 게임에 적합한 사람들에 광고 ,
+// - 유저관련 이탈율
