@@ -40,9 +40,6 @@ const ScrollableContainer = ({ children }: ScrollableContainerProps) => {
           </motion.div>
         ))}
       </motion.div>
-      <div className="h-10 snap-end bottom-0">
-        <Footer />
-      </div>
     </motion.div>
   );
 };
