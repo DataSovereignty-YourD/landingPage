@@ -23,6 +23,8 @@ function App() {
         <Route path="/" element={<ScrollSection />} />
         <Route path="/Business" element={<BusinessPage />} />
       </Routes>
+
+      <div className="h-[1px] w-full bg-gray-20 items-start"></div>
     </div>
   );
 }
