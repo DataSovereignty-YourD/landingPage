@@ -23,8 +23,6 @@ function App() {
         <Route path="/" element={<ScrollSection />} />
         <Route path="/Business" element={<BusinessPage />} />
       </Routes>
-
-      <div className="h-1"></div>
     </div>
   );
 }
