@@ -55,7 +55,7 @@ export default function YourDIntroPage() {
               key={index}
               className="px-3 py-5 sm:py-0 xl:px-10 w-full h-full justify-center flex flex-col sm:flex-row mx-auto font-bold font-[font-sf-pro-text-bold]"
             >
-              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-maincolor">
+              <div className=" shadow-lg contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-maincolor">
                 <div className="Icon rounded-full overflow-hidden mx-auto w-20 h-20 bg-color-2 items-center">
                   <img src={item.image} className="p-5"></img>
                 </div>

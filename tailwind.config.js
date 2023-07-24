@@ -9,8 +9,8 @@ module.exports = {
         Mainback: "url('/src/assets/img/mobileSecurity.png')",
       },
       colors: {
-        backcolor: "#F7F5FE",
-        "color-2": "#B7A2D7",
+        backcolor: "#ffd40050",
+        "color-2": "#ffd40098",
         "color-3": "#00D7F2",
         maincolor: "#FFD400",
         "custom-blue": "#007aff",

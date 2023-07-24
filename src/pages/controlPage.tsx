@@ -26,7 +26,7 @@ export function ControlPage() {
   return (
     <div
       id="Solution"
-      className="w-full  h-full  flex flex-col px-12 py-10  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around bg-[#F7F5FE]"
+      className="w-full  h-full  flex flex-col px-12 py-10  lg:px-32 md:px-20 sm:px-10 h-min-screen   justify-around bg-backcolor"
     >
       <div className="w-full pt-10 pb-10">
         <div
@@ -45,14 +45,17 @@ export function ControlPage() {
         </div>
       </div>
 
-      <div id="list" className="px-0 xl:px-10 grid w-full mb-5 sm:grid-cols-3 ">
+      <div
+        id="list"
+        className="px-0 xl:px-10  grid w-full mb-5 sm:grid-cols-3 "
+      >
         {contents.map((item, index) => {
           return (
             <div
               key={index}
               className="px-3 py-5 sm:py-0 xl:px-10 w-full h-full justify-center flex flex-col sm:flex-row mx-auto font-bold font-[font-sf-pro-text-bold]"
             >
-              <div className="contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-maincolor">
+              <div className="shadow-lg contentsbox w-full  rounded-xl bg-white border-color-2 border-2 p-6 text-center hover:border-maincolor">
                 <div className="Icon rounded-full overflow-hidden mx-auto w-20 h-20 bg-color-2 items-center">
                   <img src={item.image} className="p-5"></img>
                 </div>
