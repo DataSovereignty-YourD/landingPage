@@ -3,8 +3,8 @@ import Img from "../assets/svg/Business_SVG.svg";
 export default function FirstPage() {
   return (
     <section className="h-full w-full  bg-backcolor ">
-      <div className="container h-full flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-44 lg:flex-row lg:justify-between">
-        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+      <div className="container h-full flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-44 lg:px-20 lg:flex-row lg:justify-between">
+        <div className="flex flex-col justify-center p-6  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="font-[sf-pro-text-bold] text-5xl font-bold leadi sm:text-6xl">
             Ignite
             <br className="h-10"></br>
@@ -32,7 +32,7 @@ export default function FirstPage() {
             </a> */}
           </div>
         </div>
-        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        <div className="flex items-center justify-center p-6 mt-8 lg:mt-20 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
           <img
             src={Img}
             alt=""
