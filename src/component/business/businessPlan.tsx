@@ -3,9 +3,9 @@ import W3C from "../../assets/svg/W3C_Icon.svg";
 
 export default function BusinessPlan() {
     return (
-      <div className="bg-gradient-to-b from-w to-maincolor">
-        <div className="container m-auto px-6 py-20 md:px-12 lg:px-20">
-          <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
+      <div className="bg-gradient-to-b from-w to-maincolor ">
+        <div className="container  mx-auto px-6 md:px-12 lg:px-20 h-screen py-40">
+          <div className="mx-auto text-center lg:w-8/12 xl:w-7/12">
             <h2 className="text-2xl text-maincolor font-[sf-pro-text-bold] font-bold md:text-4xl">
               <a className="text-2xl text-black px-2  font-[sf-pro-text-bold] font-bold md:text-4xl">
                 Protect your business with
@@ -13,7 +13,7 @@ export default function BusinessPlan() {
               YourD
             </h2>
           </div>
-          <div className="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+          <div className="mt-12 mx-auto my-10 -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
             <div className="relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12">
               <div
                 aria-hidden="true"
