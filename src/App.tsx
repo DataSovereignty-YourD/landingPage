@@ -14,11 +14,13 @@ import { Test } from "./pages/test";
 import { ScrollSection } from "./pages/scrollsection";
 import { BusinessPage } from "./pages/BusinessPage";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import StarsCanvas from "./component/canvas/Stars";
 
 function App() {
   return (
     <div>
       <TopNavi />
+      <StarsCanvas />
       <Routes>
         <Route path="/" element={<ScrollSection />} />
         <Route path="/Business" element={<BusinessPage />} />
