@@ -19,30 +19,32 @@ const Space = () => {
 
 const SpaceCanvas = () => {
   return (
-    <Canvas
-      shadows
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: 45,
-        near: 0.1,
-        far: 200,
-        position: [-2, -280, 10],
-      }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          autoRotate
-          enableZoom={true}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Space />
+    <div className="transform:translate-y w-full h-full">
+      <Canvas
+        shadows
+        frameloop="demand"
+        dpr={[1, 2]}
+        gl={{ preserveDrawingBuffer: true }}
+        camera={{
+          fov: 45,
+          near: 0.1,
+          far: 500,
+          position: [-2, -200, -200],
+        }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            autoRotate
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Space />
 
-        <Preload all />
-      </Suspense>
-    </Canvas>
+          <Preload all />
+        </Suspense>
+      </Canvas>
+    </div>
   );
 };
 
