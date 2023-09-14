@@ -24,7 +24,7 @@ export default function MainPage() {
         >
           <div id="background" ref={ref1} className={`w-full`}/>
             <div
-              className={`fixed transition-all duration-700 px-10 ease-in delay-300 ${
+              className={`fixed transition-all duration-700 px-10 ease-in  ${
                 isVisible1
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4"
@@ -45,12 +45,12 @@ export default function MainPage() {
           id="layout2"
           className="absolute inset-0 flex justify-center items-center"
         >
-          <div id="background2" ref={ref2} className={`w-full h-20 bg-red-50`}/>
+          <div id="background2" ref={ref2} className={`w-full h-20`}/>
             <div
-              className={`fixed z-50 left-0 top-1/2 flex justify-center items-center transition-all ease-in duration-700 px-10 delay-300 ${
+              className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-700 px-10 delay-300 ${
                 isVisible2
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-4"
+                  ? "opacity-100 -translate-y-1/2 "
+                  : "opacity-0 translate-y-0"
               }
               `}
             >
