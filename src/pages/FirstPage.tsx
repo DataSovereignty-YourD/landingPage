@@ -4,13 +4,11 @@ import SpaceCanvas from "../component/canvas/Space";
 
 export default function FirstPage() {
   return (
-    <section className="h-full w-full bg-black">
-      <div className=" h-full flex flex-col justify-center p-6   lg:flex-row ">
-        <div className="w-full h-full items-center justify-center ">
-          <SpaceCanvas />
-        </div>
+    <div id= "First" className="h-full w-full bg-backcolor">
+      <div  className=" h-full flex flex-col justify-center p-6   lg:flex-row ">
+       
 
-        <div className="flex flex-row absolute mt-80  items-center">
+        <div className="flex flex-row mt-80  items-center">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
             <div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-violet-700 to-violet-100"></div>
@@ -48,6 +46,6 @@ export default function FirstPage() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
