@@ -21,6 +21,8 @@ function App() {
   return (
     <div>
       <TopNavi />
+      <StarsCanvas />
+
       <Routes>
         <Route path="/" element={<ScrollSection />} />
         <Route path="/Business" element={<BusinessPage />} />
