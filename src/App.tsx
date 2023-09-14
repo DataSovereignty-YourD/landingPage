@@ -1,5 +1,5 @@
 
-import MainPage from "./pages/mainPage";
+
 import TopNavi from "./component/topNavi";
 import { ScrollSection } from "./pages/scrollsection";
 import { BusinessPage } from "./pages/BusinessPage";
@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import React from "react";
 import StarsCanvas from "./component/canvas/Stars";
 import SideBar from "./component/sideBar";
-
+import MainPage from "./pages/MainPage"; 
 function App() {
   return (
     <React.Fragment>
