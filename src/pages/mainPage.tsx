@@ -61,7 +61,7 @@ export default function MainPage() {
             </div>
         </div>
       </div>
-      <div className="w-full h-screen bg-blue-50"></div>
+      <div className="w-full h-screen"></div>
     </>
   );
 }

@@ -13,7 +13,6 @@ function App() {
     <React.Fragment>
       <TopNavi />
       <StarsCanvas />
-
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="/past" element={<ScrollSection />} />
