@@ -1,15 +1,14 @@
-import Img from "../assets/svg/Business_SVG.svg";
-import EarthCanvas from "../component/canvas/Earth";
-import SpaceCanvas from "../component/canvas/Space";
+import Img from '../assets/svg/Business_SVG.svg';
+import EarthCanvas from '../component/canvas/Earth';
+import SpaceCanvas from '../component/canvas/Space';
 
 export default function FirstPage() {
   return (
-    <section className="  h-full w-full bg-black">
+    <section id= "First" className="  h-full w-full bg-black">
       <div className="   h-full flex flex-col justify-center p-6   lg:flex-row ">
         <div className="  flex w-full h-full">
-          <SpaceCanvas />
         </div>
-        <div className="  absolute flex-row flex top-1/3 ">
+        <div className=" flex-row flex top-1/3 ">
           <div className="   flex flex-col justify-center p-6  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className=" text-center font-[sf-pro-text-bold] text-5xl font-bold leadi sm:text-6xl text-white">
               <br className="  h-10"></br>
