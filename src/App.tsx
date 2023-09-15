@@ -1,5 +1,4 @@
 import TopNavi from './component/topNavi';
-import { ScrollSection } from './pages/scrollsection';
 import { BusinessPage } from './pages/businessPage';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -13,7 +12,6 @@ function App() {
       <StarsCanvas />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/past" element={<ScrollSection />} />
         <Route path="/Business" element={<BusinessPage />} />
       </Routes>
       <SideBar />
