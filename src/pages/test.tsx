@@ -4,7 +4,7 @@ import FirstPage from "./firstPage";
 import { ControlPage } from "./controlPage";
 import YourDIntroPage from "./yourdIntroPage";
 import RoadMapPage from "./roadmapPage";
-import FAQPage from "./FAQPage";
+import FAQPage from "./faqPage";
 type ScrollableContainerProps = {
   children: ReactNode[];
 };

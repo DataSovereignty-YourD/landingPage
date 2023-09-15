@@ -1,6 +1,6 @@
 import Img from '../assets/svg/Business_SVG.svg';
 import EarthCanvas from '../component/canvas/Earth';
-import SpaceCanvas from '../component/canvas/Space';
+import SpaceCanvas from '../component/canvas/space';
 
 export default function FirstPage() {
   return (

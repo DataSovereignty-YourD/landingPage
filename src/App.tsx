@@ -3,7 +3,7 @@ import { ScrollSection } from './pages/scrollsection';
 import { BusinessPage } from './pages/businessPage';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
-import StarsCanvas from './component/canvas/Stars';
+import StarsCanvas from './component/canvas/stars';
 import SideBar from './component/sideBar';
 import MainPage from './pages/mainPage';
 function App() {
