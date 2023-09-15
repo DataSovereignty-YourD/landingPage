@@ -1,15 +1,10 @@
 import BusinessPlan from "../component/business/businessPlan";
-import Feature1 from "../component/business/feature1";
-import Feature2 from "../component/business/feature2";
-import Feature3 from "../component/business/feature3";
+
 
 export function BusinessPage() {
   return (
     <div>
       <BusinessPlan/>
-      {/* <Feature1 />
-      <Feature2 />
-      <Feature3 /> */}
     </div>
   );
 }
