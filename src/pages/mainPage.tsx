@@ -4,8 +4,8 @@ import Eximg from '../assets/img/Dashborad.png';
 import { motion, useInView } from 'framer-motion';
 import Example from './example';
 import Footer from '../component/footer';
-import LogoHero from './example3';
-import OppoScroll from './example2';
+import LogoHero from './logoHero';
+import OppoScroll from './oppoScroll';
 export default function MainPage() {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
@@ -36,7 +36,7 @@ export default function MainPage() {
           id="layout1"
           className="absolute inset-0  flex justify-center items-center "
         >
-          <div id="background1" ref={ref1} className={`w-full`} />
+          <div id="background1" ref={ref1} className={`w-full bg-black h-full`} />
           <div
             className={`fixed transition-all duration-500 px-10 ease-in  ${
               isVisible1
