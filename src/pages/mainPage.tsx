@@ -36,7 +36,7 @@ export default function MainPage() {
           id="layout1"
           className="absolute inset-0  flex justify-center items-center "
         >
-          <div id="background1" ref={ref1} className={`w-full bg-black h-full`} />
+          <div id="background1" ref={ref1} className={`w-full `} />
           <div
             className={`fixed transition-all duration-500 px-10 ease-in  ${
               isVisible1
@@ -101,7 +101,7 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className='w-full h-1/2 bg-white relative'>
+      <div className='w-full h-1/2 bg-white relative z-50'>
         <OppoScroll/>
       </div>
 
@@ -111,9 +111,9 @@ export default function MainPage() {
       >
         <div
           id="layout4"
-          className="absolute inset-0 flex justify-center items-center"
+          className="absolute inset-0 flex justify-center items-end"
         >
-          <div id="background4" ref={ref4} className={`w-full h-20`} />
+          <div id="background4" ref={ref4} className={`w-full h-20 mb-20`} />
           <div
             className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible4
