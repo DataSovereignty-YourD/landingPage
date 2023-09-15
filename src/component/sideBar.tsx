@@ -6,7 +6,7 @@ export default function SideBar() {
 
   return (
     <div className="fixed left-8 top-1/4 flex flex-col items-center bg-transparent space-y-1 group gap-8">
-      {['container', 'container2'].map(
+      {['container1', 'container2','container3', 'logohero','footer'].map(
         (section, index, arr) => (
           <div key={section} className="flex flex-col items-center ">
             <HashLink

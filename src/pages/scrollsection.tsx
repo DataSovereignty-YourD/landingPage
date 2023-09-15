@@ -1,10 +1,10 @@
 import { useRef, ReactNode } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
-import FirstPage from "./FirstPage";
+import FirstPage from "./firstPage";
 import { ControlPage } from "./controlPage";
 import YourDIntroPage from "./yourdIntroPage";
 import RoadMapPage from "./roadmapPage";
-import FAQPage from "./FAQPage";
+import FAQPage from "./faqPage";
 import Footer from "../component/footer";
 type ScrollableContainerProps = {
   children: ReactNode[];

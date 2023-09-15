@@ -3,6 +3,9 @@ import { useIsVisible } from '../hooks/view';
 import Eximg from '../assets/img/Dashborad.png';
 import { motion, useInView } from 'framer-motion';
 import Example from './example';
+import Footer from '../component/footer';
+import LogoHero from './example3';
+import OppoScroll from './example2';
 export default function MainPage() {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
@@ -28,12 +31,12 @@ export default function MainPage() {
 
   return (
     <>
-      <div id="container" className={`w-full h-screen text-center relative `}>
+      <div id="container1" className={`w-full h-screen text-center relative `}>
         <div
-          id="layout"
+          id="layout1"
           className="absolute inset-0  flex justify-center items-center "
         >
-          <div id="background" ref={ref1} className={`w-full`} />
+          <div id="background1" ref={ref1} className={`w-full`} />
           <div
             className={`fixed transition-all duration-500 px-10 ease-in  ${
               isVisible1
@@ -98,8 +101,41 @@ export default function MainPage() {
         </div>
       </div>
 
-<div><Example/></div>
-     
+      <div className='w-full h-1/2 bg-white relative'>
+        <OppoScroll/>
+      </div>
+
+      <div
+        id="container4"
+        className={`w-full h-screen text-center relative overflow-visible`}
+      >
+        <div
+          id="layout4"
+          className="absolute inset-0 flex justify-center items-center"
+        >
+          <div id="background4" ref={ref4} className={`w-full h-20`} />
+          <div
+            className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
+              isVisible4
+                ? 'opacity-100 -translate-y-1/2 '
+                : 'opacity-0 translate-y-0'
+            }
+              `}
+          >
+            <LogoHero />
+          </div>
+        </div>
+      </div>
+
+      {/* <div id="logohero">
+        <div id="layout4" className="flex justify-center items-center"></div>
+      </div> */}
+
+      <div id="footer">
+        <div id="layout5" className="flex justify-center items-center bg-opacity-50 relative">
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

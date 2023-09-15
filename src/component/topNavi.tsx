@@ -10,7 +10,7 @@ import discord from "../assets/img/discord.png";
 export default function TopNavi() {
 
   return (
-    <div className="h-12 bg-black sm:h-16 w-full text-sm sm:text-xl bg-transparent fixed pr-4 lg:px-32 md:px-20 sm:px-20 sm:mr-20 transition-all duration-100 flex justify-between items-center backdrop-blur-md z-30">
+    <div className="h-12 bg-black sm:h-16 w-full text-sm sm:text-xl bg-transparent fixed pr-4 lg:px-32 md:px-20 sm:px-20 sm:mr-20 transition-all duration-100 flex justify-between items-center  z-30">
       <HashLink smooth to="/#">
         <img src={logo} className="h-12 sm:h-16 object-cover " alt="Logo" />
       </HashLink>
