@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
-import { useIsVisible } from '../hooks/view';
-import Eximg from '../assets/img/Dashborad.png';
-import { motion, useInView } from 'framer-motion';
-import Example from './example';
-import Footer from '../component/footer';
-import LogoHero from './logoHero';
-import OppoScroll from './oppoScroll';
+import { useEffect, useRef, useState } from "react";
+import { useIsVisible } from "../hooks/view";
+import Eximg from "../assets/img/Dashborad.png";
+import { motion, useInView } from "framer-motion";
+import Example from "./example";
+import Footer from "../component/footer";
+import LogoHero from "./logoHero";
+import OppoScroll from "./oppoScroll";
 export default function MainPage() {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
@@ -40,8 +40,8 @@ export default function MainPage() {
           <div
             className={`fixed transition-all duration-500 px-10 ease-in  ${
               isVisible1
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-4'
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <div className="font-bold text-4xl">Ignite Data Ownership</div>
@@ -64,8 +64,8 @@ export default function MainPage() {
           <div
             className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible2
-                ? 'opacity-100 -translate-y-1/2 '
-                : 'opacity-0 translate-y-0'
+                ? "opacity-100 -translate-y-1/2 "
+                : "opacity-0 translate-y-0"
             }
               `}
           >
@@ -88,8 +88,8 @@ export default function MainPage() {
           <div
             className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible3
-                ? 'opacity-100 -translate-y-1/2 '
-                : 'opacity-0 translate-y-0'
+                ? "opacity-100 -translate-y-1/2 "
+                : "opacity-0 translate-y-0"
             }
               `}
           >
@@ -101,8 +101,8 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className='w-full h-1/2 bg-white relative z-50'>
-        <OppoScroll/>
+      <div className="w-full h-1/2 bg-white relative z-50">
+        <OppoScroll />
       </div>
 
       <div
@@ -117,8 +117,8 @@ export default function MainPage() {
           <div
             className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible4
-                ? 'opacity-100 -translate-y-1/2 '
-                : 'opacity-0 translate-y-0'
+                ? "opacity-100 -translate-y-1/2 "
+                : "opacity-0 translate-y-0"
             }
               `}
           >
@@ -132,7 +132,10 @@ export default function MainPage() {
       </div> */}
 
       <div id="footer">
-        <div id="layout5" className="flex justify-center items-center bg-opacity-50 relative">
+        <div
+          id="layout5"
+          className="flex justify-center items-center bg-opacity-50 relative"
+        >
           <Footer />
         </div>
       </div>
