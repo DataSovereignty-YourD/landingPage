@@ -3,11 +3,13 @@ import { useRef} from 'react';
 import  {useIsVisible} from "../../hooks/view"
 import WetButton from './wetButton';
 import RoundedSlideButton from './roundedButton';
-
+import { Link } from 'react-router-dom';
 const ButtonWrapper = () => {
   return (
-    <div className="flex  items-center justify-center bg-opacity-60 bg-white ">
-      <WetButton />
+    <div className="flex  items-center justify-center bg-opacity-20 bg-transparent ">
+      <Link to="/Explain">
+        <WetButton />
+      </Link>
     </div>
   );
 };
@@ -26,14 +28,14 @@ const LogoHero = ({ text1, subText1 }) => {
       >
         <div id="background4" ref={ref4} className={`w-full h-20 mb-20`} />
         <div
-          className={`fixed z-50 top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
+          className={`fixed top-1/2  flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
             isVisible4
               ? 'opacity-100 -translate-y-1/2 '
               : 'opacity-0 translate-y-0'
           }
           `}
         >
-          <section className="bg-opacity-60 bg-white mb-20 pb-10">
+          <section className="bg-opacity-60 bg-transparent mb-20 pb-10">
             <div className="w-full px-8 py-12 md:py-20 flex flex-col items-center">
               <h1 className="text-center text-4xl md:text-6xl max-w-xl font-semibold">
                 {text1}

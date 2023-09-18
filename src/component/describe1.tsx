@@ -7,7 +7,7 @@ interface DescribeProps {
   text2: string;
   text3: string;
 }
-export default function Describe({ text1, subText1, text2, text3 }:DescribeProps) {
+export default function Describe1({ text1, subText1, text2, text3 }:DescribeProps) {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
 
