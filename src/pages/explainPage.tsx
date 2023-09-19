@@ -1,4 +1,4 @@
-import DescribeYourD from '../component/describeYourd';
+import DescribeYourD from '../component/explainYourd';
 export default function ExplainPage() {
   return (
     <>

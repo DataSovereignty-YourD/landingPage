@@ -7,6 +7,7 @@ import {
 import logo from '../assets/img/YourD-Logo-high.png';
 import SideNav from './sideNav';
 import { Link } from 'react-router-dom';
+import RoundedButton from '../component/utils/roundedButton';
 export default function TopBar() {
   const snsLinks = [
     {
@@ -50,6 +51,7 @@ export default function TopBar() {
       <Link to="/">
         <img src={logo} alt="logo" className="flex items-center w-16" />
       </Link>
+      <RoundedButton/>
       <div className=" flex gap-2 items-center">
         {snsLinks.map((link, index) => (
           <a
@@ -61,7 +63,7 @@ export default function TopBar() {
             {link.icon}
           </a>
         ))}
-        <SideNav />
+        <SideNav/>
       </div>
     </div>
   );

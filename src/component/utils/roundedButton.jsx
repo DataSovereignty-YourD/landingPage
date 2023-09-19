@@ -20,7 +20,7 @@ const RoundedSlideButton = () => {
           active:scale-95`}
       >
         <FiLogIn />
-        <span>Sign up free</span>
+        <div className="font-semibold">Contact Us</div>
       </button>
     );
   };
