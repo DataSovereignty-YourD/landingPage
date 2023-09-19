@@ -1,15 +1,15 @@
-import logo from "../assets/img/YourD-Logo-high.png";
+import logo from '../assets/img/YourD-Logo-high.png';
 import {
   FaSquareXTwitter,
   FaLinkedin,
   FaDiscord,
   FaMedium,
-} from "react-icons/fa6";
-import { useTranslation } from "react-i18next";
-import ContactUs from "./contactUs";
+} from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next';
+import ContactUs from './contactUs';
 
 const Footer = () => {
-  const { t, i18n } = useTranslation(["page"]);
+  const { t, i18n } = useTranslation(['page']);
   return (
     <div id="footer">
       <div
@@ -18,10 +18,6 @@ const Footer = () => {
       >
         <footer className="w-full h-full relative">
           <div className="flex flex-col justify-center items-center bg-opacity-60 bg-transparent">
-            <div className="w-full h-full ">
-              <ContactUs />
-            </div>
-
             <img src={logo} alt="LOGO" className="w-32" />
             <div className="flex text-2xl text-black mt-4">yourd@yourd.xyz</div>
             <div className="flex gap-4 mt-4">
