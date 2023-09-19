@@ -6,11 +6,9 @@ import RoundedSlideButton from './roundedButton';
 import { Link } from 'react-router-dom';
 const ButtonWrapper = () => {
   return (
-    <div className="flex  items-center justify-center bg-opacity-20 bg-transparent ">
-      <Link to="/Explain">
+      <Link to="/Explain" >
         <WetButton />
       </Link>
-    </div>
   );
 };
 
@@ -26,23 +24,21 @@ const LogoHero = ({ text1, subText1 }) => {
         id="layout4"
         className="absolute inset-0 flex justify-center items-center"
       >
-        <div id="background4" ref={ref4} className={`w-full h-20 `} />
+        <div id="background4" ref={ref4} className={`w-full h-10`} />
         <div
-          className={`fixed flex justify-center  items-center transition-all ease-in duration-500 px-10 delay-100 ${
+          className={`fixed flex justify-center items-center transition-all ease-in duration-500 z-50 px-10 delay-100 ${
             isVisible4
-              ? 'opacity-100 translate-y-4 '
+              ? 'opacity-100 translate-y-4'
               : 'opacity-0 translate-y-0'
           }
           `}
         >
-          <section className="bg-opacity-60 bg-transparent mb-20 pb-10">
-            <div className="w-full px-8 py-12 md:py-20 flex flex-col items-center">
+          <section className="bg-opacity-60 bg-transparent mb-20 pb-10 items-center justify-center z-50">
               <h1 className="text-center text-4xl md:text-6xl max-w-xl font-semibold">
                 {text1}
               </h1>
-              <p className="text-center max-w-xl my-6">{subText1}</p>
+              <p className="text-center max-w-xl my-6 w-full">{subText1}</p>
               <ButtonWrapper />
-            </div>
           </section>
         </div>
       </div>

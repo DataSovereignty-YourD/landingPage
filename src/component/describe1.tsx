@@ -48,7 +48,7 @@ export default function Describe1({ text1, subText1, text2, text3 }:DescribeProp
         >
           <div id="background2" ref={ref2} className="w-full h-20" />
           <div
-            className={`fixed z-50 top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
+            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible2
                 ? 'opacity-100 -translate-y-1/2'
                 : 'opacity-0 translate-y-0'
@@ -71,7 +71,7 @@ export default function Describe1({ text1, subText1, text2, text3 }:DescribeProp
         >
           <div id="background3" ref={ref3} className="w-full h-20" />
           <div
-            className={`fixed z-50 top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
+            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible3
                 ? 'opacity-100 -translate-y-1/2'
                 : 'opacity-0 translate-y-0'
