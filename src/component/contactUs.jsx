@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import EarthCanvas from "./canvas/earth";
 
 const ContactUs = () => {
   const [selected, setSelected] = useState("individual");
