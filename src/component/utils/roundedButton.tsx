@@ -1,6 +1,8 @@
+import { FiLogIn } from "react-icons/fi";
 import { useState } from "react";
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
+import ContactUs from "../contactUs";
 
 interface NavProps {
   isOpen: boolean;
@@ -25,7 +27,6 @@ const navVariants = {
     opacity: 0,
   },
 };
-
 const linkWrapperVariants = {
   open: {
     transition: {
@@ -38,7 +39,6 @@ const linkWrapperVariants = {
     },
   },
 };
-
 const navLinkVariants = {
   open: { x: 0 },
   closed: { x: 25 },
@@ -82,33 +82,57 @@ const Nav: React.FC<NavProps> = ({ isOpen, setIsOpen }) => (
     </motion.button>
     <motion.div
       variants={linkWrapperVariants}
-      className="flex flex-col gap-4 absolute bottom-8 left-8"
+      className="mt-52 my-auto w-full h-full   "
     >
-      {["Home", "Products", "Our Team", "Mission"].map((text) => (
-        <NavLink key={text} text={text} />
-      ))}
+      <ContactUs />
     </motion.div>
   </motion.nav>
 );
 
-const SideNav = () => {
+const RoundedSlideButtonSideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <div className="flex items-center text-white z-[-1]">
+      <div className="flex items-center text-white">
         <motion.button
           whileHover={{ rotate: "180deg" }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(true)}
           className="text-3xl bg-white text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
         >
-          <FiMenu size={24} className="" />
+          <RoundedSlideButton />
         </motion.button>
       </div>
       <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };
+const RoundedSlideButton = () => {
+  return (
+    <button
+      className={`
+          relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[1px] 
+          border-yellow-500 bg-yellow-400 px-4 py-2 font-semibold shadow-lg
+          uppercase text-black transition-all duration-500
+          
+          before:absolute before:inset-0
+          before:-z-10 before:translate-x-[150%]
+          before:translate-y-[150%] before:scale-[2.5]
+          before:rounded-[100%] before:bg-yellow-400
+          before:transition-transform before:duration-1000
+          before:content-[""]
+  
+          hover:scale-105 hover:text-neutral-900
+          hover:before:translate-x-[0%]
+          hover:before:translate-y-[0%]
+          active:scale-95`}
+    >
+      <FiLogIn />
 
-export default SideNav;
+      <div className="font-semibold">Contact Us</div>
+    </button>
+  );
+};
+
+export default RoundedSlideButtonSideNav;
