@@ -19,14 +19,14 @@ export default function Describe1({ text1, subText1, text2, text3 }:DescribeProp
 
   return (
     <>
-      <div id="container1" className="w-full h-screen text-center relative">
+      <div id="container1" className="w-full h-screen text-center relative overflow-visible">
         <div
           id="layout1"
           className="absolute inset-0 flex justify-center items-center"
         >
-          <div id="background1" ref={ref1} className="w-full h-full" />
+          <div id="background1" ref={ref1} className="w-full h-20" />
           <div
-            className={`fixed transition-all duration-500 px-10 ease-in ${
+            className={`fixed top-1/2 transition-all justify-center items-center duration-500 px-10 ease-in ${
               isVisible1
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-4'

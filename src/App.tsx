@@ -13,7 +13,7 @@ function App() {
     <React.Fragment>
       <TopBar />
       {/* <AnimationReal /> */}
-      <StarsCanvas/>
+      <StarsCanvas />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/Business" element={<BusinessPage />} />

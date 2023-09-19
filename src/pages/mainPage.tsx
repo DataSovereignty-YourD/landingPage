@@ -19,8 +19,6 @@ export default function MainPage() {
           'Shape the future of data ownership and join us in a more secure and person-centric digital world'
         }
       />
-
-      <Footer />
     </>
   );
 }
