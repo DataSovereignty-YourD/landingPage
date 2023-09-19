@@ -20,11 +20,11 @@ const LogoHero = ({ text1, subText1 }) => {
   return (
     <div
       id="container4"
-      className={`w-full h-screen text-center relative overflow-visible`}
+      className={`w-full h-screen text-center relative overflow-visible borde`}
     >
       <div
         id="layout4"
-        className="absolute inset-0 flex justify-center items-end"
+        className="absolute inset-0 flex justify-center items-end "
       >
         <div id="background4" ref={ref4} className={`w-full h-20 mb-20`} />
         <div
