@@ -3,15 +3,15 @@ import {
   FaLinkedin,
   FaDiscord,
   FaMedium,
-} from 'react-icons/fa6';
-import logo from '../assets/img/YourD-Logo-high.png';
-import SideNav from './sideNav';
-import { Link } from 'react-router-dom';
-import RoundedButton from '../component/utils/roundedButton';
+} from "react-icons/fa6";
+import logo from "../assets/img/YourD-Logo-high.png";
+import SideNav from "./sideNav";
+import { Link } from "react-router-dom";
+import RoundedSlideButtonSideNav from "../component/utils/roundedButton";
 export default function TopBar() {
   const snsLinks = [
     {
-      href: 'https://twitter.com/0xCatbox',
+      href: "https://twitter.com/0xCatbox",
       icon: (
         <FaSquareXTwitter
           className="transition duration-300 ease-in-out  hover:text-yellow-500"
@@ -20,7 +20,7 @@ export default function TopBar() {
       ),
     },
     {
-      href: 'https://www.linkedin.com/company/yourd/',
+      href: "https://www.linkedin.com/company/yourd/",
       icon: (
         <FaLinkedin
           className="transition duration-300 ease-in-out  hover:text-yellow-500"
@@ -51,19 +51,22 @@ export default function TopBar() {
       <Link to="/">
         <img src={logo} alt="logo" className="flex items-center w-16" />
       </Link>
-      <RoundedButton/>
-      <div className=" flex gap-2 items-center">
-        {snsLinks.map((link, index) => (
-          <a
-            key={index}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {link.icon}
-          </a>
-        ))}
-        <SideNav/>
+
+      <div className="flex flex-row gap-3">
+        {/* <RoundedSlideButtonSideNav className="z-[10]" /> */}
+        <div className=" flex gap-2 items-center">
+          {snsLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.icon}
+            </a>
+          ))}
+          <SideNav className="z-[-1]" />
+        </div>
       </div>
     </div>
   );
