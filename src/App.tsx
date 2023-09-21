@@ -16,7 +16,6 @@ function App() {
 
       {/* <AnimationReal /> */}
       <StarsCanvas />
-
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/Business" element={<BusinessPage />} />
