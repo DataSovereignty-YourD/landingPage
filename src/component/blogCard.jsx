@@ -41,10 +41,10 @@ const BlogCard = () => {
   };
 
   return (
-    <section className="bg-white backdrop-blur-sm bg-blur-" ref={ref}>
+    <section className="bg-white backdrop-blur-sm mt-20 " ref={ref}>
       <div className="relative overflow-hidden p-4">
         {/* CARDS */}
-        <div className="mx-auto max-w-6xl mb-16">
+        <div className="w-full">
           <div className="flex justify-between items-center ">
             <p className="mb-6 text-2xl font-semibold">
               Your
@@ -53,7 +53,7 @@ const BlogCard = () => {
               </span>{" "}
               News
             </p>
-            <Link to="/Blog" className=" hover:text-yellow-300">
+            <Link to="/Blog" className=" hover:text-[#fccc00]">
               See All
             </Link>
           </div>

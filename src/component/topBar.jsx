@@ -30,14 +30,6 @@ export default function TopBar() {
     },
     {
       icon: (
-        <FaDiscord
-          className="transition duration-300 ease-in-out  hover:text-yellow-500"
-          size={24}
-        />
-      ),
-    },
-    {
-      icon: (
         <FaMedium
           className="transition duration-300 ease-in-out  hover:text-yellow-500"
           size={24}
@@ -47,7 +39,7 @@ export default function TopBar() {
   ];
 
   return (
-    <div className=" bg-opacity-60 bg-transparent w-full flex justify-between fixed px-10 py-3 z-50">
+    <div className=" bg-opacity-60 bg-transparent w-full flex justify-between fixed px-[15%] py-3 z-50">
       <Link to="/">
         <img src={logo} alt="logo" className="flex items-center w-16" />
       </Link>

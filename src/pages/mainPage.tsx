@@ -7,22 +7,24 @@ import ScrollCircle from "../component/scrollCircle";
 export default function MainPage() {
   return (
     <>
+      <Describe1
+        title1={"Ignite"}
+        title2={"Data Ownership"}
+        subText1={"Take Control of Your Data Ownership"}
+        text1={
+          "YourD was created to tackle the challenges of data sovereignty and privacy in the modern web"
+        }
+        text2={
+          "We fundamentally address data sovereignty with a novel authentication protocol and infrastructure"
+        }
+      />
+      
+      <MainDetail />
+      <BlogCard />
       <LogoHero
         text1="The easiest way to control your Data"
         subText1="yourd에 관한 요약 설명내용"
       />
-      <Describe1
-        text1={"Ignite Data Ownership"}
-        subText1={"Take Control of Your Data Ownership"}
-        text2={
-          "We lead the revolutionary change in personal data ownership for you"
-        }
-        text3={
-          "Shape the future of data ownership and join us in a more secure and person-centric digital world"
-        }
-      />
-      <MainDetail />
-      <BlogCard />
 
       <Footer />
     </>

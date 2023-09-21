@@ -15,25 +15,26 @@ const ButtonWrapper = () => {
 const LogoHero = ({ text1, subText1 }) => {
   const ref4 = useRef(null);
   const isVisible4 = useIsVisible(ref4);
+  
   return (
     <div
       id="container4"
-      className={`w-full h-screen text-center relative`}
+      className={`w-full h-screen text-center relative `}
     >
       <div
         id="layout4"
         className="absolute inset-0 flex justify-center items-center"
       >
-        <div id="background4" ref={ref4} className={`w-full h-10`} />
+        <div id="background4" ref={ref4} className={`w-full h-10 `} />
         <div
-          className={`fixed flex justify-center items-center transition-all ease-in duration-500 z-50 px-10 delay-100 ${
+          className={`fixed top-0 flex h-full justify-center items-center transition-all ease-in duration-500 z-0 px-10 delay-100 ${
             isVisible4
               ? 'opacity-100 translate-y-4'
               : 'opacity-0 translate-y-0'
           }
           `}
         >
-          <section className="bg-opacity-60 bg-transparent mb-20 pb-10 items-center justify-center z-50">
+          <section className="bg-opacity-60 bg-transparent mb-20 pb-10 items-center justify-center ">
               <h1 className="text-center text-4xl md:text-6xl max-w-xl font-semibold">
                 {text1}
               </h1>

@@ -41,9 +41,9 @@ function Blog() {
 
   return (
     <div className="pt-24  mx-32  min-h-screen flex flex-col">
-      <div className="flex flex-grow rounded-3xl items-center mb-80 shadow-2xl bg-white justify-center z-10">
+      <div className="flex flex-grow rounded-3xl items-start mb-80 shadow-2xl bg-white justify-start z-10">
         <div className="   flex flex-col mx-24">
-          <div className="  text-4xl font-bold text-black mt-12 mb-4 mx-4 pt-12">
+          <div className="  text-4xl font-bold text-black mt-12 mb-4pt-12">
             Your
             <span className="  text-yellow-300 items-center justify-center ">
               D
@@ -52,18 +52,18 @@ function Blog() {
             <div className="border-b-2 mt-2 border-yellow-400 border-width-"></div>
           </div>
 
-          <div className="  text-2xl font-bold text-black mx-8 mt-12 mb-2 uppercase">
+          <div className="  text-2xl font-bold text-black mt-12 mb-2 uppercase">
             Recent News
           </div>
-          <div className="   mx-4 grid  grid-cols-3">
-            <div className=" items-center justify-center flex col-span-2 rounded-xl">
+          <div className="   grid  grid-cols-12 gap-10">
+            <div className=" items-center justify-start flex col-span-5 rounded-xl">
               <img
                 src={img}
                 alt="Latest News"
-                className="   border border-black rounded-xl shadow-xl  w-[800px]"
+                className="   border border-black rounded-xl shadow-xl "
               />
             </div>
-            <div className="  mx-4 flex flex-col gap-2 items-center justify-center  col-span-1">
+            <div className=" flex flex-col gap-2 items-start justify-start  col-span-7">
               <div className="text-md font-bold">
                 YourD: Realizing Data Sovereignty in Web3.0
               </div>
