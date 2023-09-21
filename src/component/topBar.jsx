@@ -3,15 +3,15 @@ import {
   FaLinkedin,
   FaDiscord,
   FaMedium,
-} from 'react-icons/fa6';
-import logo from '../assets/img/YourD-Logo-high.png';
-import SideNav from './sideNav';
-import { Link } from 'react-router-dom';
-import RoundedButton from './utils/roundedButton';
+} from "react-icons/fa6";
+import logo from "../assets/img/YourD-Logo-high.png";
+import SideNav from "./sideNav";
+import { Link } from "react-router-dom";
+import RoundedButton from "./utils/roundedButton";
 export default function TopBar() {
   const snsLinks = [
     {
-      href: 'https://twitter.com/0xCatbox',
+      href: "https://twitter.com/0xCatbox",
       icon: (
         <FaSquareXTwitter
           className="transition duration-300 ease-in-out  hover:text-yellow-500"
@@ -20,7 +20,7 @@ export default function TopBar() {
       ),
     },
     {
-      href: 'https://www.linkedin.com/company/yourd/',
+      href: "https://www.linkedin.com/company/yourd/",
       icon: (
         <FaLinkedin
           className="transition duration-300 ease-in-out  hover:text-yellow-500"
@@ -51,20 +51,25 @@ export default function TopBar() {
       <Link to="/">
         <img src={logo} alt="logo" className="flex items-center w-16" />
       </Link>
-      <Link to="/ContactUs">
-      <RoundedButton /></Link>
-      <div className=" flex gap-2 items-center">
-        {snsLinks.map((link, index) => (
-          <a
-            key={index}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {link.icon}
-          </a>
-        ))}
-        <SideNav className="z-[-1]" />
+      <div className="flex flex-row gap-2 items-center justify-center">
+        <div className="">
+          <Link to="/ContactUs">
+            <RoundedButton />
+          </Link>
+        </div>
+        <div className=" flex gap-2 items-center">
+          {snsLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.icon}
+            </a>
+          ))}
+          <SideNav className="z-[-1]" />
+        </div>
       </div>
     </div>
   );

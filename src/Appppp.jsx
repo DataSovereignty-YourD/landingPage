@@ -11,7 +11,7 @@ export default function AnimationReal() {
         camera={{ position: [0, 0, 5], fov: 30 }}
       >
         <color attach="background" args={["#ffffff"]} />
-        <ScrollControls pages={12}>
+        <ScrollControls>
           <Experience />
         </ScrollControls>
       </Canvas>

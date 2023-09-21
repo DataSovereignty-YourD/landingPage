@@ -13,8 +13,9 @@ const RoundedSlideButton = () => {
     <button
       className={`
         relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[1px] 
-        border-yellow-300 bg-yellow-200 px-4 py-2 font-semibold
+        border-yellow-300 bg-yellow-200 px-2 py-2 font-semibold
         uppercase text-black transition-all duration-500
+        text-xs 
         
         before:absolute before:inset-0
         before:-z-10 before:translate-x-[150%]
