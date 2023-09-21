@@ -27,6 +27,10 @@ function Blog() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     let sortedData = [...fetchData];
     if (sortType === "latest") {
       sortedData.sort(
@@ -43,7 +47,7 @@ function Blog() {
     <div className="pt-24  mx-32  min-h-screen flex flex-col">
       <div className="flex flex-grow rounded-3xl items-center mb-80 shadow-2xl bg-white justify-center z-10">
         <div className="   flex flex-col mx-24">
-          <div className="  text-4xl font-bold text-black mt-12 mb-4 mx-4 pt-12">
+          <div className="  text-4xl font-bold text-black mt-12 mb-4  pt-12">
             Your
             <span className="  text-yellow-300 items-center justify-center ">
               D
@@ -52,19 +56,19 @@ function Blog() {
             <div className="border-b-2 mt-2 border-yellow-400 border-width-"></div>
           </div>
 
-          <div className="  text-2xl font-bold text-black mx-8 mt-12 mb-2 uppercase">
+          <div className="  text-2xl font-bold text-black mt-12 mb-2 uppercase">
             Recent News
           </div>
-          <div className="   mx-4 grid  grid-cols-3">
-            <div className=" items-center justify-center flex col-span-2 rounded-xl">
+          <div className="  grid  grid-cols-3 gap-12">
+            <div className="  flex col-span-2 rounded-xl ">
               <img
                 src={img}
                 alt="Latest News"
-                className="   border border-black rounded-xl shadow-xl  w-[800px]"
+                className="   border border-black rounded-xl shadow-xl  w-[1000px]"
               />
             </div>
-            <div className="  mx-4 flex flex-col gap-2 items-center justify-center  col-span-1">
-              <div className="text-md font-bold">
+            <div className="  mx-4 flex flex-col gap-12 items-center   col-span-1">
+              <div className="text-xl font-bold ">
                 YourD: Realizing Data Sovereignty in Web3.0
               </div>
               <div className=" ">
@@ -89,30 +93,30 @@ function Blog() {
             </div>
           </div>
 
-          <div className="flex mt-32  justify-between items-center mx-4">
+          <div className="flex mt-32  justify-between items-center ">
             <div className="   text-3xl font-bold text-black uppercase">
               All News
             </div>
             <div className="   text-xl font-normal flex-row flex gap-2">
               <button
                 onClick={() => setSortType("latest")}
-                className="bg-yellow-300 font-bold border border-black rounded-md px-2"
+                className="bg-[#fccc00] font-bold border border-black rounded-md px-2"
               >
                 Latest
               </button>
               <button
                 onClick={() => setSortType("popular")}
-                className="bg-yellow-300 font-bold border border-black rounded-md px-2"
+                className="bg-[#fccc00] font-bold border border-black rounded-md px-2"
               >
                 Popular
               </button>
-              <div className=" bg-yellow-300 font-bold border border-black rounded-md px-2">
+              <div className=" bg-[#fccc00] font-bold border border-black rounded-md px-2">
                 Category ↓
               </div>
             </div>
           </div>
 
-          <div className="gap-14 grid grid-cols-3 mx-2 ">
+          <div className="gap-14 grid grid-cols-3  ">
             {currentPosts.map((post) => (
               <div key={post.id} className="col-span-1 my-12 rounded-2xl">
                 <div className="transform translate-y-2 translate-x-3  font-bold absolute text-xl">

@@ -41,7 +41,7 @@ const BlogCard = () => {
   };
 
   return (
-    <section className="bg-white backdrop-blur-sm bg-blur-" ref={ref}>
+    <section className=" backdrop-blur-sm bg-blur-" ref={ref}>
       <div className="relative overflow-hidden p-4">
         {/* CARDS */}
         <div className="mx-auto max-w-6xl mb-16">
@@ -53,7 +53,7 @@ const BlogCard = () => {
               </span>{" "}
               News
             </p>
-            <Link to="/Blog" className=" hover:text-yellow-300">
+            <Link to="/Blog" className="text-black hover:text-yellow-300">
               See All
             </Link>
           </div>
