@@ -52,15 +52,17 @@ const Tab = ({ selected, title, setSelected, tabNum }) => {
 const FEATURES = [
   {
     title: 'Fast Auth',
-    Feature: () => <ExampleFeature text="Fast Auth" img={FastAuth} />,
+    Feature: () => (
+      <ExampleFeature
+        text="Based on data ownership, Fast Auth enables rapid QR login without sharing personal information with corporations."
+        img={FastAuth}
+      />
+    ),
   },
   {
     title: 'Data Pass',
     Feature: () => (
-      <ExampleFeature
-        text="Utilizing high-level security technology, we ensure the safe protection of personal information, enabling it to be used confidently for a variety of purposes."
-        img={DataPass}
-      />
+      <ExampleFeature text="datapass에 관한 설명" img={DataPass} />
     ),
   },
   {
@@ -75,11 +77,13 @@ const FEATURES = [
 ];
 
 const ExampleFeature = ({ text, img }) => (
-  <div className="w-full relative bg-white bg-opacity-30 ">
+  <div className="w-full relative bg-white bg-opacity-30 border border-red-600">
     <div className="absolute inset-0 "></div>
     {img && <img src={img} alt="feature" className="w-full h-full " />}
     {text && (
-      <p className="text-black mt-4 text-center font-semibold">{text}</p>
+      <p className="text-black mt-4 text-center font-semibold text-2xl">
+        {text}
+      </p>
     )}
   </div>
 );
@@ -87,25 +91,23 @@ export default function ExplainYourD() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="mx-auto flex max-w-5xl flex-col-reverse items-center gap-6 bg-white px-4 py-12 md:flex-row md:gap-12 md:px-8 ">
+    <section className="mx-auto flex max-w-5xl flex-col-reverse items-center gap-6 bg-white px-4 py-12 md:flex-row md:gap-12 md:px-8 b ">
       <AnimatePresence mode="wait">
         {FEATURES.map((tab, index) => {
-          return selected === index ? (
+          return (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: selected === index ? 1 : 0, y: 0 }}
               exit={{ opacity: 0, y: 10 }}
               key={index}
-              className="w-full"
+              className={`w-full ${selected === index ? '' : 'hidden'}`}
             >
               <tab.Feature />
             </motion.div>
-          ) : undefined;
+          );
         })}
       </AnimatePresence>
       <Tabs selected={selected} setSelected={setSelected} />
-
     </section>
-    
   );
 }

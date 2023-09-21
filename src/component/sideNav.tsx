@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 interface NavProps {
   isOpen: boolean;
@@ -9,6 +10,8 @@ interface NavProps {
 
 interface NavLinkProps {
   text: string;
+  to: string;
+  onClick?: () => void;
 }
 
 const navVariants = {
@@ -44,8 +47,8 @@ const navLinkVariants = {
   closed: { x: 25 },
 };
 
-const NavLink: React.FC<NavLinkProps> = ({ text }) => (
-  <motion.a
+const NavLink: React.FC<NavLinkProps> = ({ text, to, onClick }) => (
+  <motion.div
     className="inline-block z-10 text-slate-800 w-fit font-black text-7xl hover:text-yellow-500 transition-colors"
     variants={navLinkVariants}
     transition={{
@@ -57,11 +60,19 @@ const NavLink: React.FC<NavLinkProps> = ({ text }) => (
       rotate: "-7.5deg",
     }}
     rel="nofollow"
-    href="#"
   >
-    {text}
-  </motion.a>
+    <Link to={to} className="no-underline" onClick={onClick}>
+      {text}
+    </Link>
+  </motion.div>
 );
+const links = [
+  { text: "Home", to: "/" },
+  { text: "Products", to: "/Products" },
+  { text: "Our Team", to: "/OurTeam" },
+  { text: "Mission", to: "/Mission" },
+  { text: "Contact Us", to: "/ContactUs" },
+];
 
 const Nav: React.FC<NavProps> = ({ isOpen, setIsOpen }) => (
   <motion.nav
@@ -84,8 +95,13 @@ const Nav: React.FC<NavProps> = ({ isOpen, setIsOpen }) => (
       variants={linkWrapperVariants}
       className="flex flex-col gap-4 absolute bottom-8 left-8"
     >
-      {["Home", "Products", "Our Team", "Mission"].map((text) => (
-        <NavLink key={text} text={text} />
+      {links.map((link) => (
+        <NavLink
+          key={link.text}
+          text={link.text}
+          to={link.to}
+          onClick={() => setIsOpen(false)}
+        />
       ))}
     </motion.div>
   </motion.nav>
