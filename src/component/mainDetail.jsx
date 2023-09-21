@@ -4,52 +4,34 @@ import FastAuth from "../assets/img/fastAuth.png";
 
 export default function MainDetail() {
   return (
-    <div className="mx-80 backdrop-blur-sm">
-      <div className="grid grid-cols-8 my-48">
-        <img
-          src={FastAuth}
-          alt=""
-          className="   w-[600px] col-span-5 mx-auto "
-        />
-
-        <div className="items-center justify-center flex w-full flex-col col-span-3">
-          <div className=" text-4xl font-bold w-full text-start">
+    <div className="w-3/5 mx-auto flex flex-col gap-60 h-screen mt-60">
+      <div className="grid grid-cols-12 w-full backdrop-blur-sm justify-center items-center">
+        <img src={FastAuth} alt="" className=" col-span-5" />
+        <div className="w-full flex flex-col col-span-7 px-10">
+          <div className="  uppercase flex w-full text-start text-4xl font-bold mb-10">
             YourD Pass & SaaS
           </div>
-
-          <div className=" text-xl">
-            DID 기반의 인증 프로토콜로 GDPR 준수 분석, fast auth, 데이터 판매,
-            타겟 광고 등 다양한 서비스를 통해 기업들은 개인 데이터 유출 없이
-            효율적인 서비스를 제공할 수 있습니다.
+          <div className="text-xl">
+            DID-based Authentication Protocol: GDPR Compliance Analysis, Easy
+            Login, Data Sale, and Targeted Advertising, among other services,
+            enable companies to provide efficient services without compromising
+            personal data.
           </div>
         </div>
       </div>
-      <div className="    grid grid-cols-8 my-48">
-        <div className="   flex items-center justify-center col-span-3  ">
-          <div className=" flex flex-col">
-            <div className=" text-4xl font-bold ">Data Selling</div>
-            <div className=" text-xl ">
-              데이터 소유권 확립으로 인해 유저들은 스스로 데이터를 통제하고 사고
-              팔 수 있습니다.
-            </div>
+      <div className="grid grid-cols-12 w-full backdrop-blur-sm justify-center items-center">
+        <div className="w-full flex flex-col col-span-7 px-10">
+          <div className="  uppercase flex w-full text-start text-4xl font-bold mb-10">
+            Data Selling
+          </div>
+          <div className="text-xl">
+            Using a DID-based authentication protocol, companies can offer
+            efficient services through various offerings such as GDPR compliance
+            analysis, fast authentication, data selling, targeted advertising,
+            and more, all without the risk of personal data leakage.
           </div>
         </div>
-
-        <img
-          src={DataPass}
-          alt=""
-          className="   w-[600px] col-span-5 mx-auto"
-        />
-      </div>
-      <div className="   grid grid-cols-8 my-48">
-        <img
-          src={DataSelling}
-          alt=""
-          className="  mx-auto w-[600px] col-span-5"
-        />
-        <div className=" flex items-center justify-center col-span-3 text-4xl font-bold">
-          Data Selling
-        </div>
+        <img src={DataSelling} alt="" className=" col-span-5" />
       </div>
       <div className=" items-center flex justify-center flex-col pt-48 mb-48">
         <div className=" uppercase text-5xl">global standard</div>
