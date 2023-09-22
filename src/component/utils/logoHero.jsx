@@ -39,7 +39,7 @@ const LogoHero = ({ text1, subText1 }) => {
                 {text1}
               </h1>
               <p className="text-center max-w-xl my-6 w-full">{subText1}</p>
-              <ButtonWrapper />
+              { isVisible4 && <ButtonWrapper />}
           </section>
         </div>
       </div>

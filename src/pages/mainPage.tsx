@@ -3,10 +3,11 @@ import Footer from "../component/footer";
 import LogoHero from "../component/utils/logoHero";
 import BlogCard from "../component/blogCard";
 import MainDetail from "../component/mainDetail";
-import ScrollCircle from "../component/scrollCircle";
+import ScrollProgressBar from '../component/scrollProgressBar';
 export default function MainPage() {
   return (
     <>
+    
       <Describe1
         title1={"Ignite"}
         title2={"Data Ownership"}
@@ -27,6 +28,7 @@ export default function MainPage() {
       />
 
       <Footer />
+      <ScrollProgressBar/>
     </>
   );
 }
