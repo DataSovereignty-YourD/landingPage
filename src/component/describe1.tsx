@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import { useIsVisible } from "../hooks/view";
-
+import { useEffect, useRef, useState } from 'react';
+import { useIsVisible } from '../hooks/view';
+import { motion } from 'framer-motion';
 interface DescribeProps {
   title1: string;
   title2: string;
@@ -25,7 +25,7 @@ export default function Describe1({
   const isVisible3 = useIsVisible(ref3);
 
   const splitWord1 = (text: string) => {
-    const word = "data sovereignty and privacy";
+    const word = 'data sovereignty and privacy';
     const parts = text.split(word);
     return (
       <>
@@ -36,17 +36,17 @@ export default function Describe1({
     );
   };
 
-  const splitWord2 = (text:string) => {
-    const word = "novel authentication protocol and infrastructure";
+  const splitWord2 = (text: string) => {
+    const word = 'novel authentication protocol and infrastructure';
     const parts = text.split(word);
     return (
       <>
-      {parts[0]}
+        {parts[0]}
         <span className="text-[#fccc00]">{word}</span>
         {parts[1]}
       </>
-    )
-  }
+    );
+  };
 
   return (
     <>
@@ -60,8 +60,8 @@ export default function Describe1({
           <div
             className={`fixed flex flex-col top-[45%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
               isVisible1
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-4'
             }`}
           >
             <div className="flex first-line:">
@@ -83,8 +83,8 @@ export default function Describe1({
           <div
             className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible2
-                ? "opacity-100 -translate-y-1/2"
-                : "opacity-0 translate-y-0"
+                ? 'opacity-100 -translate-y-1/2'
+                : 'opacity-0 translate-y-0'
             }`}
           >
             <div className="font-bold text-3xl text-black overflow-hidden">
@@ -106,8 +106,8 @@ export default function Describe1({
           <div
             className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible3
-                ? "opacity-100 -translate-y-1/2"
-                : "opacity-0 translate-y-0"
+                ? 'opacity-100 -translate-y-1/2'
+                : 'opacity-0 translate-y-0'
             }`}
           >
             <div className="font-bold text-3xl text-black overflow-hidden">
