@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useIsVisible } from '../hooks/view';
 import { motion } from 'framer-motion';
+import '../assets/css/describe1.css';
 interface DescribeProps {
   title1: string;
   title2: string;
@@ -65,10 +66,11 @@ export default function Describe1({
             }`}
           >
             <div className="flex first-line:">
-              <div className="font-bold text-6xl bg-clip-text text-transparent overflow-visible pb-1 bg-gradient-to-r from-red-500 to-[#fccc00]">
+              <div className="font-bold text-6xl overflow-visible pb-1 gradientText">
                 {title1}&nbsp;{title2}
               </div>
             </div>
+
             <div className="font-medium text-2xl">{subText1}</div>
           </div>
         </div>

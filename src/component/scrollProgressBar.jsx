@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import 'tailwindcss/tailwind.css';
+import { throttle } from 'lodash';
 
 const ScrollProgressBar = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -14,14 +15,18 @@ const ScrollProgressBar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const throttledHandleScroll = throttle(handleScroll, 100);
+    window.addEventListener('scroll', throttledHandleScroll);
+    return () => window.removeEventListener('scroll', throttledHandleScroll);
   }, []);
 
   return (
     <div className="fixed top-0 right-0 p-4">
-      <div className="w-16 h-16">
-        <CircularProgressbar value={scrollPercentage} text={`${Math.round(scrollPercentage)}%`} />
+      <div className="w-20 h-20">
+        <CircularProgressbar
+          value={scrollPercentage}
+          text={'scroll'}
+        />
       </div>
     </div>
   );
