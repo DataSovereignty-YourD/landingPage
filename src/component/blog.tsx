@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import img from "../../src/assets/img/dataPass.png";
 import Footer from "./footer";
@@ -22,10 +22,12 @@ function Blog() {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
 
+  const allNewsRef = useRef<HTMLDivElement>(null);
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+    // 페이지 번호를 클릭할 때 "All News" 섹션으로 스크롤 이동
+    allNewsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
   useEffect(() => {
     let sortedData = [...fetchData];
     if (sortType === "latest") {
@@ -39,35 +41,39 @@ function Blog() {
     setData(sortedData);
   }, [sortType]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="pt-24  mx-32  min-h-screen flex flex-col">
-      <div className="flex flex-grow rounded-3xl items-start mb-80 shadow-2xl bg-white justify-start z-10">
-        <div className="   flex flex-col mx-24">
-          <div className="  text-4xl font-bold text-black mt-12 mb-4pt-12">
+    <div className=" flex flex-col pt-16 bg-transparent lg:pt-24 lg:mx-32 lg:min-h-screen ">
+      <div className=" flex flex-grow justify-start z-10 rounded-3xl items-start mb-24 lg:mb-80 lg:shadow-2xl lg:bg-white ">
+        <div className=" flex flex-col mx-8 lg:mx-24">
+          <div className=" text-xl lg:text-4xl font-bold text-black mt-3 lg:mt-12 mb-4pt-12">
             Your
-            <span className="  text-yellow-300 items-center justify-center ">
+            <span className=" text-yellow-300 text-3xl lg:text-5xl items-center justify-center ">
               D
-            </span>{" "}
-            News
-            <div className="border-b-2 mt-2 border-yellow-400 border-width-"></div>
+            </span>
+            &nbsp;News
+            <div className="  border-b-2 lg:mt-2 border-yellow-400 border-width-"></div>
           </div>
 
-          <div className="  text-2xl font-bold text-black mt-12 mb-2 uppercase">
+          <div className="    text-md lg:text-2xl font-bold text-black mt-3 lg:mt-12 mb-1 lg:mb-2 uppercase">
             Recent News
           </div>
-          <div className="   grid  grid-cols-12 gap-10">
-            <div className=" items-center justify-start flex col-span-5 rounded-xl">
+          <div className=" gap-2 grid grid-rows-12 lg:grid-cols-12 bg-white p-2 rounded-md lg:gap-10">
+            <div className=" items-center justify-start flex row-span-2 lg:col-span-5 rounded-xl">
               <img
                 src={img}
                 alt="Latest News"
-                className="   border border-black rounded-xl shadow-xl "
+                className="  border  rounded-xl shadow-xl "
               />
             </div>
-            <div className=" flex flex-col gap-2 items-start justify-start  col-span-7">
-              <div className="text-md font-bold">
+            <div className="   backdrop-blur-lg flex flex-col gap-2 items-start justify-start row-span-10 h-32 lg:h-full lg:col-span-7">
+              <div className="  w-full text-md font-bold">
                 YourD: Realizing Data Sovereignty in Web3.0
               </div>
-              <div className=" ">
+              <div className=" text-xs lg:text-md overflow-hidden">
                 We recognize the challenges surrounding data sovereignty and
                 privacy in today's web environment. YourD was born to
                 fundamentally address these issues by introducing a new
@@ -89,61 +95,61 @@ function Blog() {
             </div>
           </div>
 
-          <div className="flex mt-32  justify-between items-center mx-4">
-            <div className="   text-3xl font-bold text-black uppercase">
+          <div
+            ref={allNewsRef}
+            className="  flex mt-8 mb-4 backdrop-blur-lg  justify-between items-center lg:mt-32 lg:mx-4"
+          >
+            <div className="   text-md mb-1 lg:text-2xl font-bold text-black uppercase">
               All News
             </div>
-            <div className="   text-xl font-normal flex-row flex gap-2">
+            <div className="  text-xs  lg:text-lg flex-row flex gap-1 lg:gap-2">
               <button
                 onClick={() => setSortType("latest")}
-                className="bg-yellow-300 font-bold border border-black rounded-md px-2"
+                className="  hover:bg-yellow-300 font-normal border border-black rounded-md px-1 lg:px-2"
               >
                 Latest
               </button>
               <button
                 onClick={() => setSortType("popular")}
-                className="bg-yellow-300 font-bold border border-black rounded-md px-2"
+                className="  hover:bg-yellow-300 font-normal border border-black rounded-md px-1 lg:px-2"
               >
                 Popular
               </button>
-              <div className=" bg-yellow-300 font-bold border border-black rounded-md px-2">
-                Category ↓
-              </div>
             </div>
           </div>
 
-          <div className="gap-14 grid grid-cols-3 mx-2 ">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-lg gap-8 lg:gap-6 lg:mx-2 ">
             {currentPosts.map((post) => (
-              <div key={post.id} className="col-span-1 my-12 rounded-2xl">
-                <div className="transform translate-y-2 translate-x-3  font-bold absolute text-xl">
+              <div
+                key={post.id}
+                className="  col-span-1 lg:my-6 rounded-2xl   bg-white shadow-md"
+              >
+                <div className="  transform translate-y-2 translate-x-3  font-bold absolute text-xs lg:text-xl">
                   Your
-                  <span className="text-yellow-300 text-2xl  items-center justify-center">
+                  <span className="  text-yellow-300 lg:text-2xl  items-center justify-center">
                     D
                   </span>
                 </div>
-                <img
-                  src={img}
-                  alt=""
-                  className="border border-yellow-700 shadow-xl rounded-xl"
-                />
-                <div className="px-2 mt-4 font-bold text-xl">{post.title}</div>
-                <div className="px-2 w-full">{`"${post.description}"`}</div>
-                <div className="flex justify-between mt-2 mx-2">
-                  <div className="bg-yellow-100 text-black rounded-xl px-2">{`👍 ${post.visited}`}</div>
-                  <div className="font-semibold bg-yellow-100 rounded-lg px-2">
+                <img src={img} alt="" className="  shadow-sm lg:shadow-xl  " />
+                <div className="  flex justify-between  lg:mt-2  lg:mx-2">
+                  <div className="  font-regular text-[1px] text-gray-500 rounded-lg px-2">
                     {post.date}
                   </div>
                 </div>
+                <div className="  lg:px-2 lg:mt-4 mt-2 text-xs font-bold px-1 lg:text-xl">
+                  {post.title}
+                </div>
+                <div className="  text-[5px] lg:px-2 overflow-hidden  h-8 px-1 w-full">{`"${post.description}"`}</div>
               </div>
             ))}
           </div>
-          <div className="flex justify-center items-center mt-24 mb-32">
+          <div className="  flex justify-center items-center my-12 lg:my-24">
             {Array.from({ length: totalPages }, (_, index) => (
               <button
                 key={index}
                 onClick={() => handlePageChange(index + 1)}
                 className={`mx-1 p-1  ${
-                  currentPage === index + 1 ? "text-blue-500" : "text-black"
+                  currentPage === index + 1 ? "text-yellow-500" : "text-black"
                 }`}
               >
                 {index + 1}
