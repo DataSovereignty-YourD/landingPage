@@ -117,7 +117,7 @@ const SideNav = () => {
           whileHover={{ rotate: "180deg" }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(true)}
-          className="text-3xl bg-white text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
+          className="text-3xl backdrop-blur-sm bg-white/10 text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
         >
           <FiMenu size={24} className="" />
         </motion.button>

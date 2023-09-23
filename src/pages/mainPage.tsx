@@ -4,6 +4,7 @@ import LogoHero from "../component/utils/logoHero";
 import BlogCard from "../component/blogCard";
 import MainDetail from "../component/mainDetail";
 import ScrollProgressBar from '../component/scrollProgressBar';
+import GlobalStandard from "./globalStandard";
 export default function MainPage() {
   return (
     <>
@@ -21,10 +22,10 @@ export default function MainPage() {
       />
       
       <MainDetail />
+      <GlobalStandard/>
       <BlogCard />
       <LogoHero
         text1="The easiest way to control your Data"
-        subText1="yourd에 관한 요약 설명내용"
       />
 
       <Footer />
