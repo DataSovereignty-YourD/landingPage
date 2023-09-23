@@ -39,8 +39,8 @@ export default function Describe1({
   function ScrollComponent() {
     return (
       <div className="text-center text-[rgba(122,122,124,0.918)] font-bold uppercase pt-8 ">
-        <div className="mx-auto w-8 h-16 border-4 border-gray-300 rounded-full flex mt-2.5">
-          <span className="m-auto block w-4 h-4 rounded-full bg-gray-300"></span>
+        <div className="mx-auto w-8 h-14 border-4 border-gray-300 rounded-full flex mt-2.5">
+          <span className="m-auto block w-4 h-4 rounded-full bg-gray-400 animate-bounce"></span>
         </div>
         <span className="text-xs">Scroll</span>
       </div>
