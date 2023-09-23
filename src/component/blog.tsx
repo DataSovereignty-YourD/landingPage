@@ -46,34 +46,32 @@ function Blog() {
   }, []);
 
   return (
-    <div className=" flex flex-col pt-16 bg-transparent lg:pt-24 lg:mx-32 lg:min-h-screen ">
-      <div className=" flex flex-grow justify-start z-10 rounded-3xl items-start mb-24 lg:mb-80 lg:shadow-2xl lg:bg-white ">
-        <div className=" flex flex-col mx-8 lg:mx-24">
-          <div className=" text-xl lg:text-4xl font-bold text-black mt-3 lg:mt-12 mb-4pt-12">
+    <div className=" flex flex-col pt-16 bg-transparent lg:pt-24  w-full sm:w-4/5 sm:mx-auto lg:min-h-screen font-sf-pro-text">
+      <div className=" flex flex-grow justify-start z-10 rounded-sm items-start mb-24 px-4 sm:px-0 lg:mb-80 lg:bg-white w-full ">
+        <div className=" flex flex-col bg-white w-full">
+          <div className=" text-xl lg:text-4xl  font-bold text-black mt-8 lg:mt-12 mb-4">
             Your
-            <span className=" text-yellow-300 text-3xl lg:text-5xl items-center justify-center ">
+            <span className=" text-[#fccc00] text-3xl lg:text-5xl items-center justify-center ">
               D
             </span>
             &nbsp;News
-            <div className="  border-b-2 lg:mt-2 border-yellow-400 border-width-"></div>
+            <div className="  border-b-2 lg:mt-2 border-[#fccc00] border-width-"></div>
           </div>
-
           <div className="    text-md lg:text-2xl font-bold text-black mt-3 lg:mt-12 mb-1 lg:mb-2 uppercase">
             Recent News
           </div>
-          <div className=" gap-2 grid grid-rows-12 lg:grid-cols-12 bg-white p-2 rounded-md lg:gap-10">
-            <div className=" items-center justify-start flex row-span-2 lg:col-span-5 rounded-xl">
-              <img
-                src={img}
-                alt="Latest News"
-                className="  border  rounded-xl shadow-xl "
-              />
-            </div>
-            <div className="   backdrop-blur-lg flex flex-col gap-2 items-start justify-start row-span-10 h-32 lg:h-full lg:col-span-7">
-              <div className="  w-full text-md font-bold">
+          <div className=" gap-2 sm:grid sm:grid-cols-12 rounded-sm lg:gap-10 w-full sm:h-60">
+            <img
+              src={img}
+              alt="Latest News"
+              className=" rounded-sm object-contain w-full h-60  sm:col-span-5 duration-300 hover:scale-105"
+            />
+            <div className="w-full backdrop-blur-lg flex flex-col gap-2 items-start justify-start h-60 sm:col-span-7">
+              <div className="text-sm sm:text-lg font-medium">2023. 09. 23</div>
+              <div className="  w-full text-lg sm:text-xl font-bold">
                 YourD: Realizing Data Sovereignty in Web3.0
               </div>
-              <div className=" text-xs lg:text-md overflow-hidden">
+              <div className=" text-sm lg:text-lg text-gray-600 text-ellipsis overflow-hidden whitespace-normal">
                 We recognize the challenges surrounding data sovereignty and
                 privacy in today's web environment. YourD was born to
                 fundamentally address these issues by introducing a new
@@ -97,7 +95,7 @@ function Blog() {
 
           <div
             ref={allNewsRef}
-            className="  flex mt-8 mb-4 backdrop-blur-lg  justify-between items-center lg:mt-32 lg:mx-4"
+            className="  flex mt-8 mb-4 backdrop-blur-lg  justify-between items-center lg:mt-32"
           >
             <div className="   text-md mb-1 lg:text-2xl font-bold text-black uppercase">
               All News
@@ -105,41 +103,39 @@ function Blog() {
             <div className="  text-xs  lg:text-lg flex-row flex gap-1 lg:gap-2">
               <button
                 onClick={() => setSortType("latest")}
-                className="  hover:bg-yellow-300 font-normal border border-black rounded-md px-1 lg:px-2"
+                className="  hover:bg-yellow-300 font-normal border border-black rounded-sm px-1 lg:px-2"
               >
                 Latest
               </button>
               <button
                 onClick={() => setSortType("popular")}
-                className="  hover:bg-yellow-300 font-normal border border-black rounded-md px-1 lg:px-2"
+                className="  hover:bg-yellow-300 font-normal border border-black rounded-sm px-1 lg:px-2"
               >
                 Popular
               </button>
             </div>
           </div>
 
-          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-lg gap-8 lg:gap-6 lg:mx-2 ">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-lg gap-8 lg:gap-6 ">
             {currentPosts.map((post) => (
               <div
                 key={post.id}
-                className="  col-span-1 lg:my-6 rounded-2xl   bg-white shadow-md"
+                className="col-span-1 lg:my-6 rounded-sm   bg-white "
               >
-                <div className="  transform translate-y-2 translate-x-3  font-bold absolute text-xs lg:text-xl">
+                <div className="transform translate-y-2  font-bold absolute text-xs lg:text-xl">
                   Your
-                  <span className="  text-yellow-300 lg:text-2xl  items-center justify-center">
+                  <span className="text-[#fccc00] lg:text-2xl  items-center justify-center">
                     D
                   </span>
                 </div>
-                <img src={img} alt="" className="  shadow-sm lg:shadow-xl  " />
-                <div className="  flex justify-between  lg:mt-2  lg:mx-2">
-                  <div className="  font-regular text-[1px] text-gray-500 rounded-lg px-2">
-                    {post.date}
-                  </div>
+                <img src={img} alt="" className="object-contain duration-300 hover:scale-105" />
+                <div className="font-regular text-sm text-gray-500 rounded-sm">
+                  {post.date}
                 </div>
-                <div className="  lg:px-2 lg:mt-4 mt-2 text-xs font-bold px-1 lg:text-xl">
+                <div className="lg:mt-4 my-2 text-lg sm:text-xl font-bold lg:text-xl">
                   {post.title}
                 </div>
-                <div className="  text-[5px] lg:px-2 overflow-hidden  h-8 px-1 w-full">{`"${post.description}"`}</div>
+                <div className="text-sm sm:text-lg text-gray-600 h-10 sm:h-16 w-full text-ellipsis overflow-hidden">{`"${post.description}"`}</div>
               </div>
             ))}
           </div>
@@ -171,7 +167,7 @@ const fetchData: MyDataType[] = [
     id: 1,
     title: "Just feels right",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
+      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.asdflkjasldfasjflkasdjl;fjasldjfasjd;fjadskkfasjdlfjksajf;ljas;djfkajsdklfjklasdjfljasdjfdasfjasdfsaklfjaldsk;f",
     date: "sep. 20. 2023",
     visited: 35,
   },
