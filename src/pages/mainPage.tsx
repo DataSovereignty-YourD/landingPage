@@ -3,7 +3,6 @@ import Footer from "../component/footer";
 import LogoHero from "../component/utils/logoHero";
 import BlogCard from "../component/blogCard";
 import MainDetail from "../component/mainDetail";
-import ScrollProgressBar from "../component/scrollProgressBar";
 import GlobalStandard from "./globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
@@ -26,7 +25,7 @@ export default function MainPage() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-2.5 bg-[#fccc00] origin-left z-10"
+        className="fixed top-0 left-0 right-0 h-1 bg-[#fccc00] origin-left z-50"
         animate={controls}
       ></motion.div>
       <Describe1
