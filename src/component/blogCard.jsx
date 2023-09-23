@@ -41,7 +41,7 @@ const BlogCard = () => {
   };
 
   return (
-    <section className="bg-white backdrop-blur-sm mt-20 " ref={ref}>
+    <section className="bg-white backdrop-blur-sm mt-20 z-30 relative font-sf-pro-text" ref={ref}>
       <div className="relative overflow-hidden p-4">
         {/* CARDS */}
         <div className="w-full">

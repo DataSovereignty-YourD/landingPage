@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useIsVisible } from "../hooks/view";
-
+import { motion } from "framer-motion";
+import "../assets/css/describe1.css";
 interface DescribeProps {
   title1: string;
   title2: string;
@@ -62,13 +63,16 @@ export default function Describe1({
 
   return (
     <>
-      <div className="h-20 relative" />
-      <div id="container1" className="w-full h-screen text-center relative ">
+      <div className="h-20 relative " />
+      <div
+        id="container1"
+        className="w-full h-screen text-center relative font-sf-pro-text"
+      >
         <div
           id="layout1"
           className="absolute inset-0 flex justify-center items-center"
         >
-          <div id="background1" ref={ref1} className="w-full h-10 mb-10" />
+          <div id="background1" ref={ref1} className="w-full h-10 mb-[30%]" />
           <div
             className={`fixed flex flex-col top-[45%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
               isVisible1
@@ -77,7 +81,7 @@ export default function Describe1({
             }`}
           >
             <div className="flex first-line:">
-              <div className="font-bold text-6xl bg-clip-text text-transparent overflow-visible pb-1 bg-gradient-to-r from-red-500 to-[#fccc00]">
+              <div className="font-bold text-6xl overflow-visible pb-1 gradientText ">
                 {title1}&nbsp;{title2}
               </div>
             </div>

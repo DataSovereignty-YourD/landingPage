@@ -12,9 +12,8 @@ const RoundedSlideButton = () => {
   return (
     <button
       className={`
-        relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[1px] 
-        border-yellow-300 bg-yellow-200 px-2 py-2 font-semibold
-        uppercase text-black transition-all duration-500
+        relative z-0 flex items-center gap-2 overflow-hidden rounded-sm border-black border-[1px]
+        px-2 py-2 font-semibold uppercase text-black transition-all duration-500
         text-xs 
         
         before:absolute before:inset-0
@@ -29,7 +28,6 @@ const RoundedSlideButton = () => {
         hover:before:translate-y-[0%]
         active:scale-95`}
     >
-      <FiLogIn />
       <span>Contact us</span>
     </button>
   );
