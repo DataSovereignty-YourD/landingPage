@@ -36,11 +36,14 @@ export default function Describe1({
       </>
     );
   };
+
   function ScrollComponent() {
     return (
       <div className="text-center text-[rgba(122,122,124,0.918)] font-bold uppercase pt-8 ">
+
         <div className="mx-auto w-8 h-14 border-4 border-gray-300 rounded-full flex mt-2.5">
           <span className="m-auto block w-4 h-4 rounded-full bg-gray-400 animate-bounce"></span>
+
         </div>
         <span className="text-xs">Scroll</span>
       </div>
@@ -85,10 +88,16 @@ export default function Describe1({
             </div>
 
             <div className="font-medium text-2xl">{subText1}</div>
-            <div className=" transform translate-y-60 bottom-0">
+          </div>
+            <div 
+            className={`fixed transition-all bottom-0 duration-500 ease-in ${
+              isVisible1
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
+            }`}
+            >
               <ScrollComponent />
             </div>
-          </div>
         </div>
       </div>
       <div className="h-20 relative " />
