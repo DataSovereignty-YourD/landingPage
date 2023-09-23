@@ -49,12 +49,12 @@ export default function MainDetail() {
           <div
             key={item.id}
             ref={item.ref}
-            className={`backdrop-blur-sm grid grid-cols-12 w-full justify-center items-center transition-all duration-500 delay-100 ease-out ${
+            className={`backdrop-blur-sm grid grid-cols-12 w-full justify-center items-center transition-all duration-1000 ease-out ${
               item.isVisible
                 ? "translate-x-0"
                 : item.id % 2 === 0
-                ? "opacity-100 translate-x-52"
-                : "opacity-50 -translate-x-52"
+                ? "opacity-100 translate-x-full"
+                : "opacity-50 -translate-x-full"
             }`}
           >
             {item.id % 2 === 0 ? (
