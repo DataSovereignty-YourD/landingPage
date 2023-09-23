@@ -54,7 +54,7 @@ const BlogCard = () => {
               News
             </p>
             <Link to="/Blog" className=" hover:text-[#fccc00]">
-              See All
+              View All
             </Link>
           </div>
           <motion.div
@@ -111,7 +111,7 @@ const Card = ({ url, category, title, description }) => {
       }}
     >
       <div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/80 to-black/40 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
-        <span className="text-xs font-semibold uppercase text-violet-300">
+        <span className="text-xs font-semibold uppercase text-yellow-300">
           {category}
         </span>
         <p className="my-2 text-3xl font-bold">{title}</p>

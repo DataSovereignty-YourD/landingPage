@@ -5,7 +5,7 @@ import FastAuth from "../assets/img/fastAuth.png";
 export default function MainDetail() {
   return (
     <div className="w-3/5 mx-auto flex flex-col gap-60 h-screen mt-60">
-      <div className="grid grid-cols-12 w-full backdrop-blur-sm justify-center items-center">
+      <div className="grid grid-cols-12 w-full backdrop-blur-sm justify-center items-center ">
         <img src={FastAuth} alt="" className=" col-span-5" />
         <div className="w-full flex flex-col col-span-7 px-10">
           <div className="  uppercase flex w-full text-start text-4xl font-bold mb-10">
