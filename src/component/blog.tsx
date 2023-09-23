@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-
 import img from "../../src/assets/img/dataPass.png";
 import Footer from "./footer";
+import { fetchData } from "../test/testData";
 
-interface MyDataType {
+export interface MyDataType {
   id: number;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ interface MyDataType {
 }
 
 function Blog() {
-  const [data, setData] = useState<MyDataType[]>([]);
+  const [data, setData] = useState<MyDataType[]>(fetchData);
   const [sortType, setSortType] = useState("latest");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 9;
@@ -29,7 +29,7 @@ function Blog() {
     allNewsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(() => {
-    let sortedData = [...fetchData];
+    let sortedData = [...data];
     if (sortType === "latest") {
       sortedData.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -128,7 +128,11 @@ function Blog() {
                     D
                   </span>
                 </div>
-                <img src={img} alt="" className="object-contain duration-300 hover:scale-105" />
+                <img
+                  src={img}
+                  alt=""
+                  className="object-contain duration-300 hover:scale-105"
+                />
                 <div className="font-regular text-sm text-gray-500 rounded-sm">
                   {post.date}
                 </div>
@@ -160,175 +164,3 @@ function Blog() {
 }
 
 export default Blog;
-
-const fetchData: MyDataType[] = [
-  // Mocked data
-  {
-    id: 1,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.asdflkjasldfasjflkasdjl;fjasldjfasjd;fjadskkfasjdlfjksajf;ljas;djfkajsdklfjklasdjfljasdjfdasfjasdfsaklfjaldsk;f",
-    date: "sep. 20. 2023",
-    visited: 35,
-  },
-  {
-    id: 2,
-    title: "Type in style",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 19. 2023",
-    visited: 55,
-  },
-  {
-    id: 3,
-    title: "Looks like a win",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 18. 2023",
-    visited: 77,
-  },
-  {
-    id: 4,
-    title: "Back feels great",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 17. 2023",
-    visited: 80,
-  },
-  {
-    id: 5,
-    title: "It's lit",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 16. 2023",
-    visited: 100,
-  },
-  {
-    id: 6,
-    title: "Stand up straight",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 15. 2023",
-    visited: 120,
-  },
-  {
-    id: 7,
-    title: "Sounds good",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 14. 2023",
-    visited: 500,
-  },
-  {
-    id: 8,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 13. 2023",
-    visited: 120,
-  },
-  {
-    id: 9,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 12. 2023",
-    visited: 160,
-  },
-  {
-    id: 10,
-    title: "Sounds good",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 14. 2023",
-    visited: 500,
-  },
-  {
-    id: 11,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 13. 2023",
-    visited: 120,
-  },
-  {
-    id: 12,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 12. 2023",
-    visited: 410,
-  },
-  {
-    id: 13,
-    title: "Sounds good",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 14. 2023",
-    visited: 104,
-  },
-  {
-    id: 14,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 13. 2023",
-    visited: 407,
-  },
-  {
-    id: 15,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 12. 2023",
-    visited: 886,
-  },
-  {
-    id: 16,
-    title: "Sounds good",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 14. 2023",
-    visited: 950,
-  },
-  {
-    id: 17,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 13. 2023",
-    visited: 1500,
-  },
-  {
-    id: 18,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 12. 2023",
-    visited: 1000,
-  },
-  {
-    id: 19,
-    title: "Sounds good",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 14. 2023",
-    visited: 800,
-  },
-  {
-    id: 20,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 13. 2023",
-    visited: 250,
-  },
-  {
-    id: 21,
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisici elit. Sequi, dolor.",
-    date: "sep. 12. 2023",
-    visited: 320,
-  },
-];

@@ -49,7 +49,7 @@ const navLinkVariants = {
 
 const NavLink: React.FC<NavLinkProps> = ({ text, to, onClick }) => (
   <motion.div
-    className="inline-block z-10 text-slate-800 w-fit font-black text-7xl hover:text-yellow-500 transition-colors"
+    className="inline-block z-10 text-slate-800 w-fit font-black text-6xl sm:text-7xl hover:text-yellow-500 transition-colors"
     variants={navLinkVariants}
     transition={{
       type: "spring",
@@ -70,6 +70,7 @@ const links = [
   { text: "Home", to: "/" },
   { text: "Products", to: "/Products" },
   { text: "About", to: "/About" },
+  { text: "Blog", to: "/Blog" },
   { text: "Contact Us", to: "/ContactUs" },
   { text: "Docs", to: "/Docs" },
 ];
@@ -117,7 +118,7 @@ const SideNav = () => {
           whileHover={{ rotate: "180deg" }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(true)}
-          className="text-3xl backdrop-blur-sm bg-white/10 text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
+          className="text-3xl  bg-white/10 text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
         >
           <FiMenu size={24} className="" />
         </motion.button>
