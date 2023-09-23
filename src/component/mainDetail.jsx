@@ -3,7 +3,8 @@ import YourDSaaS from "../assets/img/dataPass.png";
 import FastAuth from "../assets/img/fastAuth.png";
 import { useRef } from "react";
 import { useIsVisible } from "../hooks/view";
-
+import OutlineButton from "./utils/buttons/outlineButton";
+import { Link } from 'react-router-dom';
 export default function MainDetail() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -70,13 +71,17 @@ export default function MainDetail() {
               <span className="  uppercase flex w-full text-start text-4xl font-bold mb-10">
                 {item.name}
               </span>
-              <span className="text-xl ">{item.description}</span>
+              <span className="text-xl ">{item.description} </span>
+              <Link to={'/Product'} className="mt-5">
+                <OutlineButton />
+              </Link>
             </div>
             {item.id % 2 === 1 ? (
               <img src={item.image} alt="" className=" col-span-5" />
             ) : (
               <></>
             )}
+            
           </div>
         );
       })}
