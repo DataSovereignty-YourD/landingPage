@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Footer from "./footer";
 
 const BASE_TRANSITION = { ease: "anticipate", duration: 0.75 };
@@ -44,9 +44,6 @@ const Form = ({ selected, setSelected }) => {
     }
     console.log("Message:", messageRef.current?.value);
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <form
       onSubmit={(e) => {
