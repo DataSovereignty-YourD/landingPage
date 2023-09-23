@@ -9,6 +9,7 @@ import AnimationReal from "./Appppp";
 import ContactUs from "./component/contactUs";
 import Footer from "./component/footer";
 import Blog from "./component/blog";
+import AboutPage from "./pages/aboutPage";
 function App() {
   return (
     <React.Fragment>
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/Business" element={<BusinessPage />} />
+        <Route path="/About" element={<AboutPage/>}/>
         <Route path="/Explain" element={<ExplainYourD />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Blog" element={<Blog />} />

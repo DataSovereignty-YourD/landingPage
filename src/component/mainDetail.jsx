@@ -66,7 +66,7 @@ export default function MainDetail() {
             ) : (
               <></>
             )}
-            <div className="w-full flex flex-col col-span-7 px-10">
+            <div className="w-full flex flex-col col-span-7">
               <span className="  uppercase flex w-full text-start text-4xl font-bold mb-10">
                 {item.name}
               </span>

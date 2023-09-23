@@ -11,7 +11,7 @@ import RoundedButton from "./utils/roundedButton";
 export default function TopBar() {
 
   return (
-    <div className=" bg-opacity-60 bg-transparent w-full flex justify-between fixed px-[15%] py-3 z-50">
+    <div className="bg-transparent w-full flex justify-between px-[10%] fixed  py-3 z-50">
       <Link to="/">
         <img src={logo} alt="logo" className="flex items-center w-16" />
       </Link>

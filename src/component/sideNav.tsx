@@ -69,9 +69,9 @@ const NavLink: React.FC<NavLinkProps> = ({ text, to, onClick }) => (
 const links = [
   { text: "Home", to: "/" },
   { text: "Products", to: "/Products" },
-  { text: "Our Team", to: "/OurTeam" },
-  { text: "Mission", to: "/Mission" },
+  { text: "About", to: "/About" },
   { text: "Contact Us", to: "/ContactUs" },
+  { text: "Docs", to: "/Docs" },
 ];
 
 const Nav: React.FC<NavProps> = ({ isOpen, setIsOpen }) => (
