@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
 
 const WetButton = () => {
   return (
-    <Link to="/Explain" className="group relative rounded bg-yellow-400 px-4 py-2.5 font-semibold text-black transition-colors hover:bg-yellow-500">
+    <div className="group relative rounded bg-yellow-400 px-4 py-2.5 font-semibold text-black transition-colors hover:bg-yellow-500">
       Discover YourD
       <Drip left="10%" height={24} delay={0.5} />
       <Drip left="30%" height={20} delay={3} />
       <Drip left="57%" height={10} delay={4.25} />
       <Drip left="85%" height={16} delay={1.5} />
-    </Link>
+    </div>
   );
 };
 
