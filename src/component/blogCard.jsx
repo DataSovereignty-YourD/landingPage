@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import { Link } from "react-router-dom";
+import { fetchData } from "../test/testData";
+import img from "../../src/assets/img/dataPass.png";
 
 const CARD_WIDTH = 350;
 const CARD_HEIGHT = 350;
@@ -17,6 +19,7 @@ const BREAKPOINTS = {
 const BlogCard = () => {
   const [ref, { width }] = useMeasure();
   const [offset, setOffset] = useState(0);
+  const displayData = fetchData.slice(0, 10);
 
   const CARD_BUFFER =
     width > BREAKPOINTS.lg ? 3 : width > BREAKPOINTS.sm ? 2 : 1;
@@ -24,7 +27,7 @@ const BlogCard = () => {
   const CAN_SHIFT_LEFT = offset < 0;
 
   const CAN_SHIFT_RIGHT =
-    Math.abs(offset) < CARD_SIZE * (items.length - CARD_BUFFER);
+    Math.abs(offset) < CARD_SIZE * (displayData.length - CARD_BUFFER);
 
   const shiftLeft = () => {
     if (!CAN_SHIFT_LEFT) {
@@ -41,29 +44,35 @@ const BlogCard = () => {
   };
 
   return (
-    <section className="bg-white backdrop-blur-sm mt-20 z-30 relative font-sf-pro-text" ref={ref}>
-      <div className="relative overflow-hidden p-4">
+    <section
+      className="bg-white backdrop-blur-sm mt-20 z-30  relative font-sf-pro-text"
+      ref={ref}
+    >
+      <div className="w-full relative overflow-hidden p-4">
         {/* CARDS */}
-        <div className="w-full">
-          <div className="flex justify-between items-center ">
-            <p className="mb-6 text-2xl font-semibold">
+        <div className=" w-full">
+          <div className=" flex justify-between items-center ">
+            <p className=" mb-6 text-2xl font-semibold">
               Your
-              <span className="text-yellow-300 font-bold text-3xl itmes-center justify-center ">
+              <span className=" text-yellow-300 font-bold text-3xl itmes-center justify-center ">
                 D
               </span>{" "}
               News
             </p>
-            <Link to="/Blog" className=" hover:text-[#fccc00]">
-              See All
+            <Link
+              to="/Blog"
+              className=" font-bold border p-1 rounded-md border-black hover:bg-[#fccc00]"
+            >
+              View All
             </Link>
           </div>
           <motion.div
             animate={{
               x: offset,
             }}
-            className="flex"
+            className=" flex"
           >
-            {items.map((item) => {
+            {displayData.map((item) => {
               return <Card key={item.id} {...item} />;
             })}
           </motion.div>
@@ -76,7 +85,7 @@ const BlogCard = () => {
             animate={{
               x: CAN_SHIFT_LEFT ? "0%" : "-100%",
             }}
-            className="absolute left-0 top-[50%] z-30 rounded-r-xl bg-slate-100/30 p-3 pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3"
+            className=" absolute left-0 top-[50%] z-30 rounded-r-xl border border-black bg-slate-300/30 p-3 pl-2 text-4xl text-black backdrop-blur-sm transition-[padding] hover:pl-3"
             onClick={shiftLeft}
           >
             <FiChevronLeft />
@@ -86,7 +95,7 @@ const BlogCard = () => {
             animate={{
               x: CAN_SHIFT_RIGHT ? "0%" : "100%",
             }}
-            className="absolute right-0 top-[50%] z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
+            className=" absolute right-0 top-[50%] z-30 rounded-l-xl border border-black bg-slate-300/30 p-3 pr-2 text-4xl text-black backdrop-blur-sm transition-[padding] hover:pr-3"
             onClick={shiftRight}
           >
             <FiChevronRight />
@@ -100,7 +109,7 @@ const BlogCard = () => {
 const Card = ({ url, category, title, description }) => {
   return (
     <div
-      className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
+      className=" relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
       style={{
         width: CARD_WIDTH,
         height: CARD_HEIGHT,
@@ -110,74 +119,21 @@ const Card = ({ url, category, title, description }) => {
         backgroundSize: "cover",
       }}
     >
-      <div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/80 to-black/40 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
-        <span className="text-xs font-semibold uppercase text-violet-300">
-          {category}
-        </span>
-        <p className="my-2 text-3xl font-bold">{title}</p>
-        <p className="text-lg text-slate-300">{description}</p>
+      <div className=" absolute inset-0 z-20 rounded-2xl  text-black transition-[backdrop-filter] hover:backdrop-blur-sm">
+        <div className=" w-full h-[200px] ">
+          <img
+            src={img}
+            alt=""
+            className=" object-cover h-full w-full bg-white"
+          />
+        </div>
+        <div className="px-6 bg-gradient-to-b from-gray-300 py-2 via-yellow/80 to-yellow/50 ">
+          <p className="  text-3xl font-bold">{title}</p>
+          <p className=" text-[18px] text-balck">{description}</p>
+        </div>
       </div>
     </div>
   );
 };
 
 export default BlogCard;
-
-const items = [
-  {
-    id: 1,
-    url: "/imgs/computer/mouse.png",
-    category: "Mice",
-    title: "Just feels right",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-  {
-    id: 2,
-    url: "/imgs/computer/keyboard.png",
-    category: "Keyboards",
-    title: "Type in style",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-  {
-    id: 3,
-    url: "/imgs/computer/monitor.png",
-    category: "Monitors",
-    title: "Looks like a win",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-  {
-    id: 4,
-    url: "/imgs/computer/chair.png",
-    category: "Chairs",
-    title: "Back feels great",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-  {
-    id: 5,
-    url: "/imgs/computer/lights.png",
-    category: "Lights",
-    title: "It's lit",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-  {
-    id: 6,
-    url: "/imgs/computer/desk.png",
-    category: "Desks",
-    title: "Stand up straight",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-  {
-    id: 7,
-    url: "/imgs/computer/headphones.png",
-    category: "Headphones",
-    title: "Sounds good",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
-  },
-];
