@@ -25,7 +25,7 @@ export default function MainPage() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-[#fccc00] origin-left z-50"
+        className="fixed top-0 left-0 right-0 h-1 w-screen bg-[#fccc00] origin-left z-50"
         animate={controls}
       ></motion.div>
       <Describe1
