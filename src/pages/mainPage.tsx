@@ -29,7 +29,7 @@ export default function MainPage() {
       />
 
       <Footer />
-      <ScrollProgressBar/>
+      {/* <ScrollProgressBar/> */}
     </>
   );
 }

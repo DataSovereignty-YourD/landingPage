@@ -7,7 +7,7 @@ import {
 import logo from "../assets/img/YourD-Logo-high.png";
 import SideNav from "./sideNav";
 import { Link } from "react-router-dom";
-import RoundedButton from "./utils/roundedButton";
+import RoundedButton from "./utils/buttons/roundedButton";
 export default function TopBar() {
 
   return (

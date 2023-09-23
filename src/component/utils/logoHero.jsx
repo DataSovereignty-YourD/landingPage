@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useRef} from 'react';
 import  {useIsVisible} from "../../hooks/view"
-import WetButton from './wetButton';
+import WetButton from './buttons/wetButton';
 
 const LogoHero = ({ text1 }) => {
   const ref4 = useRef(null);
