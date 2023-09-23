@@ -4,8 +4,8 @@ import Footer from './footer';
 
 const BASE_TRANSITION = { ease: 'anticipate', duration: 0.75 };
 const COMMON_CLASSES = {
-  formBgColor: 'bg-yellow-200',
-  inputBgColor: 'bg-yellow-400',
+  formBgColor: 'bg-transparent',
+  inputBgColor: 'bg-slate-100',
   placeholderColor: 'placeholder-black/70',
   transitionDuration: 'duration-[750ms]',
 };
@@ -15,8 +15,8 @@ const ContactUs = () => {
 
   return (
     <div className="flex flex-col min-h-screen pt-24">
-      <section className="flex-grow flex items-center justify-center z-[30]">
-        <div className="z-[50] w-full max-w-xl mx-auto my-auto shadow-lg flex flex-col-reverse lg:flex-row rounded-lg overflow-hidden">
+      <section className="flex-grow flex items-center justify-center z-[30] mb-24">
+        <div className="z-[50] w-full max-w-xl mx-auto my-auto backdrop-blur-sm shadow-lg flex flex-col-reverse lg:flex-row rounded-lg overflow-hidden">
           <Form selected={selected} setSelected={setSelected} />
         </div>
       </section>
@@ -36,14 +36,30 @@ const Form = ({ selected, setSelected }) => {
     company: useRef(null),
     message: useRef(null),
   };
-
   const handleSubmit = () => {
-    Object.entries(formRefs).forEach(([key, ref]) => {
-      console.log(
-        `${key.charAt(0).toUpperCase() + key.slice(1)}:`,
-        ref.current?.value
-      );
-    });
+    // formRefs 객체를 순회하여 입력된 값을 가져옵니다.
+    const formData = Object.entries(formRefs).reduce((acc, [key, ref]) => {
+      acc[key] = ref.current?.value;
+      return acc;
+    }, {});
+
+    const subject = encodeURIComponent('YourD ContactUs Submission');
+
+    let bodyContent = `Name: ${formData.firstName} ${formData.lastName}\nCountry: ${formData.country}\nEmail: ${formData.email}\n`;
+
+    if (selected === 'company') {
+      bodyContent += `Type: Company\nCompany: ${formData.company}\n`;
+    } else {
+      bodyContent += `Type: Individual\n`;
+    }
+
+    bodyContent += `Message: ${formData.message}`;
+
+    const body = encodeURIComponent(bodyContent);
+
+    const mailtoLink = `mailto:0xcatbox@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -57,7 +73,7 @@ const Form = ({ selected, setSelected }) => {
       <h3 className="text-4xl font-bold mb-6">Contact us</h3>
       {[
         {
-          label: 'Hi 👋! My name is...*',
+          label: 'Hi 👋! My name is...',
           type: 'text',
           placeholder: ['First Name', 'Last Name'],
           refs: [formRefs.firstName, formRefs.lastName],
@@ -69,9 +85,9 @@ const Form = ({ selected, setSelected }) => {
           ref: formRefs.country,
         },
         {
-          label: 'Email Address *',
+          label: 'Email Address ',
           type: 'email',
-          placeholder: 'Your Email Address',
+          placeholder: 'Email address to receive replies',
           ref: formRefs.email,
         },
       ].map((field, idx) => (
@@ -97,7 +113,7 @@ const Form = ({ selected, setSelected }) => {
             transition={BASE_TRANSITION}
             className="mb-6"
           >
-            <p className="font-semibold text-xl mb-2">by the name of...*</p>
+            <p className="font-semibold text-xl mb-2">by the name of...</p>
             <input
               type="text"
               placeholder="Your company name"
@@ -108,7 +124,7 @@ const Form = ({ selected, setSelected }) => {
         )}
       </AnimatePresence>
       <div className="mb-6">
-        <p className="font-semibold text-xl mb-2">I'd love to ask about...*</p>
+        <p className="font-semibold text-xl mb-2">I'd love to ask about...</p>
         <textarea
           ref={formRefs.message}
           placeholder="Whatever you want to ask"
@@ -119,7 +135,7 @@ const Form = ({ selected, setSelected }) => {
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
         type="submit"
-        className={`transition-colors ${COMMON_CLASSES.transitionDuration} text-lg text-center rounded-lg w-full py-3 font-semibold bg-black text-yellow-400`}
+        className={`transition-colors ${COMMON_CLASSES.transitionDuration} text-lg text-center rounded-lg w-full py-3 font-semibold bg-black text-[#fccc00]`}
       >
         Submit
       </motion.button>
@@ -150,7 +166,7 @@ const FormField = ({ label, type, placeholder, refs, inputRef }) => {
 
 const FormSelect = ({ selected, setSelected }) => {
   return (
-    <div className="border-[1px] rounded border-black overflow-hidden font-medium w-fit">
+    <div className="border-[1px] rounded border-gray-200 overflow-hidden font-medium w-fit">
       {['individual', 'company'].map((type) => (
         <SelectButton
           key={type}
@@ -167,9 +183,10 @@ const SelectButton = ({ type, selected, setSelected }) => {
   const text = type === 'individual' ? 'An individual' : 'A company';
   return (
     <button
+      type="button"
       className={`text-sm px-3 py-1.5 transition-colors ${
         COMMON_CLASSES.transitionDuration
-      } relative ${selected === type ? 'text-yellow-200' : 'text-black'}`}
+      } relative ${selected === type ? 'text-[#fccc00]' : 'text-black'}`}
       onClick={() => setSelected(type)}
     >
       <span className="relative z-10">{text}</span>
