@@ -40,7 +40,7 @@ export default function Describe1({
     return (
       <div className="text-center text-[rgba(122,122,124,0.918)] font-bold uppercase pt-8 cursor-pointer">
         <div className="mx-auto w-10 h-20 border-4 border-[rgba(122,122,124,0.918)] rounded-full flex mt-2.5">
-          <span className="m-auto block w-5 h-5 rounded-full bg-gradient-to-r from-[rgba(122,122,124,0.918)] to-[#7b7c7c] "></span>
+          <span className=" animate-bounce m-auto block w-5 h-5 rounded-full bg-gradient-to-r from-[rgba(122,122,124,0.918)] to-[#7b7c7c] "></span>
         </div>
         <span className="text-xs">Discover more</span>
       </div>
