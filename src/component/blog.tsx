@@ -27,6 +27,10 @@ function Blog() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     let sortedData = [...fetchData];
     if (sortType === "latest") {
       sortedData.sort(
@@ -43,7 +47,7 @@ function Blog() {
     <div className="pt-24  mx-32  min-h-screen flex flex-col">
       <div className="flex flex-grow rounded-3xl items-start mb-80 shadow-2xl bg-white justify-start z-10">
         <div className="   flex flex-col mx-24">
-          <div className="  text-4xl font-bold text-black mt-12 mb-4pt-12">
+          <div className="  text-4xl font-bold text-black mt-12 mb-4  pt-12">
             Your
             <span className="  text-yellow-300 items-center justify-center ">
               D
@@ -55,6 +59,7 @@ function Blog() {
           <div className="  text-2xl font-bold text-black mt-12 mb-2 uppercase">
             Recent News
           </div>
+
           <div className="   grid  grid-cols-12 gap-10">
             <div className=" items-center justify-start flex col-span-5 rounded-xl">
               <img
@@ -89,30 +94,30 @@ function Blog() {
             </div>
           </div>
 
-          <div className="flex mt-32  justify-between items-center mx-4">
+          <div className="flex mt-32  justify-between items-center ">
             <div className="   text-3xl font-bold text-black uppercase">
               All News
             </div>
             <div className="   text-xl font-normal flex-row flex gap-2">
               <button
                 onClick={() => setSortType("latest")}
-                className="bg-yellow-300 font-bold border border-black rounded-md px-2"
+                className="bg-[#fccc00] font-bold border border-black rounded-md px-2"
               >
                 Latest
               </button>
               <button
                 onClick={() => setSortType("popular")}
-                className="bg-yellow-300 font-bold border border-black rounded-md px-2"
+                className="bg-[#fccc00] font-bold border border-black rounded-md px-2"
               >
                 Popular
               </button>
-              <div className=" bg-yellow-300 font-bold border border-black rounded-md px-2">
+              <div className=" bg-[#fccc00] font-bold border border-black rounded-md px-2">
                 Category ↓
               </div>
             </div>
           </div>
 
-          <div className="gap-14 grid grid-cols-3 mx-2 ">
+          <div className="gap-14 grid grid-cols-3  ">
             {currentPosts.map((post) => (
               <div key={post.id} className="col-span-1 my-12 rounded-2xl">
                 <div className="transform translate-y-2 translate-x-3  font-bold absolute text-xl">

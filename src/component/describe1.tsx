@@ -1,12 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
-import { useIsVisible } from '../hooks/view';
-import { motion } from 'framer-motion';
-import '../assets/css/describe1.css';
+import { useEffect, useRef, useState } from "react";
+import { useIsVisible } from "../hooks/view";
+import { motion } from "framer-motion";
+import "../assets/css/describe1.css";
 interface DescribeProps {
   title1: string;
   title2: string;
   text1: string;
   subText1: string;
+
   text2: string;
 }
 export default function Describe1({
@@ -26,7 +27,7 @@ export default function Describe1({
   const isVisible3 = useIsVisible(ref3);
 
   const splitWord1 = (text: string) => {
-    const word = 'data sovereignty and privacy';
+    const word = "data sovereignty and privacy";
     const parts = text.split(word);
     return (
       <>
@@ -38,7 +39,7 @@ export default function Describe1({
   };
 
   const splitWord2 = (text: string) => {
-    const word = 'novel authentication protocol and infrastructure';
+    const word = "novel authentication protocol and infrastructure";
     const parts = text.split(word);
     return (
       <>
@@ -49,10 +50,24 @@ export default function Describe1({
     );
   };
 
+  function ScrollComponent() {
+    return (
+      <div className="text-center text-[rgba(122,122,124,0.918)] font-bold uppercase pt-8 cursor-pointer">
+        <div className="mx-auto w-10 h-20 border-4 border-[rgba(122,122,124,0.918)] rounded-full flex mt-2.5">
+          <span className="m-auto block w-5 h-5 rounded-full bg-gradient-to-r from-[rgba(122,122,124,0.918)] to-[#7b7c7c] "></span>
+        </div>
+        <span className="text-xs">Discover more</span>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="h-20 relative " />
-      <div id="container1" className="w-full h-screen text-center relative font-sf-pro-text">
+      <div
+        id="container1"
+        className="w-full h-screen text-center relative font-sf-pro-text"
+      >
         <div
           id="layout1"
           className="absolute inset-0 flex justify-center items-center"
@@ -61,8 +76,8 @@ export default function Describe1({
           <div
             className={`fixed flex flex-col top-[45%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
               isVisible1
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-4'
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <div className="flex first-line:">
@@ -70,8 +85,10 @@ export default function Describe1({
                 {title1}&nbsp;{title2}
               </div>
             </div>
-
-            <div className="font-medium text-2xl">{subText1}</div>
+            <div className="font-medium text-2xl">{subText1}</div>{" "}
+            <div className=" transform translate-y-60 bottom-0">
+              <ScrollComponent />
+            </div>
           </div>
         </div>
       </div>
@@ -85,8 +102,8 @@ export default function Describe1({
           <div
             className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible2
-                ? 'opacity-100 -translate-y-1/2'
-                : 'opacity-0 translate-y-0'
+                ? "opacity-100 -translate-y-1/2"
+                : "opacity-0 translate-y-0"
             }`}
           >
             <div className="font-bold text-3xl text-black overflow-hidden">
@@ -95,6 +112,7 @@ export default function Describe1({
           </div>
         </div>
       </div>
+
       <div className="h-20 relative" />
       <div
         id="container3"
@@ -108,8 +126,8 @@ export default function Describe1({
           <div
             className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
               isVisible3
-                ? 'opacity-100 -translate-y-1/2'
-                : 'opacity-0 translate-y-0'
+                ? "opacity-100 -translate-y-1/2"
+                : "opacity-0 translate-y-0"
             }`}
           >
             <div className="font-bold text-3xl text-black overflow-hidden">
@@ -118,6 +136,7 @@ export default function Describe1({
           </div>
         </div>
       </div>
+      <div className="h-20 w-full" />
     </>
   );
 }
