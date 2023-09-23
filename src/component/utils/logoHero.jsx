@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 import { motion } from 'framer-motion';
-import { useRef} from 'react';
-import  {useIsVisible} from "../../hooks/view"
+import { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useIsVisible } from '../../hooks/view';
 import WetButton from './buttons/wetButton';
-=======
-import { motion } from "framer-motion";
-import { useRef } from "react";
-import { Link } from "react-router-dom";
-import { useIsVisible } from "../../hooks/view";
-import WetButton from "./wetButton";
->>>>>>> d427c2579b7941051fe784622be2246a51ff8a2d
 
 const LogoHero = ({ text1 }) => {
   const ref4 = useRef(null);
@@ -28,8 +21,8 @@ const LogoHero = ({ text1 }) => {
         <div
           className={`fixed bottom-20 w-full flex h-full justify-center items-center transition-all ease-in duration-500 z-0 px-10 delay-100 ${
             isVisible4
-              ? "opacity-100 translate-y-4"
-              : "opacity-0 translate-y-0 hidden"
+              ? 'opacity-100 translate-y-4'
+              : 'opacity-0 translate-y-0 hidden'
           }
           `}
         >
@@ -38,7 +31,7 @@ const LogoHero = ({ text1 }) => {
               {text1}
             </h1>
             {isVisible4 && (
-              <Link to={"/About"}>
+              <Link to={'/About'}>
                 <WetButton />
               </Link>
             )}
