@@ -10,16 +10,10 @@ import SideNav from "./sideNav";
 import { Link } from "react-router-dom";
 import RoundedButton from "./utils/buttons/roundedButton";
 export default function TopBar() {
-  const [isTopBarVisible, setTopBarVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
- 
 
   return (
     <div
-      className={`bg-white sm:bg-transparent w-screen flex justify-between px-4 sm:px-[10%] fixed py-2 sm:py-3 z-50 ${
-        isTopBarVisible ? "" : "hidden"
-      }`}
+      className={`bg-white sm:bg-transparent w-screen flex justify-between px-4 sm:px-[10%] fixed py-2 sm:py-3 z-50`}
     >
       <Link to="/">
         <img

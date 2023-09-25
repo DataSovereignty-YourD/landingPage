@@ -48,10 +48,10 @@ const BlogCard = () => {
       className="bg-white backdrop-blur-sm mt-20 z-30 w-screen  relative font-sf-pro-text"
       ref={ref}
     >
-      <div className="w-full relative overflow-hidden p-4">
+      <div className="w-full relative overflow-hidden">
         {/* CARDS */}
         <div className=" w-full">
-          <div className=" flex justify-between items-center mb-6 ">
+          <div className=" flex justify-between items-center mb-6 mx-[15%]">
             <p className=" text-xl sm:text-2xl font-semibold">
               Your
               <span className=" text-yellow-300 font-bold text-3xl itmes-center justify-center ">
@@ -70,7 +70,7 @@ const BlogCard = () => {
             animate={{
               x: offset,
             }}
-            className=" flex"
+            className=" flex pl-[15%]"
           >
             {displayData.map((item) => {
               return <Card key={item.id} {...item} />;
@@ -109,7 +109,7 @@ const BlogCard = () => {
 const Card = ({ url, category, title, description }) => {
   return (
     <div
-      className=" relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
+      className=" relative shrink-0 cursor-pointer rounded-2xl  bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
       style={{
         width: CARD_WIDTH,
         height: CARD_HEIGHT,
@@ -128,8 +128,8 @@ const Card = ({ url, category, title, description }) => {
           />
         </div>
         <div className="px-3 sm:px-6 bg-gradient-to-b from-gray-300 py-2 via-yellow/80 to-yellow/50 ">
-          <p className=" text-xl sm:text-3xl font-bold">{title}</p>
-          <p className="text-sm sm:text-xl text-balck">{description}</p>
+          <p className=" text-xl sm:text-xl font-bold">{title}</p>
+          <p className="text-sm sm:text-[16px] text-balck">{description}</p>
         </div>
       </div>
     </div>
