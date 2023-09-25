@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.13 public/NewStone/newstone.glb -o src/component/canvas
 import { useGLTF } from "@react-three/drei";
 import { useControls } from "leva";
 import React, { useRef } from "react";
-import { useExplode } from "../hooks/useExplode";
+import { useExplode } from "../../hooks/useExplode";
 
 export function Newstone(props) {
   const { nodes, materials } = useGLTF("/NewStone/newstone.glb");

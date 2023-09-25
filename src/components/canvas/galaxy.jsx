@@ -5,7 +5,7 @@ import {
   ScrollControls,
   Float,
 } from "@react-three/drei";
-import { Galaxy } from "./Galaxy1.jsx";
+import { Galaxy } from "./Galaxy1.js";
 import { ExplodingPlanet } from "./ExplodingPlanet.jsx";
 const Exploding_obj = () => {
   return (
