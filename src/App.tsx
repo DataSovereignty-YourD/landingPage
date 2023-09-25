@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 // import { BusinessPage } from "./pages/businessPage";
-import StarsCanvas from "./component/canvas/stars";
+import StarsCanvas from "./components/canvas/stars";
 import MainPage from "./pages/mainPage";
-import TopBar from "./component/topBar";
+import TopBar from "./components/topBar";
 import AboutPage from "./pages/aboutPage";
 import AnimationReal from "./Appppp";
-import ContactUs from "./component/contactUs";
-import Footer from "./component/footer";
-import Blog from "./component/blog";
+import ContactUs from "./components/contactUs";
+import Footer from "./components/footer";
+import Blog from "./components/blog";
 import ProductPage from "./pages/productPage";
 function App() {
   return (

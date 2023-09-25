@@ -1,6 +1,6 @@
 import { ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Experience } from "./components/Experience";
+import { Experience } from "./components/3d/Experience";
 import * as THREE from "three";
 
 export default function AnimationReal() {

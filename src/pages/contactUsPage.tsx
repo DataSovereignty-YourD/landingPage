@@ -1,5 +1,5 @@
-import ContactUs from "../component/contactUs";
-import Footer from "../component/footer";
+import ContactUs from "../components/contactUs";
+import Footer from "../components/footer";
 export default function ContactUsPage() {
     return(
         <>
