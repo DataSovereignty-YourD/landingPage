@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.13 public/Lava/lava.glb -o src/component/canvas/Lava.js
 import { useGLTF } from "@react-three/drei";
 import { useControls } from "leva";
 import React, { useRef } from "react";
-import { useExplode } from "../hooks/useExplode";
+import { useExplode } from "../../hooks/useExplode";
 
 export function Lava(props) {
   const { nodes, materials } = useGLTF("/Lava/lava.glb");

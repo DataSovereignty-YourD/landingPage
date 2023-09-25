@@ -1,4 +1,4 @@
-import BusinessPlan from "../component/business/businessPlan";
+import BusinessPlan from "../components/business/businessPlan";
 
 
 export function BusinessPage() {

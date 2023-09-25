@@ -15,7 +15,7 @@ const WetButton = () => {
 const Drip = ({ left, height, delay }) => {
   return (
     <motion.div
-      className="absolute top-[99%] origin-top"
+      className="absolute  sm:top-[99%] origin-top"
       style={{
         left,
       }}

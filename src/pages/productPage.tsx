@@ -1,3 +1,4 @@
+import TabsFeatures from "../components/tabsFeatures";
 export default function ProductPage() {
   return (
     <div className="flex items-center justify-center h-screen">
@@ -7,6 +8,8 @@ export default function ProductPage() {
           <li>유저 Verifiable Credential 저장 지원</li>
           <li>Fast Authentication Service 제공</li>
           <li>EBSI(European Blockchain Services Infrastructure)</li>
+
+          <TabsFeatures />
         </div>
       </div>
 

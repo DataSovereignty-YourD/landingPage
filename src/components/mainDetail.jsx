@@ -44,13 +44,13 @@ export default function MainDetail() {
   ];
 
   return (
-    <div className="w-4/5 mx-auto flex flex-col gap-60 min-h-screen mt-60">
+    <div className="px-[10%] flex flex-col gap-32 sm:gap-60 min-h-screen mt-60 overflow-hidden">
       {yourdIntroduce.map((item) => {
         return (
           <div
             key={item.id}
             ref={item.ref}
-            className={`backdrop-blur-sm grid grid-cols-12 w-full justify-center items-center transition-all duration-1000 ease-out ${
+            className={`backdrop-blur-sm sm:grid grid-cols-12 w-full justify-center items-center transition-all duration-1000 ease-out ${
               item.isVisible
                 ? "translate-x-0"
                 : item.id % 2 === 0
@@ -58,26 +58,27 @@ export default function MainDetail() {
                 : "opacity-50 -translate-x-full"
             }`}
           >
+            <img src={item.image} alt="" className="visible sm:hidden col-span-5 mb-5" />
             {item.id % 2 === 0 ? (
               <img
                 src={item.image}
                 alt=""
-                className=" col-span-5 content-center"
+                className="hidden sm:visible col-span-5 content-center"
               />
             ) : (
               <></>
             )}
             <div className="w-full flex flex-col col-span-7">
-              <span className="  uppercase flex w-full text-start text-4xl font-bold mb-10">
+              <span className="  uppercase flex w-full text-start text-2xl sm:text-4xl font-bold mb-10">
                 {item.name}
               </span>
-              <span className="text-xl ">{item.description} </span>
+              <span className="text-lg sm:text-xl ">{item.description} </span>
               <Link to={'/Product'} className="mt-5">
                 <OutlineButton />
               </Link>
             </div>
             {item.id % 2 === 1 ? (
-              <img src={item.image} alt="" className=" col-span-5" />
+              <img src={item.image} alt="" className="hidden sm:visible col-span-5" />
             ) : (
               <></>
             )}
