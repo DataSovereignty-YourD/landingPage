@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { fetchData } from "../test/testData";
 import img from "../../src/assets/img/dataPass.png";
 
-const CARD_WIDTH = 350;
-const CARD_HEIGHT = 350;
+const CARD_WIDTH = 320;
+const CARD_HEIGHT = 320;
 const MARGIN = 20;
 const CARD_SIZE = CARD_WIDTH + MARGIN;
 
@@ -45,14 +45,14 @@ const BlogCard = () => {
 
   return (
     <section
-      className="bg-white backdrop-blur-sm mt-20 z-30  relative font-sf-pro-text"
+      className="bg-white backdrop-blur-sm mt-20 z-30 w-screen  relative font-sf-pro-text"
       ref={ref}
     >
       <div className="w-full relative overflow-hidden p-4">
         {/* CARDS */}
         <div className=" w-full">
-          <div className=" flex justify-between items-center ">
-            <p className=" mb-6 text-2xl font-semibold">
+          <div className=" flex justify-between items-center mb-6 ">
+            <p className=" text-xl sm:text-2xl font-semibold">
               Your
               <span className=" text-yellow-300 font-bold text-3xl itmes-center justify-center ">
                 D
@@ -61,7 +61,7 @@ const BlogCard = () => {
             </p>
             <Link
               to="/Blog"
-              className=" font-bold border p-1 rounded-md border-black hover:bg-[#fccc00]"
+              className=" font-semibold text-sm sm:text-lg  p-1 rounded-md  hover:bg-[#fccc00]"
             >
               View All
             </Link>
@@ -127,9 +127,9 @@ const Card = ({ url, category, title, description }) => {
             className=" object-cover h-full w-full bg-white"
           />
         </div>
-        <div className="px-6 bg-gradient-to-b from-gray-300 py-2 via-yellow/80 to-yellow/50 ">
-          <p className="  text-3xl font-bold">{title}</p>
-          <p className=" text-[18px] text-balck">{description}</p>
+        <div className="px-3 sm:px-6 bg-gradient-to-b from-gray-300 py-2 via-yellow/80 to-yellow/50 ">
+          <p className=" text-xl sm:text-3xl font-bold">{title}</p>
+          <p className="text-sm sm:text-xl text-balck">{description}</p>
         </div>
       </div>
     </div>

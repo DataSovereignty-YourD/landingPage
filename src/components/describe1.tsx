@@ -64,30 +64,30 @@ export default function Describe1({
 
   return (
     <>
-      <div className="h-20 relative " />
+      <div className="h-20 relative w-screen" />
       <div
         id="container1"
-        className="w-full h-screen text-center relative font-sf-pro-text"
+        className="w-screen sm:w-full h-screen text-center relative font-sf-pro-text overflow-hidden"
       >
         <div
           id="layout1"
           className="absolute inset-0 flex justify-center items-center"
         >
-          <div id="background1" ref={ref1} className="w-full h-10 mb-[30%]" />
+          <div id="background1" ref={ref1} className="w-full h-10  " />
           <div
-            className={`fixed flex flex-col top-[45%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
+            className={`fixed flex flex-col top-[30%] sm:top-[45%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
               isVisible1
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
             }`}
           >
             <div className="flex first-line:">
-              <div className="font-bold text-6xl overflow-visible pb-1 gradientText ">
+              <div className="font-bold text-5xl sm:text-6xl overflow-visible pb-1 gradientText ">
                 {title1}&nbsp;{title2}
               </div>
             </div>
 
-            <div className="font-medium text-2xl">{subText1}</div>
+            <div className="font-medium text-xl sm:text-2xl">{subText1}</div>
           </div>
             <div 
             className={`fixed transition-all bottom-0 duration-500 ease-in ${
@@ -100,44 +100,44 @@ export default function Describe1({
             </div>
         </div>
       </div>
-      <div className="h-20 relative " />
-      <div id="container2" className="w-full h-screen text-center relative ">
+      <div className="h-20 relative w-screen" />
+      <div id="container2" className="w-screen sm:w-full h-screen text-center relative  overflow-hidden">
         <div
           id="layout2"
           className="absolute inset-0 flex justify-center items-center"
         >
           <div id="background2" ref={ref2} className="w-full h-10" />
           <div
-            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
+            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 sm:px-10 delay-100 ${
               isVisible2
                 ? "opacity-100 -translate-y-1/2"
                 : "opacity-0 translate-y-0"
             }`}
           >
-            <div className="font-bold text-3xl text-black overflow-hidden">
+            <div className="font-bold text-xl sm:text-3xl text-black overflow-hidden">
               {splitWord1(text1)}
             </div>
           </div>
         </div>
       </div>
-      <div className="h-20 relative" />
+      <div className="h-20 relative w-screen" />
       <div
         id="container3"
-        className="w-full h-screen text-center relative overflow-visible"
+        className="w-screen sm:w-full h-screen text-center relative  overflow-hidden"
       >
         <div
           id="layout3"
           className="absolute inset-0 flex justify-center items-center"
         >
-          <div id="background3" ref={ref3} className="w-full h-20 " />
+          <div id="background3" ref={ref3} className="w-full h-20" />
           <div
-            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 px-10 delay-100 ${
+            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 sm:px-10 delay-100 ${
               isVisible3
                 ? "opacity-100 -translate-y-1/2"
                 : "opacity-0 translate-y-0"
             }`}
           >
-            <div className="font-bold text-3xl text-black overflow-hidden">
+            <div className="font-bold text-xl sm:text-3xl text-black overflow-hidden">
               {splitWord2(text2)}
             </div>
           </div>

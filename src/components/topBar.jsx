@@ -17,7 +17,7 @@ export default function TopBar() {
 
   return (
     <div
-      className={`bg-white sm:bg-transparent w-full flex justify-between px-4 sm:px-[10%] fixed py-2 sm:py-3 z-50 ${
+      className={`bg-white sm:bg-transparent w-screen flex justify-between px-4 sm:px-[10%] fixed py-2 sm:py-3 z-50 ${
         isTopBarVisible ? "" : "hidden"
       }`}
     >
