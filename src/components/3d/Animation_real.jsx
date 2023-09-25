@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.13 public/Animation_real/animation_real.glb -o src/comp
 import { useGLTF } from "@react-three/drei";
 import { useControls } from "leva";
 import React, { useRef } from "react";
-import { useExplode } from "../hooks/useExplode";
+import { useExplode } from "../../hooks/useExplode";
 
 export function AnimationReal(props) {
   const { nodes, materials } = useGLTF("/Animation_real/animation_real.glb");

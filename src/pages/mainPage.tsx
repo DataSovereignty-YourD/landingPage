@@ -1,13 +1,14 @@
-import Describe1 from "../component/describe1";
-import Footer from "../component/footer";
-import LogoHero from "../component/utils/logoHero";
-import BlogCard from "../component/blogCard";
-import MainDetail from "../component/mainDetail";
+import Describe1 from "../components/describe1";
+import Footer from "../components/footer";
+import LogoHero from "../components/utils/logoHero";
+import BlogCard from "../components/blogCard";
+import MainDetail from "../components/mainDetail";
 import GlobalStandard from "./globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import React from "react";
+import TabsFeatures from "../components/tabsFeatures";
 
 export default function MainPage() {
   const controls = useAnimation();
@@ -40,7 +41,8 @@ export default function MainPage() {
         }
       />
 
-      <MainDetail />
+      {/* <MainDetail /> */}
+      <TabsFeatures/>
       <GlobalStandard />
       <BlogCard />
       <LogoHero text1="The easiest way to control your Data" />
