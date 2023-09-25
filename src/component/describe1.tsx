@@ -5,17 +5,18 @@ import "../assets/css/describe1.css";
 interface DescribeProps {
   title1: string;
   title2: string;
-  text1: string;
-  subText1: string;
-  text2: string;
+  // text1: string;
+  // subText1: string;
+  // text2: string;
 }
 export default function Describe1({
   title1,
   title2,
-  subText1,
-  text1,
-  text2,
-}: DescribeProps) {
+}: //
+// subText1,
+// text1,
+// text2,
+DescribeProps) {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
 
@@ -40,10 +41,8 @@ export default function Describe1({
   function ScrollComponent() {
     return (
       <div className="text-center text-[rgba(122,122,124,0.918)] font-bold uppercase pt-8 ">
-
         <div className="mx-auto w-8 h-14 border-4 border-gray-300 rounded-full flex mt-2.5">
           <span className="m-auto block w-4 h-4 rounded-full bg-gray-400 animate-bounce"></span>
-
         </div>
         <span className="text-xs">Scroll</span>
       </div>
@@ -87,17 +86,17 @@ export default function Describe1({
               </div>
             </div>
 
-            <div className="font-medium text-2xl">{subText1}</div>
+            {/* <div className="font-medium text-2xl">{subText1}</div> */}
           </div>
-            <div 
+          <div
             className={`fixed transition-all bottom-0 duration-500 ease-in ${
               isVisible1
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
             }`}
-            >
-              <ScrollComponent />
-            </div>
+          >
+            <ScrollComponent />
+          </div>
         </div>
       </div>
       <div className="h-20 relative " />
@@ -114,9 +113,9 @@ export default function Describe1({
                 : "opacity-0 translate-y-0"
             }`}
           >
-            <div className="font-bold text-3xl text-black overflow-hidden">
+            {/* <div className="font-bold text-3xl text-black overflow-hidden">
               {splitWord1(text1)}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -137,9 +136,9 @@ export default function Describe1({
                 : "opacity-0 translate-y-0"
             }`}
           >
-            <div className="font-bold text-3xl text-black overflow-hidden">
+            {/* <div className="font-bold text-3xl text-black overflow-hidden">
               {splitWord2(text2)}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

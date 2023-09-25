@@ -8,6 +8,8 @@ import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import React from "react";
+import YourdStack from "../component/yourdStack";
+import ProductPage from "./productPage";
 
 export default function MainPage() {
   const controls = useAnimation();
@@ -31,18 +33,22 @@ export default function MainPage() {
       <Describe1
         title1={"Ignite"}
         title2={"Data Ownership"}
-        subText1={"Take Control of Your Data Ownership"}
-        text1={
-          "YourD was created to tackle the challenges of data sovereignty and privacy in the modern web"
-        }
-        text2={
-          "We fundamentally address data sovereignty with a novel authentication protocol and infrastructure"
-        }
+        // subText1={"Take Control of Your Data Ownership"}
+        // text1={
+        //   "YourD was created to tackle the challenges of data sovereignty and privacy in the modern web"
+        // }
+        // text2={
+        //   "We fundamentally address data sovereignty with a novel authentication protocol and infrastructure"
+        // }
       />
+      <YourdStack />
+
+      <ProductPage />
 
       <MainDetail />
       <GlobalStandard />
       <BlogCard />
+
       <LogoHero text1="The easiest way to control your Data" />
 
       <Footer />
