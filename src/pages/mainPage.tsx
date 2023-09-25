@@ -31,7 +31,7 @@ export default function MainPage() {
       <Describe1
         title1={"Ignite"}
         title2={"Data Ownership"}
-        subText1={"Take Control of Your Data Ownership"}
+        subText1={"Realizing Data Sovereignty in Web3.0"}
         text1={
           "YourD was created to tackle the challenges of data sovereignty and privacy in the modern web"
         }
