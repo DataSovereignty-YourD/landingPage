@@ -25,7 +25,6 @@ function Blog() {
   const allNewsRef = useRef<HTMLDivElement>(null);
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
-    // 페이지 번호를 클릭할 때 "All News" 섹션으로 스크롤 이동
     allNewsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(() => {

@@ -8,15 +8,10 @@ import GlobalStandard from "./globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import React from "react";
-// import TabsFeatures from '../components/tabsFeatures';
-import Prove from '../components/prove';
-import Own from '../components/own';
-import Apply from '../components/apply';
-
+import WhyYourD from '../components/whyYourD';
 import YourdStack from "../components/yourdStack";
 import ProductPage from "./productPage";
-import TabsFeatures from "../components/tabsFeatures";
+
 import Persona from "../components/persona";
 import DetailProductPage from "../components/detailProductPage";
 
@@ -47,14 +42,13 @@ export default function MainPage() {
           'We provide a user-friendly Web3 infrastructure enabling you to easily build Web3 products. '
         }
         />
-
-
       <YourdStack />
       <DetailProductPage />
       <Persona />
 
       {/* <MainDetail /> */}
       {/* <TabsFeatures /> */}
+      <WhyYourD/>
       <GlobalStandard />
       <BlogCard />
 
