@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const WetButton = () => {
   return (
     <div className="group relative rounded bg-yellow-400 px-4 py-2.5 font-semibold text-black transition-colors hover:bg-yellow-500">
-      Discover YourD
+      Contact Us
       <Drip left="10%" height={24} delay={0.5} />
       <Drip left="30%" height={20} delay={3} />
       <Drip left="57%" height={10} delay={4.25} />
