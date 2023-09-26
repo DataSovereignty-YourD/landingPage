@@ -9,14 +9,15 @@ import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import React from "react";
-import TabsFeatures from '../components/tabsFeatures';
+
 import Prove from '../components/prove';
 import Own from '../components/own';
 import Apply from '../components/apply';
 
+import WhyYourD from '../components/whyYourD';
 import YourdStack from "../components/yourdStack";
 import ProductPage from "./productPage";
-import TabsFeatures from "../components/tabsFeatures";
+
 import Persona from "../components/persona";
 import DetailProductPage from "../components/detailProductPage";
 
@@ -47,7 +48,7 @@ export default function MainPage() {
           'We provide a user-friendly Web3 infrastructure enabling you to easily build Web3 products. '
         }
 
-
+/>
       <YourdStack />
       <DetailProductPage />
       <Persona />
@@ -58,20 +59,15 @@ export default function MainPage() {
       <BlogCard />
 
 
-        //  text1={
-        //    "YourD was created to tackle the challenges of data sovereignty and privacy in the modern web"
-        //  }
-        //  text2={
-        //    "We fundamentally address data sovereignty with a novel authentication protocol and infrastructure"
-        //  }
-      />{' '}
+       
       {/* <div className="flex items-center justify-center flex-col h-1/2">
         <Prove />
         <Own />
         <Apply />
       </div> */}
-      {/* <MainDetail /> */}
-      {/* <TabsFeatures/> */}
+      {/* <MainDetail />
+      <TabsFeatures/> */}
+      <WhyYourD/>
       <GlobalStandard />
       {/* <BlogCard /> */}
 
