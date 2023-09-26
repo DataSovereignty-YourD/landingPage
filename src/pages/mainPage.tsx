@@ -44,7 +44,7 @@ export default function MainPage() {
         />
       <YourdStack />
       <DetailProductPage />
-      <Persona />
+      {/* <Persona /> */}
 
       {/* <MainDetail /> */}
       {/* <TabsFeatures /> */}
