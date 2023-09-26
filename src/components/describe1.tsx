@@ -5,16 +5,16 @@ import "../assets/css/describe1.css";
 interface DescribeProps {
   title1: string;
   title2: string;
-  text1: string;
   subText1: string;
-  text2: string;
+  // text1: string;
+  // text2: string;
 }
 export default function Describe1({
   title1,
   title2,
   subText1,
-  text1,
-  text2,
+  // text1,
+  // text2,
 }: DescribeProps) {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
@@ -64,7 +64,7 @@ export default function Describe1({
 
   return (
     <>
-      <div className="h-20 relative w-screen" />
+      <div className="h-20 relative " />
       <div
         id="container1"
         className="w-screen sm:w-full h-screen text-center relative font-sf-pro-text overflow-hidden"
@@ -82,12 +82,12 @@ export default function Describe1({
             }`}
           >
             <div className="flex first-line:">
-              <div className="font-bold text-5xl sm:text-6xl overflow-visible pb-1 gradientText ">
+              <div className="font-bold text-5xl sm:text-6xl overflow-visible pb-1 gradientText">
                 {title1}&nbsp;{title2}
               </div>
             </div>
 
-            <div className="font-medium text-xl sm:text-2xl">{subText1}</div>
+            <div className="font-medium text-xl sm:text-2xl text-left">{subText1}</div>
           </div>
             <div 
             className={`fixed transition-all bottom-0 duration-500 ease-in ${
@@ -100,7 +100,7 @@ export default function Describe1({
             </div>
         </div>
       </div>
-      <div className="h-20 relative w-screen" />
+      {/* <div className="h-20 relative w-screen" />
       <div id="container2" className="w-screen sm:w-full h-screen text-center relative  overflow-hidden">
         <div
           id="layout2"
@@ -119,8 +119,8 @@ export default function Describe1({
             </div>
           </div>
         </div>
-      </div>
-      <div className="h-20 relative w-screen" />
+      </div> */}
+      {/* <div className="h-20 relative w-screen" />
       <div
         id="container3"
         className="w-screen sm:w-full h-screen text-center relative  overflow-hidden"
@@ -142,7 +142,7 @@ export default function Describe1({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
