@@ -8,9 +8,7 @@ export default function TopBar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   return (
-    <div
-      className="bg-white  w-full flex justify-between px-4 sm:px-[10%] fixed z-50" 
-    >
+    <div className="bg-white  w-full flex justify-between px-4 sm:px-[10%] fixed z-50">
       <Link to="/">
         <img
           src={logo}
@@ -18,8 +16,7 @@ export default function TopBar() {
           className=" flex items-center w-12 sm:w-16"
         />
       </Link>
-      <div className=''>
-      </div>
+      <div className=""></div>
       <div className=" flex flex-row  sm:gap-2 items-center justify-center">
         <div className=" w-20 sm:w-32">
           <Link to="/ContactUs">

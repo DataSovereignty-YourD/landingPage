@@ -44,13 +44,13 @@ export default function MainDetail() {
   ];
 
   return (
-    <div className="px-[10%] flex flex-col gap-32 sm:gap-60 min-h-screen mt-60 overflow-hidden">
+    <div className="px-[20%] flex flex-col gap-32 sm:gap-60 min-h-screen py-40 mt-40 overflow-hidden bg-white relative border-t-2 border-gray-100">
       {yourdIntroduce.map((item) => {
         return (
           <div
             key={item.id}
             ref={item.ref}
-            className={`backdrop-blur-sm sm:grid grid-cols-12 w-full justify-center items-center transition-all duration-1000 ease-out ${
+            className={`bg-white  sm:grid grid-cols-12 w-full justify-center items-center transition-all duration-1000 ease-out ${
               item.isVisible
                 ? "translate-x-0"
                 : item.id % 2 === 0
@@ -63,7 +63,7 @@ export default function MainDetail() {
               <img
                 src={item.image}
                 alt=""
-                className="hidden sm:visible col-span-5 content-center"
+                className="hidden sm:flex col-span-5 content-center"
               />
             ) : (
               <></>
@@ -78,7 +78,7 @@ export default function MainDetail() {
               </Link>
             </div>
             {item.id % 2 === 1 ? (
-              <img src={item.image} alt="" className="hidden sm:visible col-span-5" />
+              <img src={item.image} alt="" className="hidden sm:flex col-span-5" />
             ) : (
               <></>
             )}
