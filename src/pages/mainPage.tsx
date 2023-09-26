@@ -9,7 +9,7 @@ import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import React from "react";
-import TabsFeatures from '../components/tabsFeatures';
+// import TabsFeatures from '../components/tabsFeatures';
 import Prove from '../components/prove';
 import Own from '../components/own';
 import Apply from '../components/apply';
@@ -35,7 +35,7 @@ export default function MainPage() {
   }, [controls, scrollYProgress]);
 
   return (
-    <>
+    <div className="w-screen">
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 w-screen bg-[#fccc00] origin-left z-50"
         animate={controls}
@@ -46,6 +46,7 @@ export default function MainPage() {
         subText1={
           'We provide a user-friendly Web3 infrastructure enabling you to easily build Web3 products. '
         }
+        />
 
 
       <YourdStack />
@@ -57,27 +58,9 @@ export default function MainPage() {
       <GlobalStandard />
       <BlogCard />
 
-
-        //  text1={
-        //    "YourD was created to tackle the challenges of data sovereignty and privacy in the modern web"
-        //  }
-        //  text2={
-        //    "We fundamentally address data sovereignty with a novel authentication protocol and infrastructure"
-        //  }
-      />{' '}
-      {/* <div className="flex items-center justify-center flex-col h-1/2">
-        <Prove />
-        <Own />
-        <Apply />
-      </div> */}
-      {/* <MainDetail /> */}
-      {/* <TabsFeatures/> */}
-      <GlobalStandard />
-      {/* <BlogCard /> */}
-
       <LogoHero text1="The easiest way to control your Data" />
       <Footer />
       {/* <ScrollProgressBar/> */}
-    </>
+    </div>
   );
 }
