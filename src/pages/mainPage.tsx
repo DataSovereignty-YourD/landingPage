@@ -12,6 +12,8 @@ import React from "react";
 import YourdStack from "../components/yourdStack";
 import ProductPage from "./productPage";
 import TabsFeatures from "../components/tabsFeatures";
+import Persona from "../components/persona";
+import DetailProductPage from "../components/detailProductPage";
 
 export default function MainPage() {
   const controls = useAnimation();
@@ -43,12 +45,13 @@ export default function MainPage() {
           "We fundamentally address data sovereignty with a novel authentication protocol and infrastructure"
         }
       />
-      <YourdStack />
 
-      <ProductPage />
+      <YourdStack />
+      <DetailProductPage />
+      <Persona />
 
       {/* <MainDetail /> */}
-      <TabsFeatures />
+      {/* <TabsFeatures /> */}
       <GlobalStandard />
       <BlogCard />
 
