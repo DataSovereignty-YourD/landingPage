@@ -12,6 +12,7 @@ import TabsFeatures from '../components/tabsFeatures';
 import Prove from '../components/prove';
 import Own from '../components/own';
 import Apply from '../components/apply';
+import WhyYourD from '../components/whyYourD';
 export default function MainPage() {
   const controls = useAnimation();
   const { scrollYProgress } = useScroll();
@@ -49,8 +50,9 @@ export default function MainPage() {
         <Own />
         <Apply />
       </div> */}
-      {/* <MainDetail /> */}
-      {/* <TabsFeatures/> */}
+      {/* <MainDetail />
+      <TabsFeatures/> */}
+      <WhyYourD/>
       <GlobalStandard />
       {/* <BlogCard /> */}
       <LogoHero text1="The easiest way to control your Data" />
