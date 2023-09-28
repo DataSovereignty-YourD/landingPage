@@ -14,6 +14,7 @@ import ProductPage from "./productPage";
 
 import Persona from "../components/persona";
 import DetailProductPage from "../components/detailProductPage";
+import Solution from "../components/business/solution";
 
 
 export default function MainPage() {
@@ -43,7 +44,8 @@ export default function MainPage() {
         }
         />
       <YourdStack />
-      <DetailProductPage />
+      <Solution/>
+      {/* <DetailProductPage /> */}
       {/* <Persona /> */}
 
       {/* <MainDetail /> */}
