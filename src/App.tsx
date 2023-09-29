@@ -14,7 +14,6 @@ function App() {
   return (
     <React.Fragment>
       <TopBar />
-
       {/* <AnimationReal /> */}
       <StarsCanvas />
       <Routes>

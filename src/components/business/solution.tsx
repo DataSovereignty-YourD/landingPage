@@ -39,14 +39,14 @@ export default function Solution() {
 
     return (
         <div className="mx-7 sm:w-3/4 sm:mx-auto min-h-screen flex flex-col items-center justify-center font-sf-pro-text relative ">
-            <div className="grid grid-cols-4 w-full gap-10">
+            <div className="grid grid-cols-4 w-full gap-y-10 gap-x-5">
                 {solutions.map((solution) => (
-                    <div key={solution.id} className={`col-span-4 sm:col-span-2 h-full py-3 px-5 sm:py-5 sm:px-10 rounded-sm backdrop-blur-sm bg-opacity-20 ${solution.bgColor} `}>
+                    <div key={solution.id} className={`col-span-4 sm:col-span-2 h-full sm:p-6  rounded-sm  backdrop-blur-sm bg-opacity-20 ${solution.bgColor} `}>
                         <div className="flex flex-col h-full justify-between">
                             <div className="flex flex-col">
-                                <span className="font-bold text-lg sm:text-2xl">{solution.title}</span>
-                                <span className="font-medium text-[16px] sm:text-lg text-slate-600">{solution.subtitle}</span>
-                                <span className="font-normal mt-5 text-sm">{solution.description}</span>
+                                <span className="font-bold text-lg sm:text-2xl leading-3">{solution.title}</span>
+                                <span className="font-medium text-[16px] sm:text-lg text-slate-600 leading-5">{solution.subtitle}</span>
+                                <span className="font-normal mt-5 text-sm leading-5">{solution.description}</span>
                             </div>
                             <div className="flex justify-between items-end">
                                 <div>Learn More</div>
