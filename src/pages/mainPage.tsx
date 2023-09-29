@@ -8,18 +8,13 @@ import GlobalStandard from "./globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import React from "react";
-
-import Prove from '../components/prove';
-import Own from '../components/own';
-import Apply from '../components/apply';
-
 import WhyYourD from '../components/whyYourD';
 import YourdStack from "../components/yourdStack";
 import ProductPage from "./productPage";
 
 import Persona from "../components/persona";
 import DetailProductPage from "../components/detailProductPage";
+import Solution from "../components/business/solution";
 
 
 export default function MainPage() {
@@ -36,7 +31,7 @@ export default function MainPage() {
   }, [controls, scrollYProgress]);
 
   return (
-    <>
+    <div className="w-screen">
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 w-screen bg-[#fccc00] origin-left z-50"
         animate={controls}
@@ -47,11 +42,11 @@ export default function MainPage() {
         subText1={
           'We provide a user-friendly Web3 infrastructure enabling you to easily build Web3 products. '
         }
-
-/>
+        />
       <YourdStack />
-      <DetailProductPage />
-      <Persona />
+      <Solution/>
+      {/* <DetailProductPage /> */}
+      {/* <Persona /> */}
 
       {/* <MainDetail /> */}
       {/* <TabsFeatures /> */}
@@ -60,12 +55,9 @@ export default function MainPage() {
       <BlogCard />
 
 
-  
-      {/* <BlogCard /> */}
-
       <LogoHero text1="The easiest way to control your Data" />
       <Footer />
       {/* <ScrollProgressBar/> */}
-    </>
+    </div>
   );
 }

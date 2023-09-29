@@ -7,13 +7,13 @@ import analysis from '../assets/img/analysis_icon.png';
 
 export default function WhyYourD() {
   return (
-    <div className="w-full h-full relative gap-4">
-      <div className="text-4xl font-bold flex text-center itmes-center justify-center mb-10">Why YourD?</div>
-     <div className='grid grid-cols-3 items-center justify-center w-3/4 mx-auto'>
+    <div className="w-full h-[80vh] relative gap-4  justify-center mt-32">
+      <div className="text-4xl  font-bold flex text-center itmes-center justify-center mb-20">Why YourD?</div>
+     <div className='grid grid-cols-3 items-start justify-center w-3/4 mx-auto'>
          {whyFeatures.map((feature, index) => (
-           <div key={index} className="features mb-24 mx-4">
-               <img src={feature.img} alt={feature.title} />
-             <h3 className='font-bold text-2xl'>{feature.title}</h3>
+           <div key={index} className="features  m-3 h-[240px] bg-white drop-shadow-sm px-5 py-5">
+               <img src={feature.img} alt={feature.title} className="object-contain"/>
+             <h3 className='font-bold text-2xl py-3'>{feature.title}</h3>
              <p>{feature.text}</p>
            </div>
          ))}

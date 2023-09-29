@@ -8,7 +8,7 @@ export default function TopBar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   return (
-    <div className="bg-white  w-full flex justify-between px-4 sm:px-[10%] fixed z-50">
+    <div className="bg-white  w-full flex justify-between px-4 sm:px-[5%] fixed z-50">
       <Link to="/">
         <img
           src={logo}
