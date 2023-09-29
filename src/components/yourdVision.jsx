@@ -3,8 +3,8 @@ import Footer from "./footer";
 import { GoPerson, GoTrophy } from "react-icons/go";
 import RoadMap from "./roadmap";
 import PolkadotLogo from "../assets/img/Polkadot_Logo.png";
-import EthLogo from "../assets/img/ethereum-logo.png";
-import KlaytnLogo from "../assets/img/klaytn-logo.png";
+// import EthLogo from "../assets/img/ethereum-logo.png";
+// import KlaytnLogo from "../assets/img/klaytn-logo.png";
 import TronLogo from "../assets/img/tron-logo.png";
 
 export default function YourdVision() {
@@ -181,13 +181,13 @@ export default function YourdVision() {
               </div>
               <div className="  flex flex-col w-full border border-gray-500 py-12 px-8 backdrop-blur-sm rounded-3xl ">
                 <div className="  items-center justify-center flex">
-                  <img src={EthLogo} alt="" />
+                  {/* <img src={EthLogo} alt="" /> */}
                 </div>
                 <div>2022.8 - ETHSeoul: IPFS/File coin winner</div>
               </div>
               <div className="  flex flex-col w-full border border-gray-500 py-12 px-8 backdrop-blur-sm rounded-3xl ">
                 <div className="  items-center justify-center flex">
-                  <img src={KlaytnLogo} alt="" />
+                  {/* <img src={KlaytnLogo} alt="" /> */}
                 </div>
                 <div>
                   2022.10 - Klaymakers 22: Public Goods Track FinalList & winner
