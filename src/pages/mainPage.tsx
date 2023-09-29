@@ -55,20 +55,12 @@ export default function MainPage() {
 
       {/* <MainDetail /> */}
       {/* <TabsFeatures /> */}
+      <WhyYourD/>
       <GlobalStandard />
       <BlogCard />
 
 
-       
-      {/* <div className="flex items-center justify-center flex-col h-1/2">
-        <Prove />
-        <Own />
-        <Apply />
-      </div> */}
-      {/* <MainDetail />
-      <TabsFeatures/> */}
-      <WhyYourD/>
-      <GlobalStandard />
+  
       {/* <BlogCard /> */}
 
       <LogoHero text1="The easiest way to control your Data" />
