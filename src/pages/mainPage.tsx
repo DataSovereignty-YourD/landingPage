@@ -54,6 +54,7 @@ export default function MainPage() {
       <GlobalStandard />
       <BlogCard />
 
+
       <LogoHero text1="The easiest way to control your Data" />
       <Footer />
       {/* <ScrollProgressBar/> */}

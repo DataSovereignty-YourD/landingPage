@@ -37,7 +37,6 @@ const Form = ({ selected, setSelected }) => {
     message: useRef(null),
   };
   const handleSubmit = () => {
-    // formRefs 객체를 순회하여 입력된 값을 가져옵니다.
     const formData = Object.entries(formRefs).reduce((acc, [key, ref]) => {
       acc[key] = ref.current?.value;
       return acc;
