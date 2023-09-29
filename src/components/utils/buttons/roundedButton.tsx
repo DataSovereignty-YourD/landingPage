@@ -1,4 +1,6 @@
 import { FiLogIn } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import {  useNavigation } from "react-router-dom";
 
 const RoundedButton = () => {
   return (
@@ -9,12 +11,14 @@ const RoundedButton = () => {
 };
 
 const RoundedSlideButton = () => {
+  
   return (
-    <button
+    <Link
+    to={'/ContactUs'}
       className={`
         relative z-0 flex items-center gap-2 overflow-hidden rounded-sm border-black border-[1px]
-        sm:px-2 px-1 sm:py-2 py-1 font-semibold uppercase text-black transition-all duration-500
-        sm:text-xs text-[10px] 
+        sm:px-3 px-2 sm:py-2 py-1 font-semibold uppercase text-black transition-all duration-500
+        sm:text-sm text-xs
         
         before:absolute before:inset-0
         before:-z-10 before:translate-x-[150%]
@@ -23,13 +27,14 @@ const RoundedSlideButton = () => {
         before:transition-transform before:duration-1000
         before:content-[""]
 
+        hover:border-none
         hover:scale-105 hover:text-neutral-900
         hover:before:translate-x-[0%]
         hover:before:translate-y-[0%]
         active:scale-95`}
     >
       <span>Contact us</span>
-    </button>
+    </Link>
   );
 };
 
