@@ -67,7 +67,7 @@ export default function Solution() {
   );
 
   return (
-    <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto min-h-screen py-20 flex flex-col items-center justify-center font-sf-pro-text relative ">
+    <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto min-h-screen pb-20 mt-[15%] flex flex-col items-center justify-center font-sf-pro-text relative ">
       <div className="font-bold text-xl sm:text-4xl">YourD Gateway</div>
       <div className="font-medium text-[16px] sm:text-xl mt-4 mb-10 text-center leading-5">
         Quick and easy to get started with true Web 3.0, YourD is here to guide
