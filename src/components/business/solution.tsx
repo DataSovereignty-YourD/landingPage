@@ -14,8 +14,7 @@ export default function Solution() {
         "YourD Login introduces a seamless login approach, addressing the complexities of conventional wallet logins and simplifying the building of Web 3.0 projects. This makes it a true Web 3.0 login solution that opens up real-world possibilities.",
       image: FastAuth,
       bgColor: "bg-[#fccc00]",
-    },
-    {
+    },{
       id: 2,
       title: "Web 3.0 Data Ownership Solution",
       subtitle: "Implement User-Centric Data Management with YourD Pass",
@@ -23,19 +22,17 @@ export default function Solution() {
         "YourD Pass is a solution conceived around the principle of user data ownership. It is versatile, finding applications in a wide array of fields from online digital identity to offline RSVP and RWA. This enables users to manage and utilize their data effectively, representing a genuine Web 3.0 solution.",
       image: YourDSaaS,
       bgColor: "bg-[#fccc00]",
-    },
-    {
+    },{
       id: 3,
       title:
         "YourD Analytics: The Next-Generation User Analysis Tool for Web 3.0",
       subtitle:
         "Conduct Effective Analysis while Upholding Data Sovereignty with YourD Analytics",
       description:
-        "The implementation of YourD Login and YourD Pass makes user analysis in adherence to laws such as GDPR and ADPPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.",
+        "The implementation of YourD Login and YourD Pass makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.",
       image: Analytics,
       bgColor: "bg-[#007aff]",
-    },
-    {
+    },{
       id: 4,
       title: "YourD Data Leverage Infra",
       subtitle:
