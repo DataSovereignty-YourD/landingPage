@@ -18,7 +18,7 @@ export default function TopBar() {
       </Link>
       <div className=""></div>
       <div className=" flex flex-row  sm:gap-2 items-center justify-center">
-        <div className=" w-20 sm:w-32">
+        <div className=" w-fit sm:min-w-32">
           <Link to="/ContactUs">
             <RoundedButton />
           </Link>
