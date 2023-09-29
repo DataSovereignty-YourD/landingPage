@@ -72,7 +72,7 @@ export default function Describe1({
           id="layout1"
           className="absolute inset-0 flex justify-center items-center"
         >
-          <div id="background1" ref={ref1} className="w-full h-10  " />
+          <div id="background1" ref={ref1} className="w-full h-10 mb-[25%] " />
           <div
             className={`fixed flex flex-col top-[30%] sm:top-[40%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
               isVisible1
@@ -85,7 +85,7 @@ export default function Describe1({
                 {title1}&nbsp;{title2}
               </div>
             </div>
-            <div className="font-medium text-xl sm:text-2xl text-left leading-7 max-w-[600px] text-center">{subText1}</div>
+            <div className="font-medium text-xl sm:text-2xl leading-7 max-w-[600px] text-center">{subText1}</div>
             <div className="bg-white">
               <RoundedButton/>
             </div>
@@ -101,51 +101,6 @@ export default function Describe1({
           </div>
         </div>
       </div>
-
-      {/* <div className="h-20 relative w-screen" />
-      <div id="container2" className="w-screen sm:w-full h-screen text-center relative  overflow-hidden">
-
-        <div
-          id="layout2"
-          className="absolute inset-0 flex justify-center items-center"
-        >
-          <div id="background2" ref={ref2} className="w-full h-10" />
-          <div
-            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 sm:px-10 delay-100 ${
-              isVisible2
-                ? "opacity-100 -translate-y-1/2"
-                : "opacity-0 translate-y-0"
-            }`}
-          >
-            <div className="font-bold text-xl sm:text-3xl text-black overflow-hidden">
-              {splitWord1(text1)}
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="h-20 relative w-screen" />
-      <div
-        id="container3"
-        className="w-screen sm:w-full h-screen text-center relative  overflow-hidden"
-      >
-        <div
-          id="layout3"
-          className="absolute inset-0 flex justify-center items-center"
-        >
-          <div id="background3" ref={ref3} className="w-full h-20" />
-          <div
-            className={`fixed top-1/2 flex justify-center items-center transition-all ease-in duration-500 sm:px-10 delay-100 ${
-              isVisible3
-                ? "opacity-100 -translate-y-1/2"
-                : "opacity-0 translate-y-0"
-            }`}
-          >
-            <div className="font-bold text-xl sm:text-3xl text-black overflow-hidden">
-              {splitWord2(text2)}
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

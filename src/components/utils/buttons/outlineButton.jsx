@@ -8,7 +8,7 @@ const DrawOutlineButton = ({ children, ...rest }) => {
   return (
     <button
       {...rest}
-      className="group relative font-medium text-black transition-colors duration-[400ms] hover:text-[#fccc00] w-24 h-full"
+      className="group relative font-medium text-black transition-colors duration-[400ms] hover:text-[#fccc00] w-fit h-full"
     >
       <span>{children}</span>
 

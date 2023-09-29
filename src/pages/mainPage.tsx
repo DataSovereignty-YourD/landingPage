@@ -12,8 +12,6 @@ import WhyYourD from '../components/whyYourD';
 import YourdStack from "../components/yourdStack";
 import ProductPage from "./productPage";
 
-import Persona from "../components/persona";
-import DetailProductPage from "../components/detailProductPage";
 import Solution from "../components/business/solution";
 
 
@@ -52,7 +50,7 @@ export default function MainPage() {
       {/* <TabsFeatures /> */}
       <WhyYourD/>
       <GlobalStandard />
-      <BlogCard />
+      {/* <BlogCard /> */}
 
 
       <LogoHero text1="The easiest way to control your Data" />

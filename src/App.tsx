@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
-// import { BusinessPage } from "./pages/businessPage";
 import StarsCanvas from './components/canvas/stars';
 import MainPage from './pages/mainPage';
 import TopBar from './components/topBar';
@@ -25,7 +24,6 @@ function App() {
       <StarsCanvas />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        {/* <Route path="/Business" element={<BusinessPage />} /> */}
         <Route path="/product" element={<ProductPage />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/ContactUs" element={<ContactUs />} />

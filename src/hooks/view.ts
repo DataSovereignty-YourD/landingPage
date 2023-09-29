@@ -9,7 +9,6 @@ export function useIsVisible(ref: React.RefObject<HTMLElement>) {
         setIntersecting(entry.isIntersecting)
       }
       );
-      console.log(ref.current);
 
       observer.observe(ref.current);
       return () => {
