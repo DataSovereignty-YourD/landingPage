@@ -39,7 +39,8 @@ export default function DetailProductPage() {
       image: YourDSaaS,
       description1:
         "The Own phase is the concept that users own their data and personal information after proving their identity.",
-        description2: "YourD empowers users with data sovereignty through the following key features",
+      description2:
+        "YourD empowers users with data sovereignty through the following key features",
       cards: [
         {
           id: 1,
@@ -55,7 +56,8 @@ export default function DetailProductPage() {
       image: DataSelling,
       description1:
         "The Apply phase is the process of securely managing and utilizing your own data through the data sovereignty given to you by YourD.",
-        description2:' The key features YourD provides during this phase are as follows.',
+      description2:
+        " The key features YourD provides during this phase are as follows.",
       cards: [
         {
           id: 1,
@@ -80,47 +82,50 @@ export default function DetailProductPage() {
   ];
 
   return (
-    <div className=" w-full backdrop-blur-sm relative flex flex-col font-sf-pro-text">
+    <div className="  w-full backdrop-blur-sm relative flex flex-col font-sf-pro-text">
       {sections.map((section, index) => (
         <div
           key={section.id}
-          className=" w-full px-[12.5%] h-screen border-y-2 flex flex-col justify-center "
+          className="  w-full sm:px-[12.5%] h-screen border-y-2 flex flex-col justify-center "
         >
-          <div className="font-bold text-4xl text-[#fccc00] w-full text-center">
+          <div className=" font-bold text-xl sm:text-4xl text-[#fccc00] w-full text-center">
             {section.title}
           </div>
 
-          <div className="flex flex-row gap-5 py-20 px-[10%]">
+          <div className=" flex flex-row sm:gap-5 sm:py-20 w-full  sm:px-[10%]">
             <img
               src={section.image}
-              className="items-center justify-center flex w-[340px]"
+              className=" items-center justify-center flex w-[100px]   sm:w-[340px]"
               alt={section.title}
             />
-            <div className="flex flex-col  items-start justify-center p-4">
-              <div className="text-2xl  font-normal flex  backdrop-blur-sm">
+            <div className=" flex flex-col  items-start justify-center p-4">
+              <div className=" text-md sm:text-2xl  font-normal flex  backdrop-blur-sm">
                 {section.description1}
               </div>
-              {/* <div className="text-lg font-normal  text-gray-300 backdrop-blur-sm">
+              {/* <div className=" text-lg font-normal  text-gray-300 backdrop-blur-sm">
                 {section.description2}
               </div> */}
             </div>
           </div>
-          <div className=" p-6 bg-slate-100 rounded-sm">
-            <div className="w-full text-center text-2xl font-bold mb-5 text-black/50 "> Key features</div>
-            <div className="text-xl font-semibold flex gap-5 justify-between flex-row">
+          <div className="  p-6 bg-slate-100 rounded-sm">
+            <div className=" w-full text-center sm:text-2xl font-bold mb-5 text-black/50 ">
+              {" "}
+              Key features
+            </div>
+            <div className=" text-xl font-semibold flex sm:gap-5  justify-between flex-row">
               {section.cards.map((card) => (
                 <div
                   key={card.id}
-                  className="bg-white backdrop-blur-sm p-4 rounded-md w-full flex flex-col justify-start gap-4 pt-4 pb-20"
+                  className=" bg-white backdrop-blur-sm sm:p-4 rounded-md w-full flex flex-col justify-start sm:gap-4 pt-4 pb-20"
                 >
-                  <div className="text-black text-center text-2xl font-bold items-start justify-center flex">
+                  <div className=" text-black text-center text-sm sm:text-2xl sm:font-bold items-start justify-center flex">
                     {card.title}
                   </div>
-                  <div className="text-lg font-normal text-gray-500 ">
+                  <div className=" text-xs sm:text-lg font-normal text-gray-500 ">
                     {card.description}
                   </div>
-                  <div className="flex items-center justify-center w-full absolute bottom-4 left-0 right-0">
-                    <button className="p-2 font-normal bg-[#fccc00] rounded-sm text-sm">
+                  <div className=" flex items-center justify-center w-full absolute bottom-4 left-0 right-0">
+                    <button className=" sm:p-2 font-normal bg-[#fccc00] rounded-sm text-sm">
                       Learn More
                     </button>
                   </div>
