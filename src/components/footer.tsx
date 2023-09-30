@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center bg-opacity-60 bg-transparent">
           <img src={logo} alt="LOGO" className="w-20 sm:w-32" />
           <div className="flex text-sm sm:text-2xl text-black mt-4">
-            yourd@yourd.xyz
+            0xcatbox@gmail.com
           </div>
           <div className="flex gap-4 mt-4">
             <a
