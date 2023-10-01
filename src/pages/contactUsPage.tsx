@@ -1,5 +1,5 @@
-import ContactUs from "../components/contactUs";
-import Footer from "../components/footer";
+import ContactUs from "../components/common/contactUs";
+import Footer from "../components/common/footer";
 import { useEffect } from "react";
 export default function ContactUsPage() {
     useEffect(() => {

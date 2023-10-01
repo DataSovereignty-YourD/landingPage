@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import Footer from "./footer";
+import Footer from "./common/footer";
 import { GoPerson, GoTrophy } from "react-icons/go";
-import RoadMap from "./roadmap";
 import PolkadotLogo from "../assets/img/Polkadot_Logo.png";
 // import EthLogo from "../assets/img/ethereum-logo.png";
 // import KlaytnLogo from "../assets/img/klaytn-logo.png";

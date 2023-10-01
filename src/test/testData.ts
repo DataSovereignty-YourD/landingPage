@@ -1,4 +1,4 @@
-import { MyDataType } from "../components/blog";
+import { MyDataType } from "../components/blog/blog";
 
 export const fetchData: MyDataType[] = [
   // Mocked data

@@ -1,4 +1,4 @@
-import TabsFeatures from "../components/tabsFeatures";
+// import TabsFeatures from "../components/tabsFeatures";
 export default function ProductPage() {
   return (
     <div className="flex items-center justify-center h-screen">
@@ -9,7 +9,7 @@ export default function ProductPage() {
           <li>Fast Authentication Service 제공</li>
           <li>EBSI(European Blockchain Services Infrastructure)</li>
 
-          <TabsFeatures />
+          {/* <TabsFeatures /> */}
         </div>
       </div>
 

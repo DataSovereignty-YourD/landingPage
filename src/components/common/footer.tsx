@@ -1,4 +1,4 @@
-import logo from "../assets/img/YourD-Logo-high.png";
+import logo from "../../assets/img/YourD-Logo-high.png";
 import {
   FaSquareXTwitter,
   FaLinkedin,

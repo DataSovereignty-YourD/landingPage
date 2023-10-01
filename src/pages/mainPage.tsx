@@ -1,15 +1,14 @@
 
-import Describe1 from "../components/describe1";
-import Footer from "../components/footer";
-import LogoHero from "../components/utils/logoHero";
-import BlogCard from "../components/blogCard";
-import MainDetail from "../components/mainDetail";
+import Describe1 from "../components/main/describe1";
+import Footer from "../components/common/footer";
+import LogoHero from "../components/main/logoHero";
+import BlogCard from "../components/main/blogCard";
 import GlobalStandard from "./globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import WhyYourD from '../components/whyYourD';
-import YourdStack from "../components/yourdStack";
+import WhyYourD from '../components/main/whyYourD';
+import YourdStack from "../components/main/yourdStack";
 import ProductPage from "./productPage";
 
 import Solution from "../components/business/solution";
@@ -45,9 +44,6 @@ export default function MainPage() {
       <Solution/>
       {/* <DetailProductPage /> */}
       {/* <Persona /> */}
-
-      {/* <MainDetail /> */}
-      {/* <TabsFeatures /> */}
       <WhyYourD/>
       <GlobalStandard />
       {/* <BlogCard /> */}

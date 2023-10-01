@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import { Link } from "react-router-dom";
-import { fetchData } from "../test/testData";
+import { fetchData } from "../../test/testData";
 import img from "../../src/assets/img/dataPass.png";
 
 const CARD_WIDTH = 320;

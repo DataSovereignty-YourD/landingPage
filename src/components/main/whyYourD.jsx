@@ -1,9 +1,9 @@
-import data from "../assets/img/data_icon.png";
-import global from "../assets/img/global_icon.png";
-import law from "../assets/img/law_icon.png";
-import onboarding from "../assets/img/onboarding_icon.png";
-import secure from "../assets/img/secure_icon.png";
-import analysis from "../assets/img/analysis_icon.png";
+import data from "../../assets/img/data_icon.png";
+import global from "../../assets/img/global_icon.png";
+import law from "../../assets/img/law_icon.png";
+import onboarding from "../../assets/img/onboarding_icon.png";
+import secure from "../../assets/img/secure_icon.png";
+import analysis from "../../assets/img/analysis_icon.png";
 
 export default function WhyYourD() {
   return (
@@ -15,7 +15,7 @@ export default function WhyYourD() {
         {whyFeatures.map((feature, index) => (
           <div
             key={index}
-            className="features col-span-3 sm:col-span-2 m-2 sm:m-3   min-h-[220px] sm:min-h-[280px] bg-white  drop-shadow-md p-3 sm:p-4 "
+            className="features col-span-3 sm:col-span-2 m-2 sm:m-3 hover:scale-105 transition-all duration-500  min-h-[220px] sm:min-h-[280px] bg-white  drop-shadow-xl p-3 sm:p-4 border-[2px] border-opacity-50 border-[#fccc00]"
           >
             <img
               src={feature.img}

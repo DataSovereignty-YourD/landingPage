@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import img from "../../src/assets/img/dataPass.png";
-import Footer from "./footer";
-import { fetchData } from "../test/testData";
+import img from "../../../src/assets/img/dataPass.png";
+import Footer from "../common/footer";
+import { fetchData } from "../../test/testData";
 
 export interface MyDataType {
   id: number;
