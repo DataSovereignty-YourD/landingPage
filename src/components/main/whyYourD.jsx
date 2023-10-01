@@ -1,9 +1,9 @@
-import data from "../../assets/img/data_icon.png";
-import global from "../../assets/img/global_icon.png";
-import law from "../../assets/img/law_icon.png";
-import onboarding from "../../assets/img/onboarding_icon.png";
-import secure from "../../assets/img/secure_icon.png";
-import analysis from "../../assets/img/analysis_icon.png";
+import data from "../../assets/icon/data_icon.png";
+import global from "../../assets/icon/global_icon.png";
+import law from "../../assets/icon/law_icon.png";
+import onboarding from "../../assets/icon/onboarding_icon.png";
+import secure from "../../assets/icon/secure_icon.png";
+import analysis from "../../assets/icon/analysis_icon.png";
 
 export default function WhyYourD() {
   return (

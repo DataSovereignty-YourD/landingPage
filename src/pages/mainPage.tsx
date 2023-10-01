@@ -3,7 +3,7 @@ import Describe1 from "../components/main/describe1";
 import Footer from "../components/common/footer";
 import LogoHero from "../components/main/logoHero";
 import BlogCard from "../components/main/blogCard";
-import GlobalStandard from "./globalStandard";
+import GlobalStandard from "../components/main/globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";

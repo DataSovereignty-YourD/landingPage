@@ -1,4 +1,4 @@
-import W3CLogo from '../assets/img/logos_w3c.png';
+import W3CLogo from '../../assets/img/logos_w3c.png';
 export default function GlobalStandard() {
     return (
         <div className="w-screen justify-center items-center h-[60vh] flex flex-col relative font-sf-pro-text text-center bg-blue-50 z-30">
