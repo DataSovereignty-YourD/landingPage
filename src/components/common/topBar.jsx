@@ -23,9 +23,9 @@ export default function TopBar() {
             <RoundedButton />
           </Link>
         </div>
-        <div className=" w-10 h-10 flex items-center  ">
+        {/* <div className=" w-10 h-10 flex items-center  ">
           <SideNav />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
-import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useIsVisible } from '../../hooks/view';
-import WetButton from '../utils/buttons/wetButton';
+import RoundedButton from './buttons/roundedButton';
 
 const LogoHero = ({ text1 }) => {
   const ref4 = useRef(null);
@@ -32,7 +31,7 @@ const LogoHero = ({ text1 }) => {
             </h1>
             {isVisible4 && (
               <Link to={'/ContactUs'} >
-                <WetButton />
+                <RoundedButton />
               </Link>
             )}
           </section>

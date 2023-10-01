@@ -37,7 +37,7 @@ export default function MainPage() {
         title1={'Ignite'}
         title2={'Data Ownership'}
         subText1={
-          'We provide a user-friendly Web3 infrastructure enabling you to easily build Web3 products. '
+          'We provide a user-friendly Web3.0 infrastructure enabling you to easily build Web3.0 products. '
         }
         />
       <YourdStack />
