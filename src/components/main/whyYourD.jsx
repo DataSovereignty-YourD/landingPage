@@ -37,7 +37,7 @@ const whyFeatures = [
   {
     img: data,
     title: "Enhanced User Onboarding",
-    text: "Makes it easy for users to sign up and sign in to your web services.",
+    text: "Makes it easy for users to sign up and sign in to your web services",
   },
   {
     img: global,
@@ -46,8 +46,8 @@ const whyFeatures = [
   },
   {
     img: law,
-    title: "GDPR Compliance",
-    text: "Ensures compliance with GDPR regulations, safeguarding user data privacy",
+    title: "Data Protection Law Compliant",
+    text: "Ensures compliance with international data protection Laws, safeguarding user data privacy",
   },
   {
     img: onboarding,
@@ -57,11 +57,11 @@ const whyFeatures = [
   {
     img: secure,
     title: "Global Standard",
-    text: "Follows international standards for data management and privacy protection.",
+    text: "Follows international standards for data management and privacy protection",
   },
   {
     img: analysis,
     title: "Data Ownership ",
-    text: "Gives users data ownership, empowering them to manage and utilize their personal data.",
+    text: "Gives users data ownership, empowering them to manage and utilize their personal data",
   },
 ];
