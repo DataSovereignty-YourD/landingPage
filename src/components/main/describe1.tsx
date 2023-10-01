@@ -1,42 +1,20 @@
 import { useEffect, useRef, useState } from "react";
-import { useIsVisible } from "../hooks/view";
+import { useIsVisible } from "../../hooks/view";
 import { motion } from "framer-motion";
-import "../assets/css/describe1.css";
-import RoundedButton from "./utils/buttons/roundedButton";
+import "../../assets/css/describe1.css";
+import RoundedButton from "../utils/buttons/roundedButton";
 interface DescribeProps {
   title1: string;
   title2: string;
   subText1: string;
-  // text1: string;
-  // text2: string;
 }
 export default function Describe1({
   title1,
   title2,
   subText1,
-  // text1,
-  // text2,
 }: DescribeProps) {
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
-
-  const ref2 = useRef(null);
-  const isVisible2 = useIsVisible(ref2);
-
-  const ref3 = useRef(null);
-  const isVisible3 = useIsVisible(ref3);
-
-  const splitWord1 = (text: string) => {
-    const word = "data sovereignty and privacy";
-    const parts = text.split(word);
-    return (
-      <>
-        {parts[0]}
-        <span className="text-[#fccc00]">{word}</span>
-        {parts[1]}
-      </>
-    );
-  };
 
   function ScrollComponent() {
     return (

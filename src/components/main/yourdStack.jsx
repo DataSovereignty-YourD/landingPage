@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import YourDStack from "../assets/img/YourDStack.png";
+import YourDStack from "../../assets/img/YourDStack.png";
+
 export default function YourdStack() {
   const [activeLayer, setActiveLayer] = useState(null);
   const handleButtonClick = () => {

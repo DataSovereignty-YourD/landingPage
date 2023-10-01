@@ -1,15 +1,14 @@
 
-import Describe1 from "../components/describe1";
-import Footer from "../components/footer";
-import LogoHero from "../components/utils/logoHero";
-import BlogCard from "../components/blogCard";
-import MainDetail from "../components/mainDetail";
-import GlobalStandard from "./globalStandard";
+import Describe1 from "../components/main/describe1";
+import Footer from "../components/common/footer";
+import LogoHero from "../components/main/logoHero";
+import BlogCard from "../components/main/blogCard";
+import GlobalStandard from "../components/main/globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import WhyYourD from '../components/whyYourD';
-import YourdStack from "../components/yourdStack";
+import WhyYourD from '../components/main/whyYourD';
+import YourdStack from "../components/main/yourdStack";
 import ProductPage from "./productPage";
 
 import Solution from "../components/business/solution";
@@ -38,16 +37,13 @@ export default function MainPage() {
         title1={'Ignite'}
         title2={'Data Ownership'}
         subText1={
-          'We provide a user-friendly Web3 infrastructure enabling you to easily build Web3 products. '
+          'We provide a user-friendly Web3.0 infrastructure enabling you to easily build Web3.0 products. '
         }
         />
       <YourdStack />
       <Solution/>
       {/* <DetailProductPage /> */}
       {/* <Persona /> */}
-
-      {/* <MainDetail /> */}
-      {/* <TabsFeatures /> */}
       <WhyYourD/>
       <GlobalStandard />
       {/* <BlogCard /> */}
