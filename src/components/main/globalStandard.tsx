@@ -16,26 +16,26 @@ export default function GlobalStandard() {
       title: "Tezos",
       img: Tezos,
     },
-    {
-      title: "Klaytn",
-      img: Klaytn,
-    },
-    {
-      title: "Polkadot",
-      img: Polkadot,
-    },
-    {
-      title: "Tron",
-      img: Tron,
-    },
-    {
-      title: "Ethereum",
-      img: Ethereum,
-    },
-    {
-      title: "Evmos",
-      img: Evmos,
-    },
+    // {
+    //   title: "Klaytn",
+    //   img: Klaytn,
+    // },
+    // {
+    //   title: "Polkadot",
+    //   img: Polkadot,
+    // },
+    // {
+    //   title: "Tron",
+    //   img: Tron,
+    // },
+    // {
+    //   title: "Ethereum",
+    //   img: Ethereum,
+    // },
+    // {
+    //   title: "Evmos",
+    //   img: Evmos,
+    // },
   ];
 
   return (

@@ -71,7 +71,7 @@ const links = [
   // { text: "Products", to: "/Products" },
   // { text: "About", to: "/About" },
   // { text: "Blog", to: "/Blog" },
-  { text: "Contact Us", to: "/ContactUs" },
+  { text: "Contact Us", to: "/contact" },
   // { text: "Docs", to: "/Docs" },
 ];
 

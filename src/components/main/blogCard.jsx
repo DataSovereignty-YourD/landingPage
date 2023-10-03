@@ -60,7 +60,7 @@ const BlogCard = () => {
               News
             </p>
             <Link
-              to="/Blog"
+              to="/blog"
               className=" font-semibold text-sm sm:text-lg  p-1 rounded-md  hover:bg-[#fccc00]"
             >
               View All

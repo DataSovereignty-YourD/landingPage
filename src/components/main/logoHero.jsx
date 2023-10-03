@@ -30,7 +30,7 @@ const LogoHero = ({ text1 }) => {
               {text1}
             </h1>
             {isVisible4 && (
-              <Link to={'/ContactUs'} >
+              <Link to={'/contact'} >
                 <RoundedButton />
               </Link>
             )}

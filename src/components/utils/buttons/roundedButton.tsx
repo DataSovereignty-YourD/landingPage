@@ -14,7 +14,7 @@ const RoundedSlideButton = () => {
   
   return (
     <Link
-    to={'/ContactUs'}
+    to={'/contact'}
       className={`
         relative z-0 flex items-center gap-2 overflow-hidden rounded-sm border-black border-[1px]
         sm:px-3 px-2 sm:py-2 py-1 font-semibold uppercase text-black transition-all duration-500
