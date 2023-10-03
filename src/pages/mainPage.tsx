@@ -39,7 +39,7 @@ export default function MainPage() {
         subText1={
           'We provide a user-friendly Web3.0 infrastructure enabling you to easily build Web3.0 products. '
         }
-        />
+      />
       <YourdStack />
       <Solution/>
       {/* <DetailProductPage /> */}

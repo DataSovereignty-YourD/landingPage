@@ -3,6 +3,7 @@ import YourDSaaS from "../../assets/img/dataPass.png";
 import FastAuth from "../../assets/img/fastAuth.png";
 import Analytics from "../../assets/img/analytics.png";
 import OutlineButton from "../utils/buttons/outlineButton";
+import { Link } from "react-router-dom";
 
 export default function Solution() {
   const solutions = [
@@ -14,6 +15,7 @@ export default function Solution() {
         "YourD Login introduces a seamless login approach, addressing the complexities of conventional wallet logins and simplifying the building of Web 3.0 projects. This makes it a true Web 3.0 login solution that opens up real-world possibilities.",
       image: FastAuth,
       bgColor: "bg-[#fccc00]",
+      path:'/yourd_login',
     },{
       id: 2,
       title: "Web 3.0 Data Ownership Solution",
@@ -22,6 +24,7 @@ export default function Solution() {
         "YourD Pass is a solution conceived around the principle of user data ownership. It is versatile, finding applications in a wide array of fields from online digital identity to offline RSVP and RWA. This enables users to manage and utilize their data effectively, representing a genuine Web 3.0 solution.",
       image: YourDSaaS,
       bgColor: "bg-[#fccc00]",
+      path:'/yourd_pass',
     },{
       id: 3,
       title:
@@ -32,6 +35,7 @@ export default function Solution() {
         "The implementation of YourD Login and YourD Pass makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.",
       image: Analytics,
       bgColor: "bg-[#007aff]",
+      path:'/yourd_analytics',
     },{
       id: 4,
       title: "YourD Data Leverage Infra",
@@ -41,6 +45,7 @@ export default function Solution() {
         "YourD empowers users and service providers to co-create the value of their data. Zero-Knowledge Proof enables secure transmission and management of data, and YourD gives you the freedom to explore and discover new business models and opportunities in various fields in a Web 3.0 environment.",
       image: DataSelling,
       bgColor: "bg-[#007aff]",
+      path:'/',
     },
   ];
 
@@ -58,7 +63,10 @@ export default function Solution() {
         {solution.description}
       </span>
       <div className="mt-4">
-        <OutlineButton />
+        <Link to={solution.path} className='px-3'>
+           {/* <OutlineButton /> */}
+          Learn more
+        </Link>
       </div>
     </div>
   );

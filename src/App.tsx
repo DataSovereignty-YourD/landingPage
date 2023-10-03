@@ -9,6 +9,9 @@ import Blog from './components/blog/blog';
 import ProductPage from './pages/productPage';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import YourDLoginPage from './pages/product/yourdLoginPage';
+import YourDPassPage from './pages/product/yourdPassPage';
+import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
 function App() {
   const location = useLocation();
 
@@ -22,10 +25,12 @@ function App() {
       <StarsCanvas />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/product" element={<ProductPage />} />
-        <Route path="/About" element={<AboutPage />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/Blog" element={<Blog />} />
+        <Route path="/yourd_login" element={<YourDLoginPage />} />
+        <Route path="/yourd_pass" element={<YourDPassPage />} />
+        <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       {/* <SideBar /> */}
       {/* <div className="h-[1px] w-full bg-gray-20 items-start"></div> */}
