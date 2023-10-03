@@ -63,7 +63,7 @@ export default function Describe1({
                 {title1}&nbsp;{title2}
               </div>
             </div>
-            <div className="font-medium text-xl sm:text-2xl leading-7 max-w-[600px] text-center">{subText1}</div>
+            <div className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center">{subText1}</div>
             <div className="bg-white">
               <RoundedButton/>
             </div>
