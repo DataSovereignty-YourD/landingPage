@@ -10,7 +10,7 @@ import {
   FiUpload,
 } from "react-icons/fi";
 
-const CollapseCardFeatures = () => {
+const LoginButton = () => {
   const [position, setPosition] = useState(0);
 
   const shiftLeft = () => {
@@ -79,7 +79,7 @@ const Feature = ({ position, index, title, description, Icon }) => {
   );
 };
 
-export default CollapseCardFeatures;
+export default LoginButton;
 
 const features = [
   {
