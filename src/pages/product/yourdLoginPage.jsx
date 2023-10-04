@@ -7,15 +7,15 @@ import LoginButtonCard from '../../components/loginButtonCard';
 import Footer from '../../components/common/footer';
 export default function YourDLoginPage() {
   return (
-    <>
+        <div className="flex flex-col relative  pt-16 items-center  mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
       <LoginHeader />
       <DescrbieLogin />
       <LoginDiagram />
       <AdvantageLogin />
-      <div className="h-1/2 , relative">
+      <div className="h-1/2 w-full relative">
         <LoginButtonCard />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

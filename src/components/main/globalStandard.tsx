@@ -42,10 +42,10 @@ export default function GlobalStandard() {
     <div className="px-5 sm:px-10 md:w-full md:px-[12.5%] justify-center items-center min-h-[60vh] flex flex-col relative font-sf-pro-text text-center py-5 bg-blue-50 z-30">
       <>
         <div className="uppercase text-lg md:text-2xl lg:text-4xl text-center font-bold mb-5 md:mb-10  px-5 w-full">
-          GLOBAL RECOGNITION & STANDARDIZATION
+        GLOBAL STANDARDS & SUPPORT
         </div>
         <div className="font-normal md:font-medium text-sm px-4 md:text-2xl max-w-[1000px]">
-        Adhering to the global standard of W3C,, backing from Tezos, and recognized in blockchain hackathon, we are committed to enabling effective data ownership.
+        Developed in compliance with the W3C DID global standard and supported by Tezos, we are committed to enabling data ownership.
         </div>
       </>
       <div className="flex flex-wrap gap-3 w-full max-w-[1000px] items-center justify-center">

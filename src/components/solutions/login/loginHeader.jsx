@@ -1,7 +1,7 @@
-import Login from '../../../assets/img/login.png';
+import Login from '../../../assets/img/loginMockUp.png';
 export default function LoginHeader() {
     return (
-        <div className="h-1/2 flex relative justify-between pt-16 items-center  mx-5 sm:mx-10 md:w-3/4 md:mx-auto bg-white ">
+        <div className='h-1/2 relative w-full flex justify-between items-center bg-white'>
             <div>
                 <h className="text-[66px] font-bold">
                     Your<span className="text-[#fccc00]">D</span> Login
@@ -14,7 +14,7 @@ export default function LoginHeader() {
                     Open a <span className="text-[#fccc00]">safe</span> and <span className="text-[#fccc00]">fast</span> step to the Web 3.0 world!
                 </p>
             </div>
-            <img src={Login} alt="Login image" className="h-1/2 object-cover" />
+            <img src={Login} alt="Login image" className="w-1/3 object-contain pr-10" />
         </div>
     );
 }

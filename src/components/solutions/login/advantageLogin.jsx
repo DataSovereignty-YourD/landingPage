@@ -1,6 +1,6 @@
 export default function AdvantageLogin() {
   return (
-    <div className="h-1/2 w-full relative pt-60 justify-between items-center mx-5 sm:mx-10 md:w-3/4 md:mx-auto bg-white bg-opacity-70">
+    <div className="h-1/2 w-full relative pt-60 justify-between items-centerbg-white bg-opacity-70">
       <div className="font-bold text-[56px] flex text-center justify-center gradientText">
         Break free from traditional login.
       </div>
