@@ -26,34 +26,29 @@ export default function AdvantageLogin() {
   );
 }
 const advantageFeatures = [
-    {
-      //   img: data,
-      title: 'Instant Integration',
-      text: 'Example',
-    },
-    {
-      //   img: global,
-      title: 'Seamless',
-      text: 'Example',
-    },
-    {
-      //   img: law,
-      title: 'Privacy focused',
-      text: 'Example',
-    },
-    {
-      //   img: onboarding,
-      title: 'User Experience',
-      text: 'Example',
-    },
-    {
-      //   img: secure,
-      title: 'Multi platfrom compatibility',
-      text: 'Example',
-    },
-    {
-      //   img: analysis,
-      title: 'Example',
-      text: 'Example',
-    },
-  ];
+  {
+    //   img: data,
+    title: 'Simplicity with Seamless Access',
+    text: 'Instead of entering a traditional ID/password, simply scan a QR code to experience YourD login. Quickly access services without complicated authentication procedures',
+  },
+  {
+    //   img: global,
+    title: 'Swift and Easy Integration',
+    text: 'Utilizing code snippets from YourD login makes integration into your service simple and fast.',
+  },
+  {
+    //   img: law,
+    title: 'Privacy at its Core',
+    text: 'Unlike traditional centralized logins, YourD login decentralizes and protects your privacy based on your DID.  This gives users full control over their data.',
+  },
+  {
+    //   img: onboarding,
+    title: 'Enhanced User Experience',
+    text: 'YourD Login provides the same login process across different platforms. It maximizes user convenience by providing a consistent experience for users.',
+  },
+  {
+    //   img: secure,
+    title: 'Universal Compatibility',
+    text: 'YourD login is platform agnostic - it works across all ecosystems.',
+  },
+];
