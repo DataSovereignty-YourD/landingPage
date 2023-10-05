@@ -1,14 +1,14 @@
 export default function AdvantageAnalytic() {
   return (
-    <div className=" h-[1200px] w-full relative items-center justify-center  flex flex-col bg-white bg-opacity-70">
-      <div className=" font-bold text-[56px] flex text-center justify-center gradientText">
+    <div className="h-fit w-full relative py-32 justify-between items-centerbg-white bg-opacity-70">
+      <div className=" font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
         Unique Features to Elevate Your Business!
       </div>
-      <div className=" grid grid-cols-4 gap-24 px-24 items-start justify-center mt-24">
+      <div className=" grid grid-cols-4 items-start justify-center mt-24">
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className=" features hover:scale-105 duration-200 transform transition-transform  col-span-2 sm:col-span-2 m-2 sm:m-3 items-center justify-center flex flex-col  min-h-[220px] sm:min-h-[280px] bg-white drop-shadow-xl p-3 sm:p-4 "
+            className=" features hover:scale-105 duration-200 transform transition-transform  col-span-4 sm:col-span-2 m-2 sm:m-3 items-center justify-center flex flex-col  min-h-[220px] sm:min-h-[280px] bg-white drop-shadow-xl p-3 sm:p-4 "
           >
             {/* <img
                   src={feature.img}

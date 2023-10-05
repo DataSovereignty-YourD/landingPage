@@ -9,12 +9,23 @@ import "../../assets/css/describe1.css";
 
 export default function YourDAnalyticPage() {
   return (
-    <div className="flex flex-col relative  pt-32 items-center mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
-      <AnalyticHeader />
-      <DescribeAnalytic />
-      <AnalyticEmphasis />
-
+    <div className="flex flex-col relative  pt-16 items-center  ">
+      <div className=" mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+        <AnalyticHeader />
+      </div>
+      <div className="bg-neutral-100 bg-opacity-70">
+        <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+          <DescribeAnalytic />
+        </div>
+      </div>
+      <div className="bg-sky-50 ">
+        <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+          <AnalyticEmphasis />
+        </div>
+      </div>
+      <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
       <AdvantageAnalytic />
+      </div>
       {/* <div className="h-[600px] w-full relative">
         <AnalyticCard />
       </div> */}

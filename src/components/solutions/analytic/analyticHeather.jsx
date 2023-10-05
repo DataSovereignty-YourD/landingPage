@@ -1,14 +1,14 @@
 import Pass from "../../../assets/img/passImg.png";
 export default function AnalyticHeader() {
   return (
-    <div className=" h-[600px]  relative w-full flex justify-between items-center bg-white">
+    <div className="h-1/2 relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center py-12">
       <div>
-        <h className="  text-[66px] font-bold">YourD Analytics</h>
-        <div className=" font-semibold text-[60px] gradientText mt-1 relative -top-1">
+        <div className=" text-2xl sm:text-4xl font-bold">YourD Analytics</div>
+        <div className="font-semibold text-3xl sm:text-6xl gradientText mt-4 py-1">
           Deep, Insightful <br /> Web3.0 Data Analysis
         </div>
 
-        <p className="  font-medium text-xl">
+        <p className=" font-regular text-xl mt-4">
           Dive deeper into the Web 3.0 world with trusted insights and
           user-centric data protection!
         </p>
@@ -16,7 +16,7 @@ export default function AnalyticHeader() {
       <img
         src={Pass}
         alt="Login image"
-        className="  w-1/2 object-contain pr-10"
+        className="   h-[340px] sm:h-[400px] sm:my-0 object-contain"
       />
     </div>
   );

@@ -1,6 +1,6 @@
 export default function AdvantageLogin() {
   return (
-    <div className="h-fit w-full relative py-30 justify-between items-centerbg-white bg-opacity-70">
+    <div className="h-fit w-full relative py-32 justify-between items-centerbg-white bg-opacity-70">
       <div className="font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
         Break free from traditional login.
       </div>
@@ -15,7 +15,7 @@ export default function AdvantageLogin() {
             alt={feature.title}
             className="w-[30px] sm:w-[36px] object-contain mb-2"
           /> */}
-            <div className="font-bold text-lg md:text-xl sm:py-3 leading-5  min-h-[56px]">
+            <div className="font-bold text-lg md:text-xl leading-5  min-h-[56px] text-center">
               {feature.title}
             </div>
             <p className="text-sm h-fit sm:text-[16px] text-gray-700">{feature.text}</p>
