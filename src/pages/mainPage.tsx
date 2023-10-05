@@ -1,5 +1,5 @@
 
-import Describe1 from "../components/main/describe1";
+import MainHeroSection from "../components/main/mainHeroSection";
 import Footer from "../components/common/footer";
 import LogoHero from "../components/main/logoHero";
 import BlogCard from "../components/main/blogCard";
@@ -33,7 +33,7 @@ export default function MainPage() {
         className="fixed top-0 left-0 right-0 h-1 w-screen bg-[#fccc00] origin-left z-50"
         animate={controls}
       ></motion.div>
-      <Describe1
+      <MainHeroSection
         title1={'Ignite'}
         title2={'Data Ownership'}
         subText1={

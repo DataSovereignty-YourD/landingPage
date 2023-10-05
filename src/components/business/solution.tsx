@@ -42,7 +42,7 @@ export default function Solution() {
       subtitle:
         "Maximizing Data Value: YourD Paving the Way for Emerging Business Models in a Web 3.0 Landscape",
       description:
-        "YourD empowers users and service providers to co-create the value of their data. Zero-Knowledge Proof enables secure transmission and management of data, and YourD gives you the freedom to explore and discover new business models and opportunities in various fields in a Web 3.0 environment.",
+        "YourD enables users and service providers to co-create the value of their data in a Web 3.0 environment. By incorporating zero-knowledge proof (ZKP), users can selectively disclose certain information, ensuring data privacy while increasing the value of their data. This approach not only preserves data sovereignty, but also provides freedom to explore and discover new business models and opportunities in a variety of fields.",
       image: DataSelling,
       bgColor: "bg-[#007aff]",
       path:'/',
