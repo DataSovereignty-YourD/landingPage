@@ -1,17 +1,18 @@
-import { Routes, Route } from 'react-router-dom';
-import React from 'react';
-import StarsCanvas from './components/canvas/stars';
-import MainPage from './pages/mainPage';
-import TopBar from './components/common/topBar';
-import AboutPage from './pages/aboutPage';
-import ContactUs from './components/common/contactUs';
-import Blog from './components/blog/blog';
-import ProductPage from './pages/productPage';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import YourDLoginPage from './pages/product/yourdLoginPage';
-import YourDPassPage from './pages/product/yourdPassPage';
-import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
+import { Routes, Route } from "react-router-dom";
+import React from "react";
+import StarsCanvas from "./components/canvas/stars";
+import MainPage from "./pages/mainPage";
+import TopBar from "./components/common/topBar";
+import AboutPage from "./pages/aboutPage";
+import ContactUs from "./components/common/contactUs";
+import Blog from "./components/blog/blog";
+import ProductPage from "./pages/productPage";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import YourDLoginPage from "./pages/product/yourdLoginPage";
+import YourDPassPage from "./pages/product/yourdPassPage";
+import YourDAnalyticsPage from "./pages/product/yourdAnalayticsPage";
+import YourDInfraPage from "./pages/product/yourdInfraPage";
 function App() {
   const location = useLocation();
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/yourd_login" element={<YourDLoginPage />} />
         <Route path="/yourd_pass" element={<YourDPassPage />} />
         <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
+        <Route path="/yourd_infra" element={<YourDInfraPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
