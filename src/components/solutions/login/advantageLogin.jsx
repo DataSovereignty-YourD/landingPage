@@ -1,7 +1,7 @@
 export default function AdvantageLogin() {
   return (
-    <div className="h-fit w-full relative py-30 justify-between items-centerbg-white bg-opacity-70">
-      <div className="font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
+    <div className="h-screen w-full relative py-30 justify-between items-centerbg-white bg-opacity-70">
+      <div className="font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText mt-16">
         Break free from traditional login.
       </div>
       <div className="grid grid-cols-6 items-start justify-center mt-12  py-10">

@@ -1,7 +1,7 @@
 import Login from '../../../assets/img/loginMockUp.png';
 export default function LoginHeader() {
     return (
-        <div className='h-1/2 relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center bg-white'>
+        <div className='h-1/2 relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center bg-white bg-opacity-70'>
             <div>
                 <div className="text-2xl sm:text-4xl font-bold">
                     Your<span className="text-[#fccc00]">D</span> Login
