@@ -8,7 +8,7 @@ export default function AdvantageLogin() {
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className={`features hover:scale-105 duration-200 transform transition-transform ${index < 3 ? 'sm:col-span-2  sm:min-h-[280px]' : 'sm:col-span-3  sm:min-h-[180px]'}  col-span-6 m-2 sm:m-3 min-w-[220px] min-h-[150px] bg-white drop-shadow-xl p-3 sm:p-4`}
+            className={`features hover:scale-105 duration-200 transform transition-transform  sm:min-h-[280px] ${index < 3 ? 'sm:col-span-2 ' : (index === 3 ? 'sm:col-start-2 sm:col-span-2' :' sm:col-span-2')}  col-span-6 m-2 sm:m-3 min-w-[220px] min-h-[150px] bg-white drop-shadow-xl p-3 sm:p-4`}
           >
             {/* <img
             src={feature.img}
