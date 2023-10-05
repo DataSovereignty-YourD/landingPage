@@ -8,7 +8,7 @@ interface DescribeProps {
   title2: string;
   subText1: string;
 }
-export default function Describe1({
+export default function MainHeroSection({
   title1,
   title2,
   subText1,
