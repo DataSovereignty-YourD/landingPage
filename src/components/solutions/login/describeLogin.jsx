@@ -1,6 +1,6 @@
 export default function DescrbieLogin() {
   return (
-    <div className="min-h-screen w-full flex flex-col sm:flex-row relative pt-16 justify-between items-center bg-white bg-opacity-70 font-sf-pro-text gap-10">
+    <div className="min-h-screen w-full flex flex-col sm:flex-row relative pt-16 justify-between items-center -my-10 font-sf-pro-text gap-10">
       <div className="w-full sm:w-1/2">
         <div className="text-3xl font-bold text-[#007aff]">
           Seamless Login with <br />

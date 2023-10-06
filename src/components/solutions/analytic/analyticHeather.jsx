@@ -1,7 +1,7 @@
 import Pass from "../../../assets/img/passImg.png";
 export default function AnalyticHeader() {
   return (
-    <div className="h-1/2 relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center py-12">
+    <div className="h-1/2 relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center py-12 bg-white bg-opacity-70 ">
       <div>
         <div className=" text-2xl sm:text-4xl font-bold">YourD Analytics</div>
         <div className="font-semibold text-3xl sm:text-6xl gradientText mt-4 py-1">

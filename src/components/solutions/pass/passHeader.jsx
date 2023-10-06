@@ -1,12 +1,12 @@
 import Pass from "../../../assets/img/passImg.png";
 export default function PassHeader() {
   return (
-    <div className=" h-[600px]  relative w-full flex justify-between items-center bg-white">
+    <div className=" h-[600px] relative w-full flex justify-between items-center bg-white bg-opacity-70">
       <div>
-        <h className="  text-[66px] font-bold">
+        <h className=" text-[66px] font-bold">
           Your<span className="  text-[#fccc00]">D</span> Pass
         </h>
-        <div className=" font-semibold text-[66px] gradientText mt-1 relative -top-1">
+        <div className=" font-semibold text-[66px] gradientText mt-1 relative ">
           Empower <br />
           Your Data Ownership
         </div>

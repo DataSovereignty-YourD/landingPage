@@ -1,9 +1,9 @@
-import DescribeInfra from "../../components/solutions/leverageInfra/describeInfra";
-import InfraHeader from "../../components/solutions/leverageInfra/infraHeather";
-import AdvantageInfra from "../../components/solutions/leverageInfra/advantageInfra";
-import InfraCard from "../../components/solutions/leverageInfra/infraCard";
-import Footer from "../../components/common/footer";
-import "../../assets/css/describe1.css";
+import DescribeInfra from '../../components/solutions/leverageInfra/describeInfra';
+import InfraHeader from '../../components/solutions/leverageInfra/infraHeather';
+import AdvantageInfra from '../../components/solutions/leverageInfra/advantageInfra';
+import InfraCard from '../../components/solutions/leverageInfra/infraCard';
+import Footer from '../../components/common/footer';
+import '../../assets/css/describe1.css';
 
 export default function YourDInfraPage() {
   return (
@@ -22,7 +22,9 @@ export default function YourDInfraPage() {
       {/* <div className="h-[600px] w-full relative">
         <InfraCard />
       </div> */}
-      <Footer />
+      <div className="bg-white w-full bg-opacity-70 pt-10">
+        <Footer />
+      </div>
     </div>
   );
 }

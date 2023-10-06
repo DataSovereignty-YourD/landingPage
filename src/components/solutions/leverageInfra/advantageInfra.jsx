@@ -1,6 +1,6 @@
 export default function AdvantageInfra() {
   return (
-    <div className=" h-fit w-full relative py-32 justify-between items-centerbg-white bg-opacity-70">
+    <div className=" h-fit w-full relative py-32 justify-between items-center bg-white bg-opacity-70">
       <div className=" font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText py-1">
         YourD Data Infra Unlocking the Power of Web 3.0
       </div>
