@@ -1,6 +1,6 @@
 export default function AdvantagePass() {
   return (
-    <div className=" h-[1200px] w-full relative items-center justify-center  flex flex-col bg-white bg-opacity-70">
+    <div className=" h-screen w-full relative items-center justify-center  flex flex-col">
       <div className=" font-bold text-[56px] flex text-center justify-center gradientText">
         Embrace a World of New Experiences
       </div>

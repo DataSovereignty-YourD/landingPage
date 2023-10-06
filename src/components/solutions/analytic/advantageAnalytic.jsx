@@ -1,6 +1,6 @@
 export default function AdvantageAnalytic() {
   return (
-    <div className="h-fit w-full relative py-32 justify-between items-centerbg-white bg-opacity-70">
+    <div className="h-fit w-full relative py-32 justify-between items-cente">
       <div className=" font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
         Unique Features to Elevate Your Business!
       </div>
