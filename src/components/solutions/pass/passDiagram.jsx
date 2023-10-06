@@ -1,7 +1,7 @@
 import Diagram from "../../../assets/img/loginDiagram.png";
 export default function PassDiagram() {
   return (
-    <div className=" h-[700px] w-full  relative my-12 items-center  justify-center gap-12 bg-sky-100 flex flex-col bg-opacity-70">
+    <div className=" h-screen w-full  relative items-center  justify-center gap-12 flex flex-col bg-white bg-opacity-70 ">
       <div className="text-4xl font-bold">YourD Login with YourD Pass</div>
       <img src={Diagram} alt="login Diagram" className=" w-1/2" />
       <div className=" font-semibold text-2xl mx-12">

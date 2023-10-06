@@ -1,8 +1,8 @@
-import Ebsi from "../../../assets/img/polkadotLogo.png";
+import Ebsi from '../../../assets/img/polkadotLogo.png';
 
 export default function PassStandard() {
   return (
-    <div className="  bg-sky-100 h-80 w-full mt-32  flex items-center justify-center">
+    <div className=" h-80 w-full mt-32  flex items-center justify-center">
       <div className=" flex flex-col gap-4 items-center justify-center">
         <div className="  text-4xl font-semibold  ">
           Compliance with International Data Standards

@@ -1,6 +1,6 @@
 export default function AdvantageLogin() {
   return (
-    <div className="h-fit w-full relative py-30 justify-between items-centerbg-white bg-opacity-70">
+    <div className="h-fit w-full relative py-32 justify-between items-centerbg-white bg-opacity-70">
       <div className="font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
         Break free from traditional login.
       </div>
@@ -8,14 +8,14 @@ export default function AdvantageLogin() {
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className={`features hover:scale-105 duration-200 transform transition-transform ${index < 3 ? 'sm:col-span-2  sm:min-h-[280px]' : 'sm:col-span-3  sm:min-h-[180px]'}  col-span-6 m-2 sm:m-3 min-w-[220px] min-h-[150px] bg-white drop-shadow-xl p-3 sm:p-4`}
+            className={`features hover:scale-105 duration-200 transform transition-transform  sm:min-h-[280px] ${index < 3 ? 'sm:col-span-2 ' : (index === 3 ? 'sm:col-start-2 sm:col-span-2' :' sm:col-span-2')}  col-span-6 m-2 sm:m-3 min-w-[220px] min-h-[150px] bg-white drop-shadow-xl p-3 sm:p-4`}
           >
             {/* <img
             src={feature.img}
             alt={feature.title}
             className="w-[30px] sm:w-[36px] object-contain mb-2"
           /> */}
-            <div className="font-bold text-lg md:text-xl sm:py-3 leading-5  min-h-[56px]">
+            <div className="font-bold text-lg md:text-xl leading-5  min-h-[56px] text-center">
               {feature.title}
             </div>
             <p className="text-sm h-fit sm:text-[16px] text-gray-700">{feature.text}</p>

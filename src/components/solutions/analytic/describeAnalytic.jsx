@@ -1,63 +1,61 @@
 export default function DescribeAnalytic() {
   return (
-    <div className="  h-screen w-full   justify-center  items-center bg-white bg-opacity-70 flex-col flex gap-14">
-      <div className=" flex items-center justify-center text-4xl font-bold w-full bg-sky-50 p-12">
+    <div className=" min-h-screen w-full flex flex-col sm:flex-row relative py-16 justify-between items-center font-sf-pro-text gap-10">
+      {/* <div className=" flex items-center justify-center text-4xl font-bold w-full bg-sky-50 p-12">
         YourD Analytics : <br /> It solves all your worries
-      </div>
-      <div className=" flex flex-row gap-24">
-        <div className=" flex justify-center flex-col gap-4 ">
-          <h className="  text-[40px] font-bold text-[#007aff] ">
+      </div> */}
+      {/* <div className=" w-full sm:w-1/2"> */}
+        <div className="w-full sm:w-1/2">
+          <div className="  text-[40px] font-bold text-[#007aff] ">
             YourD Analytics:
-          </h>
+          </div>
 
-          <p className="  text-lg font-medium mt-5">
+          <div className="  text-lg font-medium mt-5">
             Data Security and Analytics Solutions for Web 3.0 Ensure data safety
             and accuracy at the same time, providing service providers with an
             optimal analytics experience.
-          </p>
+          </div>
         </div>
 
-        <div className="   grid w-full gap-24">
+        <div className="   flex flex-col w-full sm:w-1/2 gap-10">
           <div className=" gap-1 flex flex-col">
-            <h className="  font-semibold w-full text-[26px] flex items-center  flex-row">
-              <div className=" bg-[#007aff] w-4 h-4 rounded-full m-2"></div>
+            <div className="  font-semibold w-full text-[26px] flex items-center  flex-row">
+              <div className=" bg-[#007aff] w-4 h-4 rounded-full p-2 mr-2"></div>
               Comply with international data security laws
-            </h>
+            </div>
             <br />
-            <p className="  text-lg">
+            <p className="   text-[16px] text-[#848484]">
               Service providers can analyze and utilize user data without
               worrying about international data security laws like GDPR and
               CCPA.
             </p>
           </div>
           <div className=" gap-1 flex flex-col">
-            <h className="  font-semibold text-[26px] flex items-center  flex-row">
-              <div className=" bg-[#007aff] w-4 h-4 rounded-full m-2"></div>
+            <div className="  font-semibold text-[26px] flex items-center  flex-row">
+              <div className=" bg-[#007aff] w-4 h-4 rounded-full p-2 mr-2"></div>
               DID-based data analytics
-            </h>
+            </div>
             <br />
-            <p1 className="  text-lg">
-              {" "}
+            <div className="text-lg  text-[16px] text-[#848484]">
               YourD Analytics is based on DID technology to overcome the
               security vulnerabilities of centralized data storage, while
               ensuring transparency and reliability of data processing.
-            </p1>
+            </div>
           </div>
           <div className=" gap-1 flex flex-col">
-            <h className="  font-semibold text-[26px] flex items-center  flex-row">
-              <div className=" bg-[#007aff] w-4 h-4 rounded-full m-2"></div>
+            <div className="  font-semibold text-[26px] flex items-center  flex-row">
+              <div className=" bg-[#007aff] w-4 h-4 rounded-full p-2 mr-2"></div>
               Serverless Indexing
-            </h>
+            </div>
             <br />
-            <p1 className="  text-lg">
-              {" "}
+            <div className=" text-[16px] text-[#848484]">
               For DApps, you can index and analyze users without building a
               separate server. This allows DApps to provide better services
               while remaining serverless.
-            </p1>
+            </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

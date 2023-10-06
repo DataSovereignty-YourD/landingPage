@@ -1,25 +1,25 @@
 export default function AdvantageInfra() {
   return (
-    <div className=" h-[1200px] w-full relative items-center justify-center  flex flex-col bg-white bg-opacity-70">
-      <div className=" font-bold text-[56px] flex text-center justify-center gradientText">
+    <div className=" h-fit w-full relative py-32 justify-between items-center bg-white bg-opacity-70">
+      <div className=" font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText py-1">
         YourD Data Infra Unlocking the Power of Web 3.0
       </div>
       <div className=" grid grid-cols-6 items-start justify-center mt-24">
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className=" features hover:scale-105 duration-200 transform transition-transform  col-span-3 sm:col-span-2 m-2 sm:m-3 items-center justify-center flex flex-col  min-h-[220px] sm:min-h-[280px] bg-white drop-shadow-xl p-3 sm:p-4 "
+            className={`features hover:scale-105 duration-200 transform transition-transform  sm:min-h-[280px] ${index < 3 ? 'sm:col-span-2 ' : (index === 3 ? 'sm:col-start-2 sm:col-span-2' :' sm:col-span-2')}  col-span-6 m-2 sm:m-3 min-w-[220px] min-h-[150px] bg-white drop-shadow-xl p-3 sm:p-4`}
           >
             {/* <img
                 src={feature.img}
                 alt={feature.title}
                 className=" w-[30px] sm:w-[36px] object-contain mb-2"
               /> */}
-            <h3 className=" font-bold text-lg md:text-2xl sm:py-3 leading-5 min-h-[56px] items-center justify-center flex">
+            <h3 className=" font-bold text-lg md:text-xl leading-5  min-h-[56px] text-center">
               {feature.title}
             </h3>
             <br />
-            <p className=" text-sm h-fit sm:text-lg">{feature.text}</p>
+            <p className=" text-sm h-fit sm:text-[16px] text-gray-700">{feature.text}</p>
           </div>
         ))}
       </div>
@@ -29,7 +29,7 @@ export default function AdvantageInfra() {
 const advantageFeatures = [
   {
     //   img: data,
-    title: "Trusted data pipelines:",
+    title: "Trusted data pipelines",
     text: "Provide a trusted data pipeline that transparently and securely enables data exchange between organizations and users.",
   },
   {
