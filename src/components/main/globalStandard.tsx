@@ -1,19 +1,19 @@
-import W3CLogo from "../../assets/img/logos_w3c.png";
-import Tezos from "../../assets/img/tezosLogo.png";
-import Ethereum from "../../assets/img/ethereumLogo.png";
-import Evmos from "../../assets/img/evmosLogo.png";
-import Tron from "../../assets/img/tronLogo.png";
-import Klaytn from "../../assets/img/klaytnLogo.png";
-import Polkadot from "../../assets/img/polkadotLogo.png";
+import W3CLogo from '../../assets/img/w3c.png';
+import Tezos from '../../assets/img/tezos.png';
+import Ethereum from '../../assets/img/ethereumLogo.png';
+import Evmos from '../../assets/img/evmosLogo.png';
+import Tron from '../../assets/img/tronLogo.png';
+import Klaytn from '../../assets/img/klaytnLogo.png';
+import Polkadot from '../../assets/img/polkadotLogo.png';
 
 export default function GlobalStandard() {
   const Logos = [
     {
-      title: "W3C",
+      title: 'W3C',
       img: W3CLogo,
     },
     {
-      title: "Tezos",
+      title: 'Tezos',
       img: Tezos,
     },
     // {
@@ -39,18 +39,35 @@ export default function GlobalStandard() {
   ];
 
   return (
-    <div className="px-5 sm:px-10 md:w-full md:px-[12.5%] justify-center items-center min-h-[60vh] flex flex-col relative font-sf-pro-text text-center py-5 bg-blue-50 z-30">
+    <div className="px-[136px] min-h-[484px] pt-[100px] pb-[132px] relative font-sf-pro-text  bg-[#171717] bg-opacity-90 ">
       <>
-        <div className="uppercase text-lg md:text-2xl lg:text-4xl text-center font-bold mb-5 md:mb-10  px-5 w-full">
-        GLOBAL STANDARDS & SUPPORT
-        </div>
-        <div className="font-normal md:font-medium text-sm px-4 md:text-2xl max-w-[1000px]">
-        Developed in compliance with the W3C DID global standard and supported by Tezos, we are committed to enabling data ownership.
+        <div className="flex items-center justify-start w-full h-fit mb-[60px]">
+          <div className="w-[637px] h-[106px] font-bold text-[44px] text-[#fccc00] flex items-center">
+            GLOBAL STANDARDS &<br />
+            SUPPORT
+          </div>
+          <div className="w-[516px] h-[106px] text-[24px] ml-[60px] text-white">
+            Developed in compliance with the W3C DID global standard and
+            supported by Tezos, we are committed to enabling data ownership.
+            <div className="w-[516px] h-[80px]">
+              <div className="flex mt-[60px]">
+                <img
+                  src={W3CLogo}
+                  alt="w3c_logo"
+                  className="w-[149.5px] h-[80px] mr-20"
+                />
+                <img
+                  src={Tezos}
+                  alt="tezos_logo"
+                  className="w-[230.8456px] h-[80px]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </>
-      <div className="flex flex-wrap gap-3 w-full max-w-[1000px] items-center justify-center">
-        {Logos.map(logo=> <img key={logo.title} src={logo.img} alt={logo.title}  className="h-6 sm:h-8 md:h-10 mt-4 md:mt-14 backdrop-blur-sm object-contain"/>)}
-      </div>
     </div>
   );
 }
+
+
