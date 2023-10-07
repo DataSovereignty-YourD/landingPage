@@ -1,4 +1,4 @@
-import Login from '../../../assets/img/loginMockUp.png';
+import Login from '../../../assets/img/loginScreen.png';
 export default function LoginHeader() {
     return (
         <div className='h-1/2 relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center bg-white bg-opacity-70'>
@@ -14,7 +14,7 @@ export default function LoginHeader() {
                     Open a <span className="text-[#fccc00]">safe</span> and <span className="text-[#fccc00]">fast</span> step to the Web 3.0 world!
                 </p>
             </div>
-            <img src={Login} alt="Login image" className="h-[340px] sm:h-[400px] my-12 sm:my-0 object-contain" />
+            <img src={Login} alt="Login image" className="absolute right-0  h-[340px] sm:h-[400px] my-12 sm:my-0 object-contain" />
         </div>
     );
 }

@@ -1,6 +1,6 @@
 
   .gradientText {
-    background: linear-gradient(to right, #8f14e6, #e614dc, #e61453, #e68414, #FF5A00,#e68414,#e61453,#e614dc, #8f14e6,#e614dc, #e61453, #e68414);
+    background: linear-gradient(to right, #6D39FF, #e614dc, #FF5D39, #fccc00, #FF5A00,#e68414,#e61453,#e614dc, #8f14e6,#e614dc, #e61453, #e68414);
     background-size: 300% 100%;
     animation: gradientAnimation 6s linear infinite;
     -webkit-background-clip: text;

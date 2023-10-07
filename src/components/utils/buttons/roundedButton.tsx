@@ -16,9 +16,9 @@ const RoundedSlideButton = () => {
     <Link
     to={'/contact'}
       className={`
-        relative z-0 flex items-center gap-2 overflow-hidden rounded-sm border-black border-[1px]
-        sm:px-3 px-2 sm:py-2 py-1 font-semibold uppercase text-black transition-all duration-500
-        sm:text-sm text-xs whitespace-nowrap w-fit
+        relative z-0 flex items-center gap-2 overflow-hidden rounded-full border-black border-2
+        sm:px-5 px-2 sm:py-[10px] py-1 font-semibold uppercase text-black transition-all duration-500
+        sm:text-[16px] text-xs whitespace-nowrap w-fit
         
         before:absolute before:inset-0
         before:-z-10 before:translate-x-[150%]

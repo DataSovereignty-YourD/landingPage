@@ -1,4 +1,3 @@
-
 import MainHeroSection from "../components/main/mainHeroSection";
 import Footer from "../components/common/footer";
 import LogoHero from "../components/main/logoHero";
@@ -7,12 +6,11 @@ import GlobalStandard from "../components/main/globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import WhyYourD from '../components/main/whyYourD';
+import WhyYourD from "../components/main/whyYourD";
 import YourdStack from "../components/main/yourdStack";
 import ProductPage from "./productPage";
 
-import Solution from "../components/business/solution";
-
+import Solution from "../components/main/solution";
 
 export default function MainPage() {
   const controls = useAnimation();
@@ -34,22 +32,29 @@ export default function MainPage() {
         animate={controls}
       ></motion.div>
       <MainHeroSection
-        title1={'Ignite'}
-        title2={'Data Ownership'}
+        title1={"Ignite"}
+        title2={"Data Ownership"}
         subText1={
-          'We provide a user-friendly Web3.0 infrastructure enabling you to easily build Web3.0 products. '
+          "We provide a user-friendly Web3.0 infrastructure enabling you to easily build Web3.0 products. "
         }
       />
       <YourdStack />
-      <Solution/>
+      <Solution />
       {/* <DetailProductPage /> */}
       {/* <Persona /> */}
-      <WhyYourD/>
-      <GlobalStandard />
+      <div className="w-full h-fit relative bg-gray100 bg-opacity-50">
+        <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] min-h-[100vh] ">
+          <WhyYourD />
+        </div>
+      </div>
+      <div className="w-full h-fit relative bg-[#171717] bg-opacity-80">
+        <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] ">
+          <GlobalStandard />
+        </div>
+      </div>
       {/* <BlogCard /> */}
 
-
-      <LogoHero text1="The easiest way to control your Data" />
+      {/* <LogoHero text1="The easiest way to control your Data" /> */}
       <Footer />
       {/* <ScrollProgressBar/> */}
     </div>

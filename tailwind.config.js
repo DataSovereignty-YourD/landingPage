@@ -1,4 +1,6 @@
-module.exports = {
+
+
+module.exports = { 
   mode: "jit",
   content: [
     // Example content paths...
@@ -18,9 +20,24 @@ module.exports = {
         "color-3": "#00D7F2",
         maincolor: "#FFD400",
         "custom-blue": "#007aff",
+        gray100: '#F4F4F4',
+        gray150: '#e4e4e4',
+        gray200: '#C4C4C4',
+        gray300: '#848484',
+        gray400: '#474747',
+        gray500: '#171717',
+        gradient1: '#1846FF',
+        gradient2: '#AF00FF',
       },
+      backgroundImage: theme => ({
+        'custom-gradient': `linear-gradient(45deg, ${theme('colors.gradient1')}, ${theme('colors.gradient2')})`,
+      }),
       fontFamily: {
-        "sf-pro-text": ["SF-Pro-Text"],
+        "pre-extrabold": ["pre-extrabold"],
+        "pre-bold":["pre-bold"],
+        "pre-semibold": ["pre-semibold"],
+        "pre-medium": ["pre-medium"],
+        "pre-regular": ["pre-regular"],
       },
     },
   },

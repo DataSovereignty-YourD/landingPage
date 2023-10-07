@@ -18,7 +18,7 @@ export default function MainHeroSection({
 
   function ScrollComponent() {
     return (
-      <div className="text-center text-[rgba(122,122,124,0.918)] font-bold uppercase pt-8 ">
+      <div className="text-center text-[rgba(122,122,124,0.918)]  font-bold uppercase pt-8 ">
         <div className="mx-auto w-8 h-14 border-4 border-gray-300 rounded-full flex mt-2.5">
           <span className="m-auto block w-4 h-4 rounded-full bg-gray-400 animate-bounce"></span>
         </div>
@@ -41,10 +41,9 @@ export default function MainHeroSection({
 
   return (
     <>
-      <div className="h-20 relative " />
       <div
         id="container1"
-        className="w-screen sm:w-full h-screen text-center relative font-sf-pro-text overflow-hidden"
+        className="w-screen sm:w-full h-screen text-center relative font-pre-extra overflow-hidden bg-gray100 bg-opacity-50"
       >
         <div
           id="layout1"
@@ -52,7 +51,7 @@ export default function MainHeroSection({
         >
           <div id="background1" ref={ref1} className="w-full h-10 mb-[25%] " />
           <div
-            className={`fixed flex flex-col top-[30%] sm:top-[40%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
+            className={`fixed flex flex-col top-[30%] sm:top-[35%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
               isVisible1
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
@@ -63,7 +62,7 @@ export default function MainHeroSection({
                 {title1}&nbsp;{title2}
               </div>
             </div>
-            <div className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center">{subText1}</div>
+            <div className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-medium">{subText1}</div>
             <div className="bg-white">
               <RoundedButton/>
             </div>
