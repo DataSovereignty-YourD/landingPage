@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import WhyYourD from "../components/main/whyYourD";
 import YourdStack from "../components/main/yourdStack";
 import ProductPage from "./productPage";
+import backImg from "../assets/img/global-back.png";
 
 import Solution from "../components/main/solution";
 
@@ -47,10 +48,12 @@ export default function MainPage() {
           <WhyYourD />
         </div>
       </div>
-      <div className="w-full h-fit relative bg-[#171717] bg-opacity-80">
+      <div className="w-full h-fit bg-[#171717] bg-opacity-90 relative overflow-hidden">
         <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] ">
           <GlobalStandard />
         </div>
+        <img src={backImg} alt="back" className="absolute bottom-0 sm:-bottom-20 md:-bottom-40 sm:right-40 md:right-72"/>
+
       </div>
       {/* <BlogCard /> */}
 

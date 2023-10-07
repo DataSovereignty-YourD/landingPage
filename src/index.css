@@ -24,6 +24,10 @@
   font-family: "pre-regular";
   src: url("./assets//fonts/Pretendard-Regular.otf");
 }
+@font-face {
+  font-family: "pre-light";
+  src: url("./assets//fonts/Pretendard-Light.otf");
+}
 
 body {
   margin: 0;

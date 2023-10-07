@@ -38,6 +38,7 @@ module.exports = {
         "pre-semibold": ["pre-semibold"],
         "pre-medium": ["pre-medium"],
         "pre-regular": ["pre-regular"],
+        "pre-light": ["pre-light"],
       },
     },
   },

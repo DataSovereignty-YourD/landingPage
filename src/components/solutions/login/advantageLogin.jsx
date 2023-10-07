@@ -1,27 +1,27 @@
+import Login from '../../../assets/img/loginScreen2.png';
+
 export default function AdvantageLogin() {
   return (
-    <div className="h-fit w-full relative py-32 justify-between items-centerbg-white bg-opacity-70">
-      <div className="font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
+    <div className="h-fit w-full flex flex-col relative py-32 justify-between items-center gap-20">
+      <div className="font-bold text-3xl sm:text-[44px] pb-2 flex text-center justify-center gradientText">
         Break free from traditional login.
       </div>
-      <div className="grid grid-cols-6 items-start justify-center mt-12  py-10">
-        {advantageFeatures.map((feature, index) => (
-          <div
-            key={index}
-            className={`features hover:scale-105 duration-200 transform transition-transform  sm:min-h-[280px] ${index < 3 ? 'sm:col-span-2 ' : (index === 3 ? 'sm:col-start-2 sm:col-span-2' :' sm:col-span-2')}  col-span-6 m-2 sm:m-3 min-w-[220px] min-h-[150px] bg-white drop-shadow-xl p-3 sm:p-4`}
-          >
-            {/* <img
-            src={feature.img}
-            alt={feature.title}
-            className="w-[30px] sm:w-[36px] object-contain mb-2"
-          /> */}
-            <div className="font-bold text-lg md:text-xl leading-5  min-h-[56px] text-center">
-              {feature.title}
-            </div>
-            <p className="text-sm h-fit sm:text-[16px] text-gray-700">{feature.text}</p>
+        <div className='flex gap-20 items-start'>
+          <img src={Login} alt={'login'} className="object-contain w-1/3"/>
+          <div className='flex flex-col gap-4'>
+            {advantageFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className={`flex flex-col hover:scale-105 duration-200 transform transition-transform gap-5  bg-white rounded-[20px] p-3 sm:p-7`}
+              >
+                <div className="font-pre-bold text-lg md:text-xl leading-5 text-left">
+                  {feature.title}
+                </div>
+                <p className="font-pre-medium text-sm h-fit sm:text-[16px] text-gray300">{feature.text}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
     </div>
   );
 }

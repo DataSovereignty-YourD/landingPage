@@ -10,21 +10,21 @@ import '../../assets/css/describe1.css';
 export default function YourDAnalyticPage() {
   return (
     <div className="flex flex-col relative  pt-16 items-center  ">
-      <div className=" mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
         <AnalyticHeader />
       </div>
-      <div className="bg-neutral-100 bg-opacity-70">
-        <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className="bg-[#FFE9B1] bg-opacity-20">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <DescribeAnalytic />
         </div>
       </div>
-      <div className="bg-sky-50 bg-opacity-70">
-        <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className="bg-black bg-opacity-90">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <AnalyticEmphasis />
         </div>
       </div>
-      <div className=" bg-white bg-opacity-70">
-        <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className=" bg-gray200 bg-opacity-70">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <AdvantageAnalytic />
         </div>
       </div>

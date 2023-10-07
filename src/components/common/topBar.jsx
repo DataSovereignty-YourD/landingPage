@@ -37,19 +37,19 @@ export default function TopBar() {
       <div
         className={`bg-white  w-full flex justify-between items-start px-4 sm:px-[5%] transition-all duration-300 `}
       >
-        <Link to="/">
+        <Link to="/" className="flex h-16 justify-center">
           <img
             src={logo}
             alt="logo"
-            className=" flex items-center w-12 sm:w-16"
+            className=" flex items-center w-12 sm:w-16 object-contain"
           />
         </Link>
 
-        <div className=" flex flex-row h-16 sm:gap-10 items-center justify-center font-sf-pro-text">
+        <div className="flex flex-row h-16  sm:gap-10 items-center justify-center">
           {
-            <div className={`flex flex-col items-start justify-start z-40`}>
+            <div className={`hidden sm:flex flex-col items-start justify-start z-40`}>
               <div className="px-5 py-[10px] bg-gray-100 rounded-full text-[16px]">
-                Solution
+                Solutions
               </div>
               <div
           className={`flex flex-col absolute w-fit mt-[56px] text-lg ml-2 text-[#848484] ${
@@ -70,7 +70,7 @@ export default function TopBar() {
         </div>
             </div>
           }
-          <Link to="/contact" className="flex h-16 justify-center items-center">
+          <Link to="/contact" className="hidden sm:flex h-16 justify-center items-center">
             {/* <RoundedButton /> */}
 
             <span className=" px-5 py-[5px] border-2 border-black rounded-full transition-all duration-300 hover:bg-[#fccc00]">Contact Us</span>
@@ -81,7 +81,7 @@ export default function TopBar() {
         </div>
       </div>
       <div
-        className={`flex justify-between w-full absolute mt-16 bg-white transition-all duration-300
+        className={`hidden sm:flex justify-between w-full absolute mt-16 bg-white transition-all duration-300
                   ${isTopBarVisible ? `h-[136px]` : " h-0"}
                 `}
       >

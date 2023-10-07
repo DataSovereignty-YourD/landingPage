@@ -59,7 +59,7 @@ export default function Solution() {
           <span className="font-pre-bold text-lg sm:text-xl sm:leading-6 md:leading-7 md:text-2xl leading-5 text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
             {solution.id}.&nbsp;&nbsp;{solution.title}
           </span>
-          <span className="font-pre-medium text-lg sm:text-xl md:text-2xl text-gray400">
+          <span className="font-pre-medium text-lg sm:text-lg md:text-xl text-gray400">
             {solution.subtitle}
           </span>
           <span className="font-pre-medium text-gray300 text-[14px] sm:text-[16px] md:text-lg leading-7 mt-4">

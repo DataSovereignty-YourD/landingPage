@@ -1,25 +1,24 @@
 export default function AdvantageAnalytic() {
   return (
-    <div className="h-fit w-full relative py-32 justify-between items-cente">
-      <div className=" font-bold text-3xl sm:text-5xl flex text-center justify-center gradientText">
+    <div className="h-fit w-full flex flex-col relative py-32 justify-between items-center gap-20">
+      <div className=" font-pre-bold text-3xl sm:text-[44px] pb-2 flex text-center justify-center gradientText">
         Unique Features to Elevate Your Business!
       </div>
-      <div className=" grid grid-cols-4 items-start justify-center mt-24">
+      <div className=" grid grid-cols-4 items-start justify-center gap-5">
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className=" features hover:scale-105 duration-200 transform transition-transform  col-span-4 sm:col-span-2 m-2 sm:m-3 items-center justify-center flex flex-col  min-h-[220px] sm:min-h-[280px] bg-white drop-shadow-xl p-3 sm:p-4 "
+            className="col-span-4 sm:col-span-2 hover:scale-105 duration-200 transform transition-transform gap-5 bg-white rounded-[20px] p-3 sm:p-10 h-full grid grid-auto-rows-1fr"
           >
             {/* <img
                   src={feature.img}
                   alt={feature.title}
                   className=" w-[30px] sm:w-[36px] object-contain mb-2"
                 /> */}
-            <h3 className=" font-bold text-lg md:text-2xl sm:py-3 leading-5 min-h-[56px] items-center justify-center flex">
+            <div className="font-pre-bold text-lg md:text-2xl leading-5 items-start justify-start flex">
               {feature.title}
-            </h3>
-            <br />
-            <p className=" text-sm h-fit sm:text-lg">{feature.text}</p>
+            </div>
+            <p className="font-pre-medium text-sm h-fit sm:text-lg text-gray300">{feature.text}</p>
           </div>
         ))}
       </div>

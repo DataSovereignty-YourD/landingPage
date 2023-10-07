@@ -14,11 +14,11 @@ export default function YourdStack() {
           Your<span className="text-[#fccc00] font-pre-extrabold">D</span>{" "}
           Gateway
         </div>
-        <div className="font-medium text-lg md:text-2xl font-pre-medium">
+        <div className=" text-lg md:text-2xl font-pre-medium">
           {" "}
-          <span className="text-[#fccc00]">Quick</span> and{" "}
-          <span className="text-[#fccc00]"> Easy</span> to get started with{" "}
-          <span className="text-[#007aff]">True Web 3.0</span>, YourD is here to
+          <span className="text-[#000]">Quick</span> and{" "}
+          <span className="text-[#000]"> Easy</span> to get started with{" "}
+          <span className="text-[#000]">True Web 3.0</span>, YourD is here to
           guide you
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function YourdStack() {
             alt="rightArrow"
             className="w-16 object-contain"
           />
-          <div className="font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
+          <div className="font-light text-lg sm:text-xl md:text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
             Streamlining Your Web 3.0 Service Development
             {/* Taking back <span className="text-[#fccc00]">ownership of your data.</span><br/> Paving the Way for <span className="text-[#007aff]">Web3.0</span>   */}
           </div>

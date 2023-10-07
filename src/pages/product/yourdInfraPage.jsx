@@ -7,16 +7,16 @@ import '../../assets/css/describe1.css';
 
 export default function YourDInfraPage() {
   return (
-    <div className="flex flex-col relative items-center w-full ">
-      <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto pt-16 ">
+    <div className="flex flex-col relative pt-16 items-center w-full ">
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
         <InfraHeader />
       </div>
-      <div className="bg-neutral-100 bg-opacity-70">
-        <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className="bg-[#E3BFFF] bg-opacity-[15%]">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <DescribeInfra />
         </div>
       </div>
-      <div className="mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] bg-gray100 bg-opacity-70">
         <AdvantageInfra />
       </div>
       {/* <div className="h-[600px] w-full relative">
