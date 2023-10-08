@@ -41,7 +41,7 @@ export default function GlobalStandard() {
   return (
     <div className="px-5 sm:px-10 md:w-full md:px-[12.5%] justify-center items-center min-h-[60vh] flex flex-col relative font-sf-pro-text text-center py-5 bg-blue-50 z-30">
       <>
-        <div className="uppercase text-lg md:text-2xl lg:text-4xl text-center font-bold mb-5 md:mb-10  px-5 w-full">
+        <div className="uppercase text-lg md:text-2xl lg:text-4xl text-center font-pre-bold mb-5 md:mb-10  px-5 w-full">
         GLOBAL STANDARDS & SUPPORT
         </div>
         <div className="font-normal md:font-medium text-sm px-4 md:text-2xl max-w-[1000px]">

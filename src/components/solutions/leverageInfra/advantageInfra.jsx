@@ -8,7 +8,7 @@ export default function AdvantageInfra() {
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className={`col-span-4 sm:col-span-2 hover:scale-105 duration-200 transform transition-transform gap-5 bg-white rounded-[20px] p-3 sm:p-10 h-full grid grid-auto-rows-1fr`}
+            className={`col-span-4 shadow-all-around sm:col-span-2 hover:scale-105 duration-200 transform transition-transform gap-5 bg-white rounded-[20px] p-3 sm:p-10 h-full grid grid-auto-rows-1fr`}
           >
             {/* <img
                 src={feature.img}

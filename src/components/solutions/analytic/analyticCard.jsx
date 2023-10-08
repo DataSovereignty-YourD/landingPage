@@ -29,7 +29,7 @@ const AnalyticCard = () => {
     <section className=" overflow-hidden bg-neutral-100 px-4 py-12">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 flex justify-between gap-4">
-          <h2 className="text-4xl font-bold leading-[1.2] md:text-5xl">
+          <h2 className="text-4xl font-pre-bold leading-[1.2] md:text-5xl">
             Are you facing any of these concerns?
           </h2>
           <div className="flex gap-2">
@@ -73,7 +73,7 @@ const Feature = ({ position, index, title, description, Icon }) => {
       }`}
     >
       <Icon className="absolute right-2 top-2 text-7xl opacity-20" />
-      <h3 className="mb-8 text-3xl font-bold">{title}</h3>
+      <h3 className="mb-8 text-3xl font-pre-bold">{title}</h3>
       <p>{description}</p>
     </motion.div>
   );

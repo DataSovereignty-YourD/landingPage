@@ -13,7 +13,7 @@ export default function YourdVision() {
     <>
       <div className="mx-6 sm:mx-32 font-sf-pro-text">
         <div className="h-screen  items-center justify-center flex flex-col">
-          <div className="text-xl sm:text-5xl font-bold items-center justify-center flex ">
+          <div className="text-xl sm:text-5xl font-pre-bold items-center justify-center flex ">
             YourD Vision
           </div>
           <div className="flex text-sm items-center justify-center sm:text-xl w-2/3">
@@ -27,13 +27,13 @@ export default function YourdVision() {
         </div>
 
         <div>
-          <div className="text-xl sm:text-4xl font-bold h-screen items-center justify-center flex">
+          <div className="text-xl sm:text-4xl font-pre-bold h-screen items-center justify-center flex">
             Mission
           </div>
         </div>
         <div className="">
           <div ref={specialRef} className="  min-h-screen">
-            <div className="text-xl sm:text-4xl mb-24 font-bold items-center justify-center flex">
+            <div className="text-xl sm:text-4xl mb-24 font-pre-bold items-center justify-center flex">
               What makes Your
               <span className="text-[#fccc00]">D</span> &nbsp; special?
             </div>
@@ -74,11 +74,11 @@ export default function YourdVision() {
               </div>
             </div>
 
-            <div className="text-xl uppercase sm:text-4xl font-bold h-screen items-center justify-center flex">
+            <div className="text-xl uppercase sm:text-4xl font-pre-bold h-screen items-center justify-center flex">
               road map
             </div>
             <div className="min-h-screen items-center justify-center flex flex-col">
-              <div className="text-xl sm:text-4xl font-bold mb-8">Our Team</div>
+              <div className="text-xl sm:text-4xl font-pre-bold mb-8">Our Team</div>
               <div className="mx-24 mb-8">
                 <ul className=" list-disc pl-5 mb-12">
                   <li>
@@ -113,7 +113,7 @@ export default function YourdVision() {
               <div className="  flex flex-row gap-24 mx-24">
                 <div className="  border border-gray-600 backdrop-blur-sm rounded-3xl py-12 flex flex-col gap-12  w-full shadow-xl">
                   <div className="flex items-center justify-center flex-col gap-8">
-                    <div className="  font-bold">JaeGyeong Yeom</div>
+                    <div className="  font-pre-bold">JaeGyeong Yeom</div>
                     <GoPerson
                       size={62}
                       className="  border  border-gray-800 rounded-full "
@@ -130,7 +130,7 @@ export default function YourdVision() {
                 </div>
                 <div className="  border border-gray-600 backdrop-blur-sm rounded-3xl py-12 flex flex-col gap-12  w-full shadow-xl">
                   <div className="flex items-center justify-center flex-col gap-8">
-                    <div className="  font-bold">Younghoon Cha</div>
+                    <div className="  font-pre-bold">Younghoon Cha</div>
                     <GoPerson
                       size={62}
                       className="  border  border-gray-800 rounded-full "
@@ -146,7 +146,7 @@ export default function YourdVision() {
                 </div>
                 <div className="  border border-gray-600 backdrop-blur-sm rounded-3xl py-12 flex flex-col gap-12  w-full shadow-xl">
                   <div className="flex items-center justify-center flex-col gap-8">
-                    <div className="  font-bold">Jihwang Kim</div>
+                    <div className="  font-pre-bold">Jihwang Kim</div>
                     <GoPerson
                       size={62}
                       className="  border  border-gray-800 rounded-full "
@@ -165,7 +165,7 @@ export default function YourdVision() {
             </div>
           </div>
           <div className="  h-screen items-center justify-center flex flex-col ">
-            <div className="   text-xl sm:text-4xl font-bold mb-16">
+            <div className="   text-xl sm:text-4xl font-pre-bold mb-16">
               Team Award
             </div>
             <div className="  flex flex-row gap-4 mx-24">
