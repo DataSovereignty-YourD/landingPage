@@ -7,20 +7,20 @@ import LoginButtonCard from '../../components/solutions/login/loginButtonCard';
 import Footer from '../../components/common/footer';
 export default function YourDLoginPage() {
   return (
-    <div className="flex flex-col relative  pt-16 items-center">
-      <div className=" mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+    <div className="flex flex-col relative pt-16 items-start w-full ">
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] ">
         <LoginHeader />
       </div>
-      <div className="bg-stone-100 bg-opacity-70">
-        <div className=" mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className="bg-[#FFE9B1] bg-opacity-20">
+        <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <DescrbieLogin />
         </div>
       </div>
-      <div className=" mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+      <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
         <LoginDiagram />
       </div>
       <div className="bg-neutral-100 bg-opacity-70">
-        <div className=" mx-5 sm:mx-10 md:w-4/5 md:mx-auto">
+        <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <AdvantageLogin />
         </div>
       </div>

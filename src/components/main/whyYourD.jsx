@@ -7,25 +7,27 @@ import analysis from "../../assets/icon/analysis_icon.png";
 
 export default function WhyYourD() {
   return (
-    <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto min-h-[80vh] py-32 relative gap-4  justify-center mt-32">
-      <div className="text-xl sm:text-4xl  font-bold flex text-center itmes-center justify-center mb-10 sm:mb-20">
-        Why YourD?
+    <div className="flex flex-col gap-4 mt-52 py-20 justify-center ">
+      <div className="font-pre-extrabold text-xl sm:text-[44px]  font-bold flex text-center itmes-center justify-center mb-10 sm:mb-20">
+        Why Your<span className="text-maincolor">D</span>?
       </div>
-        <div className="grid grid-cols-6 items-start justify-center">
+        <div className="grid grid-cols-6 items-start justify-center sm:gap-5 gap-10">
           {whyFeatures.map((feature, index) => (
             <div
               key={index}
-              className="features hover:scale-105 duration-200 transform transition-transform  col-span-3 sm:col-span-2 m-2 sm:m-3   min-h-[220px] sm:min-h-[280px] bg-white border border-dashed border-yellow-100  drop-shadow-xl p-3 sm:p-4 "
+              className="flex flex-col hover:scale-105 duration-200 transform transition-transform col-span-3 md:col-span-2  text-center min-h-[220px] sm:min-h-[280px]"
             >
-              <img
-                src={feature.img}
-                alt={feature.title}
-                className="w-[30px] sm:w-[36px] object-contain mb-2"
-              />
-              <h3 className="font-bold text-lg md:text-2xl sm:py-3 leading-5 min-h-[56px]">
+              <div className="flex justify-center items-center ">
+                <img
+                  src={feature.img}
+                  alt={feature.title}
+                  className="sm:w-[80px] sm:y-[80px] md:w-[120px] md:y-[120px]  object-contain bg-white sm:p-5 md:p-10 rounded-full "
+                />
+              </div>
+              <div className="font-bold font-pre-bold text-lg md:text-2xl leading-5 mt-6 mb-2 md:mb-0 md:min-h-[60px]">
                 {feature.title}
-              </h3>
-              <p className="text-sm h-fit sm:text-lg">{feature.text}</p>
+              </div>
+              <p className="text-sm h-fit sm:text-lg text-gray300">{feature.text}</p>
             </div>
           ))}
       </div>

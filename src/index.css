@@ -3,32 +3,30 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-  font-family: "sf-pro-text";
-  src: url("./assets/fonts/SF-Pro.ttf");
-}
-@font-face {
-  font-family: "sf-pro-text-semibold";
-  src: url("./assets/fonts/SF-Pro-Text-Semibold.otf");
+  font-family: "pre-extrabold";
+  src: url("./assets//fonts/Pretendard-ExtraBold.otf");
 }
 
 @font-face {
-  font-family: "sf-pro-text-regular";
-  src: url("./assets/fonts/SF-Pro-Text-Regular.otf");
+  font-family: "pre-bold";
+  src: url("./assets//fonts/Pretendard-Bold.otf");
 }
 
 @font-face {
-  font-family: "sf-pro-text-medium";
-  src: url("./assets/fonts/SF-Pro-Text-Medium.otf");
+  font-family: "pre-semibold";
+  src: url("./assets//fonts/Pretendard-SemiBold.otf");
 }
-
 @font-face {
-  font-family: "sf-pro-text-right";
-  src: url("./assets/fonts/SF-Pro-Text-Light.otf");
+  font-family: "pre-medium";
+  src: url("./assets//fonts/Pretendard-Medium.otf");
+
+}@font-face {
+  font-family: "pre-regular";
+  src: url("./assets//fonts/Pretendard-Regular.otf");
 }
-
 @font-face {
-  font-family: "sf-pro-text-bold";
-  src: url("./assets/fonts/SF-Pro-Text-Bold.otf");
+  font-family: "pre-light";
+  src: url("./assets//fonts/Pretendard-Light.otf");
 }
 
 body {
