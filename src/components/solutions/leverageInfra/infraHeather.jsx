@@ -3,10 +3,10 @@ export default function InfraHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center  bg-white bg-opacity-70">
       <div className="h-fit pt-20 sm:pb-20 z-10">
-        <div className="text-2xl sm:text-[32px] font-pre-bold">
-          Your<span className="text-[#fccc00]">D</span> Data Leverage Infra
+        <div className="text-2xl sm:text-[32px] font-pre-bold mb-3">
+          Your<span className="text-[#fccc00] ">D</span> Data Leverage Infra
         </div>
-        <span className="font-pre-semibold text-3xl sm:text-[56px] gradientText mt-3 leading-none overflow-visible">
+        <span className="font-pre-semibold text-3xl sm:text-[56px] gradientText  leading-none overflow-visible">
         The Web3.0 <br />
           Data Paradigm
         </span>

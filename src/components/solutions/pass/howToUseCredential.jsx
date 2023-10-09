@@ -64,8 +64,8 @@ export function HowToUseCredential() {
             </>
           ))}
         </div>
-        <div className="font-pre-light text-xl sm:text-3xl max-w-[800px] text-center mx-auto">
-            With YourD Pass, Can easily access online services using <span className="font-pre-bold">Your<span className="text-maincolor">D</span>Login</span> 
+        <div className="font-pre-light text-xl sm:text-3xl max-w-[940px] text-center mx-auto">
+            With YourD Pass, Can easily access online services using <span className="font-pre-bold">Your<span className="text-maincolor">D </span>Login</span> 
         </div>
       </div>
       {/**Offline */}

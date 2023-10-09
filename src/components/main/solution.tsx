@@ -52,9 +52,9 @@ export default function Solution() {
   const solutionBox = ({solution,index}: any) => (
     <div
       key={solution.id}
-      className={` md:col-span-1 flex my-3 flex-col h-full items-center justify-start p-3 sm:p-5 sm:pb-0 md:p-10 md:pb-0 rounded-[32px] grid-auto-rows-1fr  backdrop-blur-sm bg-[#FFE9B1] bg-opacity-20 overflow-hidden ${index % 2 !== 0 ? 'md:mt-44' : ''}`}
+      className={` md:col-span-1 flex my-3 flex-col h-fit items-center justify-start p-3 sm:p-5 sm:pb-0 md:p-10 md:pb-0 rounded-[32px] grid-auto-rows-1fr  backdrop-blur-sm bg-[#FFE9B1] bg-opacity-20 overflow-hidden ${index ==3  ? 'translate-y-[136px]' : ''} ${index ==1  ? 'translate-y-[176px]' : ''}`}
     >
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <span className="font-pre-bold text-lg sm:text-xl sm:leading-6 md:leading-7 md:text-2xl leading-5 text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
             {solution.id}.&nbsp;&nbsp;{solution.title}
@@ -66,22 +66,22 @@ export default function Solution() {
             {solution.description}
           </span>
         </div>
-        <Link to={solution.path}>
-          {/* <OutlineButton /> */}
-          <img
-            src={LearnMore}
-            alt={solution.title}
-            className="object-contain w-[2.5rem] sm:w-[3rem] md:w-[3.75rem]"
-          />
-        </Link>
-      </div>
-        <div className="h-44 md:h-10">
-          <img
-            src={solution.image}
-            alt={solution.title}
-            className="absolute w-[360px] object-contain right-0 -z-10 bottom-10"
-          />
+        <div className="flex justify-between ">
+          <Link to={solution.path}>
+            {/* <OutlineButton /> */}
+            <img
+              src={LearnMore}
+              alt={solution.title}
+              className="object-contain w-[50px] sm:w-[70px] md:w-[3.75rem] mt-5"
+            />
+          </Link>
+            <img
+              src={solution.image}
+              alt={solution.title}
+              className="relative w-[260px] sm:w-[320px] lg:w-[360px] object-contain "
+            />
         </div>
+      </div>
     </div>
   );
 

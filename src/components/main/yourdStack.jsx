@@ -7,7 +7,7 @@ export default function YourdStack() {
     setActiveLayer((prevLayer) => (prevLayer ? null : "Data Selling Layer"));
   };
   return (
-    <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto h-screen flex flex-col justify-center items-center">
+    <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto h-screen flex flex-col justify-center items-center bg-gray-400">
       <div className="flex flex-col text-center w-full sm:mx-0 relative py-10 md:py-20 gap-5">
         <div className="font-pre-bold text-2xl md:text-5xl">
           {" "}

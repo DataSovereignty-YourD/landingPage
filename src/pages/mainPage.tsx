@@ -46,7 +46,7 @@ export default function MainPage() {
       <Solution />
       {/* <DetailProductPage /> */}
       {/* <Persona /> */}
-      <div className="w-full h-fit relative bg-gray100 bg-opacity-50">
+      <div className="w-full h-fit relative bg-gray150 bg-opacity-50">
         <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] min-h-[100vh] ">
           <WhyYourD />
         </div>
