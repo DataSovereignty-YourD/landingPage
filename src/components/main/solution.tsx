@@ -68,19 +68,19 @@ export default function Solution() {
             {solution.description}
           </span>
         </div>
-        <div className="flex justify-between ">
-          <Link to={solution.path}>
+        <div className="flex flex-shrink justify-between ">
+          <Link to={solution.path} className="w-fit h-fit">
             {/* <OutlineButton /> */}
             <img
               src={LearnMore}
               alt={solution.title}
-              className="object-contain w-[50px] sm:w-[70px] md:w-[3.75rem] mt-5"
+              className="object-contain min-w-[50px] w-[50px] sm:w-[50px] md:w-[60px] mt-5"
             />
           </Link>
           <img
             src={solution.image}
             alt={solution.title}
-            className="relative w-[260px] sm:w-[320px] lg:w-[360px] object-contain "
+            className="relative w-[260px] sm:w-[260px] lg:w-[300px] object-contain "
           />
         </div>
       </div>
