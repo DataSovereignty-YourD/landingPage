@@ -13,7 +13,7 @@ export default function LoginDiagram() {
         <span className="font-pre-bold">
           Your<span className="text-[#fccc00]">D</span>
         </span>
-        Login using the provided code snippets
+        &nbsp;Login using the provided code snippets
         <span className="">
           {" "}
           and users can login simply and securely by scanning a QR code.
