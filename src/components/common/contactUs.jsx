@@ -1,20 +1,20 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import { useState, useRef } from 'react';
-import Footer from './footer';
+import { AnimatePresence, motion } from "framer-motion";
+import { useState, useRef } from "react";
+import Footer from "./footer";
 
-const BASE_TRANSITION = { ease: 'anticipate', duration: 0.75 };
+const BASE_TRANSITION = { ease: "anticipate", duration: 0.75 };
 const COMMON_CLASSES = {
-  formBgColor: 'bg-transparent',
-  inputBgColor: 'bg-slate-100',
-  placeholderColor: 'placeholder-black/70',
-  transitionDuration: 'duration-[750ms]',
+  formBgColor: "bg-transparent",
+  inputBgColor: "bg-slate-100",
+  placeholderColor: "placeholder-black/70",
+  transitionDuration: "duration-[750ms]",
 };
 
 const ContactUs = () => {
-  const [selected, setSelected] = useState('individual');
+  const [selected, setSelected] = useState("individual");
 
   return (
-    <div className="flex flex-col min-h-screen pt-24">
+    <div className="flex flex-col min-h-screen pt-16 sm:pt-24">
       <section className="flex-grow flex items-center justify-center z-[30] mb-24">
         <div className="z-[50] w-full max-w-xl mx-auto my-auto backdrop-blur-sm shadow-lg flex flex-col-reverse lg:flex-row rounded-lg overflow-hidden">
           <Form selected={selected} setSelected={setSelected} />
@@ -42,11 +42,11 @@ const Form = ({ selected, setSelected }) => {
       return acc;
     }, {});
 
-    const subject = encodeURIComponent('YourD ContactUs Submission');
+    const subject = encodeURIComponent("YourD ContactUs Submission");
 
     let bodyContent = `Name: ${formData.firstName} ${formData.lastName}\nCountry: ${formData.country}\nEmail: ${formData.email}\n`;
 
-    if (selected === 'company') {
+    if (selected === "company") {
       bodyContent += `Type: Company\nCompany: ${formData.company}\n`;
     } else {
       bodyContent += `Type: Individual\n`;
@@ -72,21 +72,21 @@ const Form = ({ selected, setSelected }) => {
       <h3 className="text-4xl font-pre-bold mb-6">Contact us</h3>
       {[
         {
-          label: 'Hi 👋! My name is...',
-          type: 'text',
-          placeholder: ['First Name', 'Last Name'],
+          label: "Hi 👋! My name is...",
+          type: "text",
+          placeholder: ["First Name", "Last Name"],
           refs: [formRefs.firstName, formRefs.lastName],
         },
         {
-          label: 'Country (selection)',
-          type: 'text',
-          placeholder: 'Your Country',
+          label: "Country (selection)",
+          type: "text",
+          placeholder: "Your Country",
           ref: formRefs.country,
         },
         {
-          label: 'Email Address ',
-          type: 'email',
-          placeholder: 'Email address to receive replies',
+          label: "Email Address ",
+          type: "email",
+          placeholder: "Email address to receive replies",
           ref: formRefs.email,
         },
       ].map((field, idx) => (
@@ -104,7 +104,7 @@ const Form = ({ selected, setSelected }) => {
         <FormSelect selected={selected} setSelected={setSelected} />
       </div>
       <AnimatePresence>
-        {selected === 'company' && (
+        {selected === "company" && (
           <motion.div
             initial={{ marginTop: -104, opacity: 0 }}
             animate={{ marginTop: 0, opacity: 1 }}
@@ -123,7 +123,9 @@ const Form = ({ selected, setSelected }) => {
         )}
       </AnimatePresence>
       <div className="mb-6">
-        <p className="font-pre-semibold text-xl mb-2">I'd love to ask about...</p>
+        <p className="font-pre-semibold text-xl mb-2">
+          I'd love to ask about...
+        </p>
         <textarea
           ref={formRefs.message}
           placeholder="Whatever you want to ask"
@@ -166,7 +168,7 @@ const FormField = ({ label, type, placeholder, refs, inputRef }) => {
 const FormSelect = ({ selected, setSelected }) => {
   return (
     <div className="border-[1px] rounded border-gray-200 overflow-hidden font-medium w-fit">
-      {['individual', 'company'].map((type) => (
+      {["individual", "company"].map((type) => (
         <SelectButton
           key={type}
           type={type}
@@ -179,13 +181,13 @@ const FormSelect = ({ selected, setSelected }) => {
 };
 
 const SelectButton = ({ type, selected, setSelected }) => {
-  const text = type === 'individual' ? 'An individual' : 'A company';
+  const text = type === "individual" ? "An individual" : "A company";
   return (
     <button
       type="button"
       className={`text-sm px-3 py-1.5 transition-colors ${
         COMMON_CLASSES.transitionDuration
-      } relative ${selected === type ? 'text-[#fccc00]' : 'text-black'}`}
+      } relative ${selected === type ? "text-[#fccc00]" : "text-black"}`}
       onClick={() => setSelected(type)}
     >
       <span className="relative z-10">{text}</span>

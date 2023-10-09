@@ -31,7 +31,13 @@ export default function PassFunction() {
                 <span className="font-pre-medium text-gray300">{item.describe}</span>
               </div>
               {/* <HiMiniArrowLongDown size={40}/>*/}
-              <img src={Arrow} alt='arrow' className={`w-10 object-contain rotate-90 ${index===2 ?'hidden':''}`}/>
+              <img
+                src={Arrow}
+                alt="arrow"
+                className={`w-10 object-contain rotate-90 ${
+                  index === 2 ? "hidden" : ""
+                }`}
+              />
             </>
           ))}
         </div>
