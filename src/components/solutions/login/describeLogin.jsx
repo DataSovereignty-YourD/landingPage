@@ -30,7 +30,7 @@ export default function DescrbieLogin() {
           Seamless Login with Web 3.0's Identity
         </div>
         <div className="text-2xl sm:text-5xl mt-3 font-pre-semibold ">
-          Easy, Swift, Compatible.
+          Easy, Swift, Compatible
         </div>
         <div className=" sm:text-lg font-medium mt-5 sm:w-3/5 text-gray400">
           Embrace the future with an effortless login using QR code scanning,

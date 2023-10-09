@@ -37,9 +37,11 @@ const navLinkVariants = {
   closed: { x: 25 },
 };
 
-const NavLink = ({ text, to, onClick, icon: Icon }) => (
+const NavLink = ({ text, to, onClick, icon: Icon, smallText }) => (
   <motion.div
-    className="inline-block z-10 text-slate-800 w-fit font-black text-6xl sm:text-7xl hover:text-yellow-500 transition-colors"
+    className={`inline-block z-10 text-slate-800 w-fit font-black ${
+      smallText ? 'text-4xl' : 'text-6xl sm:text-7xl'
+    } hover:text-yellow-500 transition-colors`}
     variants={navLinkVariants}
     transition={{
       type: 'spring',
@@ -64,7 +66,7 @@ const NavLink = ({ text, to, onClick, icon: Icon }) => (
 
 const links = [
   { text: 'Home', to: '/' },
-  { text: 'Products', icon: AiFillCaretDown },
+  { text: 'Solutions' },
   { text: 'Contact Us', to: '/contact' },
 ];
 
@@ -78,7 +80,7 @@ const Nav = ({ isOpen, setIsOpen }) => (
     initial="closed"
   >
     <motion.button
-      className="text-3xl  text-black hover:text-yellow-500  transition-colors p-4 absolute top-8 right-8"
+      className="text-2xl  text-black hover:text-yellow-500  transition-colors p-4 absolute top-8 right-8"
       whileHover={{ rotate: '180deg' }}
       onClick={() => setIsOpen(false)}
       whileTap={{ scale: 0.9 }}
@@ -86,18 +88,45 @@ const Nav = ({ isOpen, setIsOpen }) => (
       <FiX />
     </motion.button>
     <motion.div
-      variants={linkWrapperVariants}
+      // variants={linkWrapperVariants}
       className="flex flex-col gap-4 absolute mt-48 left-8"
     >
-      {links.map((link) => (
-        <NavLink
-          key={link.text}
-          text={link.text}
-          icon={link.icon}
-          to={link.to}
-          onClick={() => setIsOpen(false)}
-        />
-      ))}
+      <NavLink text="Home" to="/" onClick={() => setIsOpen(false)} />
+      <NavLink text="Solutions" onClick={() => setIsOpen(false)} />
+      <NavLink
+        text="Pass"
+        to="/yourd_pass"
+        onClick={() => setIsOpen(false)}
+        smallText={true}
+      />
+      <NavLink
+        text="Login"
+        to="/yourd_login"
+        onClick={() => setIsOpen(false)}
+        smallText={true}
+      />
+      <NavLink
+        text="Analytics"
+        to="/yourd_analytics"
+        onClick={() => setIsOpen(false)}
+        smallText={true}
+      />
+      <NavLink
+        text="Infra"
+        to="/yourd_infra"
+        onClick={() => setIsOpen(false)}
+        smallText={true}
+      />
+      <NavLink
+        text="Contact Us"
+        to="/contact"
+        onClick={() => setIsOpen(false)}
+      />
+      {/* <NavLink
+        text="About Us"
+        to="/about"
+        onClick={() => setIsOpen(false)}
+      /> */}
     </motion.div>
   </motion.nav>
 );
@@ -112,7 +141,7 @@ const SideNav = () => {
           whileHover={{ rotate: '180deg' }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(true)}
-          className="text-3xl  bg-white/10 text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
+          className="text-2xl  bg-white/10 text-black hover:text-yellow-500 transition-colors p-4 rounded-full"
         >
           <FiMenu size={24} className="" />
         </motion.button>
