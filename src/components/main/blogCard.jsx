@@ -52,16 +52,16 @@ const BlogCard = () => {
         {/* CARDS */}
         <div className=" w-full">
           <div className=" flex justify-between items-center mb-6 mx-[15%]">
-            <p className=" text-xl sm:text-2xl font-semibold">
+            <p className=" text-xl sm:text-2xl font-pre-semibold">
               Your
-              <span className=" text-yellow-300 font-bold text-3xl itmes-center justify-center ">
+              <span className=" text-yellow-300 font-pre-bold text-3xl itmes-center justify-center ">
                 D
               </span>{" "}
               News
             </p>
             <Link
               to="/blog"
-              className=" font-semibold text-sm sm:text-lg  p-1 rounded-md  hover:bg-[#fccc00]"
+              className=" font-pre-semibold text-sm sm:text-lg  p-1 rounded-md  hover:bg-[#fccc00]"
             >
               View All
             </Link>
@@ -128,7 +128,7 @@ const Card = ({ url, category, title, description }) => {
           />
         </div>
         <div className="px-3 sm:px-6 bg-gradient-to-b from-gray-300 py-2 via-yellow/80 to-yellow/50 ">
-          <p className=" text-xl sm:text-xl font-bold">{title}</p>
+          <p className=" text-xl sm:text-xl font-pre-bold">{title}</p>
           <p className="text-sm sm:text-[16px] text-balck">{description}</p>
         </div>
       </div>

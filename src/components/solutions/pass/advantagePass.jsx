@@ -1,25 +1,24 @@
 export default function AdvantagePass() {
   return (
-    <div className=" h-screen w-full relative items-center justify-center  flex flex-col">
-      <div className=" font-bold text-[56px] flex text-center justify-center gradientText">
+    <div className=" h-fit py-10 sm:py-20 w-full relative items-center justify-center  flex flex-col">
+      <div className=" font-pre-bold text-[44px] flex text-center justify-center gradientText">
         Embrace a World of New Experiences
       </div>
-      <div className=" grid grid-cols-6 items-start justify-center mt-24">
+      <div className=" grid grid-cols-6 items-start justify-center mt-24 gap-10">
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
-            className=" features hover:scale-105 duration-200 transform transition-transform  col-span-3 sm:col-span-2 m-2 sm:m-3 items-center justify-center flex flex-col  min-h-[220px] sm:min-h-[280px] bg-white drop-shadow-xl p-3 sm:p-4 "
+            className="col-span-6 sm:col-span-3 lg:col-span-2 hover:scale-105 duration-200 transform transition-transform gap-5 bg-white rounded-[20px] p-3 sm:p-10 h-full  grid grid-auto-rows-1fr shadow-all-around"
           >
             {/* <img
               src={feature.img}
               alt={feature.title}
               className=" w-[30px] sm:w-[36px] object-contain mb-2"
             /> */}
-            <h3 className=" font-bold text-lg md:text-2xl sm:py-3 leading-5 min-h-[56px] items-center justify-center flex">
+            <span className=" font-pre-bold text-lg md:text-2xl leading-5 items-start justify-start flex">
               {feature.title}
-            </h3>
-            <br />
-            <p className=" text-sm h-fit sm:text-lg">{feature.text}</p>
+            </span>
+            <span className=" font-pre-medium text-sm h-fit sm:text-lg text-gray300">{feature.text}</span>
           </div>
         ))}
       </div>

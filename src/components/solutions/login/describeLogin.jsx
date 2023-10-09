@@ -24,12 +24,12 @@ export default function DescrbieLogin() {
   ];
 
   return (
-    <div className="min-h-screen h-fit w-full flex flex-col relative py-20 sm:py-0 gap-32 justify-center items-center ">
+    <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
       <div className="w-full ">
-        <div className="text-lg sm:text-[32px] font-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
+        <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           Seamless Login with Web 3.0's Identity
         </div>
-        <div className="text-2xl sm:text-5xl mt-3 font-semibold ">
+        <div className="text-2xl sm:text-5xl mt-3 font-pre-semibold ">
           Easy, Swift, Compatible.
         </div>
         <div className=" sm:text-lg font-medium mt-5 sm:w-3/5 text-gray400">
@@ -41,10 +41,10 @@ export default function DescrbieLogin() {
       <div className="flex flex-col sm:flex-row gap-7 w-full mt-10">
         {features.map((feature) => (
           <div key={feature.title}>
-            <div className="font-bold text-xl sm:text-2xl mb-2 sm:text-center sm:min-h-[64px]">
+            <div className="font-pre-bold text-xl sm:text-2xl mb-2  sm:min-h-[64px]">
               {feature.title}
             </div>
-            <ul className="list-disc pl-5 text-gray300">
+            <ul className="list-disc pl-3 text-gray300">
             {feature.descriptions.map((description, idx) => (
               <li key={idx} className="text-[16px]">
                 {description}

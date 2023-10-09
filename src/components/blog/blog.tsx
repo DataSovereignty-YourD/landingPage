@@ -48,7 +48,7 @@ function Blog() {
     <div className=" flex flex-col pt-16 bg-transparent lg:pt-24  w-full sm:w-4/5 sm:mx-auto lg:min-h-screen font-sf-pro-text">
       <div className=" flex flex-grow justify-start z-10 rounded-sm items-start mb-24 px-4 sm:px-0 lg:mb-80 lg:bg-white w-full ">
         <div className=" flex flex-col bg-white w-full">
-          <div className=" text-xl lg:text-4xl  font-bold text-black mt-8 lg:mt-12 mb-4">
+          <div className=" text-xl lg:text-4xl  font-pre-bold text-black mt-8 lg:mt-12 mb-4">
             Your
             <span className=" text-[#fccc00] text-3xl lg:text-5xl items-center justify-center ">
               D
@@ -56,7 +56,7 @@ function Blog() {
             &nbsp;News
             <div className="  border-b-2 lg:mt-2 border-[#fccc00] border-width-"></div>
           </div>
-          <div className="    text-md lg:text-2xl font-bold text-black mt-3 lg:mt-12 mb-1 lg:mb-2 uppercase">
+          <div className="    text-md lg:text-2xl font-pre-bold text-black mt-3 lg:mt-12 mb-1 lg:mb-2 uppercase">
             Recent News
           </div>
           <div className=" gap-2 sm:grid sm:grid-cols-12 rounded-sm lg:gap-10 w-full sm:h-60">
@@ -67,7 +67,7 @@ function Blog() {
             />
             <div className="w-full backdrop-blur-lg flex flex-col gap-2 items-start justify-start h-60 sm:col-span-7">
               <div className="text-sm sm:text-lg font-medium">2023. 09. 23</div>
-              <div className="  w-full text-lg sm:text-xl font-bold">
+              <div className="  w-full text-lg sm:text-xl font-pre-bold">
                 YourD: Realizing Data Sovereignty in Web3.0
               </div>
               <div className=" text-sm lg:text-lg text-gray-600 text-ellipsis overflow-hidden whitespace-normal">
@@ -96,7 +96,7 @@ function Blog() {
             ref={allNewsRef}
             className="  flex mt-8 mb-4 backdrop-blur-lg  justify-between items-center lg:mt-32"
           >
-            <div className="   text-md mb-1 lg:text-2xl font-bold text-black uppercase">
+            <div className="   text-md mb-1 lg:text-2xl font-pre-bold text-black uppercase">
               All News
             </div>
             <div className="  text-xs  lg:text-lg flex-row flex gap-1 lg:gap-2">
@@ -121,7 +121,7 @@ function Blog() {
                 key={post.id}
                 className="col-span-1 lg:my-6 rounded-sm   bg-white "
               >
-                <div className="transform translate-y-2  font-bold absolute text-xs lg:text-xl">
+                <div className="transform translate-y-2  font-pre-bold absolute text-xs lg:text-xl">
                   Your
                   <span className="text-[#fccc00] lg:text-2xl  items-center justify-center">
                     D
@@ -132,10 +132,10 @@ function Blog() {
                   alt=""
                   className="object-contain duration-300 hover:scale-105"
                 />
-                <div className="font-regular text-sm text-gray-500 rounded-sm">
+                <div className="font-pre-reqular text-sm text-gray-500 rounded-sm">
                   {post.date}
                 </div>
-                <div className="lg:mt-4 my-2 text-lg sm:text-xl font-bold lg:text-xl">
+                <div className="lg:mt-4 my-2 text-lg sm:text-xl font-pre-bold lg:text-xl">
                   {post.title}
                 </div>
                 <div className="text-sm sm:text-lg text-gray-600 h-10 sm:h-16 w-full text-ellipsis overflow-hidden">{`"${post.description}"`}</div>

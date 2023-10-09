@@ -10,7 +10,7 @@ export default function DetailPay () {
                   <th scope="col">
                     <h2 className="px-2 text-lg font-medium">Starter</h2>
                     <p className="mb-3">
-                      <span className="text-2xl font-bold sm:text-4xl text-gray-900">
+                      <span className="text-2xl font-pre-bold sm:text-4xl text-gray-900">
                         0€
                       </span>
                       <span className="font-medium text-gray-600">/mo</span>
@@ -19,7 +19,7 @@ export default function DetailPay () {
                   <th scope="col">
                     <h2 className="px-2 text-lg font-medium">Standard</h2>
                     <p className="mb-3">
-                      <span className="text-2xl font-bold sm:text-4xl text-gray-900">
+                      <span className="text-2xl font-pre-bold sm:text-4xl text-gray-900">
                         19€
                       </span>
                       <span className="font-medium text-gray-600">/mo</span>
@@ -28,7 +28,7 @@ export default function DetailPay () {
                   <th scope="col">
                     <h2 className="px-2 text-lg font-medium">Premium</h2>
                     <p className="mb-3">
-                      <span className="text-2xl font-bold sm:text-4xl text-gray-900">
+                      <span className="text-2xl font-pre-bold sm:text-4xl text-gray-900">
                         49€
                       </span>
                       <span className="font-medium text-gray-600">/mo</span>

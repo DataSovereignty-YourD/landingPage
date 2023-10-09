@@ -11,7 +11,7 @@ export default function YourDLoginPage() {
       <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] ">
         <LoginHeader />
       </div>
-      <div className="bg-[#FFE9B1] bg-opacity-20">
+      <div className="bg-[#FFF6E0]">
         <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <DescrbieLogin />
         </div>

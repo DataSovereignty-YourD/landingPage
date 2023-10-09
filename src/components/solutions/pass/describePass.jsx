@@ -1,64 +1,58 @@
-export default function DescrbiePass() {
+export default function DescribePass() {
+  const dataSections = [
+    {
+      title: "Issuance and storage",
+      description:
+        "YourD Pass allows you to securely issue credential data to your users. The issued credential data is stored on the user's device and can be accessed at any time.",
+    },
+    {
+      title: "Data Wallet",
+      description:
+        "YourD Digital Data Wallet stores user's credential data in card format along with existing Web 3 digital assets, making it easy for users to manage.",
+    },
+    {
+      title: "Providing personal information selectively",
+      description:
+        "With ZKP, users can selectively reveal only the information they need to easily access your services, while hiding unwanted personal information.",
+    },
+    {
+      title: "Approaches to online and offline authentication",
+      description:
+        "YourD Pass simplifies identity verification and KYC processes. It provides users with a quick and easy login and authentication experience, both online and offline.",
+    },
+  ];
+
   return (
-    <div className=" h-screen w-full flex relative pt-16 justify-between gap-32 items-center bg-white bg-opacity-70">
-      <div className="flex justify-between flex-col ">
-        <h className=" text-[40px] font-bold text-[#007aff]">
-          Effortless <br />
-          Data Management
-        </h>
-        <h2 className=" text-[50px] font-semibold text-[#f0a9a9]">
-          Own and Prove
-        </h2>
-        <p className=" text-lg font-medium mt-5">
-          In an age where data is paramount, <br />
-          YourD Pass empowers you to take control of your information and regain
-          your sovereignty <br />
-          in the Web 3.0 era.
-        </p>
+    <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
+      <div className="w-full">
+        <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
+          User-centered data management
+        </div>
+        <div className="text-2xl sm:text-5xl mt-3 font-pre-semibold ">
+          Versatile, reliable, and secure
+        </div>
+        <div className=" sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">
+          Take control of your data with YourD Pass, a Web 3.0 solution that
+          emphasizes user data ownership. From online platforms to offline
+          environments, YourD Pass enables consistent and easy data management
+          wherever you are..
+        </div>
       </div>
 
-      <div className="  grid w-full gap-24">
-        <div className="gap-1 flex flex-col">
-          <h className=" font-semibold w-full text-[26px] flex items-center  flex-row">
-            <div className="bg-[#007aff] w-4 h-4 rounded-full m-2"></div>
-            Safely Own and Preserve Your Data
-          </h>
-          <br />
-          <p className=" text-lg">
-            Users can receive secure, encrypted data and store it on their own
-            devices, giving them sovereignty over their data and the ability to
-            utilize it independently. In addition, the secure storage of data
-            via a DID gives users the freedom to control and utilize their data
-            according to the principles of Web 3.0.
-          </p>
-        </div>
-        <div className="gap-1 flex flex-col">
-          <h className=" font-semibold text-[26px] flex items-center  flex-row">
-            <div className="bg-[#007aff] w-4 h-4 rounded-full m-2"></div>
-            Easy Login and KYC Process
-          </h>
-          <br />
-          <p1 className=" text-lg">
-            {" "}
-            YourD Login allows users to verify their identity with a VC stored
-            on their device and utilize a QR code for simple and quick
-            authentication. It also provides a KYC process.
-          </p1>
-        </div>
-        <div className="gap-1 flex flex-col">
-          {" "}
-          <h className=" font-semibold text-[26px] flex items-center  flex-row">
-            <div className="bg-[#007aff] w-4 h-4 rounded-full m-2"></div>
-            Compliance with International Data Standards{" "}
-          </h>
-          <br />
-          <p2 className=" text-lg">
-            YourD Pass is designed to store and manage data in compliance with
-            the European Blockchain Services Infrastructure (EBSI) standard.
-            With YourD, users can experience reliable and transparent data
-            management that complies with international data standards.
-          </p2>
-        </div>
+      <div className="flex flex-col sm:grid sm:grid-cols-4  w-full mt-10 ">
+        {dataSections.map((section, index) => (
+          <div
+            key={index}
+            className="gap-1 flex flex-col sm:col-span-2 mb-20"
+          >
+            <div className="font-pre-bold text-xl sm:text-2xl  mb-2  ">
+              {section.title}
+            </div>
+            <div className="text-[16px] text-gray300">
+              {section.description}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

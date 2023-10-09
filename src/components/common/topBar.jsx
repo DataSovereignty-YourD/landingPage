@@ -30,8 +30,7 @@ export default function TopBar() {
 
   return (
     <div
-      onMouseEnter={() => setTopBarVisible(true)}
-      onMouseLeave={() => setTopBarVisible(false)}
+    
       className="flex flex-col w-screen  fixed z-50"
     >
       <div
@@ -45,15 +44,21 @@ export default function TopBar() {
           />
         </Link>
 
-        <div className="flex flex-row h-16  sm:gap-10 items-center justify-center">
+        <div 
+        onMouseLeave={() => setTopBarVisible(false)}
+        className="flex flex-row h-16  sm:gap-10 items-center justify-center">
           {
-            <div className={`hidden sm:flex flex-col items-start justify-start z-40`}>
-              <div className="px-5 py-[10px] bg-gray-100 rounded-full text-[16px]">
+            <div 
+            onMouseEnter={() => setTopBarVisible(true)}
+            
+            className={`hidden sm:flex flex-col items-start justify-start z-40`}>
+              <div className="px-5 py-[6px] font-pre-bold bg-gray-100 rounded-full text-[16px]">
                 Solutions
               </div>
               <div
-          className={`flex flex-col absolute w-fit mt-[56px] text-lg ml-2 text-[#848484] ${
-            isTopBarVisible ? "opacity-100 delay-300" : "opacity-0 hidden"
+              onMouseLeave={() => setTopBarVisible(false)}
+          className={`flex flex-col absolute w-fit mt-[48px] text-lg gap-1 bg-white px-5 py-6 -ml-6 shadow-all-around text-[#848484] ${
+            isTopBarVisible ? "opacity-100 delay-300 " : "opacity-0 hidden"
           }`}
         >
           {solutions.map((solution) => {
@@ -61,7 +66,7 @@ export default function TopBar() {
               <Link
                 to={solution.path}
                 key={solution.id}
-                className={`w-fit pb-1 text-[#848484] hover:text-black `}
+                className={`w-full px-5 rounded-sm py-1  text-gray300 hover:text-black  hover:bg-maincolor hover:bg-opacity-20`}
               >
                 {solution.solution}
               </Link>
@@ -73,21 +78,21 @@ export default function TopBar() {
           <Link to="/contact" className="hidden sm:flex h-16 justify-center items-center">
             {/* <RoundedButton /> */}
 
-            <span className=" px-5 py-[5px] border-2 border-black rounded-full transition-all duration-300 hover:bg-[#fccc00]">Contact Us</span>
+            <span className=" px-5 py-[6px] font-pre-bold border-black border-2 rounded-full transition-all duration-300 hover:bg-[#fccc00]">Contact Us</span>
           </Link>
           <div className="block sm:hidden items-center">
             <SideNav />
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className={`hidden sm:flex justify-between w-full absolute mt-16 bg-white transition-all duration-300
                   ${isTopBarVisible ? `h-[136px]` : " h-0"}
                 `}
       >
         <div />
         
-      </div>
+      </div> */}
     </div>
   );
 }

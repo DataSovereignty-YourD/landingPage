@@ -11,12 +11,12 @@ export default function DescribeInfra() {
   ];
 
   return (
-    <div className="min-h-screen h-fit w-full flex flex-col relative py-20 sm:py-40 md:py-0 gap-32 justify-center items-center ">
+    <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
       <div className="w-full ">
-        <div className="text-[40px] font-bold">
+        <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           New horizons for data<br />a user-centered model for Web 3.0
         </div>
-        <div className="text-lg font-medium mt-5 md:w-1/2 text-gray400">
+        <div className="sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">
           Following the direction of Web 3.0, YourD aims for a user-centric data model and ensures the privacy of your data through ZKP
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function DescribeInfra() {
       <div className="flex flex-col sm:flex-row gap-7 w-full mt-10">
         {infraFeatures.map((feature, idx) => (
           <div key={idx} className="gap-1 flex flex-col w-full">
-            <div className="font-bold text-xl sm:text-2xl mb-2 sm:text-center ">
+            <div className="font-pre-bold text-xl sm:text-2xl mb-2 ">
               <div >{feature.title}</div>
             </div>
             <div className="text-[16px] text-gray300">

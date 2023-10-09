@@ -1,42 +1,39 @@
-import PassMobile from "../../../assets/img/passMobile.png";
+import PassMobile from "../../../assets/img/YourDPass.png";
 import { HiMiniArrowLongDown } from "react-icons/hi2";
+import Arrow from "../../../assets/icon/rightArrow.png";
+
+const utilizeData = [
+  {
+    title: "Own your data",
+    describe: "Own your Credential data through YourD Pass",
+  },
+  {
+    title: "Manage your data ",
+    describe: "Manage credential data in the form of cards",
+  },
+  {
+    title: "Offline & Online",
+    describe: "Authenticate and use your credential data online and offline",
+  },
+];
+
 export default function PassFunction() {
   return (
-    <div className="  w-full  my-24">
-      <div className="   flex flex-row justify-center gap-8  px-18  min-h-">
-        <div className="   flex flex-col items-center justify-center font-bold text-4xl">
-          <div className="  w-full  mb-12">
-            Safely Own and Preserve Your Data
-          </div>
-          <img
-            src={PassMobile}
-            alt=""
-            className="   h-[600px] w-[300px]  flex mx-auto"
-          />
-        </div>
-        <div className="  flex flex-col items-center justify-center transform translate-x-5 pt-24">
-          <div className="   bg-[#f0a9a9] rounded-full border w-5 h-5"></div>
-          <div className="   border-r bg-gradient-to-b from-[#f0a9a9] to-[#f4e9e9]  h-[450px] w-2 "></div>
-        </div>
-
-        <div className="   flex flex-col gap-36 items-center justify-center pt-24">
-          <div className=" flex flex-col w-full gap-2 ">
-            <div className="   text-2xl font-bold w-full ">Own your data</div>
-            <div>The user is given a VC and possesses the data</div>
-          </div>
-          {/* <HiMiniArrowLongDown size={52} /> */}
-          <div className="  flex flex-col gap-2 w-full">
-            <div className="   text-2xl font-bold w-full ">Store your data</div>
-            <div>With a DID, users store their data securely.</div>
-          </div>
-
-          {/* <HiMiniArrowLongDown size={52} /> */}
-          <div className=" flex flex-col gap-2 w-full ">
-            <div className=" text-2xl font-bold w-full ">
-              Control and Utilize your data
-            </div>
-            <div>: with the principle of Web 3.0</div>
-          </div>
+    <div className=" w-full h-fit flex flex-col py-[120px] justify-center items-center gap-20">
+      <div className="font-pre-extrabold text-2xl sm:text-[44px]">Own and Utilize Your Data</div>
+      <div className="flex flex-col sm:flex-row gap-16 justify-center  items-center">
+        <img src={PassMobile} alt='YourD Pass' className=" w-2/3 sm:w-1/3 object-contain"/>
+        <div className="flex flex-col gap-8 items-center">
+          {utilizeData.map((item,index) => (
+            <>
+              <div className="flex flex-col w-full px-10 py-8 gap-2 bg-white rounded-3xl shadow-all-around">
+                <span className="font-pre-bold md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">{item.title}</span>
+                <span className="font-pre-medium text-gray300">{item.describe}</span>
+              </div>
+              {/* <HiMiniArrowLongDown size={40}/>*/}
+              <img src={Arrow} alt='arrow' className={`w-10 object-contain rotate-90 ${index===2 ?'hidden':''}`}/>
+            </>
+          ))}
         </div>
       </div>
     </div>

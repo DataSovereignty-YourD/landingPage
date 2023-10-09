@@ -14,6 +14,9 @@ module.exports = {
       backgroundImage: {
         Mainback: "url('/src/assets/img/mobileSecurity.png')",
       },
+      boxShadow: {
+        'all-around': '0 0 10px rgba(0, 0, 0, 0.15)',
+      },
       colors: {
         backcolor: "#ffd40050",
         "color-2": "#ffd40098",
@@ -30,7 +33,7 @@ module.exports = {
         gradient2: '#AF00FF',
       },
       backgroundImage: theme => ({
-        'custom-gradient': `linear-gradient(45deg, ${theme('colors.gradient1')}, ${theme('colors.gradient2')})`,
+        'gradient-primary': `linear-gradient(to right, ${theme('colors.gradient1')}, ${theme('colors.gradient2')})`,
       }),
       fontFamily: {
         "pre-extrabold": ["pre-extrabold"],

@@ -23,11 +23,11 @@ export default function YourDAnalyticPage() {
           <AnalyticEmphasis />
         </div>
       </div>
-      <div className=" bg-gray200 bg-opacity-70">
+      {/* <div className=" bg-gray100 bg-opacity-70"> */}
         <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <AdvantageAnalytic />
         </div>
-      </div>
+      {/* </div> */}
       {/* <div className="h-[600px] w-full relative">
         <AnalyticCard />
       </div> */}

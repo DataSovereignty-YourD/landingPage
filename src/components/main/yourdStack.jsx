@@ -9,7 +9,7 @@ export default function YourdStack() {
   return (
     <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto h-screen flex flex-col justify-center items-center">
       <div className="flex flex-col text-center w-full sm:mx-0 relative py-10 md:py-20 gap-5">
-        <div className="font-bold text-2xl md:text-5xl">
+        <div className="font-pre-bold text-2xl md:text-5xl">
           {" "}
           Your<span className="text-[#fccc00] font-pre-extrabold">D</span>{" "}
           Gateway
@@ -34,7 +34,7 @@ export default function YourdStack() {
             alt="rightArrow"
             className="w-16 object-contain"
           />
-          <div className="font-light text-lg sm:text-xl md:text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
+          <div className="font-pre-light text-lg sm:text-xl md:text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
             Streamlining Your Web 3.0 Service Development
             {/* Taking back <span className="text-[#fccc00]">ownership of your data.</span><br/> Paving the Way for <span className="text-[#007aff]">Web3.0</span>   */}
           </div>
