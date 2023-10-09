@@ -3,6 +3,8 @@ import { useIsVisible } from "../../hooks/view";
 import { motion } from "framer-motion";
 import "../../assets/css/describe1.css";
 import RoundedButton from "../utils/buttons/roundedButton";
+import { useRecoilState } from "recoil";
+import { MainIsVisibleState } from "../../assets/recoil/mainIsVisible";
 interface DescribeProps {
   title1: string;
   title2: string;
@@ -13,8 +15,11 @@ export default function MainHeroSection({
   title2,
   subText1,
 }: DescribeProps) {
+  const [mainIsVisible,setMainIsVisible] = useRecoilState(MainIsVisibleState);
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
+
+
 
   function ScrollComponent() {
     return (
@@ -51,7 +56,7 @@ export default function MainHeroSection({
         >
           <div id="background1" ref={ref1} className="w-full h-10 mb-[25%] " />
           <div
-            className={`fixed flex flex-col top-[30%] sm:top-[35%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
+            className={`fixed flex flex-col top-[30%] sm:top-[35%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${mainIsVisible && 'hidden'} ${
               isVisible1
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
