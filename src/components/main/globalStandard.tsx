@@ -2,36 +2,6 @@ import W3CLogo from "../../assets/img/w3c.png";
 import Tezos from "../../assets/img/tezos.png";
 
 export default function GlobalStandard() {
-  const Logos = [
-    {
-      title: "W3C",
-      img: W3CLogo,
-    },
-    {
-      title: "Tezos",
-      img: Tezos,
-    },
-    // {
-    //   title: "Klaytn",
-    //   img: Klaytn,
-    // },
-    // {
-    //   title: "Polkadot",
-    //   img: Polkadot,
-    // },
-    // {
-    //   title: "Tron",
-    //   img: Tron,
-    // },
-    // {
-    //   title: "Ethereum",
-    //   img: Ethereum,
-    // },
-    // {
-    //   title: "Evmos",
-    //   img: Evmos,
-    // },
-  ];
 
   return (
     <div className="flex flex-col sm:flex-row items-center  justify-center sm:items-start w-full h-fit py-[136px] gap-10 lg:gap-20 text-center sm:text-left ">

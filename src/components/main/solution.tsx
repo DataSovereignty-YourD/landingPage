@@ -2,9 +2,9 @@ import DataSelling from "../../assets/img/dataSelling.png";
 import YourDSaaS from "../../assets/img/dataPass.png";
 import FastAuth from "../../assets/img/fastAuth.png";
 import Analytics from "../../assets/img/analytics.png";
-import OutlineButton from "../utils/buttons/outlineButton";
 import { Link } from "react-router-dom";
 import LearnMore from "../../assets/icon/learnMoreIcon.png";
+
 export default function Solution() {
   const solutions = [
     {
@@ -53,8 +53,8 @@ export default function Solution() {
     <div
       key={solution.id}
       className={` md:col-span-1 flex my-3 flex-col h-fit items-center justify-start p-3 sm:p-5 sm:pb-0 md:p-10 md:pb-0 rounded-[32px] grid-auto-rows-1fr  backdrop-blur-sm bg-[#FFE9B1] bg-opacity-20 overflow-hidden ${
-        index == 3 ? "sm:translate-y-[136px]" : ""
-      } ${index == 1 ? "sm:translate-y-[176px]" : ""}`}
+        index === 3 ? "sm:translate-y-[136px]" : ""
+      } ${index === 1 ? "sm:translate-y-[176px]" : ""}`}
     >
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">

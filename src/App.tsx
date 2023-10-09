@@ -1,12 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
-import StarsCanvas from "./components/canvas/stars";
 import MainPage from "./pages/mainPage";
 import TopBar from "./components/common/topBar";
 import AboutPage from "./pages/aboutPage";
 import ContactUs from "./components/common/contactUs";
 import Blog from "./components/blog/blog";
-import ProductPage from "./pages/productPage";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import YourDLoginPage from "./pages/product/yourdLoginPage";

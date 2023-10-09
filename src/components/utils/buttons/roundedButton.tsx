@@ -1,6 +1,4 @@
-import { FiLogIn } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import {  useNavigation } from "react-router-dom";
 
 const RoundedButton = () => {
   return (

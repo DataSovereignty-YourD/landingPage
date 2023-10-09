@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useIsVisible } from "../../hooks/view";
-import { motion } from "framer-motion";
 import "../../assets/css/describe1.css";
 import RoundedButton from "../utils/buttons/roundedButton";
 import { useRecoilState } from "recoil";
 import { MainIsVisibleState } from "../../assets/recoil/mainIsVisible";
+
 interface DescribeProps {
   title1: string;
   title2: string;
@@ -31,18 +31,6 @@ export default function MainHeroSection({
       </div>
     );
   }
-
-  const splitWord2 = (text: string) => {
-    const word = "novel authentication protocol and infrastructure";
-    const parts = text.split(word);
-    return (
-      <>
-        {parts[0]}
-        <span className="text-[#fccc00]">{word}</span>
-        {parts[1]}
-      </>
-    );
-  };
 
   return (
     <>

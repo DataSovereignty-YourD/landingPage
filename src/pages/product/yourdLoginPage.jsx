@@ -3,8 +3,8 @@ import LoginDiagram from '../../components/solutions/login/loginDiagram';
 import LoginHeader from '../../components/solutions/login/loginHeader';
 import AdvantageLogin from '../../components/solutions/login/advantageLogin';
 import '../../assets/css/describe1.css';
-import LoginButtonCard from '../../components/solutions/login/loginButtonCard';
 import Footer from '../../components/common/footer';
+
 export default function YourDLoginPage() {
   return (
     <div className="flex flex-col relative pt-16 items-start w-full ">

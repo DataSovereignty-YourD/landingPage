@@ -1,16 +1,12 @@
 import MainHeroSection from "../components/main/mainHeroSection";
 import Footer from "../components/common/footer";
-import LogoHero from "../components/main/logoHero";
-import BlogCard from "../components/main/blogCard";
 import GlobalStandard from "../components/main/globalStandard";
 import { useScroll } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import WhyYourD from "../components/main/whyYourD";
 import YourdStack from "../components/main/yourdStack";
-import ProductPage from "./productPage";
 import backImg from "../assets/img/global-back.png";
-
 import Solution from "../components/main/solution";
 import StarsCanvas from "../components/canvas/stars";
 

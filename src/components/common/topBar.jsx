@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import logo from "../../assets/img/YourD-Logo-high.png";
 import SideNav from "../../pages/sideNavPage";
 import { Link } from "react-router-dom";
-import RoundedButton from "../utils/buttons/roundedButton";
+
 export default function TopBar() {
   const [isTopBarVisible, setTopBarVisible] = useState(false);
   const solutions = [

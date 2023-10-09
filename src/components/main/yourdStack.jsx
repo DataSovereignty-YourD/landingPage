@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useRecoilState } from "recoil";
 import YourDStack from "../../assets/img/YourDStack.png";
 import { MainIsVisibleState } from "../../assets/recoil/mainIsVisible";

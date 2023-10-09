@@ -1,7 +1,7 @@
 import DescribeInfra from '../../components/solutions/leverageInfra/describeInfra';
 import InfraHeader from '../../components/solutions/leverageInfra/infraHeather';
 import AdvantageInfra from '../../components/solutions/leverageInfra/advantageInfra';
-import InfraCard from '../../components/solutions/leverageInfra/infraCard';
+// import InfraCard from '../../components/solutions/leverageInfra/infraCard';
 import Footer from '../../components/common/footer';
 import '../../assets/css/describe1.css';
 

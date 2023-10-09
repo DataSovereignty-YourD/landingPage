@@ -1,4 +1,5 @@
 import LeverageInfra from "../../../assets/img/dataLeverageImage.png";
+
 export default function InfraHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center  bg-white bg-opacity-70">

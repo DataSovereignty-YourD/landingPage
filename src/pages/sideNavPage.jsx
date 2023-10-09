@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { FiMenu, FiX, FiArrowRight } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { AiFillCaretDown } from 'react-icons/ai';
 
 const navVariants = {
   open: {
@@ -16,19 +15,6 @@ const navVariants = {
     borderTopLeftRadius: '50vw',
     borderBottomLeftRadius: '50vw',
     opacity: 0,
-  },
-};
-
-const linkWrapperVariants = {
-  open: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-  closed: {
-    transition: {
-      staggerChildren: 0.1,
-    },
   },
 };
 
@@ -64,11 +50,6 @@ const NavLink = ({ text, to, onClick, icon: Icon, smallText }) => (
   </motion.div>
 );
 
-const links = [
-  { text: 'Home', to: '/' },
-  { text: 'Solutions' },
-  { text: 'Contact Us', to: '/contact' },
-];
 
 const Nav = ({ isOpen, setIsOpen }) => (
   <motion.nav

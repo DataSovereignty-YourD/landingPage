@@ -59,6 +59,7 @@ export function HowToUseCredential() {
               </div>
               <img
                 src={Arrow}
+                alt="Arrow"
                 className={`object-contain mx-auto sm:mx-0 rotate-90 sm:rotate-0 w-5 sm:w-10 ${index === 2 ? "hidden" : ""}`}
               />
             </>
@@ -86,6 +87,7 @@ export function HowToUseCredential() {
                   </div>
                   <img
                     src={Arrow}
+                    alt="Arrow2"
                     className={`object-contain  mx-auto rotate-90 w-5 sm:w-10 ${index === 2 ? "hidden" : ""}`}
                   />
                 </>

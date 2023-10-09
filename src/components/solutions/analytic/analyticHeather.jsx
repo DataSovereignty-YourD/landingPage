@@ -17,7 +17,7 @@ export default function AnalyticHeader() {
       </div>
       <img
         src={Pass}
-        alt="Login image"
+        alt="AnalyticImage"
         className="mb-10 sm:mb-0 md:mb-10 md:top-14 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain"
       />
     </div>

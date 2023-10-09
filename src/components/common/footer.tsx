@@ -2,14 +2,10 @@ import logo from "../../assets/img/YourD-Logo-high.png";
 import {
   FaSquareXTwitter,
   FaLinkedin,
-  FaDiscord,
   FaMedium,
 } from "react-icons/fa6";
-import { useTranslation } from "react-i18next";
-import ContactUs from "./contactUs";
 
 const Footer = () => {
-  const { t, i18n } = useTranslation(["page"]);
   return (
       <footer className="flex h-fit justify-between items-start relative bg-opacity-60 pt-10 pb-16 bg-transparent mx-5 sm:mx-10 md:mx-16 lg:mx-[136px]">
           <div className="flex flex-col  items-start gap-5">

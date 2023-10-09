@@ -1,5 +1,4 @@
 import PassMobile from "../../../assets/img/YourDPass.png";
-import { HiMiniArrowLongDown } from "react-icons/hi2";
 import Arrow from "../../../assets/icon/rightArrow.png";
 
 const utilizeData = [
@@ -30,7 +29,6 @@ export default function PassFunction() {
                 <span className="font-pre-bold md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">{item.title}</span>
                 <span className="font-pre-medium text-gray300">{item.describe}</span>
               </div>
-              {/* <HiMiniArrowLongDown size={40}/>*/}
               <img
                 src={Arrow}
                 alt="arrow"
