@@ -11,7 +11,7 @@ export default function YourdVision() {
 
   return (
     <>
-      <div className="mx-6 sm:mx-32 font-sf-pro-text">
+      <div className="mx-6 sm:mx-32 font-sf-pro-text ">
         <div className="h-screen  items-center justify-center flex flex-col">
           <div className="text-xl sm:text-5xl font-bold items-center justify-center flex ">
             YourD Vision
