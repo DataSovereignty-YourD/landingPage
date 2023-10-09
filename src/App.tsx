@@ -23,7 +23,6 @@ function App() {
     <React.Fragment>
       <TopBar />
       {/* <AnimationReal /> */}
-      <StarsCanvas />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/yourd_login" element={<YourDLoginPage />} />

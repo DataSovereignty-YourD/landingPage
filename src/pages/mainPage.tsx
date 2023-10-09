@@ -12,6 +12,7 @@ import ProductPage from "./productPage";
 import backImg from "../assets/img/global-back.png";
 
 import Solution from "../components/main/solution";
+import StarsCanvas from "../components/canvas/stars";
 
 export default function MainPage() {
   const controls = useAnimation();
@@ -28,6 +29,8 @@ export default function MainPage() {
 
   return (
     <div className="w-screen">
+      <StarsCanvas />
+
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 w-screen bg-[#fccc00] origin-left z-50"
         animate={controls}

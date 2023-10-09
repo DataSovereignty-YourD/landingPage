@@ -46,15 +46,15 @@ export function HowToUseCredential() {
       {/**Online */}
       <div className="flex flex-col gap-10">
         <div className=" text-center font-pre-bold text-xl sm:text-[44px]">Online</div>
-        <div className="flex gap-2 sm:gap-6 justify-center flex-col sm:flex-row">
+        <div className="flex gap-2 sm:gap-6 justify-center items-center flex-col sm:flex-row">
           {onlineMethod.map((item, index) => (
             <>
               <div
                 key={item.title}
-                className="w-full py-10 sm:py-0 max-w-[350px] h-fit sm:h-96 flex flex-col justify-start rounded-2xl items-center p-3 sm:p-5 md:p-10 bg-white gap-2 mb-[6px] text-center"
+                className="w-full py-10 max-w-[350px] h-fit flex flex-col justify-start rounded-2xl items-center p-3 sm:p-5 lg:p-10 bg-white gap-2 mb-[6px] text-center"
               >
-                <img src={item.image} alt={item.title} className="w-1/5 sm:w-full  sm:h-[35%] mb-5 object-contain "/>
-                <div className="font-pre-bold text-lg sm:text-lg md:text-2xl ">{item.title}</div>
+                <img src={item.image} alt={item.title} className="w-1/5 sm:w-full  sm:h-[120px] mb-5 object-contain "/>
+                <div className="font-pre-bold text-lg sm:text-lg lg:text-2xl ">{item.title}</div>
                 <div className="font-pre-regular text-sm">{item.describe}</div>
               </div>
               <img
@@ -72,13 +72,13 @@ export function HowToUseCredential() {
       <div className="flex flex-col gap-10 border-t-2">
         <div className=" text-center font-pre-bold text-[44px] mt-10">Offline</div>
         <div className="flex flex-col sm:flex-row justify-center items-center w-full gap-10">
-            <img src={offline} alt='offline' className="w-1/3 object-contain"/>
+            <img src={offline} alt='offline' className=" h-[340px] md:h-[400px] lg:h-[584px] object-contain"/>
             <div className="flex flex-col gap-6 justify-center">
               {offlineMethod.map((item, index) => (
                 <>
                   <div
                     key={item.title}
-                    className="w-full h-fit flex flex-col justify-start rounded-2xl items-center p-10 bg-white gap-2 mb-[6px] text-center"
+                    className="w-full h-fit flex flex-col justify-start rounded-2xl items-center p-3 sm:p-5 md:p-10 bg-white gap-2 mb-[6px] text-center"
                   >
                     <div className="font-pre-bold text-2xl ">{item.title}</div>
                     <div>{item.describe}</div>
@@ -92,7 +92,7 @@ export function HowToUseCredential() {
               ))}
             </div>
         </div>
-        <div className="font-pre-light text-xl sm:text-3xl max-w-[800px] text-center mx-auto">
+        <div className="font-pre-light text-xl sm:text-3xl max-w-[840px] text-center mx-auto">
             <span className="font-pre-bold">Your<span className="text-maincolor">D</span> Pass</span> allows you to present your VC in a real-world environment, making it easy to authenticate and join services.
         </div>
       </div>
