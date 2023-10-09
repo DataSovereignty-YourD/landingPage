@@ -38,19 +38,22 @@ export default function DescrbieLogin() {
           experience and enhance platform versatility for developers.
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-7 w-full mt-10">
+      <div className="flex flex-col  sm:flex-row sm:grid sm:grid-cols-6 gap-7  w-full mt-10">
         {features.map((feature) => (
-          <div key={feature.title}>
-            <div className="font-pre-bold text-xl sm:text-2xl mb-2  sm:min-h-[64px]">
+          <div
+            className="border p-4 bg-white rounded-md sm:col-span-2 shadow-all-around"
+            key={feature.title}
+          >
+            <div className="font-pre-bold text-xl sm:text-2xl  mb-2  sm:min-h-[64px]">
               {feature.title}
             </div>
             <ul className="list-disc pl-3 text-gray300">
-            {feature.descriptions.map((description, idx) => (
-              <li key={idx} className="text-[16px]">
-                {description}
-              </li>
-            ))}
-          </ul>
+              {feature.descriptions.map((description, idx) => (
+                <li key={idx} className="text-[16px]">
+                  {description}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
