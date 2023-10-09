@@ -23,15 +23,15 @@ export default function DescribePass() {
   ];
 
   return (
-    <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
-      <div className="w-full">
-        <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
+    <div className=" h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
+      <div className=" w-full">
+        <div className=" w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           User-centered data management
         </div>
-        <div className="text-2xl sm:text-5xl mt-3 font-pre-semibold ">
+        <div className=" text-2xl sm:text-5xl mt-3 font-pre-semibold ">
           Versatile, reliable, and secure
         </div>
-        <div className=" sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">
+        <div className="  sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">
           Take control of your data with YourD Pass, a Web 3.0 solution that
           emphasizes user data ownership. From online platforms to offline
           environments, YourD Pass enables consistent and easy data management
@@ -39,16 +39,16 @@ export default function DescribePass() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:grid sm:grid-cols-4  w-full mt-10 ">
+      <div className=" flex flex-col gap-7  sm:grid sm:grid-cols-4  w-full mt-10 ">
         {dataSections.map((section, index) => (
           <div
             key={index}
-            className="gap-1 flex flex-col sm:col-span-2 mb-20"
+            className="border  p-4 rounded-md bg-white gap-1 flex flex-col sm:col-span-2 shadow-all-around"
           >
-            <div className="font-pre-bold text-xl sm:text-2xl  mb-2  ">
+            <div className=" font-pre-bold text-xl sm:text-2xl  mb-2  ">
               {section.title}
             </div>
-            <div className="text-[16px] text-gray300">
+            <div className=" text-[16px] text-gray300">
               {section.description}
             </div>
           </div>

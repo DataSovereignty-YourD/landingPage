@@ -35,9 +35,12 @@ export default function DescribeAnalytic() {
           optimal analytics experience.
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-7 w-full mt-10">
+      <div className="flex flex-col sm:flex-row gap-7 sm:grid sm:grid-cols-6 w-full mt-10 ">
         {analyticsFeatures.map((feature, idx) => (
-          <div key={idx} className="gap-1 flex flex-col">
+          <div
+            key={idx}
+            className="gap-1 flex flex-col sm:col-span-2 border rounded-md p-4 bg-white shadow-all-around"
+          >
             <div className="font-pre-bold text-xl sm:text-2xl mb-2  ">
               {feature.title}
             </div>
