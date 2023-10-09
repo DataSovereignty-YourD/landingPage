@@ -49,10 +49,12 @@ export default function Solution() {
     },
   ];
 
-  const solutionBox = ({solution,index}: any) => (
+  const solutionBox = ({ solution, index }: any) => (
     <div
       key={solution.id}
-      className={` md:col-span-1 flex my-3 flex-col h-fit items-center justify-start p-3 sm:p-5 sm:pb-0 md:p-10 md:pb-0 rounded-[32px] grid-auto-rows-1fr  backdrop-blur-sm bg-[#FFE9B1] bg-opacity-20 overflow-hidden ${index ==3  ? 'translate-y-[136px]' : ''} ${index ==1  ? 'translate-y-[176px]' : ''}`}
+      className={` md:col-span-1 flex my-3 flex-col h-fit items-center justify-start p-3 sm:p-5 sm:pb-0 md:p-10 md:pb-0 rounded-[32px] grid-auto-rows-1fr  backdrop-blur-sm bg-[#FFE9B1] bg-opacity-20 overflow-hidden ${
+        index == 3 ? "translate-y-[136px]" : ""
+      } ${index == 1 ? "translate-y-[176px]" : ""}`}
     >
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
@@ -75,11 +77,11 @@ export default function Solution() {
               className="object-contain w-[50px] sm:w-[70px] md:w-[3.75rem] mt-5"
             />
           </Link>
-            <img
-              src={solution.image}
-              alt={solution.title}
-              className="relative w-[260px] sm:w-[320px] lg:w-[360px] object-contain "
-            />
+          <img
+            src={solution.image}
+            alt={solution.title}
+            className="relative w-[260px] sm:w-[320px] lg:w-[360px] object-contain "
+          />
         </div>
       </div>
     </div>
@@ -88,7 +90,7 @@ export default function Solution() {
   return (
     <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] min-h-screen h-min  flex flex-col items-start justify-start font-sf-pro-text relative transition-all duration-300">
       <div className=" w-full flex flex-col md:grid md:grid-cols-2 gap-3 sm:gap-5 lg:gap-10 ">
-        {solutions.map((solution, index) => solutionBox({solution,index}))}
+        {solutions.map((solution, index) => solutionBox({ solution, index }))}
       </div>
     </div>
   );

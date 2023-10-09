@@ -1,4 +1,4 @@
-import Pass from "../../../assets/img/yourdpassall.png";
+import Pass from "../../../assets/img/yourdpass-main.png";
 export default function PassHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">
@@ -17,7 +17,7 @@ export default function PassHeader() {
       <img
         src={Pass}
         alt="Login image"
-        className="mb-10 sm:mb-0 md:mb-10 md:top-20 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[50%] z-0  object-contain"
+        className="mb-10 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain"
       />
     </div>
   );
