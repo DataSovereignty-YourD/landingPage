@@ -63,11 +63,11 @@ export default function MainHeroSection({
             }`}
           >
             <div className="flex first-line:">
-              <div className="font-pre-bold text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
+              <h1 className="font-pre-bold text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
                 {title1}&nbsp;{title2}
-              </div>
+              </h1>
             </div>
-            <div className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-medium">{subText1}</div>
+            <h2 className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-medium">{subText1}</h2>
             <div className="bg-white">
               <RoundedButton/>
             </div>

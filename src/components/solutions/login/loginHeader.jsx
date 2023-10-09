@@ -1,7 +1,7 @@
 import Login from "../../../assets/img/loginScreen.png";
 export default function LoginHeader() {
   return (
-    <div className="relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center  bg-white bg-opacity-70">
+    <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
       <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
         <div className="text-2xl sm:text-[32px] font-pre-bold">
           Your<span className="text-[#fccc00]">D</span> Login
@@ -19,7 +19,7 @@ export default function LoginHeader() {
       <img
         src={Login}
         alt="Login image"
-        className=" top-20 mb-10 sm:mb-0 sm:pb-0 mt-10 sm:mt-0 sm:absolute right-0 w-[70%] sm:w-[35%] lg:w-[30%] z-0  rounded-3xl object-contain shadow-all-around "
+        className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%] md:w-[320px] lg:w-[380px] z-0  rounded-3xl object-contain shadow-all-around "
       />
     </div>
   );
