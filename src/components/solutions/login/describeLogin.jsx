@@ -41,7 +41,7 @@ export default function DescrbieLogin() {
       <div className="flex flex-col  sm:flex-row sm:grid sm:grid-cols-6 gap-7  w-full mt-10">
         {features.map((feature) => (
           <div
-            className="border p-4 bg-white rounded-md sm:col-span-2 shadow-all-around"
+            className="border p-4 bg-white rounded-2xl sm:col-span-2 shadow-all-around"
             key={feature.title}
           >
             <div className="font-pre-bold text-xl sm:text-2xl  mb-2  sm:min-h-[64px]">

@@ -29,7 +29,7 @@ export default function DescribeInfra() {
         {infraFeatures.map((feature, idx) => (
           <div
             key={idx}
-            className="gap-1 flex flex-col w-full border rounded-md p-4 bg-white shadow-all-around"
+            className="gap-1 flex flex-col w-full border rounded-2xl p-4 bg-white shadow-all-around"
           >
             <div className="font-pre-bold text-xl sm:text-2xl mb-2 ">
               <div>{feature.title}</div>

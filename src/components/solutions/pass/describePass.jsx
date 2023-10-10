@@ -43,7 +43,7 @@ export default function DescribePass() {
         {dataSections.map((section, index) => (
           <div
             key={index}
-            className="border  p-4 rounded-md bg-white gap-1 flex flex-col sm:col-span-2 shadow-all-around"
+            className="border  p-4 rounded-2xl bg-white gap-1 flex flex-col sm:col-span-2 shadow-all-around"
           >
             <div className=" font-pre-bold text-xl sm:text-2xl  mb-2  ">
               {section.title}
