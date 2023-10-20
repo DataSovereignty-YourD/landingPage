@@ -1,20 +1,24 @@
+import lawIcon from '../../../assets/icon/lawIcon2.png'
+import analytics from '../../../assets/icon/analyticsIcon.png'
+import indexing from '../../../assets/icon/indexingIcon.png'
+
 export default function DescribeAnalytic() {
   const analyticsFeatures = [
     {
       title: "Comply with international data security laws",
-      icon: "",
+      icon: lawIcon,
       description:
         "Service providers can analyze and utilize user data without worrying about international data security laws like GDPR and CCPA.",
     },
     {
       title: "DID-based data analytics",
-      icon: "",
+      icon: analytics,
       description:
         "YourD Analytics is based on DID technology to overcome the security vulnerabilities of centralized data storage, while ensuring transparency and reliability of data processing.",
     },
     {
       title: "Serverless Indexing",
-      icon: "",
+      icon: indexing,
       description:
         "For DApps, you can index and analyze users without building a separate server. This allows DApps to provide better services while remaining serverless.",
     },
@@ -39,8 +43,9 @@ export default function DescribeAnalytic() {
         {analyticsFeatures.map((feature, idx) => (
           <div
             key={idx}
-            className="gap-1 flex flex-col sm:col-span-2 border rounded-2xl p-4 bg-white shadow-all-around"
+            className="rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white p-4 shadow-all-around bg-opacity-70"
           >
+            <img src={feature.icon} alt={feature.title}  className="object-contain w-[64px] h-[64px]"/>
             <div className="font-pre-bold text-xl sm:text-2xl mb-2  ">
               {feature.title}
             </div>

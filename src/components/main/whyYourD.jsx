@@ -21,7 +21,7 @@ export default function WhyYourD() {
                 <img
                   src={feature.img}
                   alt={feature.title}
-                  className="absolute  object-contain w-[24px] y-[24px] md:w-[36px] md:y-[36px]"
+                  className="absolute  object-cover w-[24px] y-[24px] md:y-[36px]"
                 />
               </div>
               <div className="font-pre-bold text-lg md:text-2xl leading-5 mt-6 mb-2 md:mb-0 md:min-h-[60px]">

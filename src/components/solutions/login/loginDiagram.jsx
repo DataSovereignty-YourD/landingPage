@@ -5,9 +5,9 @@ export default function LoginDiagram() {
       <img
         src={Diagram}
         alt="login Diagram"
-        className=" w-full sm:w-3/4 object-contain"
+        className=" w-full sm:w-3/4 lg:w-3/5 object-contain"
       />
-      <div className="font-pre-light text-lg sm:text-xl w-full sm:w-3/4 text-center">
+      <div className="font-pre-light text-lg sm:text-xl lg:text-3xl w-full sm:w-4/5 text-center">
         Your services can <span className="font-pre-bold">easily</span> and{" "}
         <span className="font-pre-bold">quickly</span> integrate with{" "}
         <span className="font-pre-bold">

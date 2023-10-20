@@ -1,3 +1,7 @@
+import codesnippet from '../../../assets/icon/codesnippetIcon.png';
+import qr from '../../../assets/icon/QRIcon.png';
+import standard from '../../../assets/icon/standardIcon.png';
+
 export default function DescrbieLogin() {
   const features = [
     {
@@ -6,6 +10,7 @@ export default function DescrbieLogin() {
         "Users can log in by simply scanning a QR code, without the need for complicated passwords or authentication procedures.",
         "The login process is faster and simpler, enhancing the user experience.",
       ],
+      icon:qr
     },
     {
       title: "Integration Simplicity",
@@ -13,13 +18,15 @@ export default function DescrbieLogin() {
         "Developers can easily integrate into their services using code snippets provided by YourD Login.",
         "These snippets are designed to simplify and optimize the login process for a superior user experience.",
       ],
+      icon:codesnippet
     },
     {
-      title: "Based on DID (Decentralized Identifier)",
+      title: `Based on DID (Decentralized Identifier)`,
       descriptions: [
         "YourD Login offers easy login using the DID, which is a W3C standard.",
         "Due to its adherence to the DID standard, compatibility with various Web 3.0 services is also guaranteed.",
       ],
+      icon:standard
     },
   ];
 
@@ -38,13 +45,14 @@ export default function DescrbieLogin() {
           experience and enhance platform versatility for developers.
         </div>
       </div>
-      <div className="flex flex-col  sm:flex-row sm:grid sm:grid-cols-6 gap-7  w-full mt-10">
+      <div className="flex flex-col  sm:flex-row sm:grid sm:grid-cols-6 gap-5  w-full mt-10">
         {features.map((feature) => (
           <div
-            className="border p-4 bg-white rounded-2xl sm:col-span-2 shadow-all-around"
+            className=" rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white p-4 shadow-all-around bg-opacity-70 items-center"
             key={feature.title}
           >
-            <div className="font-pre-bold text-xl sm:text-2xl  mb-2  sm:min-h-[64px]">
+            <img src={feature.icon} alt={feature.title}  className="object-contain w-[70px] h-[70px]"/>
+            <div className="font-pre-bold text-xl sm:text-2xl lg:w-[80%] mb-2 text-center">
               {feature.title}
             </div>
             <ul className="list-disc pl-3 text-gray300">

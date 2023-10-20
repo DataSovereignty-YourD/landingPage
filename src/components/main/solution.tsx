@@ -69,7 +69,7 @@ export default function Solution() {
           </span>
         </div>
         <div className="flex flex-shrink justify-between ">
-          <Link to={solution.path} className="w-fit h-fit">
+          <Link to={solution.path} className="w-fit h-fit hover:scale-105 ">
             {/* <OutlineButton /> */}
             <img
               src={LearnMore}
