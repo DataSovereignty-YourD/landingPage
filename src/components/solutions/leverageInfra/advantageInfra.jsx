@@ -18,7 +18,7 @@ export default function AdvantageInfra() {
             <div className="font-pre-bold text-lg md:text-2xl leading-5 items-start justify-start flex">
               {feature.title}
             </div>
-            <p className="font-pre-medium text-sm h-fit sm:text-lg text-gray300">{feature.text}</p>
+            <p className="font-pre-regular font-bold text-sm h-fit sm:text-lg text-gray300">{feature.text}</p>
           </div>
         ))}
       </div>

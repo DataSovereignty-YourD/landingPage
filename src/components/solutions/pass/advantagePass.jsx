@@ -18,7 +18,7 @@ export default function AdvantagePass() {
             <span className=" font-pre-bold text-lg md:text-2xl leading-5 items-start justify-start flex">
               {feature.title}
             </span>
-            <span className=" font-pre-medium text-sm h-fit sm:text-lg text-gray300">{feature.text}</span>
+            <span className=" font-pre-regular font-bold text-sm h-fit sm:text-lg text-gray300">{feature.text}</span>
           </div>
         ))}
       </div>

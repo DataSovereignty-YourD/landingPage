@@ -36,10 +36,7 @@ module.exports = {
         'gradient-primary': `linear-gradient(to right, ${theme('colors.gradient1')}, ${theme('colors.gradient2')})`,
       }),
       fontFamily: {
-        "pre-extrabold": ["pre-extrabold"],
         "pre-bold":["pre-bold"],
-        "pre-semibold": ["pre-semibold"],
-        "pre-medium": ["pre-medium"],
         "pre-regular": ["pre-regular"],
         "pre-light": ["pre-light"],
       },

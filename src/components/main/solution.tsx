@@ -4,8 +4,10 @@ import FastAuth from "../../assets/img/fastAuth.png";
 import Analytics from "../../assets/img/analytics.png";
 import { Link } from "react-router-dom";
 import LearnMore from "../../assets/icon/learnMoreIcon.png";
-
+import LearnMoreHover from "../../assets/icon/fillcircle.png";
+import { useState } from "react";
 export default function Solution() {
+  const [isHover,setIsHover] = useState(null);
   const solutions = [
     {
       id: 1,
@@ -61,18 +63,18 @@ export default function Solution() {
           <span className="font-pre-bold text-lg sm:text-xl sm:leading-6 md:leading-7 md:text-2xl leading-5 text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
             {solution.id}.&nbsp;&nbsp;{solution.title}
           </span>
-          <span className="font-pre-medium text-lg sm:text-lg md:text-xl text-gray400">
+          <span className="font-pre-regular font-bold text-lg sm:text-lg md:text-xl text-gray400">
             {solution.subtitle}
           </span>
-          <span className="font-pre-medium text-gray300 text-[14px] sm:text-[16px] md:text-lg leading-7 mt-4">
+          <span className="font-pre-regular font-bold text-gray300 text-[14px] sm:text-[16px] md:text-lg leading-7 mt-4">
             {solution.description}
           </span>
         </div>
         <div className="flex flex-shrink justify-between ">
-          <Link to={solution.path} className="w-fit h-fit hover:scale-105 ">
+          <Link onMouseEnter={()=>setIsHover(index)} onMouseLeave={()=>setIsHover(null)} to={solution.path} className="w-fit h-fit hover:scale-110 transition-all duration-300">
             {/* <OutlineButton /> */}
             <img
-              src={LearnMore}
+              src={isHover === index?LearnMoreHover:LearnMore}
               alt={solution.title}
               className="object-contain min-w-[50px] w-[50px] sm:w-[50px] md:w-[60px] mt-5"
             />

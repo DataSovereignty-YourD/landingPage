@@ -8,7 +8,7 @@ export default function GlobalStandard() {
       <div className="w-fit sm:w-1/2 font-pre-bold  text-2xl md:text-3xl lg:text-[44px] text-[#fccc00] flex items-center text-center sm:text-left relative z-10">
         GLOBAL STANDARDS & SUPPORT
       </div>
-      <div className="sm:w-1/2 text-lg lg:text-[24px] text-gray300 font-pre-medium z-10">
+      <div className="sm:w-1/2 text-lg lg:text-[24px] text-gray300 font-pre-regular font-bold z-10">
         Developed in compliance with the W3C DID global standard and supported
         by Tezos, we are committed to enabling data ownership.
         <div className="flex justify-center sm:justify-start mt-[60px] gap-20 z-10">

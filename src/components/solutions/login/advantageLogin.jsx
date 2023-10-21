@@ -24,7 +24,7 @@ export default function AdvantageLogin() {
                 <div className="font-pre-bold text-lg md:text-xl leading-5 text-left">
                   {feature.title}
                 </div>
-                <p className="font-pre-medium text-sm h-fit sm:text-[16px] text-gray300">
+                <p className="font-pre-regular font-bold text-sm h-fit sm:text-[16px] text-gray300">
                   {feature.text}
                 </p>
               </div>

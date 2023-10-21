@@ -40,7 +40,7 @@ export function HowToUseCredential() {
 
   return (
     <div className="flex flex-col w-full h-fit py-24 justify-center items-center gap-10 sm:gap-16">
-      <div className="text-center w-full font-pre-extrabold text-2xl sm:text-[44px]">
+      <div className="text-center w-full font-pre-bold font-extrabold text-2xl sm:text-[44px]">
         How to use Credential?
       </div>
       {/**Online */}

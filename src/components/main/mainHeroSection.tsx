@@ -4,6 +4,7 @@ import "../../assets/css/describe1.css";
 import RoundedButton from "../utils/buttons/roundedButton";
 import { useRecoilState } from "recoil";
 import { MainIsVisibleState } from "../../assets/recoil/mainIsVisible";
+import { Link } from "react-router-dom";
 
 interface DescribeProps {
   title1: string;
@@ -51,13 +52,22 @@ export default function MainHeroSection({
             }`}
           >
             <div className="flex first-line:">
-              <h1 className="font-pre-bold text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
+              <h1 className="font-pre-bold  text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
                 {title1}&nbsp;{title2}
               </h1>
             </div>
-            <h2 className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-medium">{subText1}</h2>
+            <h2 className="text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-regular font-bold">{subText1}</h2>
             <div className="bg-white">
-              <RoundedButton/>
+            <Link
+            to="/contact"
+            className="hidden sm:flex h-16 justify-center items-center"
+          >
+            {/* <RoundedButton /> */}
+
+            <span className=" px-5 py-[6px] font-pre-bold border-black border-2 rounded-full transition-all duration-300 hover:bg-[#fccc00]">
+              Contact Us
+            </span>
+          </Link>
             </div>
           </div>
           <div
