@@ -7,7 +7,7 @@ export default function InfraHeader() {
         <div className="text-2xl sm:text-[32px] font-pre-bold mb-3">
           Your<span className="text-[#fccc00] ">D</span> Data Leverage Infra
         </div>
-        <span className="font-pre-semibold text-3xl sm:text-[56px] gradientText  leading-none overflow-visible">
+        <span className="font-pre-bold text-3xl sm:text-[56px] gradientText  leading-none overflow-visible">
         The Web3.0 <br />
           Data Paradigm
         </span>

@@ -7,7 +7,7 @@ export default function LoginHeader() {
         <div className="text-2xl sm:text-[32px] font-pre-bold">
           Your<span className="text-[#fccc00]">D</span> Login
         </div>
-        <div className="font-pre-semibold text-3xl sm:text-[56px] gradientText mt-3 leading-none">
+        <div className="font-pre-bold text-3xl sm:text-[56px] gradientText mt-3 leading-none">
           Simplified, Seamless
           <br /> Web3.0 Access
         </div>

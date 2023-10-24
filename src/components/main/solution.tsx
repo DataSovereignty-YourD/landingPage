@@ -90,7 +90,7 @@ export default function Solution() {
   );
 
   return (
-    <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] my-10 min-h-screen h-min  flex flex-col items-start justify-start font-sf-pro-text relative transition-all duration-300">
+    <div className="mx-5 sm:mx-10 md:mx-16 lg:mx-[136px] mt-20 min-h-screen h-min  flex flex-col items-start justify-start font-sf-pro-text relative transition-all duration-300">
       <div className=" w-full flex flex-col md:grid md:grid-cols-2 gap-3 sm:gap-5 lg:gap-10 ">
         {solutions.map((solution, index) => solutionBox({ solution, index }))}
       </div>

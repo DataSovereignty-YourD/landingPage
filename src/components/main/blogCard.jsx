@@ -52,7 +52,7 @@ const BlogCard = () => {
         {/* CARDS */}
         <div className=" w-full">
           <div className=" flex justify-between items-center mb-6 mx-[15%]">
-            <p className=" text-xl sm:text-2xl font-pre-semibold">
+            <p className=" text-xl sm:text-2xl font-pre-bold">
               Your
               <span className=" text-yellow-300 font-pre-bold text-3xl itmes-center justify-center ">
                 D
@@ -61,7 +61,7 @@ const BlogCard = () => {
             </p>
             <Link
               to="/blog"
-              className=" font-pre-semibold text-sm sm:text-lg  p-1 rounded-md  hover:bg-[#fccc00]"
+              className=" font-pre-bold text-sm sm:text-lg  p-1 rounded-md  hover:bg-[#fccc00]"
             >
               View All
             </Link>

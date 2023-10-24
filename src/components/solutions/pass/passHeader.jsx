@@ -7,7 +7,7 @@ export default function PassHeader() {
         <div className="text-2xl sm:text-[32px] font-pre-bold">
           Your<span className="text-[#fccc00]">D</span> Pass
         </div>
-        <div className="font-pre-semibold text-3xl sm:text-[44px] md:text-[56px] gradientText mt-3 leading-none">
+        <div className="font-pre-bold text-3xl sm:text-[44px] md:text-[56px] gradientText mt-3 leading-none">
         Empower <br />
           Your Data Ownership
         </div>

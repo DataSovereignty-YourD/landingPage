@@ -28,7 +28,7 @@ export default function DescribePass() {
         <div className=" w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           User-centered data management
         </div>
-        <div className=" text-2xl sm:text-5xl mt-3 font-pre-semibold ">
+        <div className=" text-2xl sm:text-5xl mt-3 font-pre-bold ">
           Versatile, reliable, and secure
         </div>
         <div className="  sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">

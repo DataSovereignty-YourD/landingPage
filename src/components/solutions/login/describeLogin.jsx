@@ -36,7 +36,7 @@ export default function DescrbieLogin() {
         <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           Seamless Login with Web 3.0's Identity
         </div>
-        <div className="text-2xl sm:text-5xl mt-3 font-pre-semibold ">
+        <div className="text-2xl sm:text-5xl mt-3 font-pre-bold ">
           Easy, Swift, Compatible
         </div>
         <div className=" sm:text-lg font-medium mt-5 sm:w-3/5 text-gray400">

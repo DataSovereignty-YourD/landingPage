@@ -7,7 +7,7 @@ export default function AnalyticHeader() {
         <div className="text-2xl sm:text-[32px] font-pre-bold mb-3">
           Your<span className="text-[#fccc00]">D</span> Analytics
         </div>
-        <span className="font-pre-semibold text-3xl sm:text-[44px] md:text-[56px] gradientText  leading-none">
+        <span className="font-pre-bold text-3xl sm:text-[44px] md:text-[56px] gradientText  leading-none">
         Deep, Insightful <br /> Web3.0 Data Analysis
         </span>
         <p className="font-pre-regular text-xl mt-10 sm:w-4/5">

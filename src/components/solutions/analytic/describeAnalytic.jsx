@@ -30,7 +30,7 @@ export default function DescribeAnalytic() {
         <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           Empowering Web 3.0 Data Insights
         </div>
-        <div className="text-2xl sm:text-5xl mt-3 font-pre-semibold ">
+        <div className="text-2xl sm:text-5xl mt-3 font-pre-bold ">
           Compliant, DID-Driven, Serverless.
         </div>
         <div className="text-lg font-medium mt-5 md:w-1/2 gray-400">
