@@ -45,7 +45,7 @@ export function HowToUseCredential() {
       </div>
       {/**Online */}
       <div className="flex flex-col gap-10">
-        <div className=" text-center font-pre-bold text-xl sm:text-[44px]">Online</div>
+        <div className=" text-center font-pre-bold text-xl sm:text-[44px]  mt-10">Online</div>
         <div className="flex gap-2 sm:gap-6 justify-center items-center flex-col sm:flex-row">
           {onlineMethod.map((item, index) => (
             <>
@@ -71,7 +71,7 @@ export function HowToUseCredential() {
       </div>
       {/**Offline */}
       <div className="flex flex-col gap-10 border-t-2">
-        <div className=" text-center font-pre-bold text-[44px] mt-10">Offline</div>
+        <div className=" text-center font-pre-bold text-xl sm:text-[44px]  mt-10">Offline</div>
         <div className="flex flex-col sm:flex-row justify-center items-center w-full gap-10">
             <img src={offline} alt='offline' className=" h-[340px] md:h-[400px] lg:h-[584px] object-contain"/>
             <div className="flex flex-col gap-6 justify-center">

@@ -23,7 +23,7 @@ function App() {
       {/* <AnimationReal /> */}
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/yourd_login" element={<YourDLoginPage />} />
+        <Route path="/yourd_web_auth" element={<YourDLoginPage />} />
         <Route path="/yourd_pass" element={<YourDPassPage />} />
         <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
         <Route path="/yourd_infra" element={<YourDInfraPage />} />

@@ -4,7 +4,7 @@ export default function LoginDiagram() {
     <div className=" h-fit min-h-1/2 w-full flex flex-col relative py-32 sm:py-52 justify-between items-center  bg-white bg-opacity-70 gap-20">
       <img
         src={Diagram}
-        alt="login Diagram"
+        alt="Auth Diagram"
         className=" w-full sm:w-3/4 lg:w-3/5 object-contain"
       />
       <div className="font-pre-light text-lg sm:text-xl lg:text-3xl w-full sm:w-4/5 text-center">
@@ -13,10 +13,10 @@ export default function LoginDiagram() {
         <span className="font-pre-bold">
           Your<span className="text-[#fccc00]">D</span>
         </span>
-        &nbsp;Login using the provided code snippets
+        &nbsp;Auth using the provided code snippets
         <span className="">
           {" "}
-          and users can login simply and securely by scanning a QR code.
+          and users can auth simply and securely by scanning a QR code.
         </span>
       </div>
     </div>

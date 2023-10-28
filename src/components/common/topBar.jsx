@@ -9,22 +9,33 @@ export default function TopBar() {
     {
       id: 1,
       solution: "YourD Pass",
+      product: [],
       path: "yourd_pass",
     },
     {
       id: 2,
-      solution: "YourD Login",
-      path: "yourd_login",
+      solution: "YourD Authentication",
+      product: [
+        { name: "Web Auth", path: "yourd_web_auth" },
+        { name: "RSVP", path: "", isComingSoon: true },
+        {
+          name: "Digital Identity Management",
+          path: "",
+          isComingSoon: true,
+        },
+      ],
+      path: "yourd_web_auth",
     },
-
     {
       id: 3,
       solution: "YourD Analytics",
+      product: [],
       path: "yourd_analytics",
     },
     {
       id: 4,
       solution: "YourD Data Leverage Infra",
+      product: [],
       path: "yourd_infra",
     },
   ];
@@ -64,13 +75,35 @@ export default function TopBar() {
               >
                 {solutions.map((solution) => {
                   return (
-                    <Link
-                      to={solution.path}
-                      key={solution.id}
-                      className={`w-full px-5 rounded-sm py-1  text-gray300 hover:text-black  hover:bg-maincolor hover:bg-opacity-20`}
+                    <div
+                      className={`flex flex-col w-full px-5 rounded-sm py-1 hover:text-black hover:bg-maincolor text-gray300  hover:bg-opacity-20`}
                     >
-                      {solution.solution}
-                    </Link>
+                      <Link
+                        to={
+                          solution.solution !== "YourD Auth"
+                            ? solution.path
+                            : undefined
+                        }
+                        key={solution.id}
+                        className={` `}
+                      >
+                        {solution.solution}
+                      </Link>
+                      {solution.product.map((product) =>
+                        product.isComingSoon ? (
+                          <div className="px-5 text-[16px] py-1 hover:text-black text-gray300">
+                            {product.name} (Coming Soon)
+                          </div>
+                        ) : (
+                          <Link
+                            className="px-5 text-[16px] py-1 text-gray300 hover:text-black"
+                            to={product.path || solution.path}
+                          >
+                            {product.name}
+                          </Link>
+                        )
+                      )}
+                    </div>
                   );
                 })}
               </div>
