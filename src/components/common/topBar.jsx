@@ -76,7 +76,7 @@ export default function TopBar() {
                 {solutions.map((solution) => {
                   return (
                     <div
-                      className={`flex flex-col w-fit px-5 rounded-sm py-1 hover:text-black hover:bg-maincolor text-gray300  hover:bg-opacity-20`}
+                      className={`flex flex-col w-full px-5 rounded-sm py-1 hover:text-black hover:bg-maincolor text-gray300  hover:bg-opacity-20`}
                     >
                       <Link
                         to={
@@ -91,12 +91,12 @@ export default function TopBar() {
                       </Link>
                       {solution.product.map((product) =>
                         product.isComingSoon ? (
-                          <div className="px-5 text-[16px] py-1 hover:text-black text-gray300 hover:border-black group">
-                            {product.name} {product.name === 'RSVP' ?<></>:<br/>}<span className=" border py-1 px-2  w-fit group-hover:border-maincolor group-hover:text-maincolor rounded-full">Coming Soon</span>
+                          <div className="px-3 text-[16px] py-1 hover:text-black text-gray300 hover:border-black group items-center  whitespace-nowrap">
+                            {product.name} {product.name === 'RSVP' ?<></>:<br/>}<span className=" border-2 py-1 px-2  w-fit rounded-full group-hover:border-black text-[12px] font-bold">Coming Soon</span>
                           </div>
                         ) : (
                           <Link
-                            className="px-5 text-[16px] py-1 text-gray300 hover:text-black"
+                            className="px-3 text-[16px] py-1 text-gray300 hover:text-black"
                             to={product.path || solution.path}
                           >
                             {product.name}
