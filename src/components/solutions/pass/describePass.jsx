@@ -18,7 +18,7 @@ export default function DescribePass() {
     {
       title: "Approaches to online and offline authentication",
       description:
-        "YourD Pass simplifies identity verification and KYC processes. It provides users with a quick and easy login and authentication experience, both online and offline.",
+        "YourD Pass simplifies identity verification and KYC processes. It provides users with a quick and easy auth and authentication experience, both online and offline.",
     },
   ];
 

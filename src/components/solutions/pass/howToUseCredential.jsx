@@ -8,12 +8,12 @@ export function HowToUseCredential() {
   const onlineMethod = [
     {
       title: "Scan",
-      describe: "Scan the QR on the YourD Login screen",
+      describe: "Scan the QR on the YourD Auth screen",
       image: ScanQR,
     },
     {
-      title: "Sign Up & Login",
-      describe: "One-touch signup and login with biometric authentication",
+      title: "Claim Credential & Authentication",
+      describe: "One-touch authentication with biometric authentication",
       image: MyData,
     },
     {
@@ -66,7 +66,7 @@ export function HowToUseCredential() {
           ))}
         </div>
         <div className="font-pre-light text-xl sm:text-3xl max-w-[940px] text-center mx-auto">
-            With YourD Pass, Can easily access online services using <span className="font-pre-bold">Your<span className="text-maincolor">D </span>Login</span> 
+            With YourD Pass, Can easily access online services using <span className="font-pre-bold">Your<span className="text-maincolor">D </span>Authentication</span> 
         </div>
       </div>
       {/**Offline */}

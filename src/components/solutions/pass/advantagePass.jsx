@@ -39,7 +39,7 @@ const advantageFeatures = [
   {
     //   img: law,
     title: "Easy sign-in feature",
-    text: "YourD Login makes it easy to sign in using your own credentials.",
+    text: "YourD Authentication makes it easy to sign in using your own credentials.",
   },
   {
     //   img: onboarding,
