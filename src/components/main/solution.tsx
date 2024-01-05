@@ -1,53 +1,63 @@
-import DataSelling from "../../assets/img/dataSelling.png";
-import YourDSaaS from "../../assets/img/dataPass.png";
-import FastAuth from "../../assets/img/fastAuth.png";
-import Analytics from "../../assets/img/analytics.png";
-import { Link } from "react-router-dom";
-import LearnMore from "../../assets/icon/learnMoreIcon.png";
-import LearnMoreHover from "../../assets/icon/fillcircle.png";
-import { useState } from "react";
+import DataSelling from '../../assets/img/dataselling.png';
+import YourDSaaS from '../../assets/img/dataPass.png';
+import FastAuth from '../../assets/img/fastAuth.png';
+import Analytics from '../../assets/img/analytics.png';
+import Payment from '../../assets/img/payment.png';
+import { Link } from 'react-router-dom';
+import LearnMore from '../../assets/icon/learnMoreIcon.png';
+import LearnMoreHover from '../../assets/icon/fillcircle.png';
+import { useState } from 'react';
 export default function Solution() {
-  const [isHover,setIsHover] = useState(null);
+  const [isHover, setIsHover] = useState(null);
   const solutions = [
     {
       id: 1,
-      title: "Web 3.0 Data Ownership Solution",
-      subtitle: "Implement User-Centric Data Management with YourD Pass",
+      title: 'Web 3.0 Data Ownership Solution',
+      subtitle: 'Implement User-Centric Data Management with YourD Pass',
       description:
-        "YourD Pass is a solution conceived around the principle of user data ownership. It is versatile, finding applications in a wide array of fields from online digital identity to offline RSVP and RWA. This enables users to manage and utilize their data effectively, representing a genuine Web 3.0 solution.",
+        'YourD Pass is a solution conceived around the principle of user data ownership. It is versatile, finding applications in a wide array of fields from online digital identity to offline. This enables users to manage and utilize their data effectively, representing a genuine Web 3.0 solution.',
       image: YourDSaaS,
-      path: "/yourd_pass",
+      path: '/yourd_pass',
     },
     {
       id: 2,
-      title: "Web 3.0 Simplified Authentication Solution",
-      subtitle: "Start your project without the complexity with YourD Web Auth",
+      title: 'Web 3.0 Simplified Authentication Solution',
+      subtitle: 'Start your project without the complexity with YourD Web Auth',
       description:
-        "YourD Auth introduces a passwordless Auth approach, addressing the complexities of conventional wallet logins and simplifying the building of Web 3.0 projects. This makes it a true Web 3.0 Authentication solution that opens up real-world possibilities.",
+        'YourD Auth introduces a passwordless Auth approach, addressing the complexities of conventional wallet logins and simplifying the building of Web 3.0 projects. This makes it a true Web 3.0 Authentication solution that opens up real-world possibilities.',
       image: FastAuth,
-      path: "/yourd_web_auth",
+      path: '/yourd_web_auth',
     },
 
     {
       id: 3,
-      title:
-        "YourD Analytics: The Next-Generation User Analysis Tool for Web 3.0",
-      subtitle:
-        "Conduct Effective Analysis while Upholding Data Sovereignty with YourD Analytics",
+      title: 'YourD Pay: Web 3.0 Integrated Payment Solution',
+      subtitle: 'Efficient and Easy Payments with YourD Pay',
       description:
-        "The implementation of YourD Web Auth and YourD Pass makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.",
-      image: Analytics,
-      path: "/yourd_analytics",
+        'YourD Pay offers a seamless payment experience with pull transaction-based QR payments and one-touch processes. Supporting multiple blockchains, it enables crypto payments in diverse environments, including Web 2.0, while ensuring security and compliance.',
+      image: Payment,
+      // path: '/yourd_payment',
     },
     {
       id: 4,
-      title: "YourD Data Leverage Infra",
+      title:
+        'YourD Analytics: The Next-Generation User Analysis Tool for Web 3.0',
       subtitle:
-        "Maximizing Data Value: YourD Paving the Way for Emerging Business Models in a Web 3.0 Landscape",
+        'Conduct Effective Analysis while Upholding Data Sovereignty with YourD Analytics',
       description:
-        "YourD enables users and service providers to co-create the value of their data in a Web 3.0 environment. By incorporating zero-knowledge proof (ZKP), users can selectively disclose certain information, ensuring data privacy while increasing the value of their data. This approach not only preserves data sovereignty, but also provides freedom to explore and discover new business models and opportunities in a variety of fields.",
+        'The implementation of YourD Web Auth and YourD Pass makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.',
+      image: Analytics,
+      path: '/yourd_analytics',
+    },
+    {
+      id: 5,
+      title: 'YourD Data Leverage Infra',
+      subtitle:
+        'Maximizing Data Value: YourD Paving the Way for Emerging Business Models in a Web 3.0 Landscape',
+      description:
+        'YourD enables users and service providers to co-create the value of their data in a Web 3.0 environment. By incorporating zero-knowledge proof (ZKP), users can selectively disclose certain information, ensuring data privacy while increasing the value of their data. This approach not only preserves data sovereignty, but also provides freedom to explore and discover new business models and opportunities in a variety of fields.',
       image: DataSelling,
-      path: "/yourd_infra",
+      path: '/yourd_infra',
     },
   ];
 
@@ -55,8 +65,8 @@ export default function Solution() {
     <div
       key={solution.id}
       className={` md:col-span-1 flex my-3 flex-col h-fit items-center justify-start p-3 sm:p-5 sm:pb-0 md:p-10 md:pb-0 rounded-[32px] grid-auto-rows-1fr  backdrop-blur-sm bg-[#FFE9B1] bg-opacity-20 overflow-hidden ${
-        index === 3 ? "sm:translate-y-[136px]" : ""
-      } ${index === 1 ? "sm:translate-y-[176px]" : ""}`}
+        index === 3 ? 'sm:translate-y-[136px]' : ''
+      } ${index === 1 ? 'sm:translate-y-[176px]' : ''}`}
     >
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
@@ -71,10 +81,15 @@ export default function Solution() {
           </span>
         </div>
         <div className="flex flex-shrink justify-between ">
-          <Link onMouseEnter={()=>setIsHover(index)} onMouseLeave={()=>setIsHover(null)} to={solution.path} className="w-fit h-fit hover:scale-110 transition-all duration-300">
+          <Link
+            onMouseEnter={() => setIsHover(index)}
+            onMouseLeave={() => setIsHover(null)}
+            to={solution.path}
+            className="w-fit h-fit hover:scale-110 transition-all duration-300"
+          >
             {/* <OutlineButton /> */}
             <img
-              src={isHover === index?LearnMoreHover:LearnMore}
+              src={isHover === index ? LearnMoreHover : LearnMore}
               alt={solution.title}
               className="object-contain min-w-[50px] w-[50px] sm:w-[50px] md:w-[60px] mt-5"
             />

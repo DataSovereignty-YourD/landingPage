@@ -35,7 +35,7 @@ export default function DescribePass() {
           Take control of your data with YourD Pass, a Web 3.0 solution that
           emphasizes user data ownership. From online platforms to offline
           environments, YourD Pass enables consistent and easy data management
-          wherever you are..
+          wherever you are.
         </div>
       </div>
 

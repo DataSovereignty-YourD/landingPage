@@ -11,6 +11,7 @@ import YourDLoginPage from "./pages/product/yourdLoginPage";
 import YourDPassPage from "./pages/product/yourdPassPage";
 import YourDAnalyticsPage from "./pages/product/yourdAnalayticsPage";
 import YourDInfraPage from "./pages/product/yourdInfraPage";
+import YourDPaymentPage from "./pages/product/yourdPaymentPage";
 function App() {
   const location = useLocation();
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/yourd_web_auth" element={<YourDLoginPage />} />
         <Route path="/yourd_pass" element={<YourDPassPage />} />
+        <Route path="/yourd_payment" element={<YourDPaymentPage />} />
         <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
         <Route path="/yourd_infra" element={<YourDInfraPage />} />
         <Route path="/about" element={<AboutPage />} />

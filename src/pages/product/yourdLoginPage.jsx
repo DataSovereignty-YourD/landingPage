@@ -4,7 +4,7 @@ import LoginHeader from '../../components/solutions/login/loginHeader';
 import AdvantageLogin from '../../components/solutions/login/advantageLogin';
 import '../../assets/css/describe1.css';
 import Footer from '../../components/common/footer';
-
+import LoginVideo from '../../components/solutions/login/loginVideo';
 export default function YourDLoginPage() {
   return (
     <div className="flex flex-col relative pt-16 items-start w-full ">
@@ -19,6 +19,9 @@ export default function YourDLoginPage() {
       <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
         <LoginDiagram />
       </div>
+      <div className="bg-[#FFF6E0] bg-opacity-70 w-full">
+        <LoginVideo />
+      </div>
       <div className="bg-neutral-100 bg-opacity-70">
         <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px]">
           <AdvantageLogin />
@@ -27,8 +30,9 @@ export default function YourDLoginPage() {
       {/* <div className="h-1/2 w-full relative">
         <LoginButtonCard />
       </div> */}
-      <div className='bg-white w-full bg-opacity-70 pt-10'>
-      <Footer/></div>
+      <div className="bg-white w-full bg-opacity-70 pt-10">
+        <Footer />
+      </div>
     </div>
   );
 }

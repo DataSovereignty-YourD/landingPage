@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import YourDStack from "../../assets/img/YourDStack.png";
 import { MainIsVisibleState } from "../../assets/recoil/mainIsVisible";
 import { useIsVisible } from "../../hooks/view";
-
+import YourDStack2 from '../../assets/img/YourDStack2.png';
 export default function YourdStack() {
   const [mainIsVisible,setMainIsVisible] = useRecoilState(MainIsVisibleState);
   const ref1 = useRef(null);
@@ -31,7 +31,7 @@ export default function YourdStack() {
       </div>
       <div className="flex flex-col md:flex-row gap-16 relative py-10 backdrop-blur-sm ">
         <img
-          src={YourDStack}
+          src={YourDStack2}
           alt="YourDStack"
           className="flex object-contain w-full md:w-3/6 bg-white relative"
         />
