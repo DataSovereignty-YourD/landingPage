@@ -1,10 +1,8 @@
 import DescrbiePass from '../../components/solutions/pass/describePass';
 import PassStandard from '../../components/solutions/pass/passStandard';
 import PassFunction from '../../components/solutions/pass/passFunction';
-import PassDiagram from '../../components/solutions/pass/passDiagram';
 import PassHeader from '../../components/solutions/pass/passHeader';
 import AdvantagePass from '../../components/solutions/pass/advantagePass';
-import PassCard from '../../components/solutions/pass/passCard';
 import Footer from '../../components/common/footer';
 import '../../assets/css/describe1.css';
 import { HowToUseCredential } from '../../components/solutions/pass/howToUseCredential';

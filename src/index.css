@@ -3,30 +3,18 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-  font-family: "pre-extrabold";
-  src: url("./assets//fonts/Pretendard-ExtraBold.otf");
-}
-
-@font-face {
   font-family: "pre-bold";
-  src: url("./assets//fonts/Pretendard-Bold.otf");
+  src: url("./assets//fonts/Pretendard-Bold.woff2") format('woff2')
 }
 
-@font-face {
-  font-family: "pre-semibold";
-  src: url("./assets//fonts/Pretendard-SemiBold.otf");
-}
-@font-face {
-  font-family: "pre-medium";
-  src: url("./assets//fonts/Pretendard-Medium.otf");
 
-}@font-face {
+@font-face {
   font-family: "pre-regular";
-  src: url("./assets//fonts/Pretendard-Regular.otf");
+  src: url("./assets//fonts/Pretendard-Regular.woff2") format('woff2')
 }
 @font-face {
   font-family: "pre-light";
-  src: url("./assets//fonts/Pretendard-Light.otf");
+  src: url("./assets//fonts/Pretendard-Light.woff2") format('woff2')
 }
 
 body {

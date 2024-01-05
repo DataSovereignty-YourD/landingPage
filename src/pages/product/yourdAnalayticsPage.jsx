@@ -2,8 +2,6 @@ import DescribeAnalytic from '../../components/solutions/analytic/describeAnalyt
 import AnalyticHeader from '../../components/solutions/analytic/analyticHeather';
 import AnalyticEmphasis from '../../components/solutions/analytic/analyticEmphasis';
 import AdvantageAnalytic from '../../components/solutions/analytic/advantageAnalytic';
-import AnalyticCard from '../../components/solutions/analytic/analyticCard';
-
 import Footer from '../../components/common/footer';
 import '../../assets/css/describe1.css';
 

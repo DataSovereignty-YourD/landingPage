@@ -18,7 +18,7 @@ export default function DescribePass() {
     {
       title: "Approaches to online and offline authentication",
       description:
-        "YourD Pass simplifies identity verification and KYC processes. It provides users with a quick and easy login and authentication experience, both online and offline.",
+        "YourD Pass simplifies identity verification and KYC processes. It provides users with a quick and easy auth and authentication experience, both online and offline.",
     },
   ];
 
@@ -28,14 +28,14 @@ export default function DescribePass() {
         <div className=" w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           User-centered data management
         </div>
-        <div className=" text-2xl sm:text-5xl mt-3 font-pre-semibold ">
+        <div className=" text-2xl sm:text-5xl mt-3 font-pre-bold ">
           Versatile, reliable, and secure
         </div>
         <div className="  sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">
           Take control of your data with YourD Pass, a Web 3.0 solution that
           emphasizes user data ownership. From online platforms to offline
           environments, YourD Pass enables consistent and easy data management
-          wherever you are..
+          wherever you are.
         </div>
       </div>
 
@@ -43,7 +43,7 @@ export default function DescribePass() {
         {dataSections.map((section, index) => (
           <div
             key={index}
-            className="border  p-4 rounded-md bg-white gap-1 flex flex-col sm:col-span-2 shadow-all-around"
+            className="border  p-4 rounded-2xl bg-white gap-1 flex flex-col sm:col-span-2 shadow-all-around"
           >
             <div className=" font-pre-bold text-xl sm:text-2xl  mb-2  ">
               {section.title}

@@ -26,7 +26,7 @@ const LogoHero = ({ text1 }) => {
           `}
         >
           <section className=" items-center justify-center flex flex-col gap-10 w-full">
-            <h1 className="text-center text-2xl px-10 sm:px-0 sm:text-4xl max-w-xl md:text-6xl font-pre-semibold">
+            <h1 className="text-center text-2xl px-10 sm:px-0 sm:text-4xl max-w-xl md:text-6xl font-pre-bold">
               {text1}
             </h1>
             {isVisible4 && (

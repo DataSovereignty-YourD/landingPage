@@ -102,7 +102,7 @@ const features = [
     problem2:
       '•Are you concerned about security and compatibility issues in the Web 3.0 environment?',
     solution:
-      '•YourD Login is based on the W3C DID standard, helping to provide secure and efficient authentication. This allows you to remain competitive even in the Web 3.0 environment.',
+      '•YourD Auth is based on the W3C DID standard, helping to provide secure and efficient authentication. This allows you to remain competitive even in the Web 3.0 environment.',
   },
 
   {
@@ -113,7 +113,7 @@ const features = [
     problem2:
       '•사용자 데이터의 보호와 관리에 대한 더 나은 방법을 찾고 계신가요?',
     solution:
-      '•YourD Login은 블록체인에 맞는 인증 방법을 제공하여 사용자 경험과 데이터 보호를 모두 강화해드립니다.',
+      '•YourD Auth은 블록체인에 맞는 인증 방법을 제공하여 사용자 경험과 데이터 보호를 모두 강화해드립니다.',
   },
 
   {
@@ -122,7 +122,7 @@ const features = [
     problem1: '•사용자들의 로그인 경험에 대한 피드백이 부담스러우신가요?',
     problem2: '•사용자 경험을 향상시키는 방법을 고민하고 계신가요?',
     solution:
-      '•YourD Login의 QR 코드 기반 로그인으로 사용자의 만족도를 높이면서 로그인 절차도 간소화됩니다.',
+      '•YourD Auth의 QR 코드 기반 로그인으로 사용자의 만족도를 높이면서 로그인 절차도 간소화됩니다.',
   },
 
   {
@@ -132,6 +132,6 @@ const features = [
       '사용자 인증과 데이터 관리에 대한 복잡한 과정 때문에 진행이 어렵게 느껴지시나요?',
     problem2: 'Web 3.0 환경의 보안과 호환성 문제로 걱정이 되시나요? ',
     solution:
-      ' YourD Login은 W3C DID 표준에 기반해 안전하고 효율적인 인증을 도와줍니다. 이를 통해 Web 3.0 환경에서도 경쟁력을 갖추실 수 있습니다.',
+      ' YourD Web Auth는 W3C DID 표준에 기반해 안전하고 효율적인 인증을 도와줍니다. 이를 통해 Web 3.0 환경에서도 경쟁력을 갖추실 수 있습니다.',
   },
 ];

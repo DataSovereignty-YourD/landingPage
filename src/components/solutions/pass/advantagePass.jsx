@@ -1,10 +1,10 @@
 export default function AdvantagePass() {
   return (
-    <div className=" h-fit py-10 sm:py-20 w-full relative items-center justify-center  flex flex-col">
-      <div className=" font-pre-bold text-[44px] flex text-center justify-center gradientText">
+    <div className=" h-fit py-10 sm:py-20 w-full relative items-center justify-center  flex flex-col gap-10 sm:gap-20">
+      <div className=" font-pre-bold text-3xl sm:text-[44px] flex text-center justify-center gradientText">
         Embrace a World of New Experiences
       </div>
-      <div className=" grid grid-cols-6 items-start justify-center mt-24 gap-10">
+      <div className=" grid grid-cols-6 items-start justify-center gap-10">
         {advantageFeatures.map((feature, index) => (
           <div
             key={index}
@@ -18,7 +18,7 @@ export default function AdvantagePass() {
             <span className=" font-pre-bold text-lg md:text-2xl leading-5 items-start justify-start flex">
               {feature.title}
             </span>
-            <span className=" font-pre-medium text-sm h-fit sm:text-lg text-gray300">{feature.text}</span>
+            <span className=" font-pre-regular font-bold text-sm h-fit sm:text-lg text-gray300">{feature.text}</span>
           </div>
         ))}
       </div>
@@ -39,7 +39,7 @@ const advantageFeatures = [
   {
     //   img: law,
     title: "Easy sign-in feature",
-    text: "YourD Login makes it easy to sign in using your own credentials.",
+    text: "YourD Authentication makes it easy to sign in using your own credentials.",
   },
   {
     //   img: onboarding,

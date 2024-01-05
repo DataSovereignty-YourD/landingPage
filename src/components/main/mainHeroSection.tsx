@@ -1,8 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useIsVisible } from "../../hooks/view";
-import { motion } from "framer-motion";
 import "../../assets/css/describe1.css";
 import RoundedButton from "../utils/buttons/roundedButton";
+import { useRecoilState } from "recoil";
+import { MainIsVisibleState } from "../../assets/recoil/mainIsVisible";
+import { Link } from "react-router-dom";
+
 interface DescribeProps {
   title1: string;
   title2: string;
@@ -13,8 +16,11 @@ export default function MainHeroSection({
   title2,
   subText1,
 }: DescribeProps) {
+  const [mainIsVisible,setMainIsVisible] = useRecoilState(MainIsVisibleState);
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
+
+
 
   function ScrollComponent() {
     return (
@@ -27,23 +33,11 @@ export default function MainHeroSection({
     );
   }
 
-  const splitWord2 = (text: string) => {
-    const word = "novel authentication protocol and infrastructure";
-    const parts = text.split(word);
-    return (
-      <>
-        {parts[0]}
-        <span className="text-[#fccc00]">{word}</span>
-        {parts[1]}
-      </>
-    );
-  };
-
   return (
     <>
       <div
         id="container1"
-        className="w-screen sm:w-full h-screen text-center relative font-pre-extra overflow-hidden bg-gray100 bg-opacity-50"
+        className="w-screen sm:w-full h-screen text-center relative overflow-hidden bg-white bg-opacity-50"
       >
         <div
           id="layout1"
@@ -51,20 +45,29 @@ export default function MainHeroSection({
         >
           <div id="background1" ref={ref1} className="w-full h-10 mb-[25%] " />
           <div
-            className={`fixed flex flex-col top-[30%] sm:top-[35%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${
+            className={`fixed flex flex-col top-[30%] sm:top-[35%] transition-all justify-center items-center duration-500 px-10 ease-in gap-5 ${mainIsVisible && 'hidden'} ${
               isVisible1
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
             }`}
           >
             <div className="flex first-line:">
-              <div className="font-pre-bold text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
+              <h1 className="font-pre-bold  text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
                 {title1}&nbsp;{title2}
-              </div>
+              </h1>
             </div>
-            <div className="font-medium text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-medium">{subText1}</div>
+            <h2 className="text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-regular font-bold">{subText1}</h2>
             <div className="bg-white">
-              <RoundedButton/>
+            <Link
+            to="/contact"
+            className="hidden sm:flex h-16 justify-center items-center"
+          >
+            {/* <RoundedButton /> */}
+
+            <span className=" px-5 py-[6px] font-pre-bold border-black border-2 rounded-full transition-all duration-300 hover:bg-[#fccc00]">
+              Contact Us
+            </span>
+          </Link>
             </div>
           </div>
           <div

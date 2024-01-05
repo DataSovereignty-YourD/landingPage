@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import  { useState, useEffect, useRef } from "react";
 import img from "../../../src/assets/img/dataPass.png";
 import Footer from "../common/footer";
 import { fetchData } from "../../test/testData";
@@ -27,6 +27,7 @@ function Blog() {
     setCurrentPage(pageNumber);
     allNewsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  
   useEffect(() => {
     let sortedData = [...data];
     if (sortType === "latest") {

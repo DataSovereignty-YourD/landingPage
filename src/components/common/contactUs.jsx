@@ -100,7 +100,7 @@ const Form = ({ selected, setSelected }) => {
         />
       ))}
       <div className="mb-6">
-        <p className="font-pre-semibold text-xl mb-2">and I represent...</p>
+        <p className="font-pre-bold text-xl mb-2">and I represent...</p>
         <FormSelect selected={selected} setSelected={setSelected} />
       </div>
       <AnimatePresence>
@@ -112,7 +112,7 @@ const Form = ({ selected, setSelected }) => {
             transition={BASE_TRANSITION}
             className="mb-6"
           >
-            <p className="font-pre-semibold text-xl mb-2">by the name of...</p>
+            <p className="font-pre-bold text-xl mb-2">by the name of...</p>
             <input
               type="text"
               placeholder="Your company name"
@@ -123,7 +123,7 @@ const Form = ({ selected, setSelected }) => {
         )}
       </AnimatePresence>
       <div className="mb-6">
-        <p className="font-pre-semibold text-xl mb-2">
+        <p className="font-pre-bold text-xl mb-2">
           I'd love to ask about...
         </p>
         <textarea
@@ -136,7 +136,7 @@ const Form = ({ selected, setSelected }) => {
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
         type="submit"
-        className={`transition-colors ${COMMON_CLASSES.transitionDuration} text-lg text-center rounded-lg w-full py-3 font-pre-semibold bg-black text-[#fccc00]`}
+        className={`transition-colors ${COMMON_CLASSES.transitionDuration} text-lg text-center rounded-lg w-full py-3 font-pre-bold bg-black text-[#fccc00]`}
       >
         Submit
       </motion.button>
@@ -147,7 +147,7 @@ const Form = ({ selected, setSelected }) => {
 const FormField = ({ label, type, placeholder, refs, inputRef }) => {
   return (
     <div className="mb-6">
-      <p className="font-pre-semibold text-xl mb-2">{label}</p>
+      <p className="font-pre-bold text-xl mb-2">{label}</p>
       <div className="flex flex-row gap-4">
         {(Array.isArray(placeholder) ? placeholder : [placeholder]).map(
           (ph, index) => (

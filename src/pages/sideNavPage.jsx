@@ -1,34 +1,20 @@
-import { useState } from 'react';
-import { FiMenu, FiX, FiArrowRight } from 'react-icons/fi';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { AiFillCaretDown } from 'react-icons/ai';
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navVariants = {
   open: {
-    x: '0%',
-    borderTopLeftRadius: '0vw',
-    borderBottomLeftRadius: '0vw',
+    x: "0%",
+    borderTopLeftRadius: "0vw",
+    borderBottomLeftRadius: "0vw",
     opacity: 1,
   },
   closed: {
-    x: '100%',
-    borderTopLeftRadius: '50vw',
-    borderBottomLeftRadius: '50vw',
+    x: "100%",
+    borderTopLeftRadius: "50vw",
+    borderBottomLeftRadius: "50vw",
     opacity: 0,
-  },
-};
-
-const linkWrapperVariants = {
-  open: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-  closed: {
-    transition: {
-      staggerChildren: 0.1,
-    },
   },
 };
 
@@ -37,19 +23,30 @@ const navLinkVariants = {
   closed: { x: 25 },
 };
 
-const NavLink = ({ text, to, onClick, icon: Icon, smallText }) => (
+const NavLink = ({
+  text,
+  to,
+  onClick,
+  icon: Icon,
+  smallText,
+  xsmallText = false,
+}) => (
   <motion.div
     className={`inline-block z-10 text-slate-800 w-fit font-black ${
-      smallText ? 'text-4xl' : 'text-6xl sm:text-7xl'
+      smallText
+        ? xsmallText
+          ? "text-2xl ml-5"
+          : "text-4xl"
+        : "text-6xl sm:text-7xl"
     } hover:text-yellow-500 transition-colors`}
     variants={navLinkVariants}
     transition={{
-      type: 'spring',
+      type: "spring",
       damping: 3,
     }}
     whileHover={{
       y: -15,
-      rotate: '-7.5deg',
+      rotate: "-7.5deg",
     }}
     rel="nofollow"
   >
@@ -64,24 +61,18 @@ const NavLink = ({ text, to, onClick, icon: Icon, smallText }) => (
   </motion.div>
 );
 
-const links = [
-  { text: 'Home', to: '/' },
-  { text: 'Solutions' },
-  { text: 'Contact Us', to: '/contact' },
-];
-
 const Nav = ({ isOpen, setIsOpen }) => (
   <motion.nav
     className={`fixed top-0 bottom-0 left-0 w-full h-full bg-white transition-opacity backdrop-blur-md  ${
-      isOpen ? 'bg-opacity-60' : 'bg-opacity-0'
+      isOpen ? "bg-opacity-60" : "bg-opacity-0"
     }`}
-    animate={isOpen ? 'open' : 'closed'}
+    animate={isOpen ? "open" : "closed"}
     variants={navVariants}
     initial="closed"
   >
     <motion.button
       className="text-2xl  text-black hover:text-yellow-500  transition-colors p-4 absolute top-8 right-8"
-      whileHover={{ rotate: '180deg' }}
+      whileHover={{ rotate: "180deg" }}
       onClick={() => setIsOpen(false)}
       whileTap={{ scale: 0.9 }}
     >
@@ -92,31 +83,42 @@ const Nav = ({ isOpen, setIsOpen }) => (
       className="flex flex-col gap-4 absolute mt-48 left-8"
     >
       <NavLink text="Home" to="/" onClick={() => setIsOpen(false)} />
-      <NavLink text="Solutions" onClick={() => setIsOpen(false)} />
-      <NavLink
-        text="Pass"
-        to="/yourd_pass"
-        onClick={() => setIsOpen(false)}
-        smallText={true}
-      />
-      <NavLink
-        text="Login"
-        to="/yourd_login"
-        onClick={() => setIsOpen(false)}
-        smallText={true}
-      />
-      <NavLink
-        text="Analytics"
-        to="/yourd_analytics"
-        onClick={() => setIsOpen(false)}
-        smallText={true}
-      />
-      <NavLink
-        text="Infra"
-        to="/yourd_infra"
-        onClick={() => setIsOpen(false)}
-        smallText={true}
-      />
+      <NavLink text="Solutions" />
+      <div className="flex flex-col gap-4 ml-4">
+        <NavLink
+          text="Pass"
+          to="/yourd_pass"
+          onClick={() => setIsOpen(false)}
+          smallText={true}
+        />
+        <NavLink text="Authentication" smallText={true} />
+        <NavLink
+          text="Web Auth"
+          to="/yourd_web_auth"
+          onClick={() => setIsOpen(false)}
+          smallText={true}
+          xsmallText={true}
+        />
+        <NavLink text="RSVP (Coming Soon)" smallText={true} xsmallText={true} />
+        <NavLink
+          text="Digital Identity Management (Coming Soon)"
+          smallText={true}
+          xsmallText={true}
+        />
+        <NavLink
+          text="Analytics"
+          to="/yourd_analytics"
+          onClick={() => setIsOpen(false)}
+          smallText={true}
+        />
+        <NavLink
+          text="Infra"
+          to="/yourd_infra"
+          onClick={() => setIsOpen(false)}
+          smallText={true}
+        />
+      </div>
+
       <NavLink
         text="Contact Us"
         to="/contact"
@@ -138,7 +140,7 @@ const SideNav = () => {
     <div>
       <div className="flex items-center text-white z-[-1]">
         <motion.button
-          whileHover={{ rotate: '180deg' }}
+          whileHover={{ rotate: "180deg" }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(true)}
           className="text-2xl  bg-white/10 text-black hover:text-yellow-500 transition-colors p-4 rounded-full"

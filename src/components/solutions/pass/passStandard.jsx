@@ -3,7 +3,7 @@ import OpenID from "../../../assets/img/openID.png";
 
 export default function PassStandard() {
   return (
-    <div className="font-pre-light  w-3/4 mx-auto text-white flex flex-col items-center justify-center py-24 leading-9 text-center gap-[60px]">
+    <div className="font-pre-light w-full sm:w-3/4 mx-auto text-white flex flex-col items-center justify-center py-24 leading-9 text-center gap-[60px]">
       <div className="flex flex-col gap-5">
         <span className="text-maincolor font-pre-bold text-lg sm:text-3xl md:text-[44px]">
           Compliance with International Data Standards

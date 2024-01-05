@@ -8,7 +8,7 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
   jit: true,
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: {
@@ -36,10 +36,7 @@ module.exports = {
         'gradient-primary': `linear-gradient(to right, ${theme('colors.gradient1')}, ${theme('colors.gradient2')})`,
       }),
       fontFamily: {
-        "pre-extrabold": ["pre-extrabold"],
         "pre-bold":["pre-bold"],
-        "pre-semibold": ["pre-semibold"],
-        "pre-medium": ["pre-medium"],
         "pre-regular": ["pre-regular"],
         "pre-light": ["pre-light"],
       },
