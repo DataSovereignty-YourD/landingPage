@@ -26,7 +26,7 @@ const DropDown = () => {
     {
       id: 3,
       solution: 'YourD Payment',
-      path: 'yourd_payment',
+      // path: 'yourd_payment',
     },
 
     {
