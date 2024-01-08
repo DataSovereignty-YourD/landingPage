@@ -12,6 +12,7 @@ import YourDPassPage from "./pages/product/yourdPassPage";
 import YourDAnalyticsPage from "./pages/product/yourdAnalayticsPage";
 import YourDInfraPage from "./pages/product/yourdInfraPage";
 import YourDPaymentPage from "./pages/product/yourdPaymentPage";
+
 function App() {
   const location = useLocation();
 
@@ -31,7 +32,7 @@ function App() {
         <Route path="/yourd_infra" element={<YourDInfraPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
       {/* <SideBar /> */}
       {/* <div className="h-[1px] w-full bg-gray-20 items-start"></div> */}

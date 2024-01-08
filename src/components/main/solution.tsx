@@ -36,7 +36,7 @@ export default function Solution() {
       description:
         'YourD Pay offers a seamless payment experience with pull transaction-based QR payments and one-touch processes. Supporting multiple blockchains, it enables crypto payments in diverse environments, including Web 2.0, while ensuring security and compliance.',
       image: Payment,
-      // path: '/yourd_payment',
+      path: '/yourd_payment',
     },
     {
       id: 4,
