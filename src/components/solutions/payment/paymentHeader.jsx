@@ -17,7 +17,7 @@ export default function PaymentHeader() {
           {/* Open a <span className="text-[#fccc00]">safe</span> and{" "}
           <span className="text-[#fccc00]">fast</span> step to the Web 3.0
           world! */}
-          Transition to the Web 3.0 economy. User-friendly one-touch payment
+          Transition to the Web 3.0 economy. User-friendly one-touch crypto payment
         </p>
       </div>
       <img

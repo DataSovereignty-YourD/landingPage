@@ -2,7 +2,7 @@ import codesnippet from '../../../assets/icon/codesnippetIcon.png';
 import qr from '../../../assets/icon/QRIcon.png';
 import standard from '../../../assets/icon/standardIcon.png';
 
-export default function DescrbieLogin() {
+export default function DescrbiePayment() {
   const features = [
     {
       title: 'Easy Payments with QR',
@@ -32,15 +32,16 @@ export default function DescrbieLogin() {
     <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
       <div className="w-full ">
         <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
-          YourD Crypto Pay: The True Web 3.0 Payment Experience
+        The True Web 3.0 Payment Experience
         </div>
         <div className="text-2xl sm:text-5xl mt-3 font-pre-bold ">
           Simple, Innovative, Multi-Chain
         </div>
         <div className=" sm:text-lg font-medium mt-5 sm:w-3/5 text-gray400">
-          웹 3.0의 탈중앙화 금융의 힘을 활용하는 YourD Crypto Pay로 거래의
-          미래를 열어보세요. pull 트랜잭션 기반 QR코드 스캔으로 번거로움 없이
-          멀티체인 결제를 경험하세요.
+          Unlock the future of transactions with YourD Crypto Pay, which
+          harnesses the power of decentralized finance in Web 3.0. Experience
+          hassle-free multi-chain payments with pull transaction-based QR code
+          scanning.
         </div>
       </div>
       <div className="flex flex-col  sm:flex-row sm:grid sm:grid-cols-6 gap-3  w-full mt-10">

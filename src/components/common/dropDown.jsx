@@ -10,6 +10,13 @@ import { Dispatch, SetStateAction, useState } from 'react';
 import { IconType } from 'react-icons';
 import { Link } from 'react-router-dom';
 const DropDown = () => {
+  const [isAnimationCompleted, setIsAnimationCompleted] = useState(false);
+  const handleItemClick = (path) => {
+    if (isAnimationCompleted) {
+      setOpen(false);
+      // 라우팅 로직 추가...
+    }
+  };
   const [open, setOpen] = useState(false);
   const solutions = [
     {
@@ -39,6 +46,7 @@ const DropDown = () => {
       solution: 'YourD Data Leverage Infra',
       path: 'yourd_infra',
     },
+    { id: 6, solution: 'About Us', path: 'about_us' },
   ];
 
   return (
@@ -59,12 +67,13 @@ const DropDown = () => {
           variants={wrapperVariants}
           style={{ originY: 'top', translateX: '-50%' }}
           className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
+          onAnimationComplete={() => setIsAnimationCompleted(true)}
         >
           {solutions.map((solution) => (
             <motion.li
               variants={itemVariants}
-              onClick={() => setOpen(false)}
-              className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+              onClick={() => handleItemClick(solution.path)}
+              className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-yellow-100 text-slate-700 hover:text-[#fccc00] transition-colors cursor-pointer"
             >
               <Link to={solution.path}>{solution.solution}</Link>
             </motion.li>
@@ -96,7 +105,7 @@ const wrapperVariants = {
   open: {
     scaleY: 1,
     transition: {
-      duration: 0.05, // 지속 시간을 0.1초로 설정
+      // 지속 시간을 0.1초로 설정
       when: 'beforeChildren',
       staggerChildren: 0.05,
     },
@@ -116,7 +125,7 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.1, // 항목별 지속 시간을 0.1초로 설정
+      // 항목별 지속 시간을 0.1초로 설정
       when: 'beforeChildren',
     },
   },
@@ -124,7 +133,7 @@ const itemVariants = {
     opacity: 0,
     y: -15,
     transition: {
-      duration: 0.1, // 항목별 지속 시간을 0.1초로 설정
+      // 항목별 지속 시간을 0.1초로 설정
       when: 'afterChildren',
     },
   },
