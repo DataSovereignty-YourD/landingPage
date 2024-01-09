@@ -11,8 +11,8 @@ const profiles = [
   { name: 'Hwang', position: 'COO / Co-Founder', sns1: 'https://www.linkedin.com/in/ji-hwang-kim-10a539243/', sns2: 'https://twitter.com/unchain_hwang' },
   { name: 'Miix', position: 'Software Engineer', sns1: 'https://www.linkedin.com/in/miix-y-723b44271/', sns2: 'https://twitter.com/yeomjaeseu98392' },
   { name: 'Jake', position: 'Software Engineer', sns1: '', sns2: 'https://twitter.com/bagseon52525961' },
-  { name: 'J.G', position: 'Product Manager', sns1: 'https://www.linkedin.com/in/hyunchae-jo/', sns2: 'https://twitter.com/trip4e_J' },
-  { name: 'J.G', position: 'Designer', sns1: 'https://www.linkedin.com/in/%EC%98%88%EC%B0%AC-%EB%B0%95-36211b279/', sns2: 'https://twitter.com/Farrell_YourD' },
+  { name: 'JJJ', position: 'Product Manager', sns1: 'https://www.linkedin.com/in/hyunchae-jo/', sns2: 'https://twitter.com/trip4e_J' },
+  { name: 'Farrell', position: 'Designer', sns1: 'https://www.linkedin.com/in/%EC%98%88%EC%B0%AC-%EB%B0%95-36211b279/', sns2: 'https://twitter.com/Farrell_YourD' },
 ];
 
 export default function YourdTeam() {
@@ -47,7 +47,7 @@ const ProfileCard = ({ profile }) => {
           <p className="text-xl font-semibold">{profile.name}</p>
           <p className="text-sm text-gray-600">{profile.position}</p>
         </div>
-        <div className="flex mt-4 space-x-3">
+        <div className="flex mt-4 space-x-3 items-start">
           <a href={profile.sns1} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn size={24} className="hover:text-yellow-400 cursor-pointer" />
           </a>

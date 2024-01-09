@@ -1,6 +1,5 @@
-import PassMobile from "../../../assets/img/YourdPass.png";
 import Arrow from "../../../assets/icon/rightArrow.png";
-
+import YourDPass from '../../../assets/img/YourdPass.png';
 const utilizeData = [
   {
     title: "Own your data",
@@ -21,7 +20,7 @@ export default function PassFunction() {
     <div className=" w-full h-fit flex flex-col py-[120px] justify-center items-center gap-10 sm:gap-20">
       <div className="font-pre-bold font-extrabold text-2xl sm:text-[44px]">Own and Utilize Your Data</div>
       <div className="flex flex-col sm:flex-row gap-16 justify-center  items-center">
-        <img src={PassMobile} alt='YourD Pass' className="h-[340px] sm:h-[500px] lg:h-[600px] object-contain"/>
+        <img src={YourDPass} alt='YourD Pass' className="h-[340px] sm:h-[500px] lg:h-[600px] object-contain"/>
         <div className="flex flex-col gap-8 items-center">
           {utilizeData.map((item,index) => (
             <>
