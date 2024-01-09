@@ -12,6 +12,7 @@ export default function GlobalStandard() {
         Developed in compliance with the W3C DID global standard and supported
         by Tezos, Google Cloud. we are committed to enabling data ownership.
         <div className="flex justify-center items-center sm:justify-start mt-[60px] gap-16 z-10">
+
           <img
             src={W3CLogo}
             alt="w3c_logo"
