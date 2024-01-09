@@ -30,7 +30,7 @@ function App() {
         <Route path="/yourd_payment" element={<YourDPaymentPage />} />
         <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
         <Route path="/yourd_infra" element={<YourDInfraPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about_us" element={<AboutPage />} />
         <Route path="/contact" element={<ContactUs />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>

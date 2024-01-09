@@ -45,26 +45,26 @@ const advantageFeatures = [
   {
     icon: pi1,
     title: 'Auto-Complete QR Payment',
-    text: 'Complete payment with a simple QR scan. Eliminates tedious data entry, enhancing user experience and speeding up transactions',
+    text: 'Effortless payments through QR scanning, enhanced user experience with swift transactions.',
   },
   {
     icon: pi2,
     title: 'Innovative UI',
-    text: 'Card-style design resembling traditional methods. Increases convenience and efficiency, offering an intuitive and enjoyable payment process.',
+    text: 'Card interface for user-friendly and efficient transactions.',
   },
   {
     icon: pi3,
     title: 'Support Multi-Chain',
-    text: 'The card-style crypto payment UI is designed to mimic the familiar card format, providing a similar feel to traditional Web2 payment methods while enjoying the benefits of Web 3.0 simultaneously. This innovative UI enhances user convenience and efficiency, making the payment process more intuitive and enjoyable.',
+    text: 'Diverse options and flexibility for an enhanced user experience.',
   },
   {
     icon: pi4,
     title: 'NFC',
-    text: 'Consumers can enjoy secure and fast wireless payments across various devices, allowing them to create diverse payment scenarios based on their needs. With seamless operation even between mobile devices, one device can serve as the payment terminal, while another performs the payment function. This enables businesses and service providers to handle all payment functions without the need for a separate payment terminal.',
+    text: 'Effortless wireless payments on IoT devices for diverse payment scenarios.',
   },
   {
     icon: pi5,
     title: 'Universal Compatibility',
-    text: 'It can be issued in the form of a physical card, similar to traditional credit or debit cards. Users can conveniently utilize their virtual assets in everyday life, incorporating the advantages of cryptocurrencies into the physical payment process.',
+    text: 'Providing a physical card similar to standard cards for convenient everyday use.',
   },
 ];

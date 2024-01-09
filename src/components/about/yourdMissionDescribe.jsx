@@ -3,15 +3,13 @@ export default function YourdMissionDescribe() {
     <div className=" h-80 w-full   flex items-center justify-center">
       <div className=" flex flex-col gap-4 items-center justify-center">
         <div className="  text-4xl font-semibold  ">
-          YourD is leading the way for the future of data sovereignty{" "}
+          Your<span className="text-[#fccc00]">D</span> is leading the way for the true web3.0
         </div>
         <div className="  text-xl">
-          YourD is a company that builds Web 3.0 Infra through DID &
-          Authentication system. Through a simple authentication system, we
-          provide data sovereignty and transparent transactions for both
-          companies and individuals. Through YourD login, pass wallet, analytic,
-          Infra, etc., users can use services in a safe and reliable digital
-          environment.
+          Your<span className="text-[#fccc00]">D</span> is a company that builds Web 3.0 Infra through authentication and payment.
+          We enable you to easly
+      
+          
         </div>
       </div>
     </div>

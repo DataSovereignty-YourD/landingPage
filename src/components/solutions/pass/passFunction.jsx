@@ -1,4 +1,4 @@
-import PassMobile from "../../../assets/img/YourDPass.png";
+import PassMobile from "../../../assets/img/YourdPass.png";
 import Arrow from "../../../assets/icon/rightArrow.png";
 
 const utilizeData = [

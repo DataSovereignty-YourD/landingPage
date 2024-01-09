@@ -1,4 +1,3 @@
-import WebAuth from '../../../assets/img/webAuthentication.png';
 import Payment from '../../../assets/img/paymentMain.png';
 export default function PaymentHeader() {
   return (
