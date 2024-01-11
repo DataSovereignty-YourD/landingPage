@@ -4,26 +4,27 @@ import process3 from "../../../assets/img/process3.png";
 import process4 from "../../../assets/img/process4.png";
 export default function PaymentProcess() {
   const process = [
+    // {
+    //   id: 1,
+    //   title: "Select YourD Pay",
+    //   subtitle: "Select YourD Pay on the e-commerce platform",
+    //   imgsrc: process1,
+    // },
     {
       id: 1,
-      title: "Select YourD Pay",
-      subtitle: "Select YourD Pay on the e-commerce platform",
-      imgsrc: process1,
-    },
-    {
-      id: 2,
       title: "Scan QR",
       subtitle: "Scan the QR code with payment information",
       imgsrc: process2,
     },
     {
-      id: 3,
+      id: 2,
       title: "Card Selection",
-      subtitle: "Please select the card for payment",
+      subtitle: "Please select",
+      subtitle2: " the card for payment",
       imgsrc: process3,
     },
     {
-      id: 4,
+      id: 3,
       title: "Settlement",
       subtitle: "Payment approved and transaction completed",
       imgsrc: process4,
@@ -37,7 +38,7 @@ export default function PaymentProcess() {
         Payment Process
       </div>
     </div>
-    <div className="mt-10 sm:mb-20 sm:flex-row flex-col flex sm:mt-16">
+    <div className="mt-10 sm:mb-20 sm:flex-row flex-col flex px-10  sm:mt-16">
       {process.map((process) => (
         <div key={process.id} className="flex flex-col sm:flex-col items-center justify-center w-full pb-12">
           <div className="w-[30px] sm:w-[60px] sm:h-[60px] bg-yellow-300 h-[30px] rounded-full flex items-center justify-center">
@@ -46,6 +47,9 @@ export default function PaymentProcess() {
           <div className="font-bold text-3xl mt-6">{process.title}</div>
           <div className="text-2xl font-semibold text-center mt-2 sm:mt-4 text-gray-400">
             {process.subtitle}
+          </div>
+          <div className="text-2xl font-semibold text-center  text-gray-400">
+            {process.subtitle2}
           </div>
           <div className="mt-10">
             <img src={process.imgsrc} className="w-[260px]" alt={`Process ${process.id}`} />

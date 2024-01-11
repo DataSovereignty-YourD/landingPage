@@ -6,6 +6,7 @@ import Footer from '../../components/common/footer';
 import EmbracePayment from '../../assets/img/embraceCrypto.png';
 import PaymentProcess from '../../components/solutions/payment/paymentProcess';
 import AdvantagePayment from '../../components/solutions/payment/advantagePayment';
+import Example from '../../components/solutions/payment/example';
 export default function YourDPaymentPage() {
   return (
     <div className="flex flex-col relative pt-16 items-start w-full ">
@@ -19,6 +20,7 @@ export default function YourDPaymentPage() {
       </div>
       <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px] bg-neutral-100">
         <EmphasisPayment />
+        {/* <Example/> */}
       </div>
       <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] bg-white flex-col flex justify-center items-center mb-10 mt-10">
         <div className="mt-10 text-5xl font-bold gradientText">

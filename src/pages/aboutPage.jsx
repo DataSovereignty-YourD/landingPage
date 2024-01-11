@@ -12,22 +12,22 @@ export default function AboutUs() {
       <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
         <YourdMission />
       </div>
-      <div className=" bg-sky-100 bg-opacity-70 w-full">
+      <div className=" bg-sky-100 bg-opacity-70 w-full relative">
         <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
           <YourdMissionDescribe />
         </div>
       </div>
-      <div className="bg-white bg-opacity-70 w-full">
+      <div className="bg-white bg-opacity-70 w-full relative">
         <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
           <YourdTeam />
         </div>
       </div>
-      <div className="bg-white bg-opacity-70 w-full">
+      <div className="bg-neutral-50 bg-opacity-70 w-full relative mt-10">
         <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
           <YourdAwards />
         </div>
       </div>
-      <div className="bg-white w-full bg-opacity-70 pt-10">
+      <div className="bg-white w-full bg-opacity-70 pt-10 relative">
         <Footer />
       </div>
     </div>
