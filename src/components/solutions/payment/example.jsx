@@ -82,7 +82,7 @@ const Content = ({ setFeatureInView, featureInView }) => {
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
           className="mt-4"
         >
           <div className="my-3 text-5xl font-bold">{featureInView.title}</div>
@@ -100,7 +100,7 @@ const Content = ({ setFeatureInView, featureInView }) => {
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
           className="mt-8 block md:hidden"
         >
           <ExampleFeature featureInView={featureInView} />

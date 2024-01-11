@@ -16,7 +16,7 @@ export default function DescrbiePayment() {
     {
       title: 'D-KYC Integration',
       descriptions: [
-        'YourD Crypto Pay introduces OCR-powered decentralized KYC, ensuring AML compliance and a smooth transition from Web 2.0 to Web 3.0 payments.',
+        'YourD Crypto Pay introduces decentralized KYC, ensuring AML compliance and a smooth transition from Web 2.0 to Web 3.0 payments.',
       ],
       icon: KYC,
     },
