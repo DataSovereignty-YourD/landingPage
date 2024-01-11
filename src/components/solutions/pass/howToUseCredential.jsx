@@ -3,7 +3,7 @@ import ScanQR from "../../../assets/img/scanQR.png";
 import MyData from "../../../assets/img/mydata.png";
 import Rocket from "../../../assets/img/rocket.png";
 import offline from "../../../assets/img/offlinePass.png";
-
+import MyData2 from '../../../assets/img/mydata2.png';
 export function HowToUseCredential() {
   const onlineMethod = [
     {
@@ -14,7 +14,7 @@ export function HowToUseCredential() {
     {
       title: "Claim Credential & Authentication",
       describe: "One-touch authentication with biometric authentication",
-      image: MyData,
+      image: MyData2,
     },
     {
       title: "Start!",

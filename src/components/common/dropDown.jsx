@@ -46,7 +46,7 @@ const DropDown = () => {
     {
       id: 6,
       solution: 'About Us',
-      //  path: 'about_us'
+       path: 'about_us'
     },
   ];
 

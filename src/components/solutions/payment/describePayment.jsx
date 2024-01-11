@@ -1,30 +1,31 @@
 import codesnippet from '../../../assets/icon/codesnippetIcon.png';
 import qr from '../../../assets/icon/QRIcon.png';
 import standard from '../../../assets/icon/standardIcon.png';
-
+import KYC from '../../../assets/icon/kycIcon.png';
+import Multi from '../../../assets/icon/multiIchaincon.png'
+import ID from '../../../assets/icon/idIcon.png';
 export default function DescrbiePayment() {
   const features = [
     {
       title: 'Easy Payments with QR',
       descriptions: [
-        'Complete transactions with a simple scan. No need to navigate complex payment gateways or input sensitive data.',
-        'Our approach accelerates the payment flow, making it quicker and more straightforward, thus enhancing the user payment experience.',
+        'Execute transactions instantly with a simple scan—no complex gateways, no data entry. Our pull transaction method speeds up the process, streamlining your payment experience.',
       ],
       icon: qr,
     },
     {
-      title: 'Next-Gen Payment',
+      title: 'D-KYC Integration',
       descriptions: [
-        'Leveraging our advanced authentication, YourD Crypto Pay introduces a new era of payment solutions that integrate effortlessly with current Web 2.0 infrastructure while paving the way for full transaction capabilities within the Web 3.0 ecosystem.',
+        'YourD Crypto Pay introduces OCR-powered decentralized KYC, ensuring AML compliance and a smooth transition from Web 2.0 to Web 3.0 payments.',
       ],
-      icon: codesnippet,
+      icon: KYC,
     },
     {
       title: `Multi-Chain Flexibility`,
       descriptions: [
-        "With our multi-chain approach, users have the liberty to transact with a variety of cryptocurrencies. YourD Crypto Pay is designed for the diverse needs of today's digital economy, accommodating multiple blockchains for ultimate payment flexibility.",
+        "Transact across various cryptocurrencies with YourD Crypto Pay, catering to the digital economy's diverse needs with multi-blockchain support.",
       ],
-      icon: standard,
+      icon: Multi,
     },
   ];
 
@@ -32,7 +33,7 @@ export default function DescrbiePayment() {
     <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
       <div className="w-full ">
         <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
-        The True Web 3.0 Payment Experience
+          The True Web 3.0 Payment Experience
         </div>
         <div className="text-2xl sm:text-5xl mt-3 font-pre-bold ">
           Simple, Innovative, Multi-Chain

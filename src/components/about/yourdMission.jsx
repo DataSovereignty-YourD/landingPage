@@ -2,26 +2,25 @@ import YourDLogo from '../../assets/img/D.png';
 import StarsCanvas from '../canvas/stars';
 export default function YourdMission() {
   return (
-    <>
-
-      <div className="min-h-[800px]  items-center justify-center flex flex-col">
-        {/* <div className="text-xl sm:text-5xl font-bold items-center justify-center flex ">
-        About US
+    <div className="min-h-[800px] flex flex-col items-center justify-center relative text-[96px] font-bold text-black ">
+      <StarsCanvas />
+      <div className="flex absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 items-baseline">
+        PROVE
+        <div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>{' '}
       </div>
-      
-      <div className="  flex flex-row items-center gap-32 justify-center transform translate-x-5 pt-24">
-        <div className="   bg-[#cce7fc] rounded-full border w-[300px] h-[300px] items-center flex justify-center text-4xl font-bold">
-          PROVE
-        </div>
-        <div className="   bg-[#6f81ea] rounded-full border w-[300px] h-[300px] items-center flex justify-center text-4xl font-bold">
-          OWN
-        </div>
-        <div className="   bg-[#3f41a2] rounded-full border w-[300px] h-[300px] items-center flex justify-center text-4xl font-bold">
-          APPLY
-        </div>
-      </div> */}
-        <img src={YourDLogo} className="object-contain w-[600px]" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img
+          src={YourDLogo}
+          alt="YourD Logo"
+          className="object-contain w-[600px] h-[600px]"
+        />
       </div>
-    </>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-baseline">
+        OWN <div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>
+      </div>
+      <div className="absolute top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2 flex items-baseline">
+        APPLY <div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>
+      </div>
+    </div>
   );
 }
