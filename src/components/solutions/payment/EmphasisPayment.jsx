@@ -34,7 +34,29 @@ export default function EmphasisPayment() {
           for payments
         </span>
       </div>
-     <Example/>
+      {emphasisSections.map((section, index) => (
+        <div
+          key={index}
+          className="flex justify-center items-center mx-10 gap-4 w-full bg-white flex-col sm:flex-row"
+        >
+          <img
+            src={section.image}
+            alt={`Section ${index + 1}`}
+            className="w-full sm:w-3/4 lg:w-2/5 object-contain"
+          />
+          <div className="text-lg sm:text-xl lg:text-3xl py-10 px-4 sm:w-4/5">
+            <span className="text-4xl font-bold">{section.title}</span>
+
+            <div className="sm:mt-12 mt-4 font-pre-light">
+              {section.content.map((paragraph, i) => (
+                <div key={i} className={i !== 0 ? "mt-2" : ""}>
+                  {paragraph}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -15,9 +15,9 @@ export default function AdvantagePayment() {
         <img
           src={Payment}
           alt={'YourDPay'}
-          className="object-contain w-2/3 sm:w-1/3 rounded-3xl"
+          className="object-contain w-2/3 sm:w-1/4  rounded-3xl "
         />
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 sm:ml-48">
           {advantageFeatures.map((feature, index) => (
             <div className="flex hover:scale-105 duration-200 transform transition-transform gap-6 bg-white  rounded-[20px] p-3 sm:p-7">
               <img
