@@ -18,7 +18,7 @@ export default function YourDPaymentPage() {
           <DescrbiePayment />
         </div>
       </div>
-      <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px] bg-neutral-100">
+      <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px] bg-sky-50">
         <EmphasisPayment />
         {/* <Example/> */}
       </div>

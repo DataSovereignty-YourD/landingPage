@@ -7,9 +7,9 @@ export default function LoginHeader() {
         <div className="text-2xl sm:text-[32px] font-pre-bold">
           Your<span className="text-[#fccc00]">D</span> Web Auth
         </div>
-        <div className="font-pre-bold text-3xl sm:text-[56px] gradientText mt-3 leading-none">
-          Simplified, Seamless
-          <br /> Web3.0 Access
+        <div className="font-pre-bold text-3xl sm:text-[46px] gradientText mt-3 leading-none">
+        Forget passwords and sign-ups.
+          <br /><div className="mt-2">One scan does it all.</div>
         </div>
         <p className="font-pre-reqular text-xl mt-10">
           Open a <span className="text-[#fccc00]">safe</span> and{" "}
