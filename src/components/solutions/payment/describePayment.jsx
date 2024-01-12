@@ -7,23 +7,24 @@ import ID from '../../../assets/icon/idIcon.png';
 export default function DescrbiePayment() {
   const features = [
     {
-      title: 'Easy Payments with QR',
+      title: 'Easy Pay with QR',
       descriptions: [
-        'Execute transactions instantly with a simple scan—no complex gateways, no data entry. Our pull transaction method speeds up the process, streamlining your payment experience.',
+        'Scan to pay—no cumbersome steps.',
+        'No gateways, just pull transaction ease.'
       ],
       icon: qr,
     },
     {
       title: 'D-KYC Integration',
       descriptions: [
-        'YourD Crypto Pay introduces decentralized KYC, ensuring AML compliance and a smooth transition from Web 2.0 to Web 3.0 payments.',
+        'YourD Crypto Pay brings in straightforward decentralized KYC to meet AML rules and ease the move to Web 3.0 payments.',
       ],
       icon: KYC,
     },
     {
       title: `Multi-Chain Flexibility`,
       descriptions: [
-        "Transact across various cryptocurrencies with YourD Crypto Pay, catering to the digital economy's diverse needs with multi-blockchain support.",
+        "Use YourD Crypto Pay to handle multiple cryptocurrencies. Simple, direct, and broad blockchain support.",
       ],
       icon: Multi,
     },
@@ -32,7 +33,7 @@ export default function DescrbiePayment() {
   return (
     <div className="h-fit w-full flex flex-col relative py-20 sm:py-24 gap-16 justify-center items-center ">
       <div className="w-full ">
-        <div className="w-fit text-lg sm:text-[32px] font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
+        <div className="w-fit text-lg sm:text-[32px] font-pre-bold  pb-1 text-transparent bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">
           The True Web 3.0 Payment Experience
         </div>
         <div className="text-2xl sm:text-5xl mt-3 font-pre-bold ">
@@ -61,7 +62,7 @@ export default function DescrbiePayment() {
             </div>
             <ul className="list-disc pl-3 text-gray300">
               {feature.descriptions.map((description, idx) => (
-                <li key={idx} className="text-[16px]">
+                <li key={idx} className="text-[20px]">
                   {description}
                 </li>
               ))}

@@ -1,22 +1,22 @@
-import React from "react";
-import LocationPayment from "../../../assets/img/locationPayment.png";
-import ModulePayment from "../../../assets/img/paymentModule.png";
-import Example from "./example";
+import React from 'react';
+import LocationPayment from '../../../assets/img/locationPayment.png';
+import ModulePayment from '../../../assets/img/paymentModule.png';
+import Example from './example';
 const emphasisSections = [
   {
-    title: "Without location restrictions",
+    title: 'Without location restrictions',
     content: [
-      "We provide a universal payment solution that can be used in both the real world and virtual space.",
-      "Pay easily from anywhere.",
+      'We provide a universal payment solution that can be used in both the real world and virtual space.',
+      'Pay easily from anywhere.',
       "Design complex crypto payment systems easily so users don't need to know anything technical.",
     ],
     image: LocationPayment,
   },
   {
-    title: "Payment module provided",
+    title: 'Payment module provided',
     content: [
-      "Easily integrate into your business with an efficient and powerful payment module.",
-      "Experience continuous innovation by responding to new payment trends through user-oriented design and ease of upgrade.",
+      'Easily integrate into your business with an efficient and powerful payment module.',
+      'Experience continuous innovation by responding to new payment trends through user-oriented design and ease of upgrade.',
     ],
     image: ModulePayment,
   },
@@ -34,7 +34,7 @@ export default function EmphasisPayment() {
           for payments
         </span>
       </div>
-      {emphasisSections.map((section, index) => (
+      {/* {emphasisSections.map((section, index) => (
         <div
           key={index}
           className="flex justify-center items-center mx-10 gap-4 w-full bg-white flex-col sm:flex-row"
@@ -56,7 +56,48 @@ export default function EmphasisPayment() {
             </div>
           </div>
         </div>
-      ))}
+      ))} */}
+      <div class="flex flex-col sm:flex-row gap-10 mt-10">
+      <div className="sm:w-[680px] bg-white rounded-xl px-4 py-4 drop-shadow-lg sm:order-1">
+          <div className="text-xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+            Without location restrictions
+          </div>
+          <div className="mt-14 sm:text-2xl ">
+            We provide a universal payment solution that can be used in both the
+            real world and virtual space.
+            <div className="mt-4"> Pay easily from anywhere.</div>{' '}
+            <div className="mt-4">
+              Design complex crypto payment systems easily so users don't need
+              to know anything technical.
+            </div>
+          </div>
+        </div>
+        <img
+          src={LocationPayment}
+          className="w-full sm:w-3/4 lg:w-2/5 object-contain"
+        />
+      </div>
+      <div class="flex flex-col sm:flex-row sm:gap-10 mt-10">
+        <img
+          src={ModulePayment}
+          className="w-full sm:w-3/4 lg:w-2/5 object-contain"
+        />
+        <div className="flex sm:gap-28 mt-10">
+          <div className="sm:w-[680px] bg-white rounded-xl px-4 py-4 drop-shadow-lg">
+            <div className="text-xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+              Payment module provided
+            </div>
+            <div className="mt-14 sm:text-2xl ">
+              Easily integrate into your business with an efficient and powerful
+              payment module.
+              <div className="mt-10">
+                Experience continuous innovation by responding to new payment
+                trends through user-oriented design and ease of upgrade.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

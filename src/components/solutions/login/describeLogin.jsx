@@ -7,24 +7,24 @@ export default function DescrbieLogin() {
     {
       title: "Easy Auth with QR",
       descriptions: [
-        "Users can log in by simply scanning a QR code, without the need for complicated passwords or authentication procedures.",
-        "The Auth process is faster and simpler, enhancing the user experience.",
+        "One scan for sign-up/login.",
+        "No passwords, just easy access.",
       ],
       icon:qr
     },
     {
       title: "Integration Simplicity",
       descriptions: [
-        "Developers can easily integrate into their services using code snippets provided by YourD Auth.",
-        "These snippets are designed to simplify and optimize the Authentication process for a superior user experience.",
+        "Quick setup with YourD Auth code snippets.",
+        "Enhance user flow, no complexity.",
       ],
       icon:codesnippet
     },
     {
-      title: `Based on DID (Decentralized Identifier)`,
+      title: `Based on DID`,
       descriptions: [
-        "YourD Auth offers easy Authentication using the DID, which is a W3C standard.",
-        "Due to its adherence to the DID standard, compatibility with various Web 3.0 services is also guaranteed.",
+        "Authenticate effortlessly with W3C-standard DID.",
+        "Ensures Web 3.0 service compatibility.",
       ],
       icon:standard
     },
@@ -37,7 +37,7 @@ export default function DescrbieLogin() {
           Seamless Authentication with Web 3.0's Identity
         </div>
         <div className="text-2xl sm:text-5xl mt-3 font-pre-bold ">
-          Easy, Swift, Compatible
+        Innovative Authentication System
         </div>
         <div className=" sm:text-lg font-medium mt-5 sm:w-3/5 text-gray400">
           Embrace the future with an effortless Auth using QR code scanning,
@@ -57,7 +57,7 @@ export default function DescrbieLogin() {
             </div>
             <ul className="list-disc pl-3 text-gray300">
               {feature.descriptions.map((description, idx) => (
-                <li key={idx} className="text-[16px]">
+                <li key={idx} className="text-[20px]">
                   {description}
                 </li>
               ))}
