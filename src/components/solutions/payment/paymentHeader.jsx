@@ -1,5 +1,8 @@
 import Payment from '../../../assets/img/paymentMain.png';
+
 export default function PaymentHeader() {
+  const imgurl = './paymentMain2.png';
+  
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
       <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
@@ -20,9 +23,9 @@ export default function PaymentHeader() {
         </p>
       </div>
       <img
-        src={Payment}  // 이미지 수정
+        src={imgurl}  // 이미지 수정
         alt="WebAuthImage"
-        className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%›] md:w-[320px] lg:w-[520px] z-0  rounded-3xl object-contain "
+        className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%] md:w-[320px] lg:w-[580px] z-0  rounded-3xl object-contain "
       />
     </div>
   );
