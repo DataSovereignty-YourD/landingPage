@@ -39,11 +39,11 @@ export default function DescribeAnalytic() {
           optimal analytics experience.
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-7 sm:grid sm:grid-cols-6 w-full mt-10 ">
+      <div className="flex flex-col sm:flex-row gap-7 sm:grid sm:grid-cols-6 w-full mt-10  ">
         {analyticsFeatures.map((feature, idx) => (
           <div
             key={idx}
-            className="rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white p-4 shadow-all-around bg-opacity-70"
+            className="rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white p-4 shadow-all-around bg-opacity-70 py-7 items-center justify-center"
           >
             <img src={feature.icon} alt={feature.title}  className="object-contain w-[64px] h-[64px]"/>
             <div className="font-pre-bold text-xl sm:text-2xl mb-2  ">
