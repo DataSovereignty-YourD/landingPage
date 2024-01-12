@@ -42,12 +42,12 @@ const ProfileCard = ({ profile }) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center pb-10">
-        <div className="mt-5">
-          <p className="text-xl font-semibold">{profile.name}</p>
-          <p className="text-sm text-gray-600">{profile.position}</p>
+      <div className="flex flex-col items-center pb-10 w-full px-16">
+        <div className="mt-5 w-full">
+          <div className="text-xl font-semibold">{profile.name}</div>
+          <div className="text-sm text-gray-600">{profile.position}</div>
         </div>
-        <div className="flex mt-4 space-x-3 items-start">
+        <div className="flex mt-4 space-x-3 items-start w-full">
           <a href={profile.sns1} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn size={24} className="hover:text-yellow-400 cursor-pointer" />
           </a>

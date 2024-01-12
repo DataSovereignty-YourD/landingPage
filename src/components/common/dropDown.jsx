@@ -48,6 +48,7 @@ const DropDown = () => {
       solution: 'About Us',
        path: 'about_us'
     },
+   
   ];
 
   return (
@@ -61,16 +62,17 @@ const DropDown = () => {
       </button>
 
       {open && (
-        <ul className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-full left-1/2 -translate-x-1/2 w-48">
+        <ul className="flex flex-col gap-2 p-2 px-12 sm:px-2 pt-6 bg-white shadow-xl absolute top-full -left-16 sm:left-1/2 -translate-x-1/2 w-[390px] sm:w-48 pb-12 sm:pb-0">
           {solutions.map((solution) => (
             <li
               key={solution.id}
               onClick={() => handleItemClick(solution.path)}
-              className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-yellow-100 text-slate-700 hover:text-[#fccc00] transition-colors cursor-pointer"
+              className="flex items-center gap-2 w-full p-2 text-xl sm:text-xs font-medium whitespace-nowrap rounded-md hover hover:bg-yellow-100 text-slate-700 hover:text-[#fccc00] transition-colors cursor-pointer"
             >
               {solution.solution}
             </li>
           ))}
+          <Link to="/contact" className=' visible sm:hidden w-fit h-6 mt-6 border border-black mx-auto rounded-3xl p-4 items-center justify-center flex font-semibold bg-black text-2xl text-[#fccc00]'>Contact Us</Link>
         </ul>
       )}
     </div>
