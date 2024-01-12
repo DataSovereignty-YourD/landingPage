@@ -63,9 +63,9 @@ export default function TopBar() {
               Contact Us
             </span>
           </Link>
-          <div className="block sm:hidden items-center">
+          {/* <div className="block sm:hidden items-center">
             <SideNav />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div
