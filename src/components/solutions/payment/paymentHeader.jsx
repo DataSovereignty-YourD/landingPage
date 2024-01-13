@@ -1,5 +1,6 @@
 import Payment from '../../../assets/img/paymentMain.png';
 import AsyncImage from '../../common/asyncImage';
+import PreloadImage from '../../common/poeLoadImage';
 export default function PaymentHeader() {
   const imgurl = './paymentMain2.png';
   
@@ -22,7 +23,7 @@ export default function PaymentHeader() {
           Transition to the Web 3.0 economy. User-friendly one-touch crypto payment
         </p>
       </div>
-      <AsyncImage
+      <PreloadImage
         src={imgurl}  // 이미지 수정
         alt="WebAuthImage"
         className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%] md:w-[320px] lg:w-[580px] z-0  rounded-3xl object-contain "
