@@ -1,5 +1,6 @@
 import LeverageInfra from "../../../assets/img/dataLeverageImage.png";
 import AsyncImage from "../../common/asyncImage";
+import PreloadImage from "../../common/poeLoadImage";
 export default function InfraHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col sm:flex-row justify-between items-center  bg-white bg-opacity-70">
@@ -15,7 +16,7 @@ export default function InfraHeader() {
         Dive into a trusted bridge between users and businesses in the Web 3.0
         </p>
       </div>
-      <AsyncImage
+      <PreloadImage
         src={LeverageInfra}
         alt="Data Leverage Infra"
         className="mb-10 sm:mb-0 md:mb-10 md:top-14 sm:pb-0 md:absolute right-0 w-3/4 sm:w-[45%] md:w-[40%] lg:w-[35%] z-0  object-contain"

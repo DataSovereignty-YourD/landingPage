@@ -6,7 +6,7 @@ import Payment from '../../assets/img/payment.png';
 import { Link } from 'react-router-dom';
 import LearnMore from '../../assets/icon/learnMoreIcon.png';
 import LearnMoreHover from '../../assets/icon/fillcircle.png';
-import AsyncImage from '../common/asyncImage';
+import PreloadImage from '../common/poeLoadImage';
 import { useState } from 'react';
 export default function Solution() {
   const [isHover, setIsHover] = useState(null);
@@ -89,7 +89,7 @@ export default function Solution() {
             className="w-fit h-fit hover:scale-110 transition-all duration-300"
           >
             {/* <OutlineButton /> */}
-            <AsyncImage
+            <img
               src={isHover === index ? LearnMoreHover : LearnMore}
               alt={solution.title}
               className="object-contain min-w-[50px] w-[50px] sm:w-[50px] md:w-[60px] mt-5"
