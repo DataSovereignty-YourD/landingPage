@@ -19,7 +19,7 @@ export default function PassHeader() {
       <PreloadImage
         src={Pass}
         alt="PassImage"
-        className="mb-10 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain "
+        className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain "
       />
     </div>
   );
