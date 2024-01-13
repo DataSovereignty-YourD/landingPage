@@ -16,7 +16,7 @@ export default function InfraHeader() {
         Dive into a trusted bridge between users and businesses in the Web 3.0
         </p>
       </div>
-      <PreloadImage
+      <img
         src={LeverageInfra}
         alt="Data Leverage Infra"
         className="mb-10 sm:mb-0 md:mb-10 md:top-14 sm:pb-0 md:absolute right-0 w-3/4 sm:w-[45%] md:w-[40%] lg:w-[35%] z-0  object-contain"
