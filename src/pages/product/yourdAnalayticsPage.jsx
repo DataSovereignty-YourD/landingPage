@@ -1,5 +1,5 @@
 import DescribeAnalytic from '../../components/solutions/analytic/describeAnalytic';
-import AnalyticHeader from '../../components/solutions/analytic/analyticHeather';
+import AnalyticHeader from '../../components/solutions/analytic/analyticHeader';
 import AnalyticEmphasis from '../../components/solutions/analytic/analyticEmphasis';
 import AdvantageAnalytic from '../../components/solutions/analytic/advantageAnalytic';
 import Footer from '../../components/common/footer';

@@ -1,5 +1,5 @@
 import DescribeInfra from '../../components/solutions/leverageInfra/describeInfra';
-import InfraHeader from '../../components/solutions/leverageInfra/infraHeather';
+import InfraHeader from '../../components/solutions/leverageInfra/infraHeader';
 import AdvantageInfra from '../../components/solutions/leverageInfra/advantageInfra';
 // import InfraCard from '../../components/solutions/leverageInfra/infraCard';
 import Footer from '../../components/common/footer';
