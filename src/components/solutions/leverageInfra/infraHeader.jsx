@@ -1,4 +1,4 @@
-import LeverageInfra from "../../../assets/img/dataLeverageImage.png";
+import LeverageInfra from "../../../assets/img/dataLeverageImage.webp";
 import AsyncImage from "../../common/asyncImage";
 import PreloadImage from "../../common/poeLoadImage";
 export default function InfraHeader() {

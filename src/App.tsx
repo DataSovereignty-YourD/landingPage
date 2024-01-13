@@ -17,11 +17,12 @@ import { useRecoilValue, useSetRecoilState } from 'recoil';
 
 function App() {
   const imageUrls = [
-    './assets/img/analytics_imac.png',
-    './assets/img/dataLeverageImage.png',
-    './assets/img/webAuthentication.png',
-    './assets/img/paymentMain.png',
-    './assets/img/yourdpass-main.png',
+    './assets/img/analytics_imac.webp',
+    './assets/img/dataLeverageImage.webp',
+    './assets/img/webAuthentication.webp',
+    './assets/img/paymentMain.webp',
+    './assets/img/yourdpass-main.webp',
+    './assets/img/D.webp',
   ];
   useEffect(() => {
     imageUrls.forEach((url) => {
