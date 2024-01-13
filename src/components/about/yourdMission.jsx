@@ -1,7 +1,7 @@
-import YourDLogo from '../../assets/img/D.png';
+import YourDLogo from '../../assets/img/D.webp';
 import StarsCanvas from '../canvas/stars';
 import AsyncImage from '../common/asyncImage';
-import PreloadImage from '../common/poeLoadImage';
+
 export default function YourdMission() {
   return (
     <div className="min-h-[800px] flex flex-col items-center justify-center relative text-[96px] font-bold text-black ">
@@ -11,7 +11,7 @@ export default function YourdMission() {
         <div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>{' '}
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <PreloadImage
+        <img
           src={YourDLogo}
           alt="YourD Logo"
           className="object-contain w-[600px] h-[600px]"

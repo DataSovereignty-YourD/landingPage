@@ -1,4 +1,4 @@
-import Pass from "../../../assets/img/analytics_imac.png";
+import Analytic from "../../../assets/img/analytics_imac.webp";
 import AsyncImage from "../../common/asyncImage";
 import PreloadImage from "../../common/poeLoadImage";
 export default function AnalyticHeader() {
@@ -17,7 +17,7 @@ export default function AnalyticHeader() {
         </p>
       </div>
       <img
-        src={Pass}
+        src={Analytic}
         alt="AnalyticImage"
         className="mb-10 sm:mb-0 md:mb-10 md:top-14 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain"
       />
