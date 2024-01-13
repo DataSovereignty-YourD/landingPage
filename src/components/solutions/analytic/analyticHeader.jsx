@@ -1,6 +1,5 @@
 import Analytic from "../../../assets/img/analytics_imac.webp";
-import AsyncImage from "../../common/asyncImage";
-import PreloadImage from "../../common/poeLoadImage";
+
 export default function AnalyticHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">
