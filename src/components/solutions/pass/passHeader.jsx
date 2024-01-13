@@ -1,6 +1,4 @@
 import Pass from "../../../assets/img/yourdpass-main.webp";
-import AsyncImage from "../../common/asyncImage";
-import PreloadImage from "../../common/poeLoadImage";
 export default function PassHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">

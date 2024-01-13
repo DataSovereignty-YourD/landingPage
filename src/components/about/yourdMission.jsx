@@ -1,7 +1,5 @@
 import YourDLogo from '../../assets/img/D.webp';
 import StarsCanvas from '../canvas/stars';
-import AsyncImage from '../common/asyncImage';
-
 export default function YourdMission() {
   return (
     <div className="min-h-[800px] flex flex-col items-center justify-center relative text-[96px] font-bold text-black ">

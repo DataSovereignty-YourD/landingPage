@@ -1,6 +1,4 @@
 import Payment from '../../../assets/img/paymentMain.webp';
-import AsyncImage from '../../common/asyncImage';
-import PreloadImage from '../../common/poeLoadImage';
 export default function PaymentHeader() {
   const imgurl = './paymentMain2.png';
   

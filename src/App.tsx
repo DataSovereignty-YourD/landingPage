@@ -12,28 +12,19 @@ import YourDPassPage from './pages/product/yourdPassPage';
 import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
 import YourDInfraPage from './pages/product/yourdInfraPage';
 import YourDPaymentPage from './pages/product/yourdPaymentPage';
-
+import preloadImages from './components/utils/preloadImages';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-
+import Analytic from './assets/img/analytics_imac.webp';
+import Payment from './assets/img/paymentMain.webp';
+import D from './assets/img/D.webp';
+import LoginImg from './assets/img/webAuthentication.webp';
+import Pass from './assets/img/yourdpass-main.webp';
+import Infra from './assets/img/dataLeverageImage.webp';
 function App() {
-  const imageUrls = [
-    './assets/img/analytics_imac.webp',
-    './assets/img/dataLeverageImage.webp',
-    './assets/img/webAuthentication.webp',
-    './assets/img/paymentMain.webp',
-    './assets/img/yourdpass-main.webp',
-    './assets/img/D.webp',
-  ];
-  useEffect(() => {
-    imageUrls.forEach((url) => {
-      const img = new Image();
-      img.src = url;
-    });
-  }, []);
   const location = useLocation();
-  // 이미지 URL 설정
-
-  // 이미지 미리 로드
+  useEffect(() => {
+    preloadImages([Analytic,Payment, D, LoginImg, Pass, Infra /* 이곳에 다른 이미지 변수를 추가 */]);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
