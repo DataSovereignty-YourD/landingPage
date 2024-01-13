@@ -16,7 +16,7 @@ export default function PassHeader() {
         Open the gateway to Web 3.0 data ownership and control!
         </p>
       </div>
-      <PreloadImage
+      <img
         src={Pass}
         alt="PassImage"
         className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain "
