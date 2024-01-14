@@ -4,7 +4,7 @@ import PreloadImage from "../../common/poeLoadImage";
 export default function PassHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">
-      <div className="h-fit pt-20  sm:pb-20 z-10">
+      <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
         <div className="text-2xl sm:text-[32px] font-pre-bold">
           Your<span className="text-[#fccc00]">D</span> Pass
         </div>
@@ -19,7 +19,7 @@ export default function PassHeader() {
       <PreloadImage
         src={Pass}
         alt="PassImage"
-        className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain "
+        className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] max-w-[700px] z-0  object-contain "
       />
     </div>
   );

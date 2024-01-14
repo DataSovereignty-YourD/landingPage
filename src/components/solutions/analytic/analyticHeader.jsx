@@ -4,7 +4,7 @@ import PreloadImage from "../../common/poeLoadImage";
 export default function AnalyticHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">
-      <div className="h-fit pt-20  sm:pb-20 z-10">
+      <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
         <div className="text-2xl sm:text-[32px] font-pre-bold mb-3">
           Your<span className="text-[#fccc00]">D</span> Analytics
         </div>
