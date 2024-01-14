@@ -24,7 +24,7 @@ export default function PaymentHeader() {
       <img
         src={Payment}  // 이미지 수정
         alt="WebAuthImage"
-        className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%] md:w-[320px] lg:w-[580px] z-0  rounded-3xl object-contain "
+        className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%] md:w-[320px] lg:w-[580px] xl:[700px] z-0  rounded-3xl object-contain "
       />
     </div>
   );
