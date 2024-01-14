@@ -18,7 +18,7 @@ export default function PassHeader() {
         <img
           src={Pass}
           alt="PassImage"
-          className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 w-[70%] md:w-[50%] lg:w-[45%] max-w-[700px] z-0  object-contain "
+          className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 w-[90%] md:w-[50%] lg:w-[45%] max-w-[700px] z-0  object-contain "
         />
     
     </div>

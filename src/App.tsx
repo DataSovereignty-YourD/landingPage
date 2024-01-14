@@ -13,7 +13,6 @@ import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
 import YourDInfraPage from './pages/product/yourdInfraPage';
 import YourDPaymentPage from './pages/product/yourdPaymentPage';
 import preloadImages from './components/utils/preloadImages';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
 import Analytic from './assets/img/analytics_imac.webp';
 import Payment from './assets/img/paymentMain.webp';
 import D from './assets/img/D.webp';
