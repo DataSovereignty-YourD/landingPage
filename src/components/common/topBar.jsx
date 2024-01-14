@@ -5,39 +5,11 @@ import { Link } from 'react-router-dom';
 import DropDown from './dropDown';
 export default function TopBar() {
   const [isTopBarVisible, setTopBarVisible] = useState(false);
-  const solutions = [
-    {
-      id: 1,
-      solution: 'YourD Pass',
-      path: 'yourd_pass',
-    },
-    {
-      id: 2,
-      solution: 'YourD Authentication',
-      path: 'yourd_web_auth',
-    },
-
-    {
-      id: 3,
-      solution: 'YourD Payment',
-      path: 'yourd_payment',
-    },
-
-    {
-      id: 4,
-      solution: 'YourD Analytics',
-      path: 'yourd_analytics',
-    },
-    {
-      id: 5,
-      solution: 'YourD Data Leverage Infra',
-      path: 'yourd_infra',
-    },
-  ];
+ 
   return (
-    <div className="flex flex-col w-screen  fixed z-50">
+    <div className="flex flex-row  w-screen  fixed z-50">
       <div
-        className={`bg-white  w-full flex justify-between items-start px-4 sm:px-[5%] transition-all duration-300 `}
+        className={`bg-white  w-full flex flex-row justify-between items-center pl-4 sm:px-[5%] transition-all duration-300 `}
       >
         <Link to="/" className="flex h-16 justify-center">
           <img
@@ -49,13 +21,15 @@ export default function TopBar() {
 
         <div
           onMouseLeave={() => setTopBarVisible(false)}
-          className="flex flex-row h-16  sm:gap-10 items-center justify-center"
+          className="flex flex-row h-16  sm:gap-10 items-center"
         >
-          <DropDown />
+          <div className='w-full'>
+            <DropDown />
+          </div>
 
           <Link
             to="/contact"
-            className="hidden sm:flex h-16 justify-center items-center"
+            className="hidden sm:flex h-16 w-full justify-center items-center"
           >
             {/* <RoundedButton /> */}
 

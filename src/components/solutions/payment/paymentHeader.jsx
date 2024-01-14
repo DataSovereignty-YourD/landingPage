@@ -3,18 +3,18 @@ export default function PaymentHeader() {
   const imgurl = './paymentMain2.png';
   
   return (
-    <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
+    <div className="relative w-full text-center sm:text-center md:text-start flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
       <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
         <div className="text-2xl sm:text-[32px] font-pre-bold">
           Your<span className="text-[#fccc00]">D</span> Pay
         </div>
-        <div className="font-pre-bold text-3xl sm:text-[56px] gradientText mt-3 leading-none">
+        <div className="font-pre-bold text-3xl sm:text-[32px] md:text-[44px] lg:text-[56px] gradientText mt-3 leading-none">
           Seamless, <br />
           Unified Payments
           <br /> for Web 3.0
         </div>
 
-        <p className="font-pre-reqular text-xl mt-10">
+        <p className="font-pre-reqular text-xl md:text-[14px] lg:text-xl mt-10 ">
           {/* Open a <span className="text-[#fccc00]">safe</span> and{" "}
           <span className="text-[#fccc00]">fast</span> step to the Web 3.0
           world! */}

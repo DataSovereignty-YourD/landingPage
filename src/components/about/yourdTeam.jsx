@@ -26,7 +26,7 @@ const profiles = [
   {
     name: "Miix",
     position: "Software Engineer",
-    sns1: "https://www.linkedin.com/in/miix-y-723b44271/",
+    sns1: "https://www.linkedin.com/in/jaeseung-yeom-723b44271/",
     sns2: "https://twitter.com/yeomjaeseu98392",
   },
   {

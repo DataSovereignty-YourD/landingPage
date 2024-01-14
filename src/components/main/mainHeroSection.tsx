@@ -52,11 +52,11 @@ export default function MainHeroSection({
             }`}
           >
             <div className="flex first-line:">
-              <h1 className="font-pre-bold  text-5xl sm:text-7xl overflow-visible pb-1 gradientText">
+              <div className="font-pre-bold  text-5xl sm:text-7xl overflow-visible pb-3 gradientText">
                 {title1}&nbsp;{title2}
-              </h1>
+              </div>
             </div>
-            <h2 className="text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-regular font-bold">{subText1}</h2>
+            <div className="text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-regular font-bold ">{subText1}</div>
             <div className="bg-white">
             <Link
             to="/contact"
