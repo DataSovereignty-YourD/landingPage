@@ -15,3 +15,15 @@ Cache-Control = "max-age=2592000"
 for = "/*.webp"
 [headers.values]
 Cache-Control = "max-age=2592000"
+
+[[headers]]
+# .woff2 파일에 대한 경로 지정-폰트
+for = "/*.woff2"
+[headers.values]
+Cache-Control = "max-age=31536000"
+
+[[headers]]
+# public 폴더 내의 모든 파일을 대상으로 지정
+for = "/public/*"
+[headers.values]
+Cache-Control = "max-age=2592000"
