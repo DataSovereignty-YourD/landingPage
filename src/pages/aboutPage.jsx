@@ -8,26 +8,26 @@ export default function AboutUs() {
   return (
     <>
     <StarsCanvas/>
-    <div className="flex flex-col relative  pt-16 items-center">
-      <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
+    <div className="flex flex-col relative  sm:pt-16 items-center">
+      <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto max-w-[2048px]">
         <YourdMission />
       </div>
       <div className=" bg-sky-100 bg-opacity-70 w-full relative">
-        <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
+        <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto max-w-[2048px] ">
           <YourdMissionDescribe />
         </div>
       </div>
       <div className="bg-white bg-opacity-70 w-full relative">
-        <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
+        <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto max-w-[2048px]">
           <YourdTeam />
         </div>
       </div>
       <div className="bg-neutral-50 bg-opacity-70 w-full relative mt-10">
-        <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto ">
+        <div className="mx-5 sm:mx-10 md:w-3/4 md:mx-auto max-w-[2048px] ">
           <YourdAwards />
         </div>
       </div>
-      <div className="bg-white w-full bg-opacity-70 pt-10 relative">
+      <div className="bg-white w-full bg-opacity-70 pt-10 relative max-w-[2048px]">
         <Footer />
       </div>
     </div>
