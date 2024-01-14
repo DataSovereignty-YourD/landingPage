@@ -9,7 +9,7 @@ export default function PaymentHeader() {
           Your<span className="text-[#fccc00]">D</span> Pay
         </div>
         <div className="font-pre-bold text-3xl sm:text-[32px] md:text-[44px] lg:text-[56px] gradientText mt-3 leading-none">
-          Seamless, <br />
+          Pay Everywhere <br />
           Unified Payments
           <br /> for Web 3.0
         </div>

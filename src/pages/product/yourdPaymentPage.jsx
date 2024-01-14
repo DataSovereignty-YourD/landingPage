@@ -3,10 +3,9 @@ import EmphasisPayment from "../../components/solutions/payment/EmphasisPayment"
 import PaymentHeader from "../../components/solutions/payment/paymentHeader";
 import "../../assets/css/describe1.css";
 import Footer from "../../components/common/footer";
-import EmbracePayment from "../../assets/img/embraceCrypto.png";
+import EmbracePayment from "../../assets/img/embracePayment.png";
 import PaymentProcess from "../../components/solutions/payment/paymentProcess";
 import AdvantagePayment from "../../components/solutions/payment/advantagePayment";
-import Example from "../../components/solutions/payment/example";
 export default function YourDPaymentPage() {
   return (
     <div className="flex flex-col relative pt-16 items-center ">
@@ -19,12 +18,13 @@ export default function YourDPaymentPage() {
         </div>
       </div>
       
-      {/* <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] bg-white flex-col flex justify-center items-center mb-10 mt-10">
-        <div className="mt-10 text-5xl font-bold gradientText pb-1">
-          Embrace cryptocurrencies
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] bg-white flex-col flex justify-center items-center mb-10 mt-10">
+        <div className="text-2xl sm:text-5xl">Your<span className="text-[#FCCC00]">D</span>&nbsp;pay</div>
+        <div className="mt-10 text-2xl flex text-center sm:text-5xl font-bold gradientText pb-1">
+        The Innovation Crypto Payment module
         </div>
         <img src={EmbracePayment} className="mt-4" />
-      </div> */}
+      </div>
       <div className="bg-[#E3BFFF] bg-opacity-[15%] w-full items-center justify-center flex ">
         <div className="max-w-[1600px]">
           <PaymentProcess />
