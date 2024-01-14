@@ -4,7 +4,7 @@ function LoginVideo() {
   const videoUrl = './YourD_Credential_Demo_tts3.mp4';
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen mx-auto w-full">
+    <div className="flex flex-col justify-center items-center my-24 mx-auto w-full">
       <div className="text-center mb-4">
         <div className="font-bold text-2xl text-slate-600">How it works</div>
         <div className='text-4xl mt-2 font-bold'>
