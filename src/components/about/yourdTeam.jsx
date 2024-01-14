@@ -51,7 +51,7 @@ const profiles = [
 
 export default function YourdTeam() {
   return (
-    <div className="flex-col min-h-[800px]  flex justify-start relative">
+    <div className="flex-col min-h-[800px]  flex justify-center items-center relative">
       <div className="mt-28 text-4xl font-pre-bold gradientText">
         Meet the Innovators
       </div>

@@ -10,25 +10,25 @@ import { HowToUseCredential } from "../../components/solutions/pass/howToUseCred
 export default function YourDPassPage() {
   return (
     <div className="flex flex-col relative  pt-16 items-center">
-      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[2048px]">
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px]">
         <PassHeader />
       </div>
       <div className="w-full bg-[#BBEFFF] bg-opacity-25 items-center justify-center flex">
-        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[2048px] ">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] ">
           <DescrbiePass />
         </div>
       </div>
       <div className="w-full bg-black bg-opacity-90 items-center justify-center flex">
-        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[2048px]">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px]">
           <PassStandard />
         </div>
       </div>
 
-      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[2048px] items-center justify-center flex">
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] items-center justify-center flex">
         <PassFunction />
       </div>
       <div className="bg-gray100 bg-opacity-70 w-full items-center justify-center flex">
-        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[2048px] ">
+        <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] ">
           <HowToUseCredential />
           {/* <PassDiagram /> */}
         </div>
@@ -42,7 +42,7 @@ export default function YourDPassPage() {
 
       {/* <PassCard /> */}
 
-      <div className="bg-white w-full bg-opacity-70 pt-10  max-w-[2048px]">
+      <div className="bg-white w-full bg-opacity-70 pt-10  max-w-[1600px]">
         <Footer />
       </div>
     </div>

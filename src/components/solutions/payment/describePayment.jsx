@@ -1,23 +1,25 @@
-import codesnippet from '../../../assets/icon/codesnippetIcon.png';
-import qr from '../../../assets/icon/QRIcon.png';
-import standard from '../../../assets/icon/standardIcon.png';
-import KYC from '../../../assets/icon/kycIcon.png';
-import Multi from '../../../assets/icon/multiIchaincon.png'
-import ID from '../../../assets/icon/idIcon.png';
+import codesnippet from "../../../assets/icon/codesnippetIcon.png";
+import qr from "../../../assets/icon/QRIcon.png";
+import standard from "../../../assets/icon/standardIcon.png";
+import KYC from "../../../assets/icon/kycIcon.png";
+import Multi from "../../../assets/icon/multiIchaincon.png";
+import Restriction from "../../../assets/icon/restrictions.png";
+import Module from "../../../assets/icon/payment_module.png";
+import ID from "../../../assets/icon/idIcon.png";
 export default function DescrbiePayment() {
   const features = [
     {
-      title: 'Easy Pay with QR',
+      title: "Easy Pay with QR",
       descriptions: [
-        'Scan to pay—no cumbersome steps.',
-        'No gateways, just pull transaction ease.'
+        "Scan to pay—no cumbersome steps.",
+        "No gateways, just pull transaction ease.",
       ],
       icon: qr,
     },
     {
-      title: 'D-KYC Integration',
+      title: "D-KYC Integration",
       descriptions: [
-        'YourD Crypto Pay brings in straightforward decentralized KYC to meet AML rules and ease the move to Web 3.0 payments.',
+        "YourD Crypto Pay brings in straightforward decentralized KYC to meet AML rules and ease the move to Web 3.0 payments.",
       ],
       icon: KYC,
     },
@@ -27,6 +29,22 @@ export default function DescrbiePayment() {
         "Use YourD Crypto Pay to handle multiple cryptocurrencies. Simple, direct, and broad blockchain support.",
       ],
       icon: Multi,
+    },
+    {
+      title: `Without location restrictions`,
+      descriptions: [
+        "Pay easily from any where",
+        "Provide a universal payment solution that can be used in both on/offline market",
+      ],
+      icon: Restriction,
+    },
+    {
+      title: `Payment Module`,
+      descriptions: [
+        "Efficiently integrate a powerful payment module into your business.",
+        "Continuously innovate with user-focused design adapting to new payment trends",
+      ],
+      icon: Module,
     },
   ];
 
@@ -46,10 +64,10 @@ export default function DescrbiePayment() {
           scanning.
         </div>
       </div>
-      <div className="flex flex-col  sm:flex-row sm:grid sm:grid-cols-6 gap-3  w-full mt-10">
+      <div className="flex flex-col items-center justify-center sm:flex-row sm:grid sm:grid-cols-6 gap-3  w-full mt-10">
         {features.map((feature) => (
           <div
-            className=" rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white px-5 py-7  lg:p-10 shadow-all-around bg-opacity-70 items-center"
+            className=" rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white px-5 py-7 h-[350px] lg:p-10 shadow-all-around bg-opacity-70 items-center"
             key={feature.title}
           >
             <img
