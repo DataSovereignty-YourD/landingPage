@@ -1,6 +1,4 @@
-import Pass from "../../../assets/img/yourdpass-main.png";
-import AsyncImage from "../../common/asyncImage";
-import PreloadImage from "../../common/poeLoadImage";
+import Pass from "../../../assets/img/yourdpass-main.webp";
 export default function PassHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">
@@ -16,7 +14,7 @@ export default function PassHeader() {
         Open the gateway to Web 3.0 data ownership and control!
         </p>
       </div>
-      <PreloadImage
+      <img
         src={Pass}
         alt="PassImage"
         className="mb-14 sm:mb-0 md:mb-10 md:top-5 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] max-w-[700px] z-0  object-contain "

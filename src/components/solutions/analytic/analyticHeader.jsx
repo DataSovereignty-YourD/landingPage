@@ -1,6 +1,5 @@
-import Pass from "../../../assets/img/analytics_imac.png";
-import AsyncImage from "../../common/asyncImage";
-import PreloadImage from "../../common/poeLoadImage";
+import Analytic from "../../../assets/img/analytics_imac.webp";
+
 export default function AnalyticHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center sm:items-start  bg-white bg-opacity-70">
@@ -16,8 +15,8 @@ export default function AnalyticHeader() {
           user-centric data protection!
         </p>
       </div>
-      <PreloadImage
-        src={Pass}
+      <img
+        src={Analytic}
         alt="AnalyticImage"
         className="mb-10 sm:mb-0 md:mb-10 md:top-14 sm:pb-0 md:absolute right-0 md:w-[50%] lg:w-[45%] z-0  object-contain"
       />

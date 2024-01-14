@@ -1,6 +1,4 @@
-import WebAuth from "../../../assets/img/webAuthentication.png";
-import AsyncImage from "../../common/asyncImage";
-import PreloadImage from "../../common/poeLoadImage";
+import WebAuth from "../../../assets/img/webAuthentication.webp";
 export default function LoginHeader() {
   return (
     <div className="relative w-full text-center sm:text-left flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
@@ -18,10 +16,11 @@ export default function LoginHeader() {
           world!
         </p>
       </div>
-      <PreloadImage
+      <img
         src={WebAuth}
         alt="WebAuthImage"
         className=" top-10 mb-10 md:mb-0 sm:pb-0 mt-10 sm:mt-0 md:absolute right-0 w-[70%] md:w-[320px] lg:w-[380px] z-0  rounded-3xl object-contain shadow-all-around  xl:w-[400px]"
+
       />
     </div>
   );
