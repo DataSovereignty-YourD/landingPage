@@ -30,22 +30,6 @@ export default function DescrbiePayment() {
       ],
       icon: Multi,
     },
-    {
-      title: `Without location restrictions`,
-      descriptions: [
-        "Pay easily from any where",
-        "Provide a universal payment solution that can be used in both on/offline market",
-      ],
-      icon: Restriction,
-    },
-    {
-      title: `Payment Module`,
-      descriptions: [
-        "Efficiently integrate a powerful payment module into your business.",
-        "Continuously innovate with user-focused design adapting to new payment trends",
-      ],
-      icon: Module,
-    },
   ];
 
   return (

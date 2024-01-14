@@ -2,7 +2,7 @@ import React from 'react';
 import LocationPayment from '../../../assets/img/locationPayment.png';
 import ModulePayment from '../../../assets/img/paymentModule.png';
 import Example from './example';
-const emphasisSections = [
+const EmphasisSections = [
   {
     title: 'Without location restrictions',
     content: [
@@ -58,7 +58,7 @@ export default function EmphasisPayment() {
         </div>
       ))} */}
       <div class="flex flex-col sm:flex-row gap-10 mt-10">
-      <div className="sm:w-[680px] bg-white rounded-xl px-4 py-4 drop-shadow-lg sm:order-1">
+        <div className="sm:w-[680px] bg-white rounded-xl px-4 py-4 drop-shadow-lg order-1 sm:order-none">
           <div className="text-xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
             Without location restrictions
           </div>

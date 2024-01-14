@@ -1,20 +1,25 @@
 import DescrbiePayment from "../../components/solutions/payment/describePayment";
-import EmphasisPayment from "../../components/solutions/payment/EmphasisPayment";
 import PaymentHeader from "../../components/solutions/payment/paymentHeader";
 import "../../assets/css/describe1.css";
 import Footer from "../../components/common/footer";
 import EmbracePayment from "../../assets/img/embracePayment.png";
 import PaymentProcess from "../../components/solutions/payment/paymentProcess";
 import AdvantagePayment from "../../components/solutions/payment/advantagePayment";
+import EmphasisPayment from "../../components/solutions/payment/EmphasisPayment";
 export default function YourDPaymentPage() {
   return (
     <div className="flex flex-col relative pt-16 items-center ">
-      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] ">
+      <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] ">
         <PaymentHeader />
       </div>
       <div className="bg-[#FFF6E0] w-full items-center justify-center flex">
         <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px]">
           <DescrbiePayment />
+        </div>
+      </div>
+      <div className="bg-sky-50 w-full items-center justify-center flex">
+        <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px]">
+          <EmphasisPayment />
         </div>
       </div>
       
