@@ -33,7 +33,7 @@ export default function PaymentProcess() {
     },
   ];
   return (
-    <div className="flex-col items-center justify-center px-10">
+    <div className="flex-col  px-10 w-full">
       <div className="mt-10 sm:mt-16 sm:text-5xl text-4xl font-bold ">
         <div className="flex items-center justify-center">
           Your<span className="text-[#fccc00]">D</span>&nbsp; <br />
@@ -42,30 +42,30 @@ export default function PaymentProcess() {
           Payment Process
         </div>
       </div>
-      <div className=" sm:mb-20 sm:flex-row flex-col flex px-32 mt-12 ">
+      <div className="items-start  sm:mb-20 sm:flex-row gap-32 flex-col flex  mt-12 ">
         {process.map((process) => (
           <div
             key={process.id}
-            className="flex flex-col sm:flex-col items-center justify-center w-full pb-12 mx-12"
+            className="flex flex-col sm:flex-col items-center justify-center w-full pb-12 "
           >
-            <div className="w-[30px] sm:w-[60px] sm:h-[60px] absolute bg-yellow-300 h-[30px] rounded-full flex items-center justify-center transform -translate-x-32 -translate-y-56 shadow-xl">
+            <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]  absolute bg-yellow-300  rounded-full flex items-center justify-center transform -translate-x-36 -translate-y-56 shadow-xl">
               <div className="text-2xl font-bold"> {process.id}</div>
             </div>
 
             <div className="mt-10">
               <img
                 src={process.imgsrc}
-                className="w-[260px]"
+                className="w-[300px]"
                 alt={`Process ${process.id}`}
               />
             </div>
             <div className="font-bold text-3xl mt-6">{process.title}</div>
-            <div className="text-2xl font-semibold text-center mt-2 sm:mt-4 text-gray-400">
+            {/* <div className="text-2xl font-semibold text-center mt-2 sm:mt-4 text-gray-400">
               {process.subtitle}
             </div>
             <div className="text-2xl font-semibold text-center  text-gray-400">
               {process.subtitle2}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
