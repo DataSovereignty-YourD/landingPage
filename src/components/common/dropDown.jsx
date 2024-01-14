@@ -53,7 +53,7 @@ const DropDown = () => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       <button
         onClick={toggleMenu}
         className="flex items-center gap-2 px-4 py-[6px] font-pre-bold sm:rounded-full duration-500 border-black sm:border-2 sm:hover:bg-[#fccc00] transition-colors"
@@ -72,8 +72,8 @@ const DropDown = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.1 }}
-            className="flex flex-col gap-2 px-12 sm:px-2 rounded pt-6 pb-10 bg-white shadow-xl absolute top-full -left-[323px] sm:-left-[30px] -translate-x-1/2 w-[390px] sm:w-48 sm:py-2"
-          >
+            className="flex flex-col gap-2 px-12 sm:px-2 rounded pt-6 pb-10 bg-white shadow-xl absolute top-full right-0  sm:-left-[30px] -translate-x-1/2 w-screen sm:w-48 sm:py-2"
+            >
             {solutions.map((solution) => (
               <motion.li
                 key={solution.id}

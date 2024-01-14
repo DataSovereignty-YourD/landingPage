@@ -1,25 +1,44 @@
 import ReactPlayer from 'react-player';
+import styled from 'styled-components';
 
 function LoginVideo() {
   const videoUrl = './YourD_Credential_Demo_tts3.mp4';
 
   return (
-    <div className="flex flex-col justify-center items-center my-24 mx-auto w-full">
-      <div className="text-center mb-4">
-        <div className="font-bold text-2xl text-slate-600">How it works</div>
-        <div className='text-4xl mt-2 font-bold'>
-          Introducing Your<span className="text-[#fccc00]">D</span> Auth
+    <VideoWrapper>
+      <div className="flex flex-col justify-center items-center my-24 mx-auto w-full">
+        <div className="text-center mb-4">
+          <div className="font-bold text-2xl text-slate-600">How it works</div>
+          <div className='text-4xl mt-2 font-bold'>
+            Introducing Your<span className="text-[#fccc00]">D</span> Auth
+          </div>
         </div>
+        <ReactPlayer
+          url={videoUrl}
+          width="100%"
+          height="100%"
+          controls
+          className="mx-auto"
+        />
       </div>
-      <ReactPlayer
-        url={videoUrl}
-        width="1000px"
-        height="600px"
-        controls
-        className="mx-auto"
-      />
-    </div>
+    </VideoWrapper>
   );
 }
+
+const VideoWrapper = styled.div`
+  width: 100%; /* 기본 너비 */
+
+  @media screen and (min-width: 640px) {
+    /* sm 이상일 때 */
+    max-width: 1000px; /* 더 큰 너비로 지정 */
+    margin: 0 auto; /* 중앙 정렬 */
+  }
+
+  @media screen and (max-width: 640px) {
+    /* sm 미만일 때 */
+    max-width: 400px; /* 작은 너비로 지정 */
+    margin: 0 auto; /* 중앙 정렬 */
+  }
+`;
 
 export default LoginVideo;
