@@ -59,8 +59,8 @@ export default function EmphasisPayment() {
         </div>
       ))} */}
       <div className="flex flex-col sm:flex-row  sm:px-12 md:px-16 lg:px-12 w-full ">
-        <div className=" rounded-xl px-4 my-16 py-4 drop-shadow-lg order-1 sm:order-none items-center justify-center flex flex-col ">
-          <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-pre-regular text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+        <div className=" rounded-xl px-4 my-16 py-4 drop-shadow-lg order-1 sm:order-none items-start justify-center flex flex-col ">
+          <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl pb-1 font-pre-regular text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
             Anywhere in the world!
           </div>
           <div className="mt-10 sm:text-lg md:text-2xl">
@@ -86,7 +86,7 @@ export default function EmphasisPayment() {
           className="w-full sm:w-2/5 lg:w-2/5 object-contain"
         />
         <div className="flex sm:gap-28">
-          <div className=" rounded-xl px-4 py-4 my-16 drop-shadow-lg items-center justify-center flex flex-col">
+          <div className=" rounded-xl px-4 py-4 my-16 drop-shadow-lg items-start justify-center flex flex-col">
             <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-pre-regular text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400 pb-1">
               Payment module provided
             </div>
