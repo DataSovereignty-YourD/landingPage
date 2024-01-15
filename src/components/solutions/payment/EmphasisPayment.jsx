@@ -25,7 +25,7 @@ const EmphasisSections = [
 
 export default function EmphasisPayment() {
   return (
-    <div className="h-fit min-h-1/2 w-full flex flex-col relative py-10 sm:py-20 justify-between items-center bg-opacity-70 gap-10 sm:gap-20">
+    <div className="h-fit min-h-1/2 w-full flex flex-col relative py-10 sm:py-20 justify-between items-center bg-opacity-70 gap-10 sm:gap-14">
       <div className="sm:text-5xl text-4xl font-bold flex flex-col items-center justify-center">
         <div>
           Your<span className="text-[#fccc00]">D</span>&nbsp;Pay <br />
@@ -58,15 +58,15 @@ export default function EmphasisPayment() {
           </div>
         </div>
       ))} */}
-      <div class="flex flex-col sm:flex-row gap-10 mt-10">
-        <div className="sm:w-[680px] bg-white rounded-xl px-4 py-4 drop-shadow-lg order-1 sm:order-none">
-          <div className="text-xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+      <div className="flex flex-col sm:flex-row gap-10 sm:px-12 md:px-16 lg:px-12 w-full">
+        <div className=" bg-white rounded-xl px-4 my-16 py-4 drop-shadow-lg order-1 sm:order-none">
+          <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
             Without location restrictions
           </div>
-          <div className="mt-14 sm:text-2xl ">
+          <div className="mt-14 sm:text-lg md:text-2xl  ">
             We provide a universal payment solution that can be used in both the
             real world and virtual space.
-            <div className="mt-4"> Pay easily from anywhere.</div>{' '}
+            <div className="mt-4"> Pay easily from anywhere.</div>
             <div className="mt-4">
               Design complex crypto payment systems easily so users don't need
               to know anything technical.
@@ -75,20 +75,20 @@ export default function EmphasisPayment() {
         </div>
         <img
           src={LocationPayment}
-          className="w-full sm:w-3/4 lg:w-2/5 object-contain"
+          className="w-full sm:w-2/5 lg:w-2/5 object-contain"
         />
       </div>
-      <div class="flex flex-col sm:flex-row sm:gap-10 mt-10">
+      <div className="flex flex-col sm:flex-row sm:gap-10 sm:px-12 md:px-16 lg:px-12 ">
         <img
           src={ModulePayment}
-          className="w-full sm:w-3/4 lg:w-2/5 object-contain"
+          className="w-full sm:w-2/5 lg:w-2/5 object-contain"
         />
-        <div className="flex sm:gap-28 mt-10">
-          <div className="sm:w-[680px] bg-white rounded-xl px-4 py-4 drop-shadow-lg">
-            <div className="text-xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+        <div className="flex sm:gap-28">
+          <div className=" bg-white rounded-xl px-4 py-4 my-16 drop-shadow-lg">
+            <div className="text-xl sm:text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
               Payment module provided
             </div>
-            <div className="mt-14 sm:text-2xl ">
+            <div className="mt-14 sm:text-lg md:text-2xl">
               Easily integrate into your business with an efficient and powerful
               payment module.
               <div className="mt-10">
