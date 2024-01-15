@@ -19,7 +19,7 @@ export default function AdvantagePayment() {
       </div>
       <div
         className="
-      flex flex-col sm:flex-row justify-center  items-center sm:items-start"
+      flex flex-col md:flex-row justify-center  items-center sm:items-start"
       >
         <img
           src={Payment}
