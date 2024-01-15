@@ -1,9 +1,10 @@
 import Diagram from "../../../assets/img/YourDLoginDiagram.png";
+import Diagram2 from '../../../assets/img/authDiagram.png';
 export default function LoginDiagram() {
   return (
     <div className=" h-fit min-h-1/2 w-full flex flex-col relative py-32 sm:py-52 justify-between items-center  bg-white bg-opacity-70 gap-20">
       <img
-        src={Diagram}
+        src={Diagram2}
         alt="Auth Diagram"
         className=" w-full sm:w-3/4 lg:w-3/5 object-contain"
       />
