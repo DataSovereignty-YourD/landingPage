@@ -24,7 +24,7 @@ export default function YourDPaymentPage() {
       </div>
       
       <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] bg-white flex-col flex justify-center items-center mb-10 mt-10">
-        <div className="text-2xl sm:text-5xl">Your<span className="text-[#FCCC00]">D</span>&nbsp;pay</div>
+        <div className="text-4xl sm:text-5xl font-bold">Your<span className="text-[#FCCC00]">D</span>&nbsp;Pay</div>
         <div className="mt-10 text-2xl flex text-center sm:text-5xl font-bold gradientText pb-1">
         The Innovation Crypto Payment module
         </div>
