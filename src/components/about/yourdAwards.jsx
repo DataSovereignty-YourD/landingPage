@@ -8,7 +8,7 @@ import Tzapc from '../../assets/img/tzapc.png';
 import googlecloud from '../../assets/img/googlecloud.png';
 import Ebsi from '../../assets/img/ebsieuro.png';
 import W3C from '../../assets/img/w3cimg.png';
-
+import Tezos from '../../assets/img/tezosLogo.png';
 export default function YourdAwards() {
   return (
     <div className="min-h-[800px] relative mt-32">
@@ -29,6 +29,7 @@ export default function YourdAwards() {
       </div>
       <div className='mt-12 text-xl sm:text-4xl font-pre-bold flex justify-center items-center'>Partners</div>
       <div className="flex justify-center items-center gap-20 mt-2">
+        <img src={Tezos} className='w-[100px] sm:w-[250px]'/>
         <img src={Tzapc} className='w-[100px] sm:w-[250px]'/>
         <img src={googlecloud} className='w-[100px] sm:w-[250px]'/>
       </div>

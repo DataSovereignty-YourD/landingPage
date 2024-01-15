@@ -1,6 +1,7 @@
 import React from 'react';
 import LocationPayment from '../../../assets/img/locationPayment.png';
 import ModulePayment from '../../../assets/img/paymentModule.png';
+import Location2 from '../../../assets/img/location2.png';
 import Example from './example';
 const EmphasisSections = [
   {
