@@ -62,8 +62,8 @@ const DropDown = () => {
     },
     {
       id: 6,
-      solution: "YourD ADs",
-      path: "yourd_infra",
+      solution: "YourD ADs ( Comming Soon )",
+      path: "",
     },
     
     
