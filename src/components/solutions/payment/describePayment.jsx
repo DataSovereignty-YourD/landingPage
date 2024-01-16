@@ -51,7 +51,7 @@ export default function DescrbiePayment() {
       <div className="flex flex-col items-center justify-center sm:flex-row sm:grid sm:grid-cols-6 gap-3  w-full mt-10">
         {features.map((feature) => (
           <div
-            className=" rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white px-5 py-7 h-[350px] lg:p-10 shadow-all-around bg-opacity-70 items-center"
+            className=" rounded-2xl sm:col-span-2 flex flex-col gap-2 bg-white px-5 py-7 max-h-min h-full lg:p-10 shadow-all-around bg-opacity-70 items-center"
             key={feature.title}
           >
             <img
