@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,6 +7,8 @@ const DropDown = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [menuIcon, setMenuIcon] = useState(true);
+  const dropdownRef = useRef();
+
 
   const handleItemClick = (path) => {
     setOpen(false);
@@ -19,10 +21,23 @@ const DropDown = () => {
     setMenuIcon((prev) => !prev);
   };
 
+  const closeDropdown = (e) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+      setOpen(false);
+      setMenuIcon(true);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", closeDropdown);
+    return () => {
+      document.removeEventListener("mousedown", closeDropdown);
+    };
+  }, []);
+
   const solutions = [
     {
       id: 1,
-      solution: "YourD App",
+      solution: "YourD Application",
       path: "yourd_pass",
     },
     {
@@ -47,16 +62,25 @@ const DropDown = () => {
     },
     {
       id: 6,
-      solution: "About Us",
+      solution: "YourD ADs",
+      path: "yourd_infra",
+    },
+    
+    
+  ];
+  const subMenuItems = [
+    {
+      id: 7,
+      subMenuItem: "About Us",
       path: "about_us",
     },
-  ];
+   ] 
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full " ref={dropdownRef}>
       <button
         onClick={toggleMenu}
-        className="flex items-center gap-2 px-4 py-[6px] font-pre-bold sm:rounded-full duration-500 border-black sm:border-2 sm:hover:bg-[#fccc00] transition-colors"
+        className="flex items-center gap-2 px-4 py-[6px] font-pre-bold sm:rounded-full duration-500  sm:hover:bg-[#fccc00] transition-colors"
       >
         <span className="font-medium hidden sm:flex">Solutions</span>
         <FiChevronDown className={`${open ? 'rotate-180' : ''} hidden sm:flex`} />
@@ -80,19 +104,34 @@ const DropDown = () => {
                 onClick={() => handleItemClick(solution.path)}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.2 }}
-                className="flex items-center gap-2 w-full p-2 text-xl sm:text-xs font-medium whitespace-nowrap rounded-md hover hover:bg-yellow-100 text-slate-700 hover:text-[#fccc00] transition-colors cursor-pointer"
+                className="flex items-center gap-2 w-full p-2 text-xl sm:text-xs font-medium whitespace-nowrap rounded-md hover hover:bg-yellow-100 text-slate-700  hover:text-[#fccc00] transition-colors cursor-pointer"
               >
                 {solution.solution}
               </motion.li>
+              
             ))}
+            <motion.ul className="mt-2 visible sm:hidden">
+              {subMenuItems.map((subMenuItem) => (
+                <motion.li
+                  key={subMenuItem.id}
+                  onClick={() => handleItemClick(subMenuItem.path)}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                  className=" items-center flex gap-2 w-full p-2 text-xl sm:text-xs font-medium whitespace-nowrap rounded-md hover hover:bg-yellow-100 text-slate-700 hover:text-[#fccc00] transition-colors cursor-pointer"
+                  >
+                  {subMenuItem.subMenuItem}
+                </motion.li>
+              ))}
+            </motion.ul>
             <Link
               to="/contact"
               onClick={() => handleItemClick("contact")}
-              className="visible sm:hidden w-fit h-6 mt-6 border border-black mx-auto rounded-xl p-4 items-center justify-center flex font-semibold bg-black text-2xl text-[#fccc00]"
+              className="visible sm:hidden w-fit h-6 mt-6  mx-auto rounded-xl p-6 items-center justify-center flex font-medium  text-2xl  text-[#fccc00] bg-black "
             >
               Contact Us
             </Link>
           </motion.ul>
+          
         )}
       </AnimatePresence>
     </div>

@@ -26,11 +26,11 @@ const EmphasisSections = [
 export default function EmphasisPayment() {
   return (
     <div className="h-fit min-h-1/2 w-full flex flex-col relative py-10 sm:py-20 justify-between items-center bg-opacity-70 gap-10 sm:gap-14">
-      <div className="sm:text-5xl text-4xl font-bold flex flex-col items-center justify-center">
+      <div className="sm:text-5xl text-4xl font-pre-bold flex flex-col items-center justify-center">
         <div>
           Your<span className="text-[#fccc00]">D</span>&nbsp;Pay <br />
         </div>
-        <span className="gradientText flex items-center justify-center pb-2 text-center mx-auto mt-4">
+        <span className="gradientText flex items-center  justify-center pb-2 text-center mx-auto mt-4">
           A new horizon <br className="sm:hidden" />
           for payments
         </span>
@@ -59,21 +59,21 @@ export default function EmphasisPayment() {
         </div>
       ))} */}
       <div className="flex flex-col sm:flex-row  sm:px-12 md:px-16 lg:px-12 w-full ">
-        <div className=" rounded-xl px-4 my-16 py-4 drop-shadow-lg order-1 sm:order-none items-start justify-center flex flex-col ">
-          <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl pb-1 font-pre-regular text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+        <div className=" rounded-xl px-4 my-16 py-4  order-1 sm:order-none items-start justify-center flex flex-col ">
+          <div className="text-xl sm:text-3xl md:text-4xl pb-1 font-pre-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
             Anywhere in the world!
           </div>
-          <div className="mt-10 sm:text-lg md:text-2xl">
-            <div>
+          <ul className="mt-10 sm:text-lg font-pre-regular list-disc">
+            <li>
               YourD Pay offers an innovative payment solution accessible in both
               the physical and virtual realms.
-            </div>
+            </li>
 
-            <div className="mt-4">
+            <li className="mt-4 font-pre-regular">
               Simplify and enhance your daily life with easy payments anytime,
               anywhere.
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
         <img
           src={LocationPayment}
@@ -86,18 +86,20 @@ export default function EmphasisPayment() {
           className="w-full sm:w-2/5 lg:w-2/5 object-contain"
         />
         <div className="flex sm:gap-28">
-          <div className=" rounded-xl px-4 py-4 my-16 drop-shadow-lg items-start justify-center flex flex-col">
-            <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-pre-regular text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400 pb-1">
+          <div className=" rounded-xl px-4 py-4 my-16  items-start justify-center flex flex-col">
+            <div className="text-xl sm:text-3xl md:text-4xl font-pre-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400 pb-1">
               Payment module provided
             </div>
-            <div className="mt-10 sm:text-lg md:text-2xl">
-              Easily integrate into your business with an efficient and powerful
-              payment module.
-              <div className="mt-4">
-                Experience continuous innovation by responding to new payment
-                trends through user-oriented design and ease of upgrade.
-              </div>
-            </div>
+           <ul className="list-disc">
+             <li className="mt-10 sm:text-lg  font-pre-regular">
+               Easily integrate into your business with an efficient and powerful
+               payment module.
+               <li className="mt-4 font-pre-regular">
+                 Experience continuous innovation by responding to new payment
+                 trends through user-oriented design and ease of upgrade.
+               </li>
+             </li>
+           </ul>
           </div>
         </div>
       </div>
