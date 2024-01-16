@@ -7,9 +7,9 @@ function LoginVideo() {
   return (
     <VideoWrapper>
       <div className="flex flex-col justify-center items-center my-24 mx-auto w-full">
-        <div className="text-center mb-4">
-          <div className="font-bold text-2xl text-slate-600">How it works</div>
-          <div className='text-4xl mt-2 font-bold'>
+        <div className="text-center mb-4 w-full items-center justify-center flex flex-col">
+          <div className="w-fit text-4xl font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">How it works</div>
+          <div className='text-4xl mt-2 font-bold mb-8'>
             Introducing Your<span className="text-[#fccc00]">D</span> Auth
           </div>
         </div>
