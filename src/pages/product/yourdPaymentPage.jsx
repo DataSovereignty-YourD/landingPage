@@ -8,7 +8,7 @@ import AdvantagePayment from "../../components/solutions/payment/advantagePaymen
 import EmphasisPayment from "../../components/solutions/payment/EmphasisPayment";
 export default function YourDPaymentPage() {
   return (
-    <div className="flex flex-col relative pt-16 items-center ">
+    <div className="flex flex-row relative pt-16 items-center ">
       <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] ">
         <PaymentHeader />
       </div>
@@ -22,11 +22,13 @@ export default function YourDPaymentPage() {
           <EmphasisPayment />
         </div>
       </div>
-      
+
       <div className="px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px] bg-white flex-col flex justify-center items-center mb-10 mt-10">
-        <div className="text-4xl sm:text-5xl font-bold">Your<span className="text-[#FCCC00]">D</span>&nbsp;Pay</div>
+        <div className="text-4xl sm:text-5xl font-bold">
+          Your<span className="text-[#FCCC00]">D</span>&nbsp;Pay
+        </div>
         <div className="mt-10 text-2xl flex text-center sm:text-5xl font-bold gradientText pb-1">
-        The Innovation Crypto Payment module
+          The Innovation Crypto Payment module
         </div>
         <img src={EmbracePayment} className="mt-4" />
       </div>
