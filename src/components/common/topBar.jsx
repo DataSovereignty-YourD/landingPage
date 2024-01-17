@@ -27,9 +27,9 @@ export default function TopBar() {
   }, []);
 
   return (
-    <div className="flex flex-row  w-full items-center justify-center fixed z-50  mx-auto">
+    <div className="flex flex-row bg-white w-full items-center justify-center fixed z-50  mx-auto">
       <div
-        className={`bg-white max-w-[1660px]  w-full flex flex-row justify-between items-center pl-4 sm:px-[5%] transition-all duration-300 `}
+        className={` max-w-[1660px]  w-full flex flex-row justify-between items-center pl-4 sm:px-[5%] transition-all duration-300 `}
       >
         <Link to="/" className="flex h-16 justify-center">
           <img
