@@ -46,7 +46,7 @@ export default function TopBar() {
           <div className="w-full">
             <DropDown />
           </div>
-          <div ref={dropdownRef} className="relative w-full hidden sm:flex">
+          <div ref={dropdownRef} className="relative w-full hidden sm:flex cursor-pointer">
             <div
               onClick={() => setOpen(!open)}
               className="flex items-center gap-2 px-4 py-[6px] font-pre-bold sm:rounded-full duration-500  sm:hover:bg-[#fccc00] transition-colors"
