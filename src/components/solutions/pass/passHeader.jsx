@@ -4,7 +4,7 @@ export default function PassHeader() {
     <div className="relative w-full text-center sm:text-center md:text-start flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
       <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
         <div className="text-2xl sm:text-[32px] font-pre-bold">
-          Your<span className="text-[#fccc00]">D</span> Pass
+          Your<span className="text-[#fccc00]">D</span> Application
         </div>
         <div className="font-pre-bold text-3xl sm:text-[32px] md:text-[44px] lg:text-[56px] gradientText mt-3 leading-none">
         Empower <br />
