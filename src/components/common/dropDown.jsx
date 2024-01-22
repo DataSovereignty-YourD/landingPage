@@ -37,8 +37,8 @@ const DropDown = () => {
   const solutions = [
     {
       id: 1,
-      solution: "YourD Application",
-      path: "yourd_pass",
+      solution: "YourD App",
+      path: "yourd_app",
     },
     {
       id: 2,

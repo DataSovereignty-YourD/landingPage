@@ -54,6 +54,6 @@ const advantageFeatures = [
   {
     //   img: analysis,
     title: "Web 3.0 Compatibility",
-    text: "YourD Pass provides a true Web 3.0 solution, facilitating integration with blockchain and decentralized web technologies.",
+    text: "YourD App provides a true Web 3.0 solution, facilitating integration with blockchain and decentralized web technologies.",
   },
 ];

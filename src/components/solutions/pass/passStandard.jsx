@@ -9,7 +9,7 @@ export default function PassStandard() {
           Compliance with International Data Standards
         </span>
         <span className="font-pre-light text-gray150  text-sm sm:text-2xl md:text-3xl">
-          YourD Pass is designed to securely store and manage user data in
+          YourD App is designed to securely store and manage user data in
           accordance with standards like EBSI and OpenID
         </span>
       </div>

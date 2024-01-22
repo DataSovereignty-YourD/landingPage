@@ -3,7 +3,7 @@ import AppImg from '../../../assets/img/app.png';
 const utilizeData = [
   {
     title: "Own your data",
-    describe: "Own your Credential data through YourD Pass",
+    describe: "Own your Credential data through YourD App",
   },
   {
     title: "Manage your data ",
@@ -20,7 +20,7 @@ export default function PassFunction() {
     <div className=" w-full h-fit flex flex-col py-[120px] justify-center items-center gap-10 sm:gap-20">
       <div className="font-pre-bold font-extrabold text-2xl sm:text-[44px]">Own and Utilize Your Data</div>
       <div className="flex flex-col sm:flex-row gap-16 justify-center  items-center">
-        <img src={AppImg} alt='YourD Pass' className="h-[340px] sm:h-[500px] lg:h-[600px] object-contain"/>
+        <img src={AppImg} alt='YourD App' className="h-[340px] sm:h-[500px] lg:h-[600px] object-contain"/>
         <div className="flex flex-col gap-8 items-center">
           {utilizeData.map((item,index) => (
             <>

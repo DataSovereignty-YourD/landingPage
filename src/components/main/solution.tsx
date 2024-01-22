@@ -1,4 +1,4 @@
-import DataSelling from '../../assets/img/dataselling.png';
+import DataSelling from '../../assets/img/dataSelling.png';
 import YourDSaaS from '../../assets/img/dataPass.png';
 import FastAuth from '../../assets/img/fastAuth.png';
 import Analytics from '../../assets/img/analytics.png';
@@ -14,11 +14,11 @@ export default function Solution() {
     {
       id: 1,
       title: 'Web 3.0 Data Ownership Solution',
-      subtitle: 'Implement User-Centric Data Management with YourD Pass',
+      subtitle: 'Implement User-Centric Data Management with YourD App',
       description:
-        'YourD Pass is a solution conceived around the principle of user data ownership. It is versatile, finding applications in a wide array of fields from online digital identity to offline. This enables users to manage and utilize their data effectively, representing a genuine Web 3.0 solution.',
+        'YourD App is a solution conceived around the principle of user data ownership. It is versatile, finding applications in a wide array of fields from online digital identity to offline. This enables users to manage and utilize their data effectively, representing a genuine Web 3.0 solution.',
       image: YourDSaaS,
-      path: '/yourd_pass',
+      path: '/yourd_app',
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ export default function Solution() {
       subtitle:
         'Conduct Effective Analysis while Upholding Data Sovereignty with YourD Analytics',
       description:
-        'The implementation of YourD Web Auth and YourD Pass makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.',
+        'The implementation of YourD Web Auth and YourD App makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.',
       image: Analytics,
       path: '/yourd_analytics',
     },

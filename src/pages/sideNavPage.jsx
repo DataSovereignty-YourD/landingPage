@@ -86,8 +86,8 @@ const Nav = ({ isOpen, setIsOpen }) => (
       <NavLink text="Solutions" />
       <div className="flex flex-col gap-4 ml-4">
         <NavLink
-          text="Pass"
-          to="/yourd_pass"
+          text="App"
+          to="/yourd_app"
           onClick={() => setIsOpen(false)}
           smallText={true}
         />

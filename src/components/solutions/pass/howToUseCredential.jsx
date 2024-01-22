@@ -81,7 +81,7 @@ export function HowToUseCredential() {
           ))}
         </div>
         <div className="font-pre-light text-xl sm:text-3xl max-w-6xl text-center mx-auto">
-          With YourD Pass, Can easily access online services using{" "}
+          With YourD App, Can easily access online services using{" "}
           <span className="font-pre-bold">
             Your<span className="text-maincolor">D </span>
             Authentication
@@ -126,7 +126,7 @@ export function HowToUseCredential() {
         <div className="font-pre-light text-xl sm:text-3xl max-w-[840px] text-center mx-auto">
           <span className="font-pre-bold">
             Your<span className="text-maincolor">D</span>{" "}
-            Pass
+            App
           </span>{" "}
           allows you to present your VC in a real-world environment, making it
           easy to authenticate and join services.

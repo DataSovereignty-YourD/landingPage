@@ -35,7 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/yourd_web_auth" element={<YourDLoginPage />} />
-        <Route path="/yourd_pass" element={<YourDPassPage />} />
+        <Route path="/yourd_app" element={<YourDPassPage />} />
         <Route path="/yourd_payment" element={<YourDPaymentPage />} />
         <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
         <Route path="/yourd_infra" element={<YourDInfraPage />} />

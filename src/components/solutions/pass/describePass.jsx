@@ -3,7 +3,7 @@ export default function DescribePass() {
     {
       title: "Issuance and storage",
       description:
-        "YourD Pass allows you to securely issue credential data to your users. The issued credential data is stored on the user's device and can be accessed at any time.",
+        "YourD App allows you to securely issue credential data to your users. The issued credential data is stored on the user's device and can be accessed at any time.",
     },
     {
       title: "Data Wallet",
@@ -18,7 +18,7 @@ export default function DescribePass() {
     {
       title: "Approaches to online and offline authentication",
       description:
-        "YourD Pass simplifies identity verification and KYC processes. It provides users with a quick and easy auth and authentication experience, both online and offline.",
+        "YourD App simplifies identity verification and KYC processes. It provides users with a quick and easy auth and authentication experience, both online and offline.",
     },
   ];
 
@@ -32,9 +32,9 @@ export default function DescribePass() {
           Versatile, reliable, and secure
         </div>
         <div className="  sm:text-lg font-medium mt-5 sm:w-1/2 text-gray400">
-          Take control of your data with YourD Pass, a Web 3.0 solution that
+          Take control of your data with YourD App, a Web 3.0 solution that
           emphasizes user data ownership. From online platforms to offline
-          environments, YourD Pass enables consistent and easy data management
+          environments, YourD App enables consistent and easy data management
           wherever you are.
         </div>
       </div>
