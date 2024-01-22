@@ -35,7 +35,7 @@ export default function Solution() {
       title: 'YourD Pay: Web 3.0 Integrated Payment Solution',
       subtitle: 'Efficient and Easy Payments with YourD Pay',
       description:
-        'YourD Pay offers a seamless payment experience with pull transaction-based QR payments and one-touch processes. Supporting multiple blockchains, it enables crypto payments in diverse environments, including Web 2.0, while ensuring security and compliance.',
+        'YourD Pay is a non-custodial cryptocurrency payment module that provides a quick and easy payment experience with full transaction-based QR payments and a one-touch process. Supporting a variety of blockchains, YourD Pay enables easy cryptocurrency payments in a Web 2.0 environment and is flexible enough for the transition to Web 3.0.',
       image: Payment,
       path: '/yourd_payment',
     },
