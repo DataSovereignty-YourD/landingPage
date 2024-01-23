@@ -2,11 +2,11 @@ import ReactPlayer from 'react-player';
 import styled from 'styled-components';
 
 function LoginVideo() {
-  const videoUrl = './YourD_Credential_Demo_tts3.mp4';
+  const videoUrl = './webAuth_demo_0123.mp4';
 
   return (
     <VideoWrapper>
-      <div className="flex flex-col justify-center items-center my-24 mx-auto w-full">
+      <div className="flex flex-col justify-center items-center my-24 mx-auto w-full ">
         <div className="text-center mb-4 w-full items-center justify-center flex flex-col">
           <div className="w-fit text-4xl font-pre-bold text-transparent pb-1 bg-clip-text bg-gradient-to-r from-gradient1 to-gradient2">How it works</div>
           <div className='text-4xl mt-2 font-bold mb-8'>
@@ -18,6 +18,7 @@ function LoginVideo() {
           width="100%"
           height="100%"
           controls
+          style={{borderRadius:18,overflow:'hidden'}}
           className="mx-auto"
         />
       </div>
