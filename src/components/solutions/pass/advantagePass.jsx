@@ -1,7 +1,7 @@
 export default function AdvantagePass() {
   return (
     <div className=" h-fit py-10 sm:py-20 w-full relative items-center justify-center  flex flex-col gap-10 sm:gap-20">
-      <div className=" font-pre-bold text-3xl sm:text-[44px] flex text-center justify-center gradientText">
+      <div className=" font-pre-bold text-3xl sm:text-[44px] flex text-center p-2 justify-center gradientText">
         Embrace a World of New Experiences
       </div>
       <div className=" grid grid-cols-6 items-start justify-center gap-10">

@@ -9,7 +9,7 @@ export default function AdvantageLogin() {
 
   return (
     <div className="h-fit w-full flex flex-col relative py-32 justify-between items-center gap-20">
-      <div className="font-pre-bold text-3xl sm:text-[44px] pb-2 flex text-center justify-center gradientText">
+      <div className="font-pre-bold text-3xl sm:text-[44px] p-2 flex text-center justify-center gradientText">
         Break free from traditional authentication.
       </div>
       <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 items-center sm:items-start">

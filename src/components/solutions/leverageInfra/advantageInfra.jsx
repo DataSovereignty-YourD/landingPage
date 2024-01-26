@@ -1,7 +1,7 @@
 export default function AdvantageInfra() {
   return (
     <div className="h-fit w-full flex flex-col relative py-32 justify-between items-center gap-20">
-      <div className="font-pre-bold text-3xl sm:text-[44px] pb-2 flex text-center justify-center gradientText">
+      <div className="font-pre-bold text-3xl sm:text-[44px] p-2 flex text-center justify-center gradientText">
         YourD Data Infra Unlocking the Power of Web 3.0
       </div>
       <div className=" grid grid-cols-4 items-start justify-center gap-5">

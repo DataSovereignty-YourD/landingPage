@@ -82,7 +82,7 @@ const DropDown = () => {
         onClick={toggleMenu}
         className="flex items-center gap-2 px-4 py-[6px] font-pre-bold sm:rounded-full duration-500  sm:hover:bg-[#fccc00] transition-colors border border-gray-400"
       >
-        <span className="font-medium hidden sm:flex ">Solutions</span>
+        <div className="font-medium hidden sm:flex whitespace-nowrap ">Solutions</div>
         <FiChevronDown className={`${open ? 'rotate-180' : ''} hidden sm:flex`} />
         <motion.div whileHover={{ scale: 1.2 }} transition={{ duration: 0.2 }} className="visible sm:hidden">
           {menuIcon ? <FiMenu size={24} /> : <FiX size={24} />}
