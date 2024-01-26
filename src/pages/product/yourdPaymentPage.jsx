@@ -2,7 +2,7 @@ import DescrbiePayment from "../../components/solutions/payment/describePayment"
 import PaymentHeader from "../../components/solutions/payment/paymentHeader";
 import "../../assets/css/describe1.css";
 import Footer from "../../components/common/footer";
-import EmbracePayment from "../../assets/img/embracePayment.png";
+import EmbracePayment from "../../assets/img/embracePayment.webp";
 import PaymentProcess from "../../components/solutions/payment/paymentProcess";
 import AdvantagePayment from "../../components/solutions/payment/advantagePayment";
 import EmphasisPayment from "../../components/solutions/payment/EmphasisPayment";

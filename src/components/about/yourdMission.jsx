@@ -16,10 +16,10 @@ export default function YourdMission() {
         />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-baseline">
-        OWN <div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>
+        OWN<div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>
       </div>
-      <div className="absolute top-2/3 sm:top-3/4 left-2/3 sm:left-3/4 transform -translate-x-1/2 -translate-y-1/2 flex items-baseline">
-        APPLY <div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>
+      <div className="absolute top-2/3 sm:top-3/4 left-2/3 sm:left-3/4 transform -translate-x-1/2 -translate-y-1/2 flex items-baseline whitespace-nowrap">
+        APPLY<div className="w-[20px] h-[20px] bg-[#fccc00] ml-2"></div>
       </div>
     </div>
   );
