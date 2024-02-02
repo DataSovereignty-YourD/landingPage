@@ -8,6 +8,7 @@ import LearnMore from '../../assets/icon/learnMoreIcon.png';
 import LearnMoreHover from '../../assets/icon/fillcircle.png';
 import PreloadImage from '../common/poeLoadImage';
 import { useState } from 'react';
+import OutlineButton from '../utils/buttons/outlineButton';
 export default function Solution() {
   const [isHover, setIsHover] = useState(null);
   const solutions = [
@@ -81,6 +82,7 @@ export default function Solution() {
             {solution.description}
           </span>
         </div>
+
         <div className="flex flex-shrink justify-between ">
           <Link
             onMouseEnter={() => setIsHover(index)}
@@ -88,13 +90,16 @@ export default function Solution() {
             to={solution.path}
             className="w-fit h-fit hover:scale-110 transition-all duration-300"
           >
-            {/* <OutlineButton /> */}
-            <img
-              src={isHover === index ? LearnMoreHover : LearnMore}
-              alt={solution.title}
-              className="object-contain min-w-[50px] w-[50px] sm:w-[50px] md:w-[60px] mt-5"
-            />
+            <div className="flex items-center justify-center border font-semibold bg-[#474747] rounded-full mt-5">
+              <img
+                src={isHover === index ? LearnMoreHover : LearnMore}
+                alt={solution.title}
+                className="object-contain min-w-[40px] w-[40px] sm:w-[40px] md:w-[50px] "
+              />
+              <div className={`text-lg pr-5 ${isHover === index ? "gradientText" : "text-white"}`}>Learn More</div>
+            </div>
           </Link>
+
           <img
             src={solution.image}
             alt={solution.title}
