@@ -10,11 +10,13 @@ interface DescribeProps {
   title1: string;
   title2: string;
   subText1: string;
+  subText2: string;
 }
 export default function MainHeroSection({
   title1,
   title2,
   subText1,
+  subText2,
 }: DescribeProps) {
   const [mainIsVisible,setMainIsVisible] = useRecoilState(MainIsVisibleState);
   const ref1 = useRef(null);
@@ -56,7 +58,7 @@ export default function MainHeroSection({
                 {title1}&nbsp;{title2}
               </div>
             </div>
-            <div className="text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-regular font-bold ">{subText1}</div>
+            <div className="text-lg sm:text-2xl leading-7 max-w-[600px] text-center font-pre-regular font-bold ">{subText1}<br/>{subText2}</div>
             <div className="bg-white">
             <Link
             to="/contact"
