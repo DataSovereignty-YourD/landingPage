@@ -29,17 +29,17 @@ const Footer = () => {
                 <FaLinkedin size={28} />
               </a>
               <a
-                href="https://twitter.com/0xCatbox"
+                href="https://x.com/YourD_ata"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition duration-300 ease-in-out p hover:bg-yellow-500 hover:text-white"
               >
                 <FaSquareXTwitter size={28} />
               </a>
-              <FaMedium
+              {/* <FaMedium
                 size={28}
                 className="hover:text-yellow-500 transition relative"
-              />
+              /> */}
             </div>
           </div>
           
