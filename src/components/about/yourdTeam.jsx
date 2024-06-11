@@ -9,43 +9,37 @@ const profiles = [
     name: "J.G",
     position: "CEO / Co-Founder",
     sns1: "https://www.linkedin.com/in/j-g-y-a7b429244/",
-    sns2: "https://twitter.com/SSi3_0",
+
   },
   {
     name: "Cha",
     position: "CTO / Co-Founder",
     sns1: "https://www.linkedin.com/in/younghoon-cha-1173a5248/",
-    sns2: "https://twitter.com/yhc125",
   },
   {
     name: "Hwang",
     position: "COO / Co-Founder",
     sns1: "https://www.linkedin.com/in/ji-hwang-kim-10a539243/",
-    sns2: "https://twitter.com/unchain_hwang",
   },
   {
-    name: "Miix",
+    name: "Seung",
     position: "Software Engineer",
     sns1: "https://www.linkedin.com/in/jaeseung-yeom-723b44271/",
-    sns2: "https://twitter.com/yeomjaeseu98392",
   },
   {
     name: "Jake",
     position: "Software Engineer",
     sns1: "",
-    sns2: "https://twitter.com/bagseon52525961",
   },
   {
     name: "JJJ",
     position: "Product Manager",
     sns1: "https://www.linkedin.com/in/hyunchae-jo/",
-    sns2: "https://twitter.com/trip4e_J",
   },
   {
     name: "Farrell",
     position: "Designer",
     sns1: "https://www.linkedin.com/in/%EC%98%88%EC%B0%AC-%EB%B0%95-36211b279/",
-    sns2: "https://twitter.com/Farrell_YourD",
   },
 ];
 
@@ -97,12 +91,12 @@ const ProfileCard = ({ profile }) => {
               className="hover:text-yellow-400 cursor-pointer"
             />
           </a>
-          <a href={profile.sns2} target="_blank" rel="noopener noreferrer">
+          {/* <a href={profile.sns2} target="_blank" rel="noopener noreferrer">
             <FaXTwitter
               size={24}
               className="hover:text-yellow-400 cursor-pointer"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
