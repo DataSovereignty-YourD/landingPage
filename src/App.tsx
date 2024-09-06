@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import React from 'react';
+import React, { useState } from 'react';
 import MainPage from './pages/mainPage';
 import TopBar from './components/common/topBar';
 import AboutPage from './pages/aboutPage';
@@ -19,34 +19,44 @@ import D from './assets/img/D.webp';
 import LoginImg from './assets/img/webAuthentication.webp';
 import Pass from './assets/img/yourdpass-main.webp';
 import Infra from './assets/img/dataLeverageImage.webp';
+import KbwModal from './components/common/popup';
 function App() {
-  const location = useLocation();
-  useEffect(() => {
-    preloadImages([Analytic,Payment, D, LoginImg, Pass, Infra /* 이곳에 다른 이미지 변수를 추가 */]);
-  }, []);
+    const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
+    const location = useLocation();
+    const septemberEnd = new Date(2024, 8, 30, 23, 59, 59); // 2024년 9월 30일 자정
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-  return (
-    <React.Fragment>
-      <TopBar />
-      {/* <AnimationReal /> */}
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/yourd_web_auth" element={<YourDLoginPage />} />
-        <Route path="/yourd_app" element={<YourDPassPage />} />
-        <Route path="/yourd_payment" element={<YourDPaymentPage />} />
-        <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
-        <Route path="/yourd_infra" element={<YourDInfraPage />} />
-        <Route path="/about_us" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactUs />} />
-        {/* <Route path="/blog" element={<Blog />} /> */}
-      </Routes>
-      {/* <SideBar /> */}
-      {/* <div className="h-[1px] w-full bg-gray-20 items-start"></div> */}
-    </React.Fragment>
-  );
+    const handleCloseModal = (e: React.MouseEvent | boolean) => {
+        setIsModalVisible(false);
+    };
+
+    useEffect(() => {
+        preloadImages([Analytic, Payment, D, LoginImg, Pass, Infra /* 이곳에 다른 이미지 변수를 추가 */]);
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+
+    return (
+        <React.Fragment>
+            <TopBar />
+            <KbwModal visible={isModalVisible} onClose={handleCloseModal} expiryDate={septemberEnd} />
+            {/* <AnimationReal /> */}
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/yourd_web_auth" element={<YourDLoginPage />} />
+                <Route path="/yourd_app" element={<YourDPassPage />} />
+                <Route path="/yourd_payment" element={<YourDPaymentPage />} />
+                <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
+                <Route path="/yourd_infra" element={<YourDInfraPage />} />
+                <Route path="/about_us" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactUs />} />
+                {/* <Route path="/blog" element={<Blog />} /> */}
+            </Routes>
+            {/* <SideBar /> */}
+            {/* <div className="h-[1px] w-full bg-gray-20 items-start"></div> */}
+        </React.Fragment>
+    );
 }
 
 export default App;

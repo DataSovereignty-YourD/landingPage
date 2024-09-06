@@ -1,7 +1,7 @@
 import W3CLogo from "../../assets/img/w3c.png";
 import Tezos from "../../assets/img/tezos.png";
 import Google from '../../assets/img/google.png';
-import Kaia from '../../assets/svg/kaia_white.svg';
+// import Kaia from '../../assets/svg/kaia_white.svg';
 export default function GlobalStandard() {
 
   return (
@@ -30,7 +30,7 @@ export default function GlobalStandard() {
             className="h-10 md:h-[60px] lg:h-[100px] object-contain"
           />
         </div>
-        <img src={Kaia} alt='kaia logo'   className="h-10 md:h-[45px] lg:h-[60px] object-contain mt-8"/>
+        {/* <img src={Kaia} alt='kaia logo'   className="h-10 md:h-[45px] lg:h-[60px] object-contain mt-8"/> */}
       </div>
     </div>
   );
