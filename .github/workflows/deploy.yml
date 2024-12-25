@@ -45,7 +45,7 @@ jobs:
       # 6. CloudFront 캐시 무효화
       - name: Invalidate CloudFront Cache
         run: |
-          aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+          aws cloudfront create-invalidation --distribution-id E1DFXQ25304IKX --paths "/*"
         env:
           AWS_ACCESS_KEY_ID: ${{ fromJson(secrets.aws_cloudfront_cicd_secrets).AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ fromJson(secrets.aws_cloudfront_cicd_secrets).AWS_SECRET_ACCESS_KEY }}
