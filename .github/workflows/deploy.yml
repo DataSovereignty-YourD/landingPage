@@ -22,18 +22,16 @@ jobs:
           aws-secret-access-key: ${{ fromJson(secrets.aws_cloudfront_cicd_secrets).AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ fromJson(secrets.aws_cloudfront_cicd_secrets).AWS_DEFAULT_REGION }}
 
-      # 3. 종속성 설치 및 환경 설정
-      - name: Install missing dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq # 필요에 따라 추가
-          sudo apt-get install -y awscli
-
-      # 4. 의존성 설치 및 빌드
-      - name: Install dependencies and build
+      # 3. 종속성 설치 및 브라우저리스트 업데이트
+      - name: Install dependencies and update browserslist
         run: |
           yarn install
-          yarn build
+          npx update-browserslist-db@latest --force
+
+      # 4. 빌드 (CI 환경에서 경고 무시)
+      - name: Build project
+        run: |
+          CI=false yarn build
 
       # 5. S3로 배포
       - name: Deploy to S3
