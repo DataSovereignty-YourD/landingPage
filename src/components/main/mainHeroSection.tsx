@@ -39,7 +39,7 @@ export default function MainHeroSection({
     <>
       <div
         id="container1"
-        className="w-screen sm:w-full h-screen text-center relative overflow-hidden bg-black bg-opacity-50"
+        className="w-screen sm:w-full h-screen text-center relative overflow-hidden bg-white bg-opacity-50"
       >
         <div
           id="layout1"

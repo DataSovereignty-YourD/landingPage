@@ -1,4 +1,4 @@
-import DataSelling from '../../assets/img/dataSelling.png';
+import DataSelling from '../../assets/img/dataselling.png';
 import YourDSaaS from '../../assets/img/dataPass.png';
 import FastAuth from '../../assets/img/fastAuth.png';
 import Analytics from '../../assets/img/analytics.png';
