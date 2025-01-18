@@ -21,7 +21,6 @@ import KbwModal from './components/common/popup';
 
 function App() {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
-    const [isCookieSet, setIsCookieSet] = useState(false); // 쿠키 상태 확인용
     const location = useLocation();
     const septemberEnd = new Date(2024, 8, 30, 23, 59, 59); // 2024년 9월 30일 자정
 
@@ -37,27 +36,6 @@ function App() {
         window.scrollTo(0, 0);
     }, [location.pathname]);
 
-    useEffect(() => {
-        const fetchCookies = async () => {
-            try {
-                const response = await fetch('https://uniauth.yourd.xyz/issueCookies', {
-                    method: 'GET',
-                    credentials: 'include', // 쿠키를 포함하여 요청
-                });
-
-                if (response.ok) {
-                    console.log('Cookies successfully set by the server.');
-                    setIsCookieSet(true); // 쿠키 설정 성공 상태
-                } else {
-                    console.error('Failed to set cookies:', response.status);
-                }
-            } catch (error) {
-                console.error('Error while fetching cookies:', error);
-            }
-        };
-
-        fetchCookies(); // 쿠키 요청
-    }, []);
 
     return (
         <React.Fragment>
