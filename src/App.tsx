@@ -40,6 +40,7 @@ function App() {
         window.scrollTo(0, 0);
     }, [location.pathname]);
 
+
     return (
         <React.Fragment>
             {!shouldHideElements && <TopBar />}
@@ -55,7 +56,7 @@ function App() {
                 <Route path="/about_us" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/app/download" element={<AppDownloadPage />} />
-                
+
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </React.Fragment>
