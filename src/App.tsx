@@ -1,10 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import MainPage from './pages/mainPage';
 import TopBar from './components/common/topBar';
 import AboutPage from './pages/aboutPage';
 import ContactUs from './components/common/contactUs';
-import Blog from './components/blog/blog';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import YourDLoginPage from './pages/product/yourdLoginPage';
@@ -20,10 +19,14 @@ import LoginImg from './assets/img/webAuthentication.webp';
 import Pass from './assets/img/yourdpass-main.webp';
 import Infra from './assets/img/dataLeverageImage.webp';
 import KbwModal from './components/common/popup';
+import AppDownloadPage from './components/main/appDownloadPage';
+
 function App() {
-    const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
     const location = useLocation();
-    const septemberEnd = new Date(2024, 8, 30, 23, 59, 59); // 2024년 9월 30일 자정
+    const hideElementsOnRoutes = ['/app/download'];
+    const shouldHideElements = hideElementsOnRoutes.includes(location.pathname);
+    const [isModalVisible, setIsModalVisible] = useState<boolean>(!shouldHideElements);
+    const septemberEnd = new Date(2024, 8, 27, 11, 59, 59); // 2024년 9월 30일 자정
 
     const handleCloseModal = (e: React.MouseEvent | boolean) => {
         setIsModalVisible(false);
@@ -39,7 +42,7 @@ function App() {
 
     return (
         <React.Fragment>
-            <TopBar />
+            {!shouldHideElements && <TopBar />}
             <KbwModal visible={isModalVisible} onClose={handleCloseModal} expiryDate={septemberEnd} />
             {/* <AnimationReal /> */}
             <Routes>
@@ -51,10 +54,10 @@ function App() {
                 <Route path="/yourd_infra" element={<YourDInfraPage />} />
                 <Route path="/about_us" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactUs />} />
-                {/* <Route path="/blog" element={<Blog />} /> */}
+                <Route path="/app/download" element={<AppDownloadPage />} />
+                
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-            {/* <SideBar /> */}
-            {/* <div className="h-[1px] w-full bg-gray-20 items-start"></div> */}
         </React.Fragment>
     );
 }
