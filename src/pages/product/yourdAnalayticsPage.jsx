@@ -2,7 +2,6 @@ import DescribeAnalytic from '../../components/solutions/analytic/describeAnalyt
 import AnalyticHeader from '../../components/solutions/analytic/analyticHeader';
 import AnalyticEmphasis from '../../components/solutions/analytic/analyticEmphasis';
 import AdvantageAnalytic from '../../components/solutions/analytic/advantageAnalytic';
-import Footer from '../../components/common/footer';
 import '../../assets/css/describe1.css';
 
 export default function YourDAnalyticPage() {
@@ -31,9 +30,6 @@ export default function YourDAnalyticPage() {
       {/* <div className="h-[600px] w-full relative">
         <AnalyticCard />
       </div> */}
-      <div className="bg-white w-full bg-opacity-70 pt-10 max-w-[1600px]">
-        <Footer />
-      </div>
     </div>
   );
 }

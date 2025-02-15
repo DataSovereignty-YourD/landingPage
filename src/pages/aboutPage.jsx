@@ -1,4 +1,3 @@
-import Footer from '../components/common/footer';
 import YourdMission from '../components/about/yourdMission';
 import YourdMissionDescribe from '../components/about/yourdMissionDescribe';
 import YourdTeam from '../components/about/yourdTeam';
@@ -26,9 +25,6 @@ export default function AboutUs() {
         <div className=" mx-5 sm:mx-10 md:w-3/4 md:mx-auto max-w-[1600px] ">
           <YourdAwards />
         </div>
-      </div>
-      <div className=" bg-white w-full bg-opacity-70 pt-10 relative max-w-[1600px]">
-        <Footer />
       </div>
     </div>
     </>

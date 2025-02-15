@@ -2,7 +2,6 @@ import DescribeInfra from '../../components/solutions/leverageInfra/describeInfr
 import InfraHeader from '../../components/solutions/leverageInfra/infraHeader';
 import AdvantageInfra from '../../components/solutions/leverageInfra/advantageInfra';
 // import InfraCard from '../../components/solutions/leverageInfra/infraCard';
-import Footer from '../../components/common/footer';
 import '../../assets/css/describe1.css';
 
 export default function YourDInfraPage() {
@@ -24,9 +23,6 @@ export default function YourDInfraPage() {
       {/* <div className="h-[600px] w-full relative">
         <InfraCard />
       </div> */}
-      <div className="bg-white w-full bg-opacity-70 pt-10 max-w-[1600px]">
-        <Footer />
-      </div>
     </div>
   );
 }

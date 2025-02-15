@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useRef } from "react";
-import Footer from "./footer";
 
 const BASE_TRANSITION = { ease: "anticipate", duration: 0.75 };
 const COMMON_CLASSES = {
@@ -20,9 +19,6 @@ const ContactUs = () => {
           <Form selected={selected} setSelected={setSelected} />
         </div>
       </section>
-      <div className="bottom-0">
-        <Footer />
-      </div>
     </div>
   );
 };

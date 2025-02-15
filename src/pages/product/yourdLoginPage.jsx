@@ -3,7 +3,6 @@ import LoginDiagram from "../../components/solutions/login/loginDiagram";
 import LoginHeader from "../../components/solutions/login/loginHeader";
 import AdvantageLogin from "../../components/solutions/login/advantageLogin";
 import "../../assets/css/describe1.css";
-import Footer from "../../components/common/footer";
 import LoginVideo from "../../components/solutions/login/loginVideo";
 export default function YourDLoginPage() {
   return (
@@ -32,9 +31,6 @@ export default function YourDLoginPage() {
       {/* <div className="h-1/2 w-full relative">
         <LoginButtonCard />
       </div> */}
-      <div className="bg-white w-full bg-opacity-70 pt-10 max-w-[1600px]">
-        <Footer />
-      </div>
     </div>
   );
 }

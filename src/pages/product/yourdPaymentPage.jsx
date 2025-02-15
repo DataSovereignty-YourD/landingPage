@@ -1,7 +1,6 @@
 import DescrbiePayment from "../../components/solutions/payment/describePayment";
 import PaymentHeader from "../../components/solutions/payment/paymentHeader";
 import "../../assets/css/describe1.css";
-import Footer from "../../components/common/footer";
 import EmbracePayment from "../../assets/img/embracePayment.webp";
 import PaymentProcess from "../../components/solutions/payment/paymentProcess";
 import AdvantagePayment from "../../components/solutions/payment/advantagePayment";
@@ -41,9 +40,6 @@ export default function YourDPaymentPage() {
         <div className=" px-5 w-full sm:px-10 md:px-16 lg:px-[136px] max-w-[1600px]">
           <AdvantagePayment />
         </div>
-      </div>
-      <div className="bg-white w-full bg-opacity-70 pt-10 max-w-[1600px] ">
-        <Footer />
       </div>
     </div>
   );

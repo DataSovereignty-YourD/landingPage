@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import React, { useState } from 'react';
 import MainPage from './pages/mainPage';
 import TopBar from './components/common/topBar';
@@ -18,19 +18,29 @@ import D from './assets/img/D.webp';
 import LoginImg from './assets/img/webAuthentication.webp';
 import Pass from './assets/img/yourdpass-main.webp';
 import Infra from './assets/img/dataLeverageImage.webp';
-import KbwModal from './components/common/popup';
 import AppDownloadPage from './components/main/appDownloadPage';
+import Privacy from './pages/policy/privacy/v1/ko';
+import TermsOfService from './pages/policy/terms/v1/ko';
+import StarsCanvas from './components/canvas/stars';
+import Footer from './components/common/footer';
+import TermsMain from './pages/policy/TermsMain';
+
+function Layout() {
+    return (
+        <React.Fragment>
+            <StarsCanvas />
+            <TopBar />
+            <div className="flex flex-col flex-1 relative">
+                <Outlet />
+            </div>
+            <Footer />
+        </React.Fragment>
+    );
+}
+
 
 function App() {
     const location = useLocation();
-    const hideElementsOnRoutes = ['/app/download'];
-    const shouldHideElements = hideElementsOnRoutes.includes(location.pathname);
-    const [isModalVisible, setIsModalVisible] = useState<boolean>(!shouldHideElements);
-    const septemberEnd = new Date(2024, 8, 27, 11, 59, 59); // 2024년 9월 30일 자정
-
-    const handleCloseModal = (e: React.MouseEvent | boolean) => {
-        setIsModalVisible(false);
-    };
 
     useEffect(() => {
         preloadImages([Analytic, Payment, D, LoginImg, Pass, Infra /* 이곳에 다른 이미지 변수를 추가 */]);
@@ -43,20 +53,24 @@ function App() {
 
     return (
         <React.Fragment>
-            {!shouldHideElements && <TopBar />}
-            <KbwModal visible={isModalVisible} onClose={handleCloseModal} expiryDate={septemberEnd} />
-            {/* <AnimationReal /> */}
             <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/yourd_web_auth" element={<YourDLoginPage />} />
-                <Route path="/yourd_app" element={<YourDPassPage />} />
-                <Route path="/yourd_payment" element={<YourDPaymentPage />} />
-                <Route path="/yourd_analytics" element={<YourDAnalyticsPage />} />
-                <Route path="/yourd_infra" element={<YourDInfraPage />} />
-                <Route path="/about_us" element={<AboutPage />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="/app/download" element={<AppDownloadPage />} />
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<MainPage />} />
+                    <Route path="yourd_web_auth" element={<YourDLoginPage />} />
+                    <Route path="yourd_app" element={<YourDPassPage />} />
+                    <Route path="yourd_payment" element={<YourDPaymentPage />} />
+                    <Route path="yourd_analytics" element={<YourDAnalyticsPage />} />
+                    <Route path="yourd_infra" element={<YourDInfraPage />} />
+                    <Route path="about_us" element={<AboutPage />} />
+                    <Route path="contact" element={<ContactUs />} />
+                    
+                    <Route path="policy" element={<Navigate to="policy/terms" replace />} />
+                    <Route path="policy/privacy" element={<TermsMain />} />
+                    <Route path="policy/terms" element={<TermsMain />} />
+                </Route>
 
+
+                <Route path="/app/download" element={<AppDownloadPage />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </React.Fragment>

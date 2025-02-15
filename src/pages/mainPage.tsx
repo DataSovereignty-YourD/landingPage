@@ -8,17 +8,10 @@ import WhyYourD from "../components/main/whyYourD";
 import YourdStack from "../components/main/yourdStack";
 import backImg from "../assets/img/global-back.png";
 import Solution from "../components/main/solution";
-import StarsCanvas from "../components/canvas/stars";
-import isWebGLSupported from "../effect/isWebGLSupported";
 
 export default function MainPage() {
     const controls = useAnimation();
     const { scrollYProgress } = useScroll();
-    const [webglSupported, setWebglSupported] = useState(false);
-
-    useEffect(() => {
-        setWebglSupported(isWebGLSupported());
-    }, []);
 
     useEffect(() => {
         const unsubscribe = scrollYProgress.onChange((value) => {
@@ -31,7 +24,6 @@ export default function MainPage() {
 
     return (
         <div className="w-screen">
-            {webglSupported && <StarsCanvas />}
             <motion.div
                 className="fixed top-0 left-0 right-0 h-1 w-screen bg-[#fccc00] origin-left z-50"
                 animate={controls}
@@ -60,11 +52,6 @@ export default function MainPage() {
                 <img src={backImg} alt="back" className="absolute bottom-0 sm:-bottom-20 md:-bottom-40 sm:right-40 md:right-72" />
 
             </div>
-            {/* <BlogCard /> */}
-
-            {/* <LogoHero text1="The easiest way to control your Data" /> */}
-            <Footer />
-            {/* <ScrollProgressBar/> */}
         </div>
     );
 }

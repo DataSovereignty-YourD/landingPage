@@ -11,6 +11,10 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+        fontSize: {
+            'xxs': '10px',
+            'md': '16px', // Adding a custom text size for 16px
+        },
       backgroundImage: {
         Mainback: "url('/src/assets/img/mobileSecurity.png')",
       },
