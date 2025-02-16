@@ -11,6 +11,7 @@ const DropDown = () => {
 
 
     const handleItemClick = (path) => {
+        if (!path) return;
         setOpen(false);
         setMenuIcon(true);
         navigate(path);
@@ -38,27 +39,27 @@ const DropDown = () => {
         {
             id: 1,
             solution: "YourD App",
-            path: "yourd_app",
+            path: "/yourd_app",
         },
         {
             id: 2,
             solution: "YourD Authentication",
-            path: "yourd_web_auth",
+            path: "/yourd_web_auth",
         },
         {
             id: 3,
             solution: "YourD Payment",
-            path: "yourd_payment",
+            path: "/yourd_payment",
         },
         {
             id: 4,
             solution: "YourD Analytics",
-            path: "yourd_analytics",
+            path: "/yourd_analytics",
         },
         {
             id: 5,
             solution: "YourD Data Leverage Infra",
-            path: "yourd_infra",
+            path: "/yourd_infra",
         },
         {
             id: 6,

@@ -19,8 +19,6 @@ import LoginImg from './assets/img/webAuthentication.webp';
 import Pass from './assets/img/yourdpass-main.webp';
 import Infra from './assets/img/dataLeverageImage.webp';
 import AppDownloadPage from './components/main/appDownloadPage';
-import Privacy from './pages/policy/privacy/v1/ko';
-import TermsOfService from './pages/policy/terms/v1/ko';
 import StarsCanvas from './components/canvas/stars';
 import Footer from './components/common/footer';
 import TermsMain from './pages/policy/TermsMain';
@@ -63,13 +61,13 @@ function App() {
                     <Route path="yourd_infra" element={<YourDInfraPage />} />
                     <Route path="about_us" element={<AboutPage />} />
                     <Route path="contact" element={<ContactUs />} />
-                    
-                    <Route path="policy" element={<Navigate to="policy/terms" replace />} />
-                    <Route path="policy/privacy" element={<TermsMain />} />
-                    <Route path="policy/terms" element={<TermsMain />} />
+
                 </Route>
 
 
+                <Route path="/policy" element={<Navigate to="policy/terms" replace />} />
+                <Route path="/policy/privacy" element={<TermsMain />} />
+                <Route path="/policy/terms" element={<TermsMain />} />
                 <Route path="/app/download" element={<AppDownloadPage />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

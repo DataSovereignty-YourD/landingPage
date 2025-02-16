@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import TopBar from "../../components/common/topBar";
 import PrivacyV1EN from "./privacy/v1/en";
 import PrivacyV1KO from "./privacy/v1/ko";
 import TermsV1EN from "./terms/v1/en";
 import TermsV1KO from "./terms/v1/ko";
 
+const validLangs = ['ko', 'en'];
 const tabItems = [
     {
         key: 'terms',
@@ -42,7 +44,7 @@ const TermsMain = () => {
     };
 
     // URL 쿼리에서 lang 파라미터 읽기 (기본값 "ko")
-    const initialLang = searchParams.get("lang") || "ko";
+    const initialLang = validLangs.includes(searchParams.get("lang")) ? searchParams.get("lang") : "en";
 
     const [activeTab, setActiveTab] = useState(getTabFromPath(location.pathname));
     const [activeLanguage, setActiveLanguage] = useState(initialLang);
@@ -50,7 +52,7 @@ const TermsMain = () => {
     useEffect(() => {
         setActiveTab(getTabFromPath(location.pathname));
         // URL 쿼리에서 lang 값을 읽어 activeLanguage 업데이트
-        const lang = searchParams.get("lang") || "ko";
+        const lang = validLangs.includes(searchParams.get("lang")) ? searchParams.get("lang") : "en";
         setActiveLanguage(lang);
     }, [location.pathname, searchParams]);
 
@@ -74,43 +76,46 @@ const TermsMain = () => {
 
 
     return (
-        <div className="flex flex-col flex-1 max-w-6xl px-6 lg:px-0 mx-auto bg-white gap-y-10">
-            <div className="flex items-center justify-between w-full border-b border-gray-200 mt-10">
-                <div className="flex">
-                    {tabItems.map((tab) => (
+        <>
+            <TopBar />
+            <div className="flex flex-col flex-1 max-w-6xl px-6 lg:px-0 mx-auto bg-white gap-y-10">
+                <div className="flex items-center justify-between w-full border-b border-gray-200 mt-10">
+                    <div className="flex">
+                        {tabItems.map((tab) => (
+                            <button
+                                key={tab.key}
+                                className={`px-4 py-2 text-center text-lg font-medium border-b-2 ${activeTab === tab.key ? "border-blue-500 text-blue-500" : "text-gray-600 border-transparent"
+                                    } hover:text-blue-500`}
+                                onClick={() => handleTabChange(tab.key)}
+                            >
+                                {tab.label[activeLanguage]}
+                            </button>
+                        ))}
+                    </div>
+                    {/* 언어 전환 탭 */}
+                    <div className="flex gap-x-2">
                         <button
-                            key={tab.key}
-                            className={`px-4 py-2 text-center text-lg font-medium border-b-2 ${activeTab === tab.key ? "border-blue-500 text-blue-500" : "text-gray-600 border-transparent"
-                                } hover:text-blue-500`}
-                            onClick={() => handleTabChange(tab.key)}
+                            className={`p-1 text-base font-medium  ${activeLanguage === "ko" ? " text-black" : " text-gray-500"}`}
+                            onClick={() => handleLanguageChange("ko")}
                         >
-                            {tab.label[activeLanguage]}
+                            KOR
                         </button>
-                    ))}
+                        <button
+                            className={`p-1 text-base font-medium  ${activeLanguage === "en" ? " text-black" : " text-gray-500"}`}
+                            onClick={() => handleLanguageChange("en")}
+                        >
+                            ENG
+                        </button>
+                    </div>
                 </div>
-                {/* 언어 전환 탭 */}
-                <div className="flex gap-x-2">
-                    <button
-                        className={`p-1 text-base font-medium  ${activeLanguage === "ko" ? " text-black" : " text-gray-600"}`}
-                        onClick={() => handleLanguageChange("ko")}
-                    >
-                        KOR
-                    </button>
-                    <button
-                        className={`p-1 text-base font-medium  ${activeLanguage === "en" ? " text-black" : " text-gray-600"}`}
-                        onClick={() => handleLanguageChange("en")}
-                    >
-                        ENG
-                    </button>
+
+                {/* 탭 콘텐츠 */}
+                <div className="max-w-6xl py-6 px-6 lg:px-0 mx-auto bg-white">
+                    {tabItems.find((tab) => tab.key === activeTab).children[activeLanguage]}
                 </div>
-            </div>
 
-            {/* 탭 콘텐츠 */}
-            <div className="max-w-6xl py-6 px-6 lg:px-0 mx-auto bg-white">
-                {tabItems.find((tab) => tab.key === activeTab).children[activeLanguage]}
             </div>
-
-        </div>
+        </>
     )
 }
 

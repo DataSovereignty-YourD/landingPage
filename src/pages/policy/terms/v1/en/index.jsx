@@ -2,9 +2,9 @@
 const TermsV1EN = () => {
     return (
         <div className="leading-relaxed text-gray-500 text-md">
-            {/* Section 1: Purpose */}
+            
             <p id="section-1" className="text-md font-bold mb-3 text-gray-800">
-                Section 1 (Purpose)
+                {`1. Purpose`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -14,9 +14,9 @@ const TermsV1EN = () => {
 
             <br id="section-1-br" />
 
-            {/* Section 2: Definitions */}
+            
             <p id="section-2" className="text-md font-bold mb-3 text-gray-800">
-                Section 2 (Definitions)
+                {`2. Definitions`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -47,9 +47,9 @@ const TermsV1EN = () => {
 
             <br id="section-2-br" />
 
-            {/* Section 3: Display and Revision of Terms */}
+            
             <p id="section-3" className="text-md font-bold mb-3 text-gray-800">
-                Section 3 (Display and Revision of Terms)
+                {`3. Display and Revision of Terms`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -74,9 +74,9 @@ const TermsV1EN = () => {
 
             <br id="section-3-br" />
 
-            {/* Section 4: External Regulations */}
+            
             <p id="section-4" className="text-md font-bold mb-3 text-gray-800">
-                Section 4 (External Regulations)
+                {`4. External Regulations`}
             </p>
             <p className="mb-6">
                 Any matters not specified in these Terms shall be governed by the relevant laws and the Company’s separate policies, operational guidelines, and rules (hereinafter “Supplementary Guidelines”), and the Supplementary Guidelines shall take precedence in the event of any conflict.
@@ -84,9 +84,9 @@ const TermsV1EN = () => {
 
             <br id="section-4-br" />
 
-            {/* Section 5: Formation of Service Contract */}
+            
             <p id="section-5" className="text-md font-bold mb-3 text-gray-800">
-                Section 5 (Formation of Service Contract)
+                {`5. Formation of Service Contract`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -137,9 +137,9 @@ const TermsV1EN = () => {
 
             <br id="section-5-br" />
 
-            {/* Section 6: Collection of Personal Information */}
+            
             <p id="section-6" className="text-md font-bold mb-3 text-gray-800">
-                Section 6 (Collection of Personal Information)
+                {`6. Collection of Personal Information`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -155,9 +155,9 @@ const TermsV1EN = () => {
 
             <br id="section-6-br" />
 
-            {/* Section 7: Obligation to Protect Personal Information */}
+            
             <p id="section-7" className="text-md font-bold mb-3 text-gray-800">
-                Section 7 (Obligation to Protect Personal Information)
+                {`7. Obligation to Protect Personal Information`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -170,9 +170,9 @@ const TermsV1EN = () => {
 
             <br id="section-7-br" />
 
-            {/* Section 8: Modification of Member Information */}
+            
             <p id="section-8" className="text-md font-bold mb-3 text-gray-800">
-                Section 8 (Modification of Member Information)
+                {`8. Modification of Member Information`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -186,9 +186,9 @@ const TermsV1EN = () => {
 
             <br id="section-8-br" />
 
-            {/* Section 9: Notice to Members */}
+            
             <p id="section-9" className="text-md font-bold mb-3 text-gray-800">
-                Section 9 (Notice to Members)
+                {`9. Notice to Members`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -202,9 +202,9 @@ const TermsV1EN = () => {
 
             <br id="section-9-br" />
 
-            {/* Section 10: Company’s Obligations */}
+            
             <p id="section-10" className="text-md font-bold mb-3 text-gray-800">
-                Section 10 (Company’s Obligations)
+                {`10. Company’s Obligations`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -214,15 +214,15 @@ const TermsV1EN = () => {
                     The Company shall have the necessary personnel and systems in place to appropriately handle any complaints or requests for redress arising from the use of the Service.
                 </li>
                 <li>
-                    In the event that the Company is unable to provide the Service to a Member, the Company shall notify the Member at least 3 months prior to the scheduled suspension of the Service in accordance with Section 19 of these Terms, except where advance notice is not possible.
+                    In the event that the Company is unable to provide the Service to a Member, the Company shall notify the Member at least 3 months prior to the scheduled suspension of the Service in accordance with {`19. f these Terms, except where advance notice is not possible`}
                 </li>
             </ol>
 
             <br id="section-10-br" />
 
-            {/* Section 11: Members' Obligations */}
+            
             <p id="section-11" className="text-md font-bold mb-3 text-gray-800">
-                Section 11 (Members' Obligations)
+                {`11. Members' Obligations`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -285,9 +285,9 @@ const TermsV1EN = () => {
 
             <br id="section-11-br" />
 
-            {/* Section 12: Service Provision */}
+            
             <p id="section-12" className="text-md font-bold mb-3 text-gray-800">
-                Section 12 (Service Provision)
+                {`12. Service Provision`}
             </p>
             <p className="mb-6">
                 The scope and content of the services provided by the Company are as follows:
@@ -318,9 +318,9 @@ const TermsV1EN = () => {
 
             <br id="section-12-br" />
 
-            {/* Section 13: Service Modification */}
+            
             <p id="section-13" className="text-md font-bold mb-3 text-gray-800">
-                Section 13 (Service Modification)
+                {`13. Service Modification`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -333,15 +333,15 @@ const TermsV1EN = () => {
                     The procedures, methods, and application of such changes shall be governed by Sections 3(3) through 3(6) of these Terms.
                 </li>
                 <li>
-                    During the Free Trial period, the Company shall notify Members of the service expiration date and the method for converting to the Paid Service in accordance with the method specified in Section 0, and shall confirm whether the Member consents to the conversion. (After the Free Trial period expires, Members will no longer have access to the related data.)
+                    During the Free Trial period, the Company shall notify Members of the service expiration date and the method for converting to the Paid Service in accordance with the method specified in {`0.,and shall confirm whether the Member consents to the conversion. (After the Free Trial period expires, Members will no longer have access to the related data.`}
                 </li>
             </ol>
 
             <br id="section-13-br" />
 
-            {/* Section 14: Restriction and Suspension of Service Usage */}
+            
             <p id="section-14" className="text-md font-bold mb-3 text-gray-800">
-                Section 14 (Restriction and Suspension of Service Usage)
+                {`14. Restriction and Suspension of Service Usage`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li className="list-decimal list-inside">
@@ -379,15 +379,15 @@ const TermsV1EN = () => {
                     </ol>
                 </li>
                 <li className="list-decimal list-inside">
-                    If a Member fails to pay the full overdue amount within the period specified in Section 3, the Company may terminate the service contract and delete the relevant data, after notifying the Member of the overdue, contract termination, and data deletion.
+                    If a Member fails to pay the full overdue amount within the period specified in {`3.,the Company may terminate the service contract and delete the relevant data, after notifying the Member of the overdue, contract termination, and data deletion`}
                 </li>
             </ol>
 
             <br id="section-14-br" />
 
-            {/* Section 15: Calculation of Service Usage Fees */}
+            
             <p id="section-15" className="text-md font-bold mb-3 text-gray-800">
-                Section 15 (Calculation of Service Usage Fees)
+                {`15. Calculation of Service Usage Fees`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -415,9 +415,9 @@ const TermsV1EN = () => {
 
             <br id="section-15-br" />
 
-            {/* Section 16: Payment of Service Usage Fees */}
+            
             <p id="section-16" className="text-md font-bold mb-3 text-gray-800">
-                Section 16 (Payment of Service Usage Fees)
+                {`16. Payment of Service Usage Fees`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -452,9 +452,9 @@ const TermsV1EN = () => {
 
             <br id="section-16-br" />
 
-            {/* Section 17: Cancellation, Refund, and Suspension of Recurring Payment for Paid Service */}
+            
             <p id="section-17" className="text-md font-bold mb-3 text-gray-800">
-                Section 17 (Cancellation, Refund, and Suspension of Recurring Payment for Paid Service)
+                {`17. Cancellation, Refund, and Suspension of Recurring Payment for Paid Service`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -534,9 +534,9 @@ const TermsV1EN = () => {
 
             <br id="section-17-br" />
 
-            {/* Section 18: Protection of the Service */}
+            
             <p id="section-18" className="text-md font-bold mb-3 text-gray-800">
-                Section 18 (Protection of the Service)
+                {`18. Protection of the Service`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -552,9 +552,9 @@ const TermsV1EN = () => {
 
             <br id="section-18-br" />
 
-            {/* Section 19: Preservation and Destruction of Data */}
+            
             <p id="section-19" className="text-md font-bold mb-3 text-gray-800">
-                Section 19 (Preservation and Destruction of Data)
+                {`19. Preservation and Destruction of Data`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -579,9 +579,9 @@ const TermsV1EN = () => {
 
             <br id="section-19-br" />
 
-            {/* Section 20: Copyright of Posted Content */}
+            
             <p id="section-20" className="text-md font-bold mb-3 text-gray-800">
-                Section 20 (Copyright of Posted Content)
+                {`20. Copyright of Posted Content`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -594,9 +594,9 @@ const TermsV1EN = () => {
 
             <br id="section-20-br" />
 
-            {/* Section 21: Scope of Liability for Damages and Claims */}
+            
             <p id="section-21" className="text-md font-bold mb-3 text-gray-800">
-                Section 21 (Scope of Liability for Damages and Claims)
+                {`21. Scope of Liability for Damages and Claims`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -630,9 +630,9 @@ const TermsV1EN = () => {
 
             <br id="section-21-br" />
 
-            {/* Section 22: Disclaimer */}
+            
             <p id="section-22" className="text-md font-bold mb-3 text-gray-800">
-                Section 22 (Disclaimer)
+                {`22. Disclaimer`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
@@ -659,7 +659,7 @@ const TermsV1EN = () => {
                     The Company shall not be liable for any damages related to the free Service, unless otherwise specified by relevant laws.
                 </li>
                 <li>
-                    The Company shall not be liable for any data loss resulting from its failure to back up data that has been destroyed in accordance with Section 24 after the termination of the Service, nor for any loss of data for which the Member has requested deletion.
+                    The Company shall not be liable for any data loss resulting from its failure to back up data that has been destroyed in accordance with {`24. fter the termination of the Service, nor for any loss of data for which the Member has requested deletion`}
                 </li>
                 <li>
                     The Company shall not be responsible for the accuracy or reliability of any information, data, or facts provided through the Service.
@@ -668,9 +668,9 @@ const TermsV1EN = () => {
 
             <br id="section-22-br" />
 
-            {/* Section 23: Dispute Resolution */}
+            
             <p id="section-23" className="text-md font-bold mb-3 text-gray-800">
-                Section 23 (Dispute Resolution)
+                {`23. Dispute Resolution`}
             </p>
             <ol className="list-decimal list-inside mb-6 space-y-1">
                 <li>
