@@ -21,7 +21,7 @@ const Footer = () => {
                             사업자등록번호 805-29-01574 | 통신판매신고 2024-서울서대문-1048 | 대표: 김지황
                         </p>
                         <p>
-                            서울특별시 서대문구 세무서2길 64, 101동 8층 | 연락처: 0507-1855-5086
+                            서울특별시 서대문구 세무서2길 64, 101동 8층 | 연락처: 0507-1855-5086, <a href="mailto:0xcatbox@gmail.com">0xcatbox@gmail.com</a>
                         </p>
                     </div>
                     {/* 이용약관, 개인정보 처리방침 링크 */}
@@ -46,6 +46,15 @@ const Footer = () => {
                 </div>
 
                 <div className="w-full sm:w-1/3 flex flex-col items-center sm:items-end justify-end">
+                    <div className="flex gap-3 items-center">
+                        {/* Contact Info */}
+                        <div className="flex items-center text-gray-600 hover:text-black transition duration-300 ease-in-out">
+
+                            <a href="mailto:0xcatbox@gmail.com" className="text-sm font-normal">
+                                Contact:
+                            </a>
+                        </div>
+                    </div>
                     <div className="flex gap-2">
                         <a
                             href="https://www.linkedin.com/company/yourd/"
