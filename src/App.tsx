@@ -1,27 +1,28 @@
-import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
-import React, { useState } from 'react';
-import MainPage from './pages/mainPage';
-import TopBar from './components/common/topBar';
-import AboutPage from './pages/aboutPage';
+import React, { useEffect } from 'react';
+import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom';
+import Analytic from './assets/img/analytics_imac.webp';
+import D from './assets/img/D.webp';
+import Infra from './assets/img/dataLeverageImage.webp';
+import Payment from './assets/img/paymentMain.webp';
+import LoginImg from './assets/img/webAuthentication.webp';
+import YourDHub from './assets/img/YourDHub.webp';
+import Pass from './assets/img/yourdpass-main.webp';
+import StarsCanvas from './components/canvas/stars';
 import ContactUs from './components/common/contactUs';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import Footer from './components/common/footer';
+import TopBar from './components/common/topBar';
+import AppDownloadPage from './components/main/appDownloadPage';
+import preloadImages from './components/utils/preloadImages';
+import AboutPage from './pages/aboutPage';
+import MainPage from './pages/mainPage';
+import TermsMain from './pages/policy/TermsMain';
+import PricingPage from './pages/product/Pricing';
+import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
+import YourDHubPage from './pages/product/YourDHubPage';
+import YourDInfraPage from './pages/product/yourdInfraPage';
 import YourDLoginPage from './pages/product/yourdLoginPage';
 import YourDPassPage from './pages/product/yourdPassPage';
-import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
-import YourDInfraPage from './pages/product/yourdInfraPage';
 import YourDPaymentPage from './pages/product/yourdPaymentPage';
-import preloadImages from './components/utils/preloadImages';
-import Analytic from './assets/img/analytics_imac.webp';
-import Payment from './assets/img/paymentMain.webp';
-import D from './assets/img/D.webp';
-import LoginImg from './assets/img/webAuthentication.webp';
-import Pass from './assets/img/yourdpass-main.webp';
-import Infra from './assets/img/dataLeverageImage.webp';
-import AppDownloadPage from './components/main/appDownloadPage';
-import StarsCanvas from './components/canvas/stars';
-import Footer from './components/common/footer';
-import TermsMain from './pages/policy/TermsMain';
 
 function Layout() {
     return (
@@ -41,7 +42,7 @@ function App() {
     const location = useLocation();
 
     useEffect(() => {
-        preloadImages([Analytic, Payment, D, LoginImg, Pass, Infra /* 이곳에 다른 이미지 변수를 추가 */]);
+        preloadImages([Analytic, Payment, D, LoginImg, Pass, Infra, YourDHub /* 이곳에 다른 이미지 변수를 추가 */]);
     }, []);
 
     useEffect(() => {
@@ -55,13 +56,14 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<MainPage />} />
                     <Route path="yourd_web_auth" element={<YourDLoginPage />} />
+                    <Route path="yourd_hub" element={<YourDHubPage />} />
                     <Route path="yourd_app" element={<YourDPassPage />} />
                     <Route path="yourd_payment" element={<YourDPaymentPage />} />
                     <Route path="yourd_analytics" element={<YourDAnalyticsPage />} />
                     <Route path="yourd_infra" element={<YourDInfraPage />} />
                     <Route path="about_us" element={<AboutPage />} />
                     <Route path="contact" element={<ContactUs />} />
-
+                    <Route path="pricing" element={<PricingPage />} />
                 </Route>
 
 
