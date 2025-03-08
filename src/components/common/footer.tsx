@@ -2,78 +2,108 @@ import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 
+// 한글 버전 사업자 정보
+const BusinessInfoKo = () => (
+    <div className="text-[13px] font-normal text-gray-500 mb-5 text-center">
+        <p>
+            사업자등록번호 805-29-01574 | 통신판매신고 2024-서울서대문-1048 | 대표: 김지황
+            서울특별시 서대문구 세무서2길 64, 101동 8층 | 연락처: 0507-1855-5086,{" "}
+            <a href="mailto:0xcatbox@gmail.com">0xcatbox@gmail.com</a>
+        </p>
+    </div>
+);
+
+// 영어 버전 사업자 정보 (간단하게 처리)
+const BusinessInfoEn = () => (
+    <div className="text-[13px] font-normal text-gray-500 mb-5 flex flex-col sm:flex-row text-center">
+        <p>2024 YourD.
+            <span className="text-gray-300 mx-2">|</span>
+            8th Floor, Building 101, 64 Saeumseo 2-gil, Seodaemun-gu, Seoul, South Korea
+            <span className="text-gray-300 mx-2">|</span>
+        </p>
+        <p>
+            <a href="mailto:0xcatbox@gmail.com">0xcatbox@gmail.com</a>
+        </p>
+    </div>
+);
+
+// 한글 버전 정책 링크
+const PolicyLinksKo = () => (
+    <div className="flex flex-row gap-2 sm:gap-x-4 items-center justify-center">
+        <Link
+            to="/policy/terms?lang=ko"
+            className="text-[13px] font-medium hover:underline text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            이용약관
+        </Link>
+        <span className="text-gray-300">|</span>
+        <Link
+            to="/policy/privacy?lang=ko"
+            className="text-[13px] font-medium hover:underline text-gray-800"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            개인정보 처리방침
+        </Link>
+    </div>
+);
+
+// 영어 버전 정책 링크
+const PolicyLinksEn = () => (
+    <div className="flex flex-row gap-2 sm:gap-x-4 items-center justify-center">
+        <Link
+            to="/policy/terms?lang=en"
+            className="text-[13px] font-medium hover:underline text-gray-600"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Terms of Service
+        </Link>
+        <span className="text-gray-300">|</span>
+        <Link
+            to="/policy/privacy?lang=en"
+            className="text-[13px] font-medium hover:underline text-gray-800"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Privacy Policy
+        </Link>
+    </div>
+);
 
 const Footer = () => {
+    const lang = navigator.language || "en";
+    const BusinessInfo = lang.startsWith("ko") ? BusinessInfoKo : BusinessInfoEn;
+    const PolicyLinks = lang.startsWith("ko") ? PolicyLinksKo : PolicyLinksEn;
+
     return (
-        <footer className="flex flex-col sm:flex-row h-fit justify-between items-center sm:items-start relative pt-10 pb-16 bg-white px-5 sm:px-10 md:px-16 lg:px-[136px] gap-10 sm:gap-0 border-t">
-            <div className="flex flex-col sm:flex-row justify-between gap-10 w-full">
-                {/* 왼쪽 열: 로고, 기본 정보, 사업자 정보 */}
-                <div className="w-full sm:w-2/3 text-center sm:text-left">
-                    {/* 로고 및 기본 정보 */}
-                    <div className="flex flex-col mb-6">
-                        <p className="text-xs sm:text-[14px] font-normal mb-2">
-                            CopyRight © 2024 YourD, All rights reserved.
-                        </p>
-                    </div>
-                    {/* 사업자 정보 */}
-                    <div className="text-xs sm:text-sm font-normal text-gray-500 mb-5">
-                        <p>
-                            사업자등록번호 805-29-01574 | 통신판매신고 2024-서울서대문-1048 | 대표: 김지황
-                        </p>
-                        <p>
-                            서울특별시 서대문구 세무서2길 64, 101동 8층 | 연락처: 0507-1855-5086, <a href="mailto:0xcatbox@gmail.com">0xcatbox@gmail.com</a>
-                        </p>
-                    </div>
-                    {/* 이용약관, 개인정보 처리방침 링크 */}
-                    <div className="flex flex-row gap-2 sm:gap-x-4 justify-center sm:justify-start">
-                        <Link
-                            to="/policy/terms"
-                            className="text-[14px] font-medium hover:underline text-gray-500"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Terms of Service
-                        </Link>
-                        <Link
-                            to="/policy/privacy"
-                            className="text-[14px] font-medium hover:underline text-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Privacy Policy
-                        </Link>
-                    </div>
-                </div>
+        <footer className="flex flex-col h-fit items-center relative pt-10 pb-5 bg-white px-5 sm:px-10 md:px-16 lg:px-[136px] gap-0 border-t">
+            {/* 사업자 정보 (언어에 따라 다르게 표시) */}
+            <BusinessInfo />
+            {/* 이용약관, 개인정보 처리방침 링크 */}
+            <PolicyLinks />
 
-                <div className="w-full sm:w-1/3 flex flex-col items-center sm:items-end justify-end">
-                    <div className="flex gap-3 items-center">
-                        {/* Contact Info */}
-                        <div className="flex items-center text-gray-600 hover:text-black transition duration-300 ease-in-out">
+            <p className="mt-5 text-gray-800 text-sm">© 2024 YourD. All rights reserved.</p>
 
-                            <a href="mailto:0xcatbox@gmail.com" className="text-sm font-normal">
-                                Contact:
-                            </a>
-                        </div>
-                    </div>
-                    <div className="flex gap-2">
-                        <a
-                            href="https://www.linkedin.com/company/yourd/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-white rounded-full p-2"
-                        >
-                            <FaLinkedin size={32} />
-                        </a>
-                        <a
-                            href="https://x.com/YourD_ata"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-white rounded-full p-2"
-                        >
-                            <FaSquareXTwitter size={32} />
-                        </a>
-                    </div>
-                </div>
+            <div className="flex gap-x-2 mt-5 ">
+                <a
+                    href="https://www.linkedin.com/company/yourd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition duration-300 ease-in-out text-slate-500  hover:text-yellow-500"
+                >
+                    <FaLinkedin size={32} />
+                </a>
+                <a
+                    href="https://x.com/YourD_ata"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition duration-300 ease-in-out text-slate-500  hover:text-yellow-500"
+                >
+                    <FaSquareXTwitter size={32} />
+                </a>
             </div>
         </footer>
     );
