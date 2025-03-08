@@ -5,8 +5,6 @@ import LearnMore from '../../assets/icon/learnMoreIcon.png';
 import Analytics from '../../assets/img/analytics.png';
 import YourDSaaS from '../../assets/img/dataPass.png';
 import DataSelling from '../../assets/img/dataSelling.png';
-import FastAuth from '../../assets/img/fastAuth.png';
-import Payment from '../../assets/img/payment.png';
 
 export default function Solution() {
     const [isHover, setIsHover] = useState(null);
@@ -22,11 +20,11 @@ export default function Solution() {
         },
         {
             id: 2,
-            title: 'YourD Hub – Foundation for Digital Verification',
+            title: 'YourD Hub – All-in-One Digital Verification & Analytics',
             subtitle: 'Manage and verify your verifiable credentials effortlessly with YourD Hub',
             description:
-                'YourD Hub is a secure platform that enables businesses to easily verify digital credentials and build trusted Web 3.0 infrastructures. Our solution streamlines the process of credential management and verification, removing unnecessary complexity while ensuring robust security and reliability. With YourD Hub, organizations can effortlessly create a trustworthy digital ecosystem for seamless interactions.',
-            image: FastAuth,
+                'YourD Hub is a comprehensive platform that simplifies verifiable credential management and delivers advanced data analytics for the Web 3.0 era. Businesses can issue, manage, and verify credentials without the complexity of a dedicated DID system—while gaining insights that comply with GDPR, CCPA, and other international standards. Leveraging decentralized identity technology, we protect personal data and foster a trusted digital ecosystem for seamless interactions and sustainable growth.',
+            image: Analytics,
             path: '/yourd_hub',
         },
         // {
@@ -48,19 +46,19 @@ export default function Solution() {
         //     image: Payment,
         //     path: '/yourd_payment',
         // },
+        // {
+        //     id: 3,
+        //     title:
+        //         'YourD Analytics: The Next-Generation User Analysis Tool for Web 3.0',
+        //     subtitle:
+        //         'Conduct Effective Analysis while Upholding Data Sovereignty with YourD Analytics',
+        //     description:
+        //         'The implementation of YourD Web Auth and YourD App makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.',
+        //     image: Analytics,
+        //     path: '/yourd_analytics',
+        // },
         {
             id: 3,
-            title:
-                'YourD Analytics: The Next-Generation User Analysis Tool for Web 3.0',
-            subtitle:
-                'Conduct Effective Analysis while Upholding Data Sovereignty with YourD Analytics',
-            description:
-                'The implementation of YourD Web Auth and YourD App makes user analysis in adherence to laws such as GDPR and CCPA feasible in the Web 3.0 framework. This offers companies the capability to honor user data sovereignty and explore avenues for continuous service enhancement and novel growth.',
-            image: Analytics,
-            path: '/yourd_analytics',
-        },
-        {
-            id: 4,
             title: 'YourD Data Leverage Infra',
             subtitle:
                 'Maximizing Data Value: YourD Paving the Way for Emerging Business Models in a Web 3.0 Landscape',
@@ -101,9 +99,9 @@ export default function Solution() {
                             <img
                                 src={isHover === index ? LearnMoreHover : LearnMore}
                                 alt={solution.title}
-                                className="object-contain min-w-[40px] w-[40px] sm:w-[40px] md:w-[50px] "
+                                className="object-contain min-w-[32px] w-7 sm:w-[40px] md:w-[50px] "
                             />
-                            <div className={`text-lg pr-5 ${isHover === index ? "gradientText" : "text-white"}`}>Learn More</div>
+                            <div className={`text-xs sm:text-sm md:text-md pr-5 whitespace-nowrap ${isHover === index ? "gradientText" : "text-white"}`}>Learn More</div>
                         </div>
                     </Link>
 

@@ -1,7 +1,6 @@
 import { FaCheck } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import "../../assets/css/describe1.css";
-import PricingPage from "./Pricing";
 
 const features = [
     {
@@ -121,6 +120,43 @@ export default function YourDHubPage() {
                     </div>
                 </div>
             </div>
+
+            <section className="bg-gray-50 w-full py-20">
+                <div className="max-w-5xl mx-auto text-center flex flex-col gap-y-6">
+                    <h2 className="text-4xl font-extrabold text-gray-900">
+                        Empower Your Hub with Data Analytics
+                    </h2>
+                    <p className="text-lg text-gray-700 font-normal">
+                        Dive deep into your Web 3.0 ecosystem with advanced data analytics, gaining safe and transparent insights without the need to manage your own servers.
+                    </p>
+                </div>
+                <div className="max-w-6xl mx-auto px-4 mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">
+                            DID-Based Security Enhancement
+                        </h3>
+                        <p className="text-gray-600">
+                            Leveraging DID technology, we protect your personal data while providing precise analytics insights from secured data.
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">
+                            Fully Managed Analytics
+                        </h3>
+                        <p className="text-gray-600">
+                            Enjoy immediate analytics insights from our platform without worrying about server maintenance.
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">
+                            Compliance & Transparency
+                        </h3>
+                        <p className="text-gray-600">
+                            We comply with international data protection regulations like GDPR and CCPA, ensuring complete transparency in data processing.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
             <section className="bg-gradient-to-r from-blue-100 to-green-100 py-20 w-full">
                 <div className="max-w-5xl mx-auto text-center flex flex-col gap-y-20">

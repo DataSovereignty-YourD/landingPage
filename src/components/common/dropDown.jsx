@@ -56,11 +56,11 @@ const DropDown = () => {
         //     solution: "YourD Payment",
         //     path: "/yourd_payment",
         // },
-        {
-            id: 4,
-            solution: "YourD Analytics",
-            path: "/yourd_analytics",
-        },
+        // {
+        //     id: 4,
+        //     solution: "YourD Analytics",
+        //     path: "/yourd_analytics",
+        // },
         {
             id: 5,
             solution: "YourD Data Leverage Infra",
