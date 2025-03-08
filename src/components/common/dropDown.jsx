@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
 
 const DropDown = () => {
@@ -43,14 +43,19 @@ const DropDown = () => {
         },
         {
             id: 2,
-            solution: "YourD Authentication",
-            path: "/yourd_web_auth",
+            solution: "YourD Hub",
+            path: "/yourd_hub",
         },
-        {
-            id: 3,
-            solution: "YourD Payment",
-            path: "/yourd_payment",
-        },
+        // {
+        //     id: 2,
+        //     solution: "YourD Authentication",
+        //     path: "/yourd_web_auth",
+        // },
+        // {
+        //     id: 3,
+        //     solution: "YourD Payment",
+        //     path: "/yourd_payment",
+        // },
         {
             id: 4,
             solution: "YourD Analytics",
