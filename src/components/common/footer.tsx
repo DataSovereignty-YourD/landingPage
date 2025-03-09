@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const BusinessInfoKo = () => (
     <div className="text-[13px] font-normal text-gray-500 mb-5 text-center">
         <p>
-            사업자등록번호 805-29-01574 | 통신판매신고 2024-서울서대문-1048 | 대표: 김지황
-            서울특별시 서대문구 세무서2길 64, 101동 8층 | 연락처: 0507-1855-5086,{" "}
+            {/* 사업자등록번호 805-29-01574 | 통신판매신고 2024-서울서대문-1048 | 대표: 김지황
+            서울특별시 서대문구 세무서2길 64, 101동 8층 | 연락처: 0507-1855-5086,{" "} */}
             <a href="mailto:0xcatbox@gmail.com">0xcatbox@gmail.com</a>
         </p>
     </div>
@@ -18,8 +18,8 @@ const BusinessInfoEn = () => (
     <div className="text-[13px] font-normal text-gray-500 mb-5 flex flex-col sm:flex-row text-center">
         <p>2024 YourD.
             <span className="text-gray-300 mx-2">|</span>
-            8th Floor, Building 101, 64 Saeumseo 2-gil, Seodaemun-gu, Seoul, South Korea
-            <span className="text-gray-300 mx-2">|</span>
+            {/* 8th Floor, Building 101, 64 Saeumseo 2-gil, Seodaemun-gu, Seoul, South Korea
+            <span className="text-gray-300 mx-2">|</span> */}
         </p>
         <p>
             <a href="mailto:0xcatbox@gmail.com">0xcatbox@gmail.com</a>
