@@ -4,7 +4,7 @@ import LearnMoreHover from '../../assets/icon/fillcircle.png';
 import LearnMore from '../../assets/icon/learnMoreIcon.png';
 import Analytics from '../../assets/img/analytics.png';
 import YourDSaaS from '../../assets/img/dataPass.png';
-import DataSelling from '../../assets/img/dataSelling.png';
+import DataSelling from '../../assets/img/dataselling.png';
 
 export default function Solution() {
     const [isHover, setIsHover] = useState(null);
