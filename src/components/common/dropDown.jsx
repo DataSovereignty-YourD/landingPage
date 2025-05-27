@@ -43,8 +43,8 @@ const DropDown = () => {
         },
         {
             id: 2,
-            solution: "YourD Hub",
-            path: "/yourd_hub",
+            solution: "YourD Studio",
+            path: "/yourd_studio",
         },
         // {
         //     id: 2,

@@ -30,7 +30,7 @@ const features = [
 ];
 
 
-export default function YourDHubPage() {
+export default function YourDStudioPage() {
     const navigate = useNavigate();
 
     return (
@@ -39,7 +39,7 @@ export default function YourDHubPage() {
                 <div className="relative w-full sm:text-center md:text-start flex flex-col md:flex-row justify-between items-center  bg-white bg-opacity-70">
                     <div className="h-fit pt-10 sm:pt-20  sm:pb-20 z-10">
                         <div className="text-2xl sm:text-[32px] font-pre-bold">
-                            Your<span className="text-[#fccc00]">D</span> Hub
+                            Your<span className="text-[#fccc00]">D</span> Studio
                         </div>
                         <div className="font-pre-bold text-3xl sm:text-[32px] md:text-[36px] lg:text-[56px] gradientText mt-3 leading-none pb-1">
                             Empowering Digital Trust
@@ -124,7 +124,7 @@ export default function YourDHubPage() {
             <section className="bg-gray-50 w-full py-20">
                 <div className="max-w-5xl mx-auto text-center flex flex-col gap-y-6">
                     <h2 className="text-4xl font-extrabold text-gray-900">
-                        Empower Your Hub with Data Analytics
+                        Empower Your Studio with Data Analytics
                     </h2>
                     <p className="text-lg text-gray-700 font-normal">
                         Dive deep into your Web 3.0 ecosystem with advanced data analytics, gaining safe and transparent insights without the need to manage your own servers.
@@ -160,22 +160,20 @@ export default function YourDHubPage() {
 
             <section className="bg-gradient-to-r from-blue-100 to-green-100 py-20 w-full">
                 <div className="max-w-5xl mx-auto text-center flex flex-col gap-y-20">
-                    <h2 className="text-4xl font-extrabold text-gray-900">Why YourD Hub</h2>
+                    <h2 className="text-4xl font-extrabold text-gray-900">Why YourD Studio</h2>
                     <p className="text-lg text-gray-700 font-normal">
-                        YourD Hub transforms digital identity management with a secure, decentralized platform for seamless interactions.
+                        YourD Studio transforms digital identity management with a secure, decentralized platform for seamless interactions.
                         We build a trusted, hyper-connected ecosystem that empowers businesses to simplify credential management and verification.
                     </p>
                 </div>
             </section>
 
-            <main className="flex-grow max-w-6xl mx-auto px-4 py-12 bg-white">
-                {/* Pricing Section */}
+            {/* <main className="flex-grow max-w-6xl mx-auto px-4 py-12 bg-white">
                 <section className="py-12 text-center ">
                     <h2 className="text-4xl font-extrabold text-gray-800 pb-6">
                         Pricing
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Basic Plan */}
                         <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
                             <h3 className="text-2xl font-bold text-gray-800 mb-4">Basic</h3>
                             <p className="text-4xl font-extrabold text-gray-900 mb-4">$49<span className="text-lg font-normal">/mo</span></p>
@@ -197,7 +195,6 @@ export default function YourDHubPage() {
                             </ul>
 
                         </div>
-                        {/* Pro Plan */}
                         <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
                             <h3 className="text-2xl font-bold text-gray-800 mb-4">Pro</h3>
                             <p className="text-4xl font-extrabold text-gray-900 mb-4">$329<span className="text-lg font-normal">/mo</span></p>
@@ -219,7 +216,6 @@ export default function YourDHubPage() {
                                 </li>
                             </ul>
                         </div>
-                        {/* Enterprise Plan */}
                         <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
                             <h3 className="text-2xl font-bold text-gray-800 mb-4">Enterprise</h3>
                             <p className="text-4xl font-extrabold text-gray-900 mb-4">Custom</p>
@@ -240,7 +236,7 @@ export default function YourDHubPage() {
                         </div>
                     </div>
                 </section>
-            </main>
+            </main> */}
         </div>
     );
 }

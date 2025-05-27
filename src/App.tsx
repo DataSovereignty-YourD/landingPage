@@ -5,7 +5,7 @@ import D from './assets/img/D.webp';
 import Infra from './assets/img/dataLeverageImage.webp';
 import Payment from './assets/img/paymentMain.webp';
 import LoginImg from './assets/img/webAuthentication.webp';
-import YourDHub from './assets/img/YourDHub.webp';
+import YourDStudio from './assets/img/YourDStudio.webp';
 import Pass from './assets/img/yourdpass-main.webp';
 import StarsCanvas from './components/canvas/stars';
 import ContactUs from './components/common/contactUs';
@@ -18,11 +18,11 @@ import MainPage from './pages/mainPage';
 import TermsMain from './pages/policy/TermsMain';
 import PricingPage from './pages/product/Pricing';
 import YourDAnalyticsPage from './pages/product/yourdAnalayticsPage';
-import YourDHubPage from './pages/product/YourDHubPage';
 import YourDInfraPage from './pages/product/yourdInfraPage';
 import YourDLoginPage from './pages/product/yourdLoginPage';
 import YourDPassPage from './pages/product/yourdPassPage';
 import YourDPaymentPage from './pages/product/yourdPaymentPage';
+import YourDStudioPage from './pages/product/YourDStudioPage';
 
 function Layout() {
     return (
@@ -42,7 +42,7 @@ function App() {
     const location = useLocation();
 
     useEffect(() => {
-        preloadImages([Analytic, Payment, D, LoginImg, Pass, Infra, YourDHub /* 이곳에 다른 이미지 변수를 추가 */]);
+        preloadImages([Analytic, Payment, D, LoginImg, Pass, Infra, YourDStudio /* 이곳에 다른 이미지 변수를 추가 */]);
     }, []);
 
     useEffect(() => {
@@ -56,7 +56,7 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<MainPage />} />
                     <Route path="yourd_web_auth" element={<YourDLoginPage />} />
-                    <Route path="yourd_hub" element={<YourDHubPage />} />
+                    <Route path="yourd_studio" element={<YourDStudioPage />} />
                     <Route path="yourd_app" element={<YourDPassPage />} />
                     <Route path="yourd_payment" element={<YourDPaymentPage />} />
                     <Route path="yourd_analytics" element={<YourDAnalyticsPage />} />

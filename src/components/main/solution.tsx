@@ -20,12 +20,12 @@ export default function Solution() {
         },
         {
             id: 2,
-            title: 'YourD Hub – All-in-One Digital Verification & Analytics',
-            subtitle: 'Manage and verify your verifiable credentials effortlessly with YourD Hub',
+            title: 'YourD Studio – All-in-One Digital Verification & Analytics',
+            subtitle: 'Manage and verify your verifiable credentials effortlessly with YourD Studio',
             description:
-                'YourD Hub is a comprehensive platform that simplifies verifiable credential management and delivers advanced data analytics for the Web 3.0 era. Businesses can issue, manage, and verify credentials without the complexity of a dedicated DID system—while gaining insights that comply with GDPR, CCPA, and other international standards. Leveraging decentralized identity technology, we protect personal data and foster a trusted digital ecosystem for seamless interactions and sustainable growth.',
+                'YourD Studio is a comprehensive platform that simplifies verifiable credential management and delivers advanced data analytics for the Web 3.0 era. Businesses can issue, manage, and verify credentials without the complexity of a dedicated DID system—while gaining insights that comply with GDPR, CCPA, and other international standards. Leveraging decentralized identity technology, we protect personal data and foster a trusted digital ecosystem for seamless interactions and sustainable growth.',
             image: Analytics,
-            path: '/yourd_hub',
+            path: '/yourd_studio',
         },
         // {
         //   id: 2,
